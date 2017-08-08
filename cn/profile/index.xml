@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Profile on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/profile/</link>
+    <description>Recent content in Profile on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    
+	<atom:link href="https://RCJacH.github.io/cn/profile/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+  </channel>
+</rss>

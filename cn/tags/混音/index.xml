@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>混音 on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/tags/%E6%B7%B7%E9%9F%B3/</link>
+    <description>Recent content in 混音 on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    <lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/cn/tags/%E6%B7%B7%E9%9F%B3/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>REAPER信号流</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</link>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</guid>
+      <description>什么是信号流？
+在数字音频制作领域，信号流指的是信号（例如音频或MIDI）是如何经过DAW中每一层运算的。
+因为我们在实际使用中常常会需要建立路由，无论是简单的信号发送、搭建模块合成器、还是建立使用Parameter Modulation的多轨模板，清晰地了解信号在DAW中的路径以及运算顺序会有非常大的帮助。
+
+所以我画了以下这张图。
+排除模拟输入(Input)以及输出(Output)，Reaper总共有四个信号处理阶段：Take（层），Item（块），Track（轨），Master（总线）。每一个阶段在音频运算方面是完全一样的（单纯的加法），唯一的区别只是使用方式以而已。
+
+以下则是一张包含包络的细节图。
+注释：
+Take Trim = 层音量衰减（主页面块儿上&amp;rdquo;边&amp;rdquo;往下拽的衰减）。
+
+另外几点
+ 我们知道REAPER只有一种万能轨道。
+ 信号发送到另一轨的思路与块的信号输入至所包含轨性质是一样的。
+ 母轨道(Folder Track)就像微型总线一样，把所有子轨道的信号加在一块儿再处理。
+ 音频/MIDI通道是同路由上平行的信号流。
+ 音频只会相加同通道的信号。
+ 音量推子、Trim包络、音量包络三者可以同时使用，也就是说可以同时有三层音量调整的方法（平衡、段落、微调之类的）。
+ 监听FX（Monitor FX）在音频渲染时是旁通的。
+  </description>
+    </item>
+    
+    <item>
+      <title>Reaper字符串快捷键系统：Vimper Solo</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-vimper-solo/</link>
+      <pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-vimper-solo/</guid>
+      <description>当我们开始挖掘REAPER内隐藏着的几千个操作（Action），并且随着ReaPack的成长不断添加新的用户自制脚本与扩展时，我们会发现当我们需要自定义快捷键时，能用到的键位越来越少。而为了充分利用现有的字母、数字、以及符号键，我们通常需要加上各种如Ctrl，Alt甚至Win的修饰键进行各种高难度的键位组合，而且经常过几天可能就会忘掉一大半。
+为了避免这种尴尬，我做了一个按组归类快捷键的脚本。它是依照VIM文本编辑器快捷键的理念，通过一串字符触发快捷键的。
+点击这里下载Vimper Solo。
+通过这个脚本，我们不需要去记各种修饰键，只需按组激发对应的键位就好了。例如，在这个脚本内，同一个m键可以根据不同的分组静音轨道、块或层，但在REAPER里，我们得去想到三个不同的修饰键组合来触发这三个不同的功能。有的时候由于记不住某个操作是要按Shift还是要按Ctrl还是Ctrl+Shift需要反复去试，浪费很多时间。
+使用方法：  解压后把整个文件夹放到资源目录的Script文件夹内，然后在Reaper的Action List中加载RCJacH_Vimper Solo并为其设置一个快捷键（我用的是分号;）。
+ 触发脚本，根据GUI窗口提示进入不同的分组并触发不同的操作。
+ 使用Backspace退格键返回上一层菜单。
+ 也可以在Action List中加载RCJacH_Vimper Solo Repeat Action来反复触发上一次触发操作。
+  在Bindings.lua文件里，可以依照现有项设置新的快捷键或者修改现有的快捷键。
+格式：
+分组= {
+NAME = “分组”,
+快捷键= {CommandID, 所显示的名称},
+}
+*注意，任何分组必须得包含NAME= “名称”一项，否则识别不到。
+**分组可以有无数层。
+***如果添加新的总分组，得在最底下的return{}里添加。
+****快捷键目前区分大小写。
+*****显示名称可以使用中文。</description>
+    </item>
+    
+    <item>
+      <title>Reaper JSFX: NoiseBuzz噪音生成器</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</guid>
+      <description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
+这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
+下载地址： NoiseBuzz官网下载地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
+    </item>
+    
+    <item>
+      <title>REAPER JSFX - AB Comparison 8路信号对比脚本</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison/</link>
+      <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison/</guid>
+      <description>昨天做了个JSFX小脚本：AB Comparison。目的是更方便的监听和对比不同信号（比如说不同插件、不同轨道）。
+这个脚本可以根据所设置的节拍或者微秒长度，自动切换到不同的双声道通道。同时还包含一个盲听模式。
+使用方法：  在任意音轨上放置 AB Comparison 这个JS脚本。
+ 将所需对比的乐器、插件、音轨设置成不同的双声道输出，例：插件1 = 1-2，插件2 = 3-4，插件3 = 5-6&amp;hellip;一共能接收8个双声道输入。
+ 将 # of Input 设置成需要对比的双声道个数。
+ 将 Switch Beat length 设置为自动切换通道的拍数（每n拍切换一次）。或者，使用 Millisecond Mode 并将其设置为自动切换的毫秒数。
+ 选择切换模式：
+   Manual = 手动模式，点击0-9任意触发按钮（或对应小键盘数字）切换到对应双声道通道。
+ Sequential = 循序模式，输出通道将按照所设置的间隔自动切换到下一个双声道。
+ Random = 随机模式，输出通道将按照所设置的间隔自动切换到一个不同的随机双声道。
+ Guessing = 盲听模式，随机切换到一个双声道，并隐藏显示正播放的通道。点击0-9任意触发按钮显示正在播放的通道。
+  使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。
+Output Channel Display 显示正在播放的通道。循序模式和随机模式内，点击0-9任意触发按钮返回至手动模式，并切换到该通道。
+下载地址： AB Comparison官网下载地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
+    </item>
+    
+    <item>
+      <title>模拟信号与电子信号的音量关系：-20 dBFS = 0 VU</title>
+      <link>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</link>
+      <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</guid>
+      <description>这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。
+图中有以下几点需要注意：
+ 电子信号会在0 dBFS的状态下遭遇电子削波，而模拟信号会在+24 dBu（也就是+20VU）的状态下遭遇削波。
+ 模拟设备在0VU以上会有逐渐增强的失真。
+ 因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的平均输出音量保持在-20dBFS左右，这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。
+ 在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如ToneBooster的Ferox/Reelbus、Klanghelm的IVGI、112dB的Redline PreAmp、Slate Digital的Virtual Tape Machines等等。
+  </description>
+    </item>
+    
+    <item>
+      <title>ReaComp到底有多强大？Pro Tools用户哭了。</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-reacomp-the-great/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-reacomp-the-great/</guid>
+      <description>在音频处理方面，压缩一词经常被捧上天。尤其是对听感的音量变化还不是很敏感的那些初学者们，会觉得压缩处理好像是一个非常神秘的步骤。其实压缩器的性质与手动调音量一样- 衰减音量大的部分并提升音量小的部分 – 只不过压缩比手动画音量能在更短的时间内做出反应与相对措施。那么他对音频具体有什么影响呢？我们来通过Reaper自带的ReaComp来观察一下。
+ReaComp的界面的确不是最华丽的，但麻雀虽小五脏俱全：
+音频信号压缩的原理是把输入信号分成两份，一份通过压缩本身的信号处理，而另一份则被用于检测衡量信号。这两份信号都可以在ReaComp内进行一定程度的处理来达到所需的效果。我们用图来解释一下ReaComp内的参数分别是什么。
+假设我们输入的音频是这个样子，中间有一段音量突出的片段。
+
+如果我们想用压缩来控制这个片段的话，我们需要调四个参数。最重要的两个是ReaComp左侧的阈值 (Threshold)以及正中央的压缩比例 (Ratio)。当输入音频音量高于阈值时，会按着所设置的Ratio对高出的范围进行衰减 (GR = Gain Reduction)。例，当输入音量比阈值高出4dB而Ratio为4:1时，超出阈值的片段会衰减至所超出范围的四分之一，输出音量则会比阈值高出1dB。
+剩下的Attack和Release两个参数是用来控制衰减行为的时间b。Attack参数决定了音频从高于阈值那一刻起到最高衰减所需要的时间，而Release决定了在音频低于阈值后衰减恢复到0dB的时间。我们看一下这张图可能会更容易理解，图中的压缩比例为无限:1，也就是说GR会把超出音量降至阈值。
+
+Class Attack选项会改变Attack的曲线，让音头衰减更慢一点，如图:
+
+Auto Release选项是根据GR程度来计算是否需要延长Release的时间。假设我们在压缩军鼓时选择了Auto Release。如果GR是3dB，那么ReaComp会采取Release设置的x微秒；如果GR达到了20dB，Auto Release选项会让Release时间超出x，让Release时间变长。可惜的是，这样的设置在听觉上不是很舒服。许多模拟压缩所采取的Auto Release是根据GR时间长度来决定Release时间，也就是说在军鼓上衰减5dB与在贝斯上衰减5dB所造成的Release时长是不一样的。期待ReaComp能在未来的哪天实现这个功能。
+在Ratio下方有一个Knee Size参数，他决定了GR与Threshold的关系。什么意思呢？想象一下，我们录过的主人声。有一些句子唱的很轻，一些句子音量稍微高一点，而副歌的时候音量会非常大。这个时候使用同一个阈值与压缩比例显然不是很合适。为什么呢？因为如果我们把阈值设置成仅仅低于副歌部分，那么前面的句子就不会被影响；而如果我们需要压缩所有信号，可能Ratio不会让副歌的音量衰减到平均范围，或者会让主歌部分压缩太多。这个时候，我们可以通过Knee Size来让GR变得更圆滑，让信号在Threshold前后Knee/2的范围内都有着不同比例的压缩。如图。
+无压缩
+Hard Knee
+Soft Knee
+
+Knee Size 之下的Detector input决定了检测信号的识别方式。可选项为双声道、单声道左/右、侧链双声道以及单声道（通过Channel 3 - 4的信号来激发对Channel 1 - 2的压缩）、以及Feedback (通过输出信号来激发压缩，让压缩稍微更圆润一点)。我们可以根据压缩的不同目的来选择不同识别方式，具体会在今后的文章中介绍。
+
+再往下的两个参数分别是低通（Low Pass）与高通 (High Pass)，这个是用来调节检测信号的频段。假设我们的输入音频是一个低频比较重的木吉他，而他的低频与高频动态不是很平均的话，当低频超过了阈值，它就会触发我们不想要的衰减。这个时候如果我们把High Pass调到高于这个低频的频段，就可以让压缩只根据高频的动态来对整个信号进行适应的衰减。另一种用法是把两个参数调成齿音的频段，可以当成一个De-Esser用了。
+
+好吧，我承认以上的参数一般压缩插件也都有（虽然调制范围有不同），并不会让ReaComp显得多么独特。但不用怕，接下来的两个参数正是ReaComp的杀手锏，那就是RMS Size和Pre-Comp。
+RMS是什么？RMS，Root Mean-Square，简单来说就是一段时间的平均值。当RMS为0的时候，检测的动态为瞬间峰值的音量，也就是很多其他压缩插件的Peak Mode。如果我们把RMS调成10ms，算法会以10ms为单位检测这段时间的平均值来判断是否需要压缩，这样我们能让衰减更圆滑一点。ReaComp的RMS最高可以调到1000ms，也就是一秒。如果能调到5分钟的话差不多能直接自动做母带压缩了呵呵。
+Pre-Comp算法相对更复杂一点，但我们目前可以把他看成信号检测预留时间。例如，当我们有一个特别短的音头需要压缩掉的时候，把Attack调成0（这是模拟压缩做不到的一点）则会造成一定程度的失真（因为音频采样需要从某个点瞬间移动到另一个点）。针对这个现象，我们可以调Pre-Comp，让插件在处理音头之前就已经开始进行衰减了，这样当我们处理到音头的时候就不会造成突然地失真。效果如下图：
+
+注意，因为使用Pre-Comp需要让插件提前识别之后的音频，会增加宿主的延迟，所以可能这个工具更适合后期混音而非现场演奏、录音。
+
+好了，我们把ReaComp中大部分参数意义复习了一遍，也该讲一讲它的神奇之处了。这个技巧最先由Cockos论坛会员ashcat_lt提出，准备好颠覆我们对压缩的概念吧。
+
+我们知道RMS是截取一个段落的平均值，我们又知道Pre-Comp能让插件“预知”一段时间的音量。那么如果我们把Pre-Comp设置成RMS的一半左右，我们处理的则是一个峰值与它前后一段时间的平均值。这样等于音量会自然地在峰值之前衰减，而在峰值之后恢复。同时，因为Attack和Release已经包含在整个程序内了，我们不需要额外地添加Attack和Release。峰值的音头形状可能稍微取决于RMS与Pre-Comp * 2之差。利用这个方法，我们可以把Knee Size和Threshold调到比平常高一点的位置，让输入音频一直保持Knee中间的状态，GR大概保持在1.5dB以下就好了。这个压缩技术的效果就是在保留音头的情况下非常自然地降低了动态范围，甚至根本听不出来压缩的痕迹!
+操作起来很简单，你只需要如下图这样设置，然后根据你的输入及目的来调制红色框内的Threshold、Ratio、与Knee Size(其实都可以不动)。</description>
+    </item>
+    
+    <item>
+      <title>录音输入音量标准</title>
+      <link>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</link>
+      <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</guid>
+      <description>这篇文章是录音输入音量标准的解说。
+我发现国内的录音爱好者和一些职业录音师，对于输入音量并没有一个绝对标准（除了用耳朵听这种无法衡量的行为），这导致同一个录音工程的同一轨会有不同音量标准的文件，甚至输入太热导致爆音。由于语言与文化的差别，我决定不逐字翻译，仅把结论和简单的理由列了出来。
+关于录音输入音量所需注意的事项：
+ 用24位或更高的音频录音。   正式录音前，试录整个演奏中音量最大的部分，并观察你的输入音量。
+ 用你链接麦克风之后的第一个音量/增益控制钮调整输入音量，以保证你的硬件本身不会爆音。它通常在你的麦克风前级上（别名话放）。让平均音量处于-18dB左右，偶尔峰值达到-10dB左右。
+ 如果你拥有高端的话放并想要利用其饱和度(Saturation)为录音染色，在上一个步骤的状态下慢慢提升你的输入音量达到渴望的染色，再把设备输出音量往回调到平均值-18dB左右。
+ 不要动DAW里录音轨的音量推子！这样你才能清晰地看到你的输入音量是多少。
+ 如果你觉得输入音量太小听不到，拉低工程内其他音轨的音量，并把你的监听音量开大。不要因为听不到录音的音轨而提升录音轨音量！
+ 重要的事情说三遍，不要动DAW里录音轨的音量推子！
+  原因：
+ 24位音频的动态范围是144dB，而16位音频的动态范围是96dB。计算方法为6乘以比特位数。
+ 大多数硬件信噪比在70dB-80dB之间，再加上30dB-50dB的乐器动态范围，就超出了96dB能精准记载的程度，降低了信噪比，导致噪音音量的提升。
+ 后期各阶段的压缩会继续降低信噪比。
+ 为了不让音量峰值部分爆音，我们还需要为预留一些额外的空间，称为动态余量。
+ 在后期处理中，使用软硬件效果器之前，我们依然需要把音频输入音量调到一个标准范围（通常效果器对不同动态会有不同的失真与压缩处理）。
+ 24位音频的144dB的动态范围能够精确地记载录音信号，同时也能预留出动态余量，所以请好好利用其优势！
+  </description>
+    </item>
+    
+    <item>
+      <title>REAPER简介</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-introduction/</link>
+      <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-introduction/</guid>
+      <description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
+
+国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是心里默默地在骂 谴责某些功能不顺手、不稳定或者满足不了需求。
+
+所以Reaper诞生了。目前有一些大牌的游戏与影视音效、音乐设计师公开表达他们对Reaper的爱：
+David Farmer (霍比特人、蚁人、暗黑3、魔兽世界等)
+Ariel Gross (质量效应、星球大战游戏等)
+Eduardo Vaisman (分裂细胞6：黑名单、孤岛惊魂4等)
+Ryan Canestro (影视作品列表)
+除了音频处理功能上有实力与其他DAW竞争，Reaper包含了一下几个其他DAW只能仰望的特征：
+价格 Reaper支持60天无限制的免费试用，并且用户可以在试用期之后继续使用，而限制只有打开界面时5秒钟的购买提示。如需购买正版，Reaper针对年营业额低于两万美金的商业个体或团体，以各种教育机构有一个60刀的折扣版，比不少插件都要*便宜很多*。同时，每一个正版的授权可以免费享用两个大版本的升级。如果你是版本5点几发布时购买的授权，你可以免费升级到6.99。按照Cockos他们家一年半一个大版本升级的进度来算，代表着3年左右的免费升级。相比之下Cubase8升到8.5还得花钱的是不是弱爆了?
+更新速度 Reaper平均每两天放出一次微型的beta版本更新，修正一些Bug、添加一些API、增加一些新功能之类的。每次更新之后团队会在论坛里获得一些反馈，通常出现任何问题可能*当天*就修复了（每年元旦第二天就开始持续更新了）。
+当然啦，普通用户可能不需要保持最新版本，而且beta版通常是为开发人员准备的。这种互联网形式的更新与反馈速度倒是值得学习一下。
+自定义界面、菜单、宏 这点是Cockos公司创始人Justin Frankel (之前是Winamp的开发者) 一直强调的。先不说自定义快捷键这种行业标准，Reaper里差不多所有的界面与菜单都可以自定义。很多人首次打开Reaper觉得界面不美，但其实我们可以使用官网上用户自制的皮肤。
+比如这个： 这个： 这个： 或者适合双屏的这个： 也有很多模仿款的： PT Cubase皮肤 Logic皮肤与付费版 Sonar皮肤 Adobe Audition 2017皮肤 
+菜单方面，很多人刚开始使用的时候会觉得很乱没有逻辑。我之前也这么觉得，所以在这里推荐一下我目前正在使用的菜单系统，ReaMenus（貌似需要SWS扩展）。
+
+使用方法： 把ReaMenus下载文件放到Reaper的资源文件目录中的MenuSets文件夹内，在Option菜单里的Customize menus/toolbars选项内，下方有一个Import。点击后选择新下载的文件，你就能看到整个菜单都变了样子呢！可惜目前菜单不支持K酱的中文翻译版，以后说不定。
+而宏又是什么呢？在Reaper里，一个宏是一群操作的组合。通过宏，我们可以用一个快捷键执行多个操作。例如我们可以按一个键Solo所有名字里带有DR的轨道（鼓组），或者一键把选中的item通过原轨道效果导出成音频段放在新的一轨中（保留音量、相位包络和发送设置），也可以结合多个自制脚本达到意想不到的效果。
+
+自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。</description>
+    </item>
+    
+  </channel>
+</rss>

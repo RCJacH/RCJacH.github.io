@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Jsfx on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/tags/jsfx/</link>
+    <description>Recent content in Jsfx on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    <lastBuildDate>Fri, 05 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/cn/tags/jsfx/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tone Sweep – 原创JSFX电鼓合成器</title>
+      <link>https://RCJacH.github.io/cn/blog/tone-sweep/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/tone-sweep/</guid>
+      <description>Tone Sweep下载地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
+
+介绍： Tone Sweep是一款能生成一个音高变化（扫频）的单音电鼓合成器。主要用于设计电子音乐中使用的鼓，例如低鼓，军鼓，铜鼓，以及音效。
+
+用法：  设置起始音高（StartingNote）以及目标音高（EndingNote）。
+ 通过拖动图形的X和Y轴按需求设置扫频的曲线和时长。
+ 使用Envelope图形以及下方参数设计音量包络。
+ 输入MIDI或者用MIDI键盘输入音符，播放一下。
+ 阅读下方更具体的参数解说。
+  
+控制器类别： 通用 Ctrl+鼠标左键重置至默认数值。
+推子 可以通过直接点击推子或者按住鼠标左键后左右拖动来设置一个数值。拖动时可按下Shift或Alt键微调：Shift改变0.01，Alt改变1。注意，要先松开鼠标左键，后松开修饰键，否则数值将被设置为鼠标位置对应的数值。
+选框 点击改变改参数的开启状态。
+拖拽框 点击按住鼠标左键并上下拖动鼠标来改变数值，拖动时按住Shift可微调。
+图形 点击按住鼠标左键并拖动鼠标来开遍数值，拖动时按住Shift可微调。X轴和Y轴可能分别影响两个不同的参数。
+
+界面参数说明： 概述页面 这个是插入JSFX后显示的第一个页面，包含了此合成器的两个最主要的元素，音高扫频和音量包络。
+任何图形的X轴参数决定了其长度，Y轴参数决定了曲线的坡度。音量包络图形则包含三个不同的部分，Attack，Hold，和Decay。每个部分有他自己的X和Y轴。音量包络图形下方有几个拖拽框可以改变曲线形状以及时长。
+在整个界面最低端有一个不可操作的波形图样，作为视觉参考。
+
+音高页面 第二个页面是音高页面，包含了此合成器中所有与音高、频率有关的参数。
+Pitch 音高 A4：这个参数是音高标准，指的是A4（MIDI音高69）这个音的频率，默认为440。
+Starting Note：扫频的起始音高。
+Ending Note：扫频的目标音高，可以同起始音高一样，或高于起始音高。
+Fine Tune：这两个操作将改变对应音高的音分，即百分之一个半音。
+Sweep 扫频 Time：这个指的是扫频，从起始音高到目标音高，总共需要花的时长（毫秒）。
+Curve &amp;amp; Multiplier：这两个参数决定了扫频的曲线坡度。
+Shape：这个参数决定了曲线的形状。
+此页面右下角的*音高曲线图形*与概述页面中的相同。
+
+音量包络页面 此页面包含了所有对音量包络有影响的参数。此合成器，作为电鼓合成器，音量包络只有三个阶段，Attack（起音）、Hold（停留)、Decay（衰减），或AHD。
+*起音*阶段指的是，当接收到MIDI音符触发信息后，包络值从0%到达100%的阶段；*停留*阶段指的是当达到100%后所持续的时间；经过停留阶段，包络值开始从100%*衰减*至0%
+起音和衰减阶段的曲线控制原理与扫频曲线原理相同。
+音量包络图形与概括页面的图形一样。
+
+波形页面 波形页面所包含的是那些会改变输出信号音色的参数。</description>
+    </item>
+    
+    <item>
+      <title>Reaper JSFX: NoiseBuzz噪音生成器</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</link>
+      <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</guid>
+      <description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
+这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
+下载地址： NoiseBuzz官网下载地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
+    </item>
+    
+    <item>
+      <title>REAPER JSFX - AB Comparison 8路信号对比脚本</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison/</link>
+      <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison/</guid>
+      <description>昨天做了个JSFX小脚本：AB Comparison。目的是更方便的监听和对比不同信号（比如说不同插件、不同轨道）。
+这个脚本可以根据所设置的节拍或者微秒长度，自动切换到不同的双声道通道。同时还包含一个盲听模式。
+使用方法：  在任意音轨上放置 AB Comparison 这个JS脚本。
+ 将所需对比的乐器、插件、音轨设置成不同的双声道输出，例：插件1 = 1-2，插件2 = 3-4，插件3 = 5-6&amp;hellip;一共能接收8个双声道输入。
+ 将 # of Input 设置成需要对比的双声道个数。
+ 将 Switch Beat length 设置为自动切换通道的拍数（每n拍切换一次）。或者，使用 Millisecond Mode 并将其设置为自动切换的毫秒数。
+ 选择切换模式：
+   Manual = 手动模式，点击0-9任意触发按钮（或对应小键盘数字）切换到对应双声道通道。
+ Sequential = 循序模式，输出通道将按照所设置的间隔自动切换到下一个双声道。
+ Random = 随机模式，输出通道将按照所设置的间隔自动切换到一个不同的随机双声道。
+ Guessing = 盲听模式，随机切换到一个双声道，并隐藏显示正播放的通道。点击0-9任意触发按钮显示正在播放的通道。
+  使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。
+Output Channel Display 显示正在播放的通道。循序模式和随机模式内，点击0-9任意触发按钮返回至手动模式，并切换到该通道。
+下载地址： AB Comparison官网下载地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
+    </item>
+    
+    <item>
+      <title>Reaper JSFX: Maschine式音符重复器</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</link>
+      <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</guid>
+      <description> 下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
+官网下载地址
+官网论坛地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
+更新： * v1.1 (2016-10-09)
++ 改名
++ 音符长度
++ 对齐格子
+# 修改了音符准确性
+  说明： 这个脚本是用来模拟N.I.公司Maschine硬件上的Note Repeat(音符重复）功能的。我没用过硬件，所以可能在用法会有一些出入。但通过一些视频我发现这个功能在做HiHat方面很优秀，所以做了个脚本模拟一下。
+使用方法如下： 这个脚本可以以两种方法使用：
+ 作为轨道的输入FX。为所有的参数设置CC控制器，在第四个参数（开关）开启的状态下在你的MIDI键盘上按住一个（或多个）音，这个音就会以第一个参数（Rate）所设置的时值重复触发所按下的音符。第二个参数（Type）决定所选时值是普通、三连音还是附点音符。
+ 作为普通FX插入轨道，排序至你的乐器之前。在钢琴卷帘中画出要出发的音符，用包络来控制参数。你也可以添加第二轨，用它录下第一轨的MIDI输出而得来实际重复的音符。这样你可以更细腻地去修改所生成的片段。
+  用Normal Type Lock参数（第三个）来做Drill类型的片段非常轻松。你可以试试把它设置成1/8，Type设置成Triplet，然后通过改变Rate来做出加花式的8分音符、16分音符、甚至32分音符三连音。这个参数能让你节省很多反复调节交替正常和三连音的时间。
+Channel Pressure，通道触后，可以用来改变重复音符的力度：输出力度 = 通道触后。
+看图。
+输入： 过程： 输出： </description>
+    </item>
+    
+    <item>
+      <title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</link>
+      <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</guid>
+      <description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
+如图，这个插件只有一个选项：你想要屏蔽的CC。你也可以通过选择最顶项来屏蔽所有的CC。
+具体使用方法就是，当你点击通道上的录音键之后，通道会出现一个IN FX的选项。如下图中橙色箭头所指位置。
+IN FX指的是Input FX（输入效果），也就是在你的信号录入电脑之前所处理的效果。他会对你录入的MIDI/音频有不可恢复的影响（Destructive），所以除了这种特殊需求以外很少去运用INFX。录音的朋友们尽量不要用这个Input FX为录音加压缩防爆音什么的…如果你录入的音频是爆音的，通常在出声卡的时候已经爆音了，所以你在DAW添加什么效果都没有用。具体请参考这篇录音输入音量标准。
+点击这里通过官网Stash下载MIDI CC Eater，然后放到资源文件目录下的Effects/MIDI文件夹内就可以在Reaper里调用了！</description>
+    </item>
+    
+  </channel>
+</rss>

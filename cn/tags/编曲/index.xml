@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>编曲 on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/tags/%E7%BC%96%E6%9B%B2/</link>
+    <description>Recent content in 编曲 on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    <lastBuildDate>Sat, 18 Jun 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/cn/tags/%E7%BC%96%E6%9B%B2/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Reaper：工程策划音轨模板</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-track-template-layout-rsgc/</link>
+      <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-track-template-layout-rsgc/</guid>
+      <description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
+你可以这里下载RSGC英文版或者RSGC中文版。
+下载之后，解压放到REAPER资源文件目录内的Track Templates文件夹，之后直接在主窗口左半栏中，点击右键出现的Insert Track From Template或中译的通过模板插入新的轨道选项里，选择Layout RSGC就能加载了。
+
+看一下截图：
+为了不让这四轨干扰我们正常的制作流程，我把它们从调音台界面隐藏了，同时我也禁用了它们的MIDI以及音频的输入。
+
+那么我们怎么使用这个模板呢？请容我解释一下模板中每一轨的功能。
+参考轨： 我们可以直接把参考的音频拖到这个音轨中，无论是该风格的制作/混音/母带参考品还是歌曲的小样版本。
+为了针对可能出现的频段监听需求，我在效果链中放个了ReaEQ，当高切低切用，并且把频率参数设置成了轨道控制钮。
+段落轨： 这个音轨是用来排列歌曲不同段落的。这个方面我发现用Reaper的空白块(Empty Item)功能会比用各种标记（Markers）或者区域（Regions）要更便捷。同时我们还能直接选中需要导出的段落，使用&amp;ldquo;Loop points: Set Loop Points to Items&amp;rdquo;这个操作（Actions），然后在导出界面右上角的Bounds选项里选择&amp;ldquo;Time Selection&amp;rdquo;或选区。
+此模板内包含了所有我能想到的段落名称作为一个个单独的空白块。这样我们可以直接加载模板，利用现有的块来拼出歌曲的轮廓，然后删掉剩下的那些不需要的块。
+在此之上，我用ReaMIDIControl加了一轨没有任何实际影响的包络，命名为Energy Map/能量线，主要是画出歌曲的动态起伏。我们可以模仿上一条的参考轨来画出符合风格的能量线。
+律动轨： 律动轨是用来制定出歌曲每个段落中的多层节奏律动的。我们可以直接插入一个MIDI块，然后如下图一样画出律动：
+图中我用C1和D1来表示底鼓和军鼓，这样如果我把这个律动片段拷贝至鼓的轨道上，他们能直接触发相应的采样。其他节奏层则使用了Csus2和弦来标记，这样能够在最大程度上避免大小调的感觉，同时又不会听起来太混乱。当然你想用啥音标记都可以啦！当你找到一个合适的律动标记方法之后，别忘了为所使用的音高重命名，Rename Current Note，要不然几个月之后可能就忘了……
+对于加花，我们在前期设计的时候可能还不确定某个地方应该怎样设计，但是我们可以先把加花的位置标出来。乐器加花不需要在这个层面上设计，但齐奏的加花可以在有思路之后标出来。
+我在这轨挂了个ReaSynth，默认预设，用来回放写出来的律动。
+我们还可以直接用这个律动作为制作时的节奏参考，方便音符对齐之类的。
+在这个基础之上，我们甚至可以把不同的律动层设置为不同的MIDI通道，这样我们能够专注单一的律动层而做出设计。当我们在MIDI编辑器里让其他轨道可见的时候，Reaper只会显示所选的MIDI通道里的音符。
+和弦轨： 用这个轨道标出歌曲的和弦。在这轨里，我继续使用了空白块在轨道上显示和弦名称，因为用它调整位置和长度的话会很方便。同时，空白块也可以使用Heda的Note Reader脚本，能让我们在进行爵士相关的即兴时提供实时的和弦显示功能。
+我在这轨上保留了一个空白块，简单用鼠标拖拽就可以将其复制。对比手动建立空白块省去了许多步骤。
+
+小贴士：
+ 我们可以使用 RSGC 进行制作分析：分析参考轨中歌曲的律动、和弦和段落，然后将其保存为一个新音轨模板，在今后可作为易用的参考。 对你自己所有的歌曲进行同样的操作，这是一种快速为歌曲确定律动与和弦结构的方法。我们也可以在改编时加载模板作为歌曲参考。 我们甚至可以把自己歌曲的RSGC策划发给需要录音的乐手，这样他(们)就不用拿着个TXT文件每个小节地去对你所发的音频了。  其他没了，玩得愉快。如果有什么问题或者建议的话，请随时提出。能提高工作效率的东西肯定是极好的。
+下载RSGC英文版 下载RSGC中文版</description>
+    </item>
+    
+    <item>
+      <title>REAPER简介</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-introduction/</link>
+      <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-introduction/</guid>
+      <description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
+
+国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是心里默默地在骂 谴责某些功能不顺手、不稳定或者满足不了需求。
+
+所以Reaper诞生了。目前有一些大牌的游戏与影视音效、音乐设计师公开表达他们对Reaper的爱：
+David Farmer (霍比特人、蚁人、暗黑3、魔兽世界等)
+Ariel Gross (质量效应、星球大战游戏等)
+Eduardo Vaisman (分裂细胞6：黑名单、孤岛惊魂4等)
+Ryan Canestro (影视作品列表)
+除了音频处理功能上有实力与其他DAW竞争，Reaper包含了一下几个其他DAW只能仰望的特征：
+价格 Reaper支持60天无限制的免费试用，并且用户可以在试用期之后继续使用，而限制只有打开界面时5秒钟的购买提示。如需购买正版，Reaper针对年营业额低于两万美金的商业个体或团体，以各种教育机构有一个60刀的折扣版，比不少插件都要*便宜很多*。同时，每一个正版的授权可以免费享用两个大版本的升级。如果你是版本5点几发布时购买的授权，你可以免费升级到6.99。按照Cockos他们家一年半一个大版本升级的进度来算，代表着3年左右的免费升级。相比之下Cubase8升到8.5还得花钱的是不是弱爆了?
+更新速度 Reaper平均每两天放出一次微型的beta版本更新，修正一些Bug、添加一些API、增加一些新功能之类的。每次更新之后团队会在论坛里获得一些反馈，通常出现任何问题可能*当天*就修复了（每年元旦第二天就开始持续更新了）。
+当然啦，普通用户可能不需要保持最新版本，而且beta版通常是为开发人员准备的。这种互联网形式的更新与反馈速度倒是值得学习一下。
+自定义界面、菜单、宏 这点是Cockos公司创始人Justin Frankel (之前是Winamp的开发者) 一直强调的。先不说自定义快捷键这种行业标准，Reaper里差不多所有的界面与菜单都可以自定义。很多人首次打开Reaper觉得界面不美，但其实我们可以使用官网上用户自制的皮肤。
+比如这个： 这个： 这个： 或者适合双屏的这个： 也有很多模仿款的： PT Cubase皮肤 Logic皮肤与付费版 Sonar皮肤 Adobe Audition 2017皮肤 
+菜单方面，很多人刚开始使用的时候会觉得很乱没有逻辑。我之前也这么觉得，所以在这里推荐一下我目前正在使用的菜单系统，ReaMenus（貌似需要SWS扩展）。
+
+使用方法： 把ReaMenus下载文件放到Reaper的资源文件目录中的MenuSets文件夹内，在Option菜单里的Customize menus/toolbars选项内，下方有一个Import。点击后选择新下载的文件，你就能看到整个菜单都变了样子呢！可惜目前菜单不支持K酱的中文翻译版，以后说不定。
+而宏又是什么呢？在Reaper里，一个宏是一群操作的组合。通过宏，我们可以用一个快捷键执行多个操作。例如我们可以按一个键Solo所有名字里带有DR的轨道（鼓组），或者一键把选中的item通过原轨道效果导出成音频段放在新的一轨中（保留音量、相位包络和发送设置），也可以结合多个自制脚本达到意想不到的效果。
+
+自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Reaper on RCJacH</title>
+    <link>https://RCJacH.github.io/tags/reaper/</link>
+    <description>Recent content in Reaper on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>RCJacH. ALL RIGHTS RESERVED.</copyright>
+    <lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/tags/reaper/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>REAPER Signal Flow</title>
+      <link>https://RCJacH.github.io/blog/reaper-signal-flow/</link>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/reaper-signal-flow/</guid>
+      <description>What is signal flow?
+For our interest in digital audio production, signal flow is how signal data, either audio or MIDI, travel through various stages of the DAW calculation.
+Because of the potential complexity of our routing, from something as simple as building a send track to something more abstract such as designing modular synth or multi-track template with parameter modulations, to have a clear mental picture of the signal flow, it would be quite beneficial to know what stages and in what order our signals are going through within the DAW.</description>
+    </item>
+    
+    <item>
+      <title>Tone Sweep - REAPER JSFX Percussion Synth</title>
+      <link>https://RCJacH.github.io/blog/tone-sweep/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/tone-sweep/</guid>
+      <description>You can download it from here: Tone Sweep on Github
+or Simply add my repository in ReaPack:
+RCJacH ReaPack Repository
+
+Description: This synth generates a monophonic sweeping tone when receiving a MIDI note input. Intended for designing percussive sounds, such as kicks, snares, toms, or sound FXs in electronic music genres.
+
+Quick Instruction:  Set a starting and ending note.
+ If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
+    </item>
+    
+    <item>
+      <title>REAPER Toolbar System</title>
+      <link>https://RCJacH.github.io/blog/reaper-toolbar-system/</link>
+      <pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/reaper-toolbar-system/</guid>
+      <description>I recently discovered an interesting and efficient way of using Reaper&amp;rsquo;s customizable toolbars.
+
+In other DAWs, the toolbars would remain stagnant throughout the sessions, and the only change you can apply to them would be either to move them or hide them.
+In Reaper, since we are lucky enough to have many customizable toolbars available, while able to customize our toolbars with any action, it wouldn&amp;rsquo;t take long before our screen becomes like this</description>
+    </item>
+    
+    <item>
+      <title>REAPER JS: MIDI Note Beat Repeater</title>
+      <link>https://RCJacH.github.io/blog/reaper-jsfx-midi-note-beat-repeater/</link>
+      <pubDate>Sun, 24 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/reaper-jsfx-midi-note-beat-repeater/</guid>
+      <description>Download MIDI Note Beat Repeater JSFX and put it somewhere within the Effects folder of your Reaper Resources Path.
+Update: * v1.1 (2016-10-09)
++ Renamed
++ Added Gate Function (Note Length)
++ Added Sync to grid function
+# Fixed Note On accuracy
+  Description: This script is made to emulate the note repeating function in Native Instrument Maschine hardware.
+I have never used Maschine myself, thus I do not know how it really works.</description>
+    </item>
+    
+    <item>
+      <title>REAPER Track Template - Layout RSGC</title>
+      <link>https://RCJacH.github.io/blog/reaper-track-template-layout-rsgc/</link>
+      <pubDate>Thu, 16 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/reaper-track-template-layout-rsgc/</guid>
+      <description>Here&amp;rsquo;s a Reaper Track Template that I believe would improve your production workflow. It&amp;rsquo;s called &amp;ldquo;Layout RSGC&amp;rdquo;, which stands for Reference, Sections, Grooves, and Chords, a group of four tracks. These four tracks are used to construct a general layout for our song production, which is vital for commercial projects that is tight on schedule, with no time for any experimentation or trying out new ideas. It is way easier to insert the track template and copy n&amp;rsquo; pasting existing items rather than handwriting everything from scratch, which we may have been doing in the past.</description>
+    </item>
+    
+    <item>
+      <title>Vocal Recording &amp; Mixing Template by RCJacH</title>
+      <link>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</guid>
+      <description>Vocal Recording &amp;amp; Mixing Template
+By RCJacH
+Explanation 
+Vocal Recording &amp;amp; Mixing Template by RCJacH is a REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track, including native functional FXs (with a few JS effects) on each track with track controls directly visible on the mixer.
+This template works the best with the default REAPER themes. All dynamic related FXs are designed to work around signals that are recorded with RMS level of -20dBFS.</description>
+    </item>
+    
+    <item>
+      <title>How to Use Track Manager in REAPER</title>
+      <link>https://RCJacH.github.io/blog/how-to-use-track-manager-in-reaper/</link>
+      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/how-to-use-track-manager-in-reaper/</guid>
+      <description>When we are dealing with MIDI drumset, guitar, and other sample libraries that requires either multiple output or routing, the default setup may show up like this:
+See the lines of space below the topmost track? That&amp;rsquo;s all the microphone outputs of a drum library. They display no audio information other than level meters, but taking up a huge chunk of space in the arranger view, especially when zoomed in. It will fire up your frustration during your working sessions, taking up scrolling time which you could have saved for music making, so we are better off throwing them out of our sight.</description>
+    </item>
+    
+    <item>
+      <title>Recording Volume Calibration</title>
+      <link>https://RCJacH.github.io/blog/recording-volume-calibration/</link>
+      <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/recording-volume-calibration/</guid>
+      <description>I have seen many people, from amateurs to professionals (in China), myself included, struggling with digital volume level calibration while tracking. Many people do not bother having a standard with levels and many lack the understanding of impact of leveling in tracking, resulting in level inconsistency between tracks or even takes. It took me quite a while to come across articles explaining at what level we should be recording at and why, and thus helped me greatly by providing recordings at consistent level while removing any doubts of &amp;ldquo;am I recording too hot or too quiet?</description>
+    </item>
+    
+  </channel>
+</rss>

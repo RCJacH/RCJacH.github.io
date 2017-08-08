@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on RCJacH</title>
+    <link>https://RCJacH.github.io/categories/</link>
+    <description>Recent content in Categories on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>RCJacH. ALL RIGHTS RESERVED.</copyright>
+    <lastBuildDate>Tue, 07 Jul 2015 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Blogging</title>
+      <link>https://RCJacH.github.io/categories/blogging/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/blogging/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Book Recommendation</title>
+      <link>https://RCJacH.github.io/categories/book-recommendation/</link>
+      <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/book-recommendation/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Guitar Playing</title>
+      <link>https://RCJacH.github.io/categories/guitar-playing/</link>
+      <pubDate>Mon, 11 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/guitar-playing/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Methodology</title>
+      <link>https://RCJacH.github.io/categories/methodology/</link>
+      <pubDate>Mon, 11 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/methodology/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Music Production</title>
+      <link>https://RCJacH.github.io/categories/music-production/</link>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/music-production/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Musicianship</title>
+      <link>https://RCJacH.github.io/categories/musicianship/</link>
+      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/musicianship/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scripts  Templates</title>
+      <link>https://RCJacH.github.io/categories/scripts--templates/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/scripts--templates/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

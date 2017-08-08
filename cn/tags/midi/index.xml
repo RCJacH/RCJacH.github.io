@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Midi on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/tags/midi/</link>
+    <description>Recent content in Midi on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    <lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/cn/tags/midi/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>REAPER信号流</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</link>
+      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</guid>
+      <description>什么是信号流？
+在数字音频制作领域，信号流指的是信号（例如音频或MIDI）是如何经过DAW中每一层运算的。
+因为我们在实际使用中常常会需要建立路由，无论是简单的信号发送、搭建模块合成器、还是建立使用Parameter Modulation的多轨模板，清晰地了解信号在DAW中的路径以及运算顺序会有非常大的帮助。
+
+所以我画了以下这张图。
+排除模拟输入(Input)以及输出(Output)，Reaper总共有四个信号处理阶段：Take（层），Item（块），Track（轨），Master（总线）。每一个阶段在音频运算方面是完全一样的（单纯的加法），唯一的区别只是使用方式以而已。
+
+以下则是一张包含包络的细节图。
+注释：
+Take Trim = 层音量衰减（主页面块儿上&amp;rdquo;边&amp;rdquo;往下拽的衰减）。
+
+另外几点
+ 我们知道REAPER只有一种万能轨道。
+ 信号发送到另一轨的思路与块的信号输入至所包含轨性质是一样的。
+ 母轨道(Folder Track)就像微型总线一样，把所有子轨道的信号加在一块儿再处理。
+ 音频/MIDI通道是同路由上平行的信号流。
+ 音频只会相加同通道的信号。
+ 音量推子、Trim包络、音量包络三者可以同时使用，也就是说可以同时有三层音量调整的方法（平衡、段落、微调之类的）。
+ 监听FX（Monitor FX）在音频渲染时是旁通的。
+  </description>
+    </item>
+    
+    <item>
+      <title>REAPER网格</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-grid-system/</link>
+      <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-grid-system/</guid>
+      <description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
+它长这个样子
+或者这个样子
+我们通常会把网格设置成常用的音符长度，例如八分音符、十六分音符等二的倍数(2 * 2^n)，或者三连音的倍数(3 * 2^n)。可是当我们需要稍微不常见的(例如五连音、七连音、九连音)或者不规则的细分时，这些选项就不太够用了。
+作为REAPER用户，我们在这块儿还是比较幸运啦，因为REAPER网格不是固定的选项而是直接提取用户输入。这样我们则不需要局限于传统固定的格子，反而可以尝试一些不寻常的搭配。
+首先，REAPER的格子设置可以分别在这两个地方找到。
+MIDI界面的底端
+以及主界面的吸附/格子设置（Snap/Grid Settings）
+我们可以在这个设置中直接输入所需的分数来设置网格的规模。
+算法则是：网格大小 = 全音符 / 分母 * 分子
+注：全音符是四个四分音符，所以如果用非4/4的节奏谱号可能会比较难理解。
+注2：每个小节重新开始计算。
+通过简单的计算我们就可以得出
+全音符九连音 = 1&amp;frasl;9
+四分音符七连音 = 1/(7*4)=1&amp;frasl;28
+或者试一试不规律的组合，例如
+5&amp;frasl;27
+此外，利用这种设置可以开启比较不寻常的节奏分解，例如把三拍分成五个音
+3&amp;frasl;20
+我用不同组合的五连音做了个短Demo。
+ </description>
+    </item>
+    
+    <item>
+      <title>Reaper JSFX: Maschine式音符重复器</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</link>
+      <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</guid>
+      <description> 下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
+官网下载地址
+官网论坛地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
+更新： * v1.1 (2016-10-09)
++ 改名
++ 音符长度
++ 对齐格子
+# 修改了音符准确性
+  说明： 这个脚本是用来模拟N.I.公司Maschine硬件上的Note Repeat(音符重复）功能的。我没用过硬件，所以可能在用法会有一些出入。但通过一些视频我发现这个功能在做HiHat方面很优秀，所以做了个脚本模拟一下。
+使用方法如下： 这个脚本可以以两种方法使用：
+ 作为轨道的输入FX。为所有的参数设置CC控制器，在第四个参数（开关）开启的状态下在你的MIDI键盘上按住一个（或多个）音，这个音就会以第一个参数（Rate）所设置的时值重复触发所按下的音符。第二个参数（Type）决定所选时值是普通、三连音还是附点音符。
+ 作为普通FX插入轨道，排序至你的乐器之前。在钢琴卷帘中画出要出发的音符，用包络来控制参数。你也可以添加第二轨，用它录下第一轨的MIDI输出而得来实际重复的音符。这样你可以更细腻地去修改所生成的片段。
+  用Normal Type Lock参数（第三个）来做Drill类型的片段非常轻松。你可以试试把它设置成1/8，Type设置成Triplet，然后通过改变Rate来做出加花式的8分音符、16分音符、甚至32分音符三连音。这个参数能让你节省很多反复调节交替正常和三连音的时间。
+Channel Pressure，通道触后，可以用来改变重复音符的力度：输出力度 = 通道触后。
+看图。
+输入： 过程： 输出： </description>
+    </item>
+    
+    <item>
+      <title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</link>
+      <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</guid>
+      <description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
+如图，这个插件只有一个选项：你想要屏蔽的CC。你也可以通过选择最顶项来屏蔽所有的CC。
+具体使用方法就是，当你点击通道上的录音键之后，通道会出现一个IN FX的选项。如下图中橙色箭头所指位置。
+IN FX指的是Input FX（输入效果），也就是在你的信号录入电脑之前所处理的效果。他会对你录入的MIDI/音频有不可恢复的影响（Destructive），所以除了这种特殊需求以外很少去运用INFX。录音的朋友们尽量不要用这个Input FX为录音加压缩防爆音什么的…如果你录入的音频是爆音的，通常在出声卡的时候已经爆音了，所以你在DAW添加什么效果都没有用。具体请参考这篇录音输入音量标准。
+点击这里通过官网Stash下载MIDI CC Eater，然后放到资源文件目录下的Effects/MIDI文件夹内就可以在Reaper里调用了！</description>
+    </item>
+    
+    <item>
+      <title>你还在画CC吗？其实Reaper这么用更强大！</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</guid>
+      <description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
+虽然目前有一些能提高CC效率的工具，例如这款MIDI Velocity/CC Tool。
+但他们治标不治本，无法大幅度提升编曲效率。尤其当我们做吉他
+做弦乐
+弦乐组
+或任何需要画大量CC表情控制器的时候，这些工具所能给予的帮助实在是少得可怜。
+
+再加上一个技术性的原因：Reaper工程文件是可以当成文本文件直接打开并修改的！我们可以用文本编辑器把某个插件段落的代码删掉，来挽救一个持续崩溃的工程。懂行的朋友还可以用GIT来监测工程版本，是一个很方便的功能。但我们开始画CC的时候会发现，因为每一个点都会明确记载，所以工程文件会变得无比巨大，轨道稍微多一点的工程体积会上到几十兆甚至一百多兆。如果你还开启了定时文件备份的功能（比如说每15分钟备份至新文件），你会在几小时之后发现硬盘空间少了好几个G！这真是一个迫使你去换新固态硬盘的好办法…
+
+而参数包络在Reaper里反而更受到重视，不仅可以使用曲线，也有很厉害的脚本插件，比如说这款Envelope Point Generator
+
+所以，我下了一个决定：用包络来代替CC！用包络来画曲线不仅减少了工程文件大小，也能让修改的时候变得很轻松（时间和位置只需拖拉一个点，而不需要每一个CC信息都细修）。
+那么这个怎么做到的呢？有以下两种方法。
+一，用ReaControlMIDI来控制CC参数。 Reaper自带的ReaControlMIDI长这个样子:
+而我们需要用的是红色方框内的功能。首先先点击橙色箭头指向的Enable选项来开启这个功能，用右边的RawMode来开启传统128位的CC系统，然后用下方的菜单来选择需要控制的CC参数，最常见的估计是CC1（力度/颤音深度），弯音轮，与CC11（表情/音量）。
+记得把它排列在音源前面。
+这个时候我们点击轨道上的trim标签
+来打开包络设置。
+我们能看到ReaControlMIDI所有可以操作的参数，其中包含CC1、PW、和CC11。我们只需点击红色圈内的选框就能把包络当成CC来画啦！
+
+二，使用音源参数 当我们把上一个小节的方法运用到音源参数的时候，会比通过ReaControlMIDI中转成CC更直接。我们可以直接控制任何音源所有可以操作的外部参数，例如这款免费合成器Helm所包含的一部分参数:
+Reaper版本5.1开始支持用MIDI CC来直接控制参数，不需要经过ReaControlMIDI，如图。
+注释：选择一个可控制的参数，通过选择Param -&amp;gt; MIDI Link -&amp;gt; CC -&amp;gt; 我们需要的控制器编号。图中使用的JS只是模拟CC 1的输入。
+
+如果想利用插件（如JS脚本或序列器）在原MIDI基础上添加新信息的话，只需要右键插件输入输出选项，在MIDI output菜单里选择Merges with MIDI bus（感谢Tee先生的补充），如图：
+
+当然，我们在编曲时使用CC最多的恐怕是Kontakt内的采样音源。我们可以通过Auto一栏的Host Automation（宿主自动化）来设置。
+有一些音源，尤其是Native Instruments自家的音源，已经给你设置好了，比如说这款Granduer钢琴。
+这种音源你可以马上用起来！比如在钢琴轨上通过修改”Color”、”Transient”、“Tonal Depth”三个包络，让音源在不同段落包含着不同的音色与音头强度，比后期压缩要更有针对性。
+
+对于非NI本厂的音源来说，很遗憾，我们没有办法享受到已调制好的预设。所以需要自己动手，做一次最初的设置，然后保存为乐器模板。方法如下:
+
+首先加载音源，例如Orange Tree Samples公司出品的Strawberry吉他，然后把Host里任何一栏拖拉到需要调制的参数上。如果这个参数是可以通过外部调制的（按钮与旋钮），鼠标箭头会变成一个带有加号的箭头，否则说明此参数不能被外部控制（下拉菜单）。
+稍微花一点时间把所有参数都设置成宿主自动化吧，必要的话可以用Param菜单的Alias Parameter功能为某个包络控制起一个自己能看得懂的名字。
+当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
+记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！</description>
+    </item>
+    
+  </channel>
+</rss>

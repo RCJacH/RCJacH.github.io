@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Production on RCJacH</title>
+    <link>https://RCJacH.github.io/tags/production/</link>
+    <description>Recent content in Production on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <copyright>RCJacH. ALL RIGHTS RESERVED.</copyright>
+    <lastBuildDate>Fri, 05 May 2017 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/tags/production/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Tone Sweep - REAPER JSFX Percussion Synth</title>
+      <link>https://RCJacH.github.io/blog/tone-sweep/</link>
+      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/tone-sweep/</guid>
+      <description>You can download it from here: Tone Sweep on Github
+or Simply add my repository in ReaPack:
+RCJacH ReaPack Repository
+
+Description: This synth generates a monophonic sweeping tone when receiving a MIDI note input. Intended for designing percussive sounds, such as kicks, snares, toms, or sound FXs in electronic music genres.
+
+Quick Instruction:  Set a starting and ending note.
+ If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
+    </item>
+    
+    <item>
+      <title>Vocal Recording &amp; Mixing Template by RCJacH</title>
+      <link>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</link>
+      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</guid>
+      <description>Vocal Recording &amp;amp; Mixing Template
+By RCJacH
+Explanation 
+Vocal Recording &amp;amp; Mixing Template by RCJacH is a REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track, including native functional FXs (with a few JS effects) on each track with track controls directly visible on the mixer.
+This template works the best with the default REAPER themes. All dynamic related FXs are designed to work around signals that are recorded with RMS level of -20dBFS.</description>
+    </item>
+    
+  </channel>
+</rss>

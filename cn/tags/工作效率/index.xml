@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>工作效率 on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/</link>
+    <description>Recent content in 工作效率 on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    <lastBuildDate>Thu, 22 Sep 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/cn/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>REAPER工具栏系统</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-toolbar-system/</link>
+      <pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-toolbar-system/</guid>
+      <description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
+
+在其他DAW里，工具栏通常是固定不变的，我们最多只能移动或者隐藏它们。
+但是在Reaper里，因为我们很幸运地拥有不少可自定义的工具栏，并且能在工具栏内添加任何操作，可能过不了多久我们的屏幕就变成这样了：
+可能有些人会觉得这样排列工具栏在做大项目里是必要的，不过要在这么多图标里找到需要的操作还是要花一些时间的。
+我们不如在单块面板上使用多个工具栏，然后把他们都连成一整个工具栏系统！
+
+我现在的界面是这样的：
+
+作为参考，以下是我对工具栏系统的组成思路。
+我现在在主界面以及钢琴卷界面设置了两个层次的工具栏。
+最上层的工具栏所包含的操作拥有两个目的。一是触发工程范围的事件，比如说重设MIDI设备、打开各种窗口（sws自动配色 或 heda的Note Reader）。二是作为状态栏，显示一些用快捷键触发的开关性的动作，如节拍器、预卷、吸附网格、包络跟随块等。
+旁边的工具栏包含日常常用的操作，分为五类：
+音轨 块 音频 包络 插件 
+用来切换的命令是这个：
+同样功能的包含工具栏2至工具栏16，以及相关的MIDI工具栏。
+这样，我们可以在母工具栏里设置一系列切换到子工具栏的操作，并在所有的子工具栏里加上一个回到母工具栏的操作。
+我的钢琴卷工具栏也是用同样的方法设置的，只不过状态栏和操作栏全部放到了同一个横向面板中。
+状态 选择 音符 CC 呵呵，我讨厌CC
+和弦 （为了迅速输入和弦并且修改声部排列）
+当然，以上的截图并非是这个系统的最终状态。我会慢慢更新并完善它：添加一些常用的操作，并删除一些不常用的。不过，这个系统理念能够更有效的利用、整理、分类Reaper的工具栏，节省我们屏幕中宝贵的显示空间。</description>
+    </item>
+    
+    <item>
+      <title>Reaper：工程策划音轨模板</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-track-template-layout-rsgc/</link>
+      <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-track-template-layout-rsgc/</guid>
+      <description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
+你可以这里下载RSGC英文版或者RSGC中文版。
+下载之后，解压放到REAPER资源文件目录内的Track Templates文件夹，之后直接在主窗口左半栏中，点击右键出现的Insert Track From Template或中译的通过模板插入新的轨道选项里，选择Layout RSGC就能加载了。
+
+看一下截图：
+为了不让这四轨干扰我们正常的制作流程，我把它们从调音台界面隐藏了，同时我也禁用了它们的MIDI以及音频的输入。
+
+那么我们怎么使用这个模板呢？请容我解释一下模板中每一轨的功能。
+参考轨： 我们可以直接把参考的音频拖到这个音轨中，无论是该风格的制作/混音/母带参考品还是歌曲的小样版本。
+为了针对可能出现的频段监听需求，我在效果链中放个了ReaEQ，当高切低切用，并且把频率参数设置成了轨道控制钮。
+段落轨： 这个音轨是用来排列歌曲不同段落的。这个方面我发现用Reaper的空白块(Empty Item)功能会比用各种标记（Markers）或者区域（Regions）要更便捷。同时我们还能直接选中需要导出的段落，使用&amp;ldquo;Loop points: Set Loop Points to Items&amp;rdquo;这个操作（Actions），然后在导出界面右上角的Bounds选项里选择&amp;ldquo;Time Selection&amp;rdquo;或选区。
+此模板内包含了所有我能想到的段落名称作为一个个单独的空白块。这样我们可以直接加载模板，利用现有的块来拼出歌曲的轮廓，然后删掉剩下的那些不需要的块。
+在此之上，我用ReaMIDIControl加了一轨没有任何实际影响的包络，命名为Energy Map/能量线，主要是画出歌曲的动态起伏。我们可以模仿上一条的参考轨来画出符合风格的能量线。
+律动轨： 律动轨是用来制定出歌曲每个段落中的多层节奏律动的。我们可以直接插入一个MIDI块，然后如下图一样画出律动：
+图中我用C1和D1来表示底鼓和军鼓，这样如果我把这个律动片段拷贝至鼓的轨道上，他们能直接触发相应的采样。其他节奏层则使用了Csus2和弦来标记，这样能够在最大程度上避免大小调的感觉，同时又不会听起来太混乱。当然你想用啥音标记都可以啦！当你找到一个合适的律动标记方法之后，别忘了为所使用的音高重命名，Rename Current Note，要不然几个月之后可能就忘了……
+对于加花，我们在前期设计的时候可能还不确定某个地方应该怎样设计，但是我们可以先把加花的位置标出来。乐器加花不需要在这个层面上设计，但齐奏的加花可以在有思路之后标出来。
+我在这轨挂了个ReaSynth，默认预设，用来回放写出来的律动。
+我们还可以直接用这个律动作为制作时的节奏参考，方便音符对齐之类的。
+在这个基础之上，我们甚至可以把不同的律动层设置为不同的MIDI通道，这样我们能够专注单一的律动层而做出设计。当我们在MIDI编辑器里让其他轨道可见的时候，Reaper只会显示所选的MIDI通道里的音符。
+和弦轨： 用这个轨道标出歌曲的和弦。在这轨里，我继续使用了空白块在轨道上显示和弦名称，因为用它调整位置和长度的话会很方便。同时，空白块也可以使用Heda的Note Reader脚本，能让我们在进行爵士相关的即兴时提供实时的和弦显示功能。
+我在这轨上保留了一个空白块，简单用鼠标拖拽就可以将其复制。对比手动建立空白块省去了许多步骤。
+
+小贴士：
+ 我们可以使用 RSGC 进行制作分析：分析参考轨中歌曲的律动、和弦和段落，然后将其保存为一个新音轨模板，在今后可作为易用的参考。 对你自己所有的歌曲进行同样的操作，这是一种快速为歌曲确定律动与和弦结构的方法。我们也可以在改编时加载模板作为歌曲参考。 我们甚至可以把自己歌曲的RSGC策划发给需要录音的乐手，这样他(们)就不用拿着个TXT文件每个小节地去对你所发的音频了。  其他没了，玩得愉快。如果有什么问题或者建议的话，请随时提出。能提高工作效率的东西肯定是极好的。
+下载RSGC英文版 下载RSGC中文版</description>
+    </item>
+    
+    <item>
+      <title>你还在画CC吗？其实Reaper这么用更强大！</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</link>
+      <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</guid>
+      <description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
+虽然目前有一些能提高CC效率的工具，例如这款MIDI Velocity/CC Tool。
+但他们治标不治本，无法大幅度提升编曲效率。尤其当我们做吉他
+做弦乐
+弦乐组
+或任何需要画大量CC表情控制器的时候，这些工具所能给予的帮助实在是少得可怜。
+
+再加上一个技术性的原因：Reaper工程文件是可以当成文本文件直接打开并修改的！我们可以用文本编辑器把某个插件段落的代码删掉，来挽救一个持续崩溃的工程。懂行的朋友还可以用GIT来监测工程版本，是一个很方便的功能。但我们开始画CC的时候会发现，因为每一个点都会明确记载，所以工程文件会变得无比巨大，轨道稍微多一点的工程体积会上到几十兆甚至一百多兆。如果你还开启了定时文件备份的功能（比如说每15分钟备份至新文件），你会在几小时之后发现硬盘空间少了好几个G！这真是一个迫使你去换新固态硬盘的好办法…
+
+而参数包络在Reaper里反而更受到重视，不仅可以使用曲线，也有很厉害的脚本插件，比如说这款Envelope Point Generator
+
+所以，我下了一个决定：用包络来代替CC！用包络来画曲线不仅减少了工程文件大小，也能让修改的时候变得很轻松（时间和位置只需拖拉一个点，而不需要每一个CC信息都细修）。
+那么这个怎么做到的呢？有以下两种方法。
+一，用ReaControlMIDI来控制CC参数。 Reaper自带的ReaControlMIDI长这个样子:
+而我们需要用的是红色方框内的功能。首先先点击橙色箭头指向的Enable选项来开启这个功能，用右边的RawMode来开启传统128位的CC系统，然后用下方的菜单来选择需要控制的CC参数，最常见的估计是CC1（力度/颤音深度），弯音轮，与CC11（表情/音量）。
+记得把它排列在音源前面。
+这个时候我们点击轨道上的trim标签
+来打开包络设置。
+我们能看到ReaControlMIDI所有可以操作的参数，其中包含CC1、PW、和CC11。我们只需点击红色圈内的选框就能把包络当成CC来画啦！
+
+二，使用音源参数 当我们把上一个小节的方法运用到音源参数的时候，会比通过ReaControlMIDI中转成CC更直接。我们可以直接控制任何音源所有可以操作的外部参数，例如这款免费合成器Helm所包含的一部分参数:
+Reaper版本5.1开始支持用MIDI CC来直接控制参数，不需要经过ReaControlMIDI，如图。
+注释：选择一个可控制的参数，通过选择Param -&amp;gt; MIDI Link -&amp;gt; CC -&amp;gt; 我们需要的控制器编号。图中使用的JS只是模拟CC 1的输入。
+
+如果想利用插件（如JS脚本或序列器）在原MIDI基础上添加新信息的话，只需要右键插件输入输出选项，在MIDI output菜单里选择Merges with MIDI bus（感谢Tee先生的补充），如图：
+
+当然，我们在编曲时使用CC最多的恐怕是Kontakt内的采样音源。我们可以通过Auto一栏的Host Automation（宿主自动化）来设置。
+有一些音源，尤其是Native Instruments自家的音源，已经给你设置好了，比如说这款Granduer钢琴。
+这种音源你可以马上用起来！比如在钢琴轨上通过修改”Color”、”Transient”、“Tonal Depth”三个包络，让音源在不同段落包含着不同的音色与音头强度，比后期压缩要更有针对性。
+
+对于非NI本厂的音源来说，很遗憾，我们没有办法享受到已调制好的预设。所以需要自己动手，做一次最初的设置，然后保存为乐器模板。方法如下:
+
+首先加载音源，例如Orange Tree Samples公司出品的Strawberry吉他，然后把Host里任何一栏拖拉到需要调制的参数上。如果这个参数是可以通过外部调制的（按钮与旋钮），鼠标箭头会变成一个带有加号的箭头，否则说明此参数不能被外部控制（下拉菜单）。
+稍微花一点时间把所有参数都设置成宿主自动化吧，必要的话可以用Param菜单的Alias Parameter功能为某个包络控制起一个自己能看得懂的名字。
+当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
+记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！</description>
+    </item>
+    
+    <item>
+      <title>英文缩写规则</title>
+      <link>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</link>
+      <pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</guid>
+      <description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
+英文缩写：（abbreviation，来自于拉丁语中的brevis，代表short简短）
+ Shortening：缩略一个词使它保留原单词的前几个字母，一般会在结尾加一个句号&amp;rdquo;.&amp;rdquo; 例：cont. = continued。
+ 注释：如果缩略单词能形成另外一个单词，句号会被省略。例：limo = limousine。
+ 这种缩略不一定是非正式用语，比如：bus = autobus，taxi = taxicab等等。
+ 注释：有些时候会为了发音或拼写对缩略单词进行变化，例如：bike = bicycle。
+  Contraction：使用单词第一个字母与最后一个字母，并省略中间的字母。例如：Dr. doctor, St. = saint/street。需要在结尾加句号&amp;rdquo;.&amp;ldquo;。另一种缩短方式是用单引号apostrophe &amp;lsquo; 来标注省略字母，比如说：can&amp;rsquo;t = cannot，didn&amp;rsquo;t = did not等等。
+ 注释：我个人发现另一种缩短的方法：省略元音与重复的字母，保留辅音。例如：cls. = Class， src = source，gtr = guitar。  Initialism：对于词组，可以使用每个词的首写字母。CIA/C.I.A.，US/U.S.。这种缩写方法越来越倾向不使用句号来分开字母。
+ Acronyms：这种缩写方法是让词组的每个词形成另外一个完整的单词，比如：AIDS，laser，或者像DAW以及Reaper。这种情况缩写反而成为了常用的词汇，而完整体通常用于解释目的。
+  灵活地去运用以上四个方法，我们便可很便捷地、系统地去简化音频相关英文单词。例如之前的PAD Sequence Glitter可以写成 PD sq Gltr，而后者可以标记为EG w trem。这样一眼就知道每一轨代表什么乐器了。</description>
+    </item>
+    
+  </channel>
+</rss>

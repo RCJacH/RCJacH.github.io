@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>旋律 on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/tags/%E6%97%8B%E5%BE%8B/</link>
+    <description>Recent content in 旋律 on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    <lastBuildDate>Thu, 07 Jul 2016 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/cn/tags/%E6%97%8B%E5%BE%8B/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>小脚本 - 随机生成旋律属性</title>
+      <link>https://RCJacH.github.io/cn/blog/script-generating-melodic-properties/</link>
+      <pubDate>Thu, 07 Jul 2016 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/script-generating-melodic-properties/</guid>
+      <description>今天做了个小脚本，随机生成旋律方面的一些参数，这样每天可以练习一些旋律创作。
+随机生成旋律属性脚本地址
+点击左侧偏上的Run按钮来运行，会在右侧显示结果。
+这个脚本生成一下几个参数：
+Key = 调。目前定义为五线谱调号，以后可以考虑再生成调式/音阶参数。
+Number of Points = 旋律线中转折点的数量，用来决定下面的旋律形状。
+*旋律形状*：从音阶几级上行或下行到几级。
+Prominent Interval = 旋律中比较重要的音程，或者重复比较多的音程。
+Number of Bars = 小节数。
+同时也做了个随机生成旋律属性脚本中文版
+以下是今天做的（红色部分代表旋律转折点）
+Key: D
+Number of Points: 4
+&amp;ndash;&amp;gt; Second
+&amp;ndash;&amp;gt; Down to Third
+&amp;ndash;&amp;gt; Up to Sixth
+&amp;ndash;&amp;gt; Down to Seventh
+Prominent Interval: perfect Fourth
+Number of Bars: 4</description>
+    </item>
+    
+  </channel>
+</rss>
