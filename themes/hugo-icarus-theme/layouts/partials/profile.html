@@ -1,0 +1,46 @@
+<aside id="profile">
+  <div class="inner profile-inner">
+    <div class="base-info profile-block">
+      {{ with .Site.Params.gravatar }}
+      <img id="avatar" src="https://www.gravatar.com/avatar/{{ . | md5 }}?s=100&d=identicon"/>
+      {{ else }}
+      <img id="avatar" src="{{ .Site.Params.avatar | absURL }}">
+      {{ end }}
+      {{ with .Site.Params.author}}<h2 id="name">{{ . }}</h2>{{ end }}
+      {{ with .Site.Params.bio }}<h3 id="title">{{ . }}</h3>{{ end }}
+      {{ with .Site.Params.location }}<span id="location"><i class="fa fa-map-marker"></i>{{ . }}</span>{{ end }}
+      {{ with .Site.Params.profile.follow_button }}
+        <button class="box button button-profile button-large" onclick="location.href='{{ . }}'" type="button">{{with (index $.Site.Data.translations $.Site.LanguageCode).profile.follow_button}}{{.}}{{end}}</button>
+      {{ end }}
+    </div>
+    <div class="article-info profile-block">
+      <div class="article-info-block">
+        <a href="{{ (index (.Site.Params.mainSections) 0) | absLangURL }}">
+          {{ len (where .Site.RegularPages "Type" "blog") }}
+          <span>{{with (index $.Site.Data.translations $.Site.LanguageCode).profile.posts}}{{.}}{{end}}
+          </span>
+        </a>
+      </div>
+      <div class="article-info-block">
+        <a href="{{ "tags/" | absLangURL }}">
+          {{ if isset .Site.Taxonomies "tags" }}
+            {{ len .Site.Taxonomies.tags }}
+          {{ else }}
+            0
+          {{ end }}
+          <span>
+            {{with (index $.Site.Data.translations $.Site.LanguageCode).profile.tags}}{{.}}{{end}}
+          </span>
+        </a>
+      </div>
+    </div>
+    <div class="profile-block social-links">
+      <table>
+        <tr>
+          {{ partial "social" . }}
+          <td><a href="{{ .Site.RSSLink }}" target="_blank" title="RSS"><i class="fa fa-rss"></i></a></td>
+        </tr>
+      </table>
+    </div>
+  </div>
+</aside>

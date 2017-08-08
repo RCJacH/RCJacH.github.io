@@ -1,0 +1,25 @@
+{{- $comments := readDir "data/comments" -}}
+{{- $.Scratch.Add "hasComments" 0 -}}
+{{- $entryId := .UniqueID -}}
+{{ .UniqueID }}
+{{- range $comments -}}
+  {{ $name := split (index (split .Name ".") 0) -}}
+  {{- if eq $name $entryId -}}
+    {{- $.Scratch.Add "hasComments" 1 -}}
+    {{- with (index $.Site.Data.comments $entryId) -}}
+      <div class="box">
+        <div class="comments">
+          <div class="comments-header">
+            <img class="comments-avatar" src="https://www.gravatar.com/avatar/{{ .email }}?s=100">
+            <p class="comments-info"><strong>{{ .name }}</strong><br>{{ dateFormat "02/01/2006" .date }}</p>
+          </div>
+          {{ .body | markdownify }}
+        </div>
+      </div>
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if eq ($.Scratch.Get "hasComments") 0 -}}
+  <p>{{with (index $.Site.Data.translations $.Site.LanguageCode).comment.empty}}{{.}}{{end}}</p>
+{{- end -}}

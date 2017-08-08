@@ -1,0 +1,30 @@
+<div id="contact">
+    <section>
+        {{ if isset .Site.Params "email" }}
+        <div class="heading">
+          <h3>{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.form}}{{.}}{{end}}</h3>
+        </div>
+        <div class="box">
+            <div id="contact-message" class="alert" role="alert" style="display: none;">
+                <button type="button" class="close" onclick="hideAlert('#contact-message')">
+                    <span>×</span>
+                </button>
+                {{with (index $.Site.Data.translations $.Site.LanguageCode).contact.alert}}{{.}}{{end}}
+            </div>
+        </div>
+        <form class="contact-form" method="post" action="https://formspree.io/{{ .Site.Params.email }}">
+            <label for="name">{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.name}}{{.}}{{end}}</label>
+            <input type="text" class="box" name="name" id="name" placeholder="{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.name}}{{.}}{{end}}.." >
+            
+            <label for="email">{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.email}}{{.}}{{end}}</label>
+            <input type="text" class="box" name="email" id="email" placeholder="{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.email}}{{.}}{{end}}.." >
+            
+            <label for="message">{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.message}}{{.}}{{end}}</label>
+            <textarea id="message" class="box" name="message" placeholder="{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.message}}{{.}}{{end}}.." rows="10" ></textarea>
+
+            <button type="submit" id="send-message" class="box button button-large"><i class="fa fa-envelope-o"></i>{{with (index $.Site.Data.translations $.Site.LanguageCode).contact.send}}{{.}}{{end}}</button>
+        </form>
+        {{ end }}
+
+    </section>
+</div>

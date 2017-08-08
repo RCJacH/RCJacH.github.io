@@ -1,0 +1,28 @@
+{{ $notes := .Get "notes" }}
+{{ if $notes }}
+<script> VexTabDiv.Artist.NOLOGO = true </script>
+{{ $barWidth := .Get "barWidth" }}
+{{ $barNumbers := add 1 (len (split $notes "|")) }}
+{{ if .Get "inline" }}<span {{ else }}<div {{ end }}
+    class="vex-tabdiv"
+    width={{ if $barWidth }}{{ mul (int $barWidth) $barNumbers }}{{ else }}inherit{{ end }}
+    scale=1.0
+    artist="">
+    options
+    beam-rests={{ with .Get "bean-rests" }}true{{ else }}false{{ end }}
+    {{ with .Get "space" }}space={{ . }}{{ end }}
+    {{ with .Get "scale" }}scale={{ . }}{{ end }}
+
+    tabstave
+    clef={{ with .Get "clef" }}{{ . }}{{ else }}{{ if eq (.Get "instrument") "bass" }}bass{{ else if eq (.Get "instrument") "percussion" }}percussion{{ else }}treble{{ end }}{{ end }}
+
+    notation={{ if .Get "noNotation" }}false{{ else }}true{{ end }}
+    tablature={{ with .Get "tab" }}{{ . }}{{ else }}false{{ end }}
+    {{ with .Get "time" }} time= {{ . }} {{ end }}
+    {{ with .Get "key" }} key= {{ . }} {{ end }}
+    {{ with .Get "tuning" }} tuning= {{ . }} {{ end }}
+    notes {{ $notes }}
+
+    {{ if .Get "text" }} text {{ .Get "text" }} {{ end }}
+{{ if .Get "inline" }}</span {{ else }}</div {{ end }}>
+{{ end }}
