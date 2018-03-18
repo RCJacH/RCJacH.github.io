@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>其他 on RCJacH</title>
+    <link>https://RCJacH.github.io/cn/categories/%E5%85%B6%E4%BB%96/</link>
+    <description>Recent content in 其他 on RCJacH</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>cn</language>
+    <copyright>所有版权归RCJacH拥有。</copyright>
+    <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="https://RCJacH.github.io/cn/categories/%E5%85%B6%E4%BB%96/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>关于棚改隔音</title>
+      <link>https://RCJacH.github.io/cn/blog/sound-insulation/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/sound-insulation/</guid>
+      <description>前些日子经过一位大佬的点拨，以及几十篇GS、Johnlsayers帖子和Ethan Winer、RealTraps团队这种建筑师官网文章，稍微了解了一下符合录音功能的隔音与吸音，并整理出以下几段笔记。越挖越深，一步走错万丈深渊，因此来请大家一起入坑。
+此文章仅为个人观点，若有任何讲解不正确的地方，请大佬们指出，看情况修正。
+隔音与吸音是两个相关但并非互相替换的概念。很遗憾，*很多装修相关的书和文章都在瞎写，把这两个概念混淆在一起，甚至两个词换着用*，有点不负责任。吸音主要功能是提高室内的声学环境 – 减少室内声波反射 – 无法阻止声音进出房间，虽然减少声音反射的确对隔音有一点点帮助。
+隔音需要注意的有以下几点，按重要性排列：
+1，Airtight密封性。 声音能渗入任何空气流通的地方，*3米长的墙根处一个两毫米宽的缝隙在隔音方面相当于墙上有个大约200平方毫米的窟窿*。很简单的概念，实际操作却很困难。毕竟我们想做的是棚改，是要花大量时间在室内工作的，如果空气不流通的话，人怎样呼吸呢？新风？新风也需要管道呐，而且新风也是有噪音的（空气流动的声音）！混音时可能影响不大，录音时照样要关掉的。当然除非你房间够大，不过房间大的话，人数上去对送风量的要求也会提升…
+除去新风管道，还有别的东西也会在墙上打洞，例如插座暗盒、电线管、暖气管、空调管道。这些东西必要的，所以实际保证房间密封性是相对来说比较困难的。哦，别忘了一个房间最大的两个开口：门（shen）窗（keng）！怎么解决呢？问毛爷爷，红色的。
+2，Mass质量（或 体积 x 密度）。 这个道理也简单，隔音效果在同样体积情况下越重越好，同样密度下体积越大越好。而且是木桶原理，也就是说假设你花了很多钱建了个很厚、密度很高、隔音指数很高的墙，但是门不隔音&amp;hellip;花在墙上的钱就白费了。
+关于建筑材料密度，我找到了这么一个表并企图翻译了一下，可以当作参考：
+   材料 kg/m³ lbs/ft³     亚克力玻璃 Acrylic Glass 1180.0 kg/m³ 73.66 lb/ft³   普通红砖 Brick, common red 1922.0 kg/m³ 119.99 lb/ft³   火泥砖 Brick, fire clay 2403.0 kg/m³ 150.01 lb/ft³   灌胶水泥 Cement (foundation) 2499.0 kg/m³ 156.01 lb/ft³   硬质刨花板 Chip board, hard 750.</description>
+    </item>
+    
+  </channel>
+</rss>

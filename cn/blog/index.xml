@@ -7,10 +7,27 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>所有版权归RCJacH拥有。</copyright>
-    <lastBuildDate>Mon, 10 Jul 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/cn/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>关于棚改隔音</title>
+      <link>https://RCJacH.github.io/cn/blog/sound-insulation/</link>
+      <pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/sound-insulation/</guid>
+      <description>前些日子经过一位大佬的点拨，以及几十篇GS、Johnlsayers帖子和Ethan Winer、RealTraps团队这种建筑师官网文章，稍微了解了一下符合录音功能的隔音与吸音，并整理出以下几段笔记。越挖越深，一步走错万丈深渊，因此来请大家一起入坑。
+此文章仅为个人观点，若有任何讲解不正确的地方，请大佬们指出，看情况修正。
+隔音与吸音是两个相关但并非互相替换的概念。很遗憾，*很多装修相关的书和文章都在瞎写，把这两个概念混淆在一起，甚至两个词换着用*，有点不负责任。吸音主要功能是提高室内的声学环境 – 减少室内声波反射 – 无法阻止声音进出房间，虽然减少声音反射的确对隔音有一点点帮助。
+隔音需要注意的有以下几点，按重要性排列：
+1，Airtight密封性。 声音能渗入任何空气流通的地方，*3米长的墙根处一个两毫米宽的缝隙在隔音方面相当于墙上有个大约200平方毫米的窟窿*。很简单的概念，实际操作却很困难。毕竟我们想做的是棚改，是要花大量时间在室内工作的，如果空气不流通的话，人怎样呼吸呢？新风？新风也需要管道呐，而且新风也是有噪音的（空气流动的声音）！混音时可能影响不大，录音时照样要关掉的。当然除非你房间够大，不过房间大的话，人数上去对送风量的要求也会提升…
+除去新风管道，还有别的东西也会在墙上打洞，例如插座暗盒、电线管、暖气管、空调管道。这些东西必要的，所以实际保证房间密封性是相对来说比较困难的。哦，别忘了一个房间最大的两个开口：门（shen）窗（keng）！怎么解决呢？问毛爷爷，红色的。
+2，Mass质量（或 体积 x 密度）。 这个道理也简单，隔音效果在同样体积情况下越重越好，同样密度下体积越大越好。而且是木桶原理，也就是说假设你花了很多钱建了个很厚、密度很高、隔音指数很高的墙，但是门不隔音&amp;hellip;花在墙上的钱就白费了。
+关于建筑材料密度，我找到了这么一个表并企图翻译了一下，可以当作参考：
+   材料 kg/m³ lbs/ft³     亚克力玻璃 Acrylic Glass 1180.0 kg/m³ 73.66 lb/ft³   普通红砖 Brick, common red 1922.0 kg/m³ 119.99 lb/ft³   火泥砖 Brick, fire clay 2403.0 kg/m³ 150.01 lb/ft³   灌胶水泥 Cement (foundation) 2499.0 kg/m³ 156.01 lb/ft³   硬质刨花板 Chip board, hard 750.</description>
+    </item>
     
     <item>
       <title>RCJacH - 不规则世界</title>
@@ -156,11 +173,11 @@ Shape：这个参数决定了曲线的形状。
       
       <guid>https://RCJacH.github.io/cn/blog/script-list-permutation/</guid>
       <description>为了让音乐创作之全排列技巧变得更直观，我做了一个简单的脚本。
-全排列脚本地址。
-这个脚本按着输入的音符（或者字符）以及所需要的变化数量，随机生成几个修饰方式以及相应的全排列。
+全排列脚本地址
+ 这个脚本按着输入的音符（或者字符）以及所需要的变化数量，随机生成几个修饰方式以及相应的全排列。
 使用方法：  第一行的变量为音程修饰的总数，改成0则生成无修饰的全排列。
  第二行的大括号内为所使用的字符，第一项和最后一项是范围之外的临时变化。中间可以输入任意数量的字符。默认为C大调的1 2 3 4（以及作为临时变化的7和5）
- 设置好了之后点击上方的Run，就可以在右边的结果栏里显示出来所有的排列。
+ 设置好了之后点击上方的Run，就可以在低下的结果栏里显示出来所有的排列。
   此脚本可以作为一个学习、检查、或者激发灵感的工具，真正弹奏的话还是建议把这个全排列技术练成本能。</description>
     </item>
     
@@ -473,9 +490,9 @@ I sang to thee.</description>
       <description>这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。
 图中有以下几点需要注意：
  电子信号会在0 dBFS的状态下遭遇电子削波，而模拟信号会在+24 dBu（也就是+20VU）的状态下遭遇削波。
- 模拟设备在0VU以上会有逐渐增强的失真。
- 因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的平均输出音量保持在-20dBFS左右，这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。
- 在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如ToneBooster的Ferox/Reelbus、Klanghelm的IVGI、112dB的Redline PreAmp、Slate Digital的Virtual Tape Machines等等。
+ 模拟设备在0VU以上会有逐渐增强的过载失真。
+ 因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的输出音量平均值保持在-20dBFS左右（之后细讲），这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。
+ 在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。
   </description>
     </item>
     
@@ -651,7 +668,7 @@ PS. 以后博客各种谱子也争取运用vexflow的技术生成图片，近期
       <guid>https://RCJacH.github.io/cn/blog/reaper-introduction/</guid>
       <description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
 
-国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是心里默默地在骂 谴责某些功能不顺手、不稳定或者满足不了需求。
+国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是因为某些功能不顺手、不稳定或者满足不了需求而心里默默跑过了一万只羊陀。
 
 所以Reaper诞生了。目前有一些大牌的游戏与影视音效、音乐设计师公开表达他们对Reaper的爱：
 David Farmer (霍比特人、蚁人、暗黑3、魔兽世界等)
@@ -663,13 +680,14 @@ Ryan Canestro (影视作品列表)
 更新速度 Reaper平均每两天放出一次微型的beta版本更新，修正一些Bug、添加一些API、增加一些新功能之类的。每次更新之后团队会在论坛里获得一些反馈，通常出现任何问题可能*当天*就修复了（每年元旦第二天就开始持续更新了）。
 当然啦，普通用户可能不需要保持最新版本，而且beta版通常是为开发人员准备的。这种互联网形式的更新与反馈速度倒是值得学习一下。
 自定义界面、菜单、宏 这点是Cockos公司创始人Justin Frankel (之前是Winamp的开发者) 一直强调的。先不说自定义快捷键这种行业标准，Reaper里差不多所有的界面与菜单都可以自定义。很多人首次打开Reaper觉得界面不美，但其实我们可以使用官网上用户自制的皮肤。
-比如这个： 这个： 这个： 或者适合双屏的这个： 也有很多模仿款的： PT Cubase皮肤 Logic皮肤与付费版 Sonar皮肤 Adobe Audition 2017皮肤 
+比如这个： 这个： 这个： 或者适合双屏的这个： 也有很多模仿款的： PT Logic皮肤与付费版 Sonar皮肤 Adobe Audition 2017皮肤 
 菜单方面，很多人刚开始使用的时候会觉得很乱没有逻辑。我之前也这么觉得，所以在这里推荐一下我目前正在使用的菜单系统，ReaMenus（貌似需要SWS扩展）。
 
 使用方法： 把ReaMenus下载文件放到Reaper的资源文件目录中的MenuSets文件夹内，在Option菜单里的Customize menus/toolbars选项内，下方有一个Import。点击后选择新下载的文件，你就能看到整个菜单都变了样子呢！可惜目前菜单不支持K酱的中文翻译版，以后说不定。
 而宏又是什么呢？在Reaper里，一个宏是一群操作的组合。通过宏，我们可以用一个快捷键执行多个操作。例如我们可以按一个键Solo所有名字里带有DR的轨道（鼓组），或者一键把选中的item通过原轨道效果导出成音频段放在新的一轨中（保留音量、相位包络和发送设置），也可以结合多个自制脚本达到意想不到的效果。
 
-自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。</description>
+自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
     </item>
     
     <item>

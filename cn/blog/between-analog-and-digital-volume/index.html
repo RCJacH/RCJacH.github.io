@@ -2,7 +2,7 @@
 <html lang="cn">
 <head>
     <title>模拟信号与电子信号的音量关系：-20 dBFS = 0 VU &middot; RCJacH</title>
-    <meta name="generator" content="Hugo 0.25" />
+    <meta name="generator" content="Hugo 0.37" />
     <meta charset="utf-8">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
@@ -32,6 +32,7 @@
 
 
 <meta property="article:published_time" content="2016-04-01T00:00:00&#43;00:00"/>
+
 <meta property="article:modified_time" content="2016-04-01T00:00:00&#43;00:00"/>
 
 
@@ -50,23 +51,17 @@
 <meta itemprop="description" content="这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。">
 
 
+<meta itemprop="datePublished" content="2016-04-01T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2016-04-01T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="12">
+<meta itemprop="wordCount" content="8">
 
 
 
 <meta itemprop="keywords" content="音乐制作,录音,混音," />
 
-    
-
-  <meta name="twitter:card" content="summary"/>
-
-
-
-<meta name="twitter:text:title" content="模拟信号与电子信号的音量关系：-20 dBFS = 0 VU"/>
+    <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="模拟信号与电子信号的音量关系：-20 dBFS = 0 VU"/>
 <meta name="twitter:description" content="这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。"/>
-
 
     
 
@@ -85,7 +80,7 @@
     <div class="outer">
       <a href="https://RCJacH.github.io/cn/" id="logo">
           
-          <img src="https://RCJacH.github.io/img/logo.png" alt="RCJacH - 不规则世界 logo" class="hidden-xs hidden-sm">
+          <img src="https://RCJacH.github.io/img/logo.png" alt="关于棚改隔音 logo" class="hidden-xs hidden-sm">
           
           
       </a>
@@ -178,7 +173,7 @@
     <div class="article-info profile-block">
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/cn/blog">
-          31
+          32
           <span>文章
           </span>
         </a>
@@ -186,7 +181,7 @@
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/cn/tags/">
           
-            29
+            30
           
           <span>
             标签
@@ -336,16 +331,16 @@
 <ol>
 <li><p>电子信号会在0 dBFS的状态下遭遇电子削波，而模拟信号会在+24 dBu（也就是+20VU）的状态下遭遇削波。</p></li>
 
-<li><p>模拟设备在0VU以上会有逐渐增强的失真。</p></li>
+<li><p>模拟设备在0VU以上会有<strong>逐渐增强的过载失真</strong>。</p></li>
 
-<li><p>因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的平均输出音量保持在-20dBFS左右，这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。</p></li>
+<li><p>因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的输出音量<strong>平均值</strong>保持在-20dBFS左右（之后细讲），这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。</p></li>
 
-<li><p>在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如ToneBooster的Ferox/Reelbus、Klanghelm的IVGI、112dB的Redline PreAmp、Slate Digital的Virtual Tape Machines等等。</p></li>
+<li><p>在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。</p></li>
 </ol>
 
         </div>
         <footer class="article-footer">
-    <a data-url="https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/" data-id="65b42bb160f2bd4cda928585b55dd4cb" class="article-share-link">
+    <a data-url="https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/" data-id="31883302a871597846f942bad432e8c6" class="article-share-link">
         <i class="fa fa-share"></i>
         分享
     </a>
@@ -467,7 +462,15 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/cn/categories/%E4%B9%90%E7%90%86">
                     乐理
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/categories/%E5%85%B6%E4%BB%96">
+                    其他
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -491,7 +494,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF">
                     脚本模板
                 </a>
-                <span class="category-list-count">9</span>
+                <span class="category-list-count">10</span>
             </li>
             
             <li class="category-list-item">
@@ -729,6 +732,14 @@
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/%E8%A3%85%E4%BF%AE">
+                    装修
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/%E9%92%A2%E7%90%B4">
                     钢琴
                 </a>
@@ -851,6 +862,9 @@
         <a href="https://RCJacH.github.io/cn/tags/%E8%8A%82%E5%A5%8F" style="font-size: 12px;">节奏</a>
         
         
+        <a href="https://RCJacH.github.io/cn/tags/%E8%A3%85%E4%BF%AE" style="font-size: 12px;">装修</a>
+        
+        
         <a href="https://RCJacH.github.io/cn/tags/%E9%92%A2%E7%90%B4" style="font-size: 12px;">钢琴</a>
         
         
@@ -880,7 +894,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       <a href="https://RCJacH.github.io/cn/">
-        COPYRIGHT &copy; 2017
+        COPYRIGHT &copy; 2018
         所有版权归RCJacH拥有。
       </a>
     </div>
