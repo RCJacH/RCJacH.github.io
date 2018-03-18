@@ -9,8 +9,9 @@ categories = ["脚本&模板"]
 
 为了让[音乐创作之全排列技巧]({{< ref "Compositional-Permutation.cn.md" >}})变得更直观，我做了一个简单的脚本。
 
-[全排列脚本地址。](http://rcjach.lofter.com/permutation)
+[全排列脚本地址](http://rcjach.lofter.com/permutation)
 
+<iframe frameborder="0" width="100%" height="500px" src="https://repl.it/FhB1?lite=true"></iframe>
 
 
 这个脚本按着输入的音符（或者字符）以及所需要的变化数量，随机生成几个修饰方式以及相应的全排列。
@@ -23,7 +24,7 @@ categories = ["脚本&模板"]
 
 2. 第二行的大括号内为所使用的字符，第一项和最后一项是范围之外的临时变化。中间可以输入任意数量的字符。默认为C大调的1 2 3 4（以及作为临时变化的7和5）
 
-3. 设置好了之后点击上方的Run，就可以在右边的结果栏里显示出来所有的排列。
+3. 设置好了之后点击上方的Run，就可以在低下的结果栏里显示出来所有的排列。
 
 
 

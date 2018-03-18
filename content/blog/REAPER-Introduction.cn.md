@@ -13,7 +13,7 @@ categories = ["音乐制作"]
 
 <br>
 
-国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家**压根**没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是心里默默地在骂 谴责某些功能不顺手、不稳定或者满足不了需求。
+国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家**压根**没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是因为某些功能不顺手、不稳定或者满足不了需求而心里默默跑过了一万只羊陀。
 
 <br>
 
@@ -68,9 +68,6 @@ Reaper平均**每两天**放出一次[微型的beta版本更新](http://www.land
 也有很多模仿款的：
 [PT](https://stash.reaper.fm/theme/1338/Pro%20X-Tools%20Gold%20ED%20v1.0.2.%20MOD%20by%20FB.rar)
 ![](https://stash.reaper.fm/19884/ProTools_alike_ProTools_alike_screenset.PNG)
-
-[Cubase皮肤](https://stash.reaper.fm/theme/1883/CubicPack272.zip)
-![](https://stash.reaper.fm/29077/FremaFM.png)
 
 [Logic皮肤](https://stash.reaper.fm/theme/1964/I%20Logic%20V2%20Public.ReaperThemeZip)与[付费版](https://forum.cockos.com/showthread.php?t=187971)
 ![](https://stash.reaper.fm/30444/2.5.png)
