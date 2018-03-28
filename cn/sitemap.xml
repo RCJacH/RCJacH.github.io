@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://RCJacH.github.io/cn/blog/reaper-jsfx-rcmship-perfect-pitch/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/cn/blog/sound-insulation/</loc>
         <lastmod>2018-03-18T00:00:00+00:00</lastmod>
     </url>
@@ -17,7 +22,7 @@
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/cn/blog/tone-sweep/</loc>
+        <loc>https://RCJacH.github.io/cn/blog/reaper-jsfx-tone-sweep/</loc>
         <lastmod>2017-05-05T00:00:00+00:00</lastmod>
     </url>
     
@@ -163,12 +168,12 @@
     
     <url>
         <loc>https://RCJacH.github.io/cn/</loc>
-        <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
     </url>
     
     <url>
         <loc>https://RCJacH.github.io/cn/blog/</loc>
-        <lastmod>2018-03-18T00:00:00+00:00</lastmod>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -185,8 +190,14 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/cn/tags/exercise/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/cn/tags/jsfx/</loc>
-        <lastmod>2017-05-05T00:00:00+00:00</lastmod>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -197,13 +208,43 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/cn/tags/musicianship/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/cn/tags/production/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/cn/profile/</loc>
         <lastmod>0001-01-01T00:00:00+00:00</lastmod>
     </url>
     
     <url>
         <loc>https://RCJacH.github.io/cn/tags/reaper/</loc>
-        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/cn/tags/script/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/cn/categories/scripts--templates/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/cn/tags/synth/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     

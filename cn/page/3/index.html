@@ -34,7 +34,7 @@
 
 
 
-<meta property="og:updated_time" content="2016-03-10T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2016-03-16T00:00:00&#43;00:00"/>
 
 
 
@@ -72,7 +72,7 @@
     <div class="outer">
       <a href="https://RCJacH.github.io/cn/" id="logo">
           
-          <img src="https://RCJacH.github.io/img/logo.png" alt="关于棚改隔音 logo" class="hidden-xs hidden-sm">
+          <img src="https://RCJacH.github.io/img/logo.png" alt="REAPER - 原创JSFX小游戏RCMShip Perfect Pitch logo" class="hidden-xs hidden-sm">
           
           
       </a>
@@ -165,7 +165,7 @@
     <div class="article-info profile-block">
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/cn/blog">
-          32
+          33
           <span>文章
           </span>
         </a>
@@ -173,7 +173,7 @@
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/cn/tags/">
           
-            30
+            35
           
           <span>
             标签
@@ -258,6 +258,154 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/">
+    <h1 class="article-title" itemprop="name">
+        REAPER JSFX - MIDI CC Eater CC屏蔽器
+    </h1>
+    </a>
+    
+        <div class="article-meta">
+            
+            <div class="article-date">
+                <i class="fa fa-calendar"></i>
+                <time datetime="2016-03-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">2016-03-16</time>
+                
+                
+            </div>
+            
+            
+                
+                
+                <div class="article-category">
+                    <i class="fa fa-folder"></i>
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF">脚本&amp;模板</a>
+                    
+                    
+                </div>
+                
+            
+
+            
+                
+                
+                <div class="article-category">
+                    <i class="fa fa-tags"></i>
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C">音乐制作</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/midi">MIDI</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC">脚本</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/jsfx">JSFX</a>
+                    
+                    
+                </div>
+                
+            
+        </div>
+        
+    
+
+</header>
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                屏蔽所选的CC信息。
+            </p>
+            <button class="box button button-small" onclick="location.href='https:\/\/RCJacH.github.io\/cn\/blog\/reaper-jsfx-midi-cc-eater\/'" type="button">阅读更多</button>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/" data-id="42aaa7c8714b05132b6d9cbcc4e7cf02" class="article-share-link">
+        <i class="fa fa-share"></i>
+        分享
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-weibo" target="_blank" title="Weibo"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -1663,176 +1811,6 @@
     </div>
 </article>
 
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://RCJacH.github.io/cn/blog/single-string-scales/">
-    <h1 class="article-title" itemprop="name">
-        【吉他】单弦音阶
-    </h1>
-    </a>
-    
-        <div class="article-meta">
-            
-            <div class="article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2015-12-09 00:00:00 &#43;0800 CST" itemprop="datePublished">2015-12-09</time>
-                
-                
-            </div>
-            
-            
-                
-                
-                <div class="article-category">
-                    <i class="fa fa-folder"></i>
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/cn/categories/%E5%90%89%E4%BB%96%E5%BC%B9%E5%A5%8F">吉他弹奏</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/cn/categories/%E4%B9%90%E5%99%A8%E6%95%99%E6%9D%90">乐器教材</a>
-                    
-                    
-                </div>
-                
-            
-
-            
-                
-                
-                <div class="article-category">
-                    <i class="fa fa-tags"></i>
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/%E4%B9%90%E5%99%A8">乐器</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/%E5%90%89%E4%BB%96">吉他</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/%E7%BB%83%E4%B9%A0">练习</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/%E9%9F%B3%E9%98%B6">音阶</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/cn/tags/%E5%85%A5%E9%97%A8">入门</a>
-                    
-                    
-                </div>
-                
-            
-        </div>
-        
-            
-                
-                <a class="article-category-link" href="https://RCJacH.github.io/blog/single-string-scales/">
-                    English: Single-String Scales
-                    
-                         &middot; 671
-                            
-                                words
-                            
-                        
-                    
-                </a>
-            
-        
-    
-
-</header>
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                一个非常有效及高效的音阶练习方法。
-            </p>
-            <button class="box button button-small" onclick="location.href='https:\/\/RCJacH.github.io\/cn\/blog\/single-string-scales\/'" type="button">阅读更多</button>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://RCJacH.github.io/cn/blog/single-string-scales/" data-id="07cc2e4743b1eec667b4a36c95a8b98d" class="article-share-link">
-        <i class="fa fa-share"></i>
-        分享
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-weibo" target="_blank" title="Weibo"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-    </div>
-</article>
-
 
 <nav id="page-nav">
 
@@ -1863,6 +1841,14 @@
     <h3 class="widget-title">分类</h3>
     <div class="widget">
         <ul class="category-list">
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/categories/scripts--templates">
+                    scripts--templates
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
             
             <li class="category-list-item">
                 
@@ -1955,10 +1941,18 @@
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/exercise">
+                    exercise
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/jsfx">
                     jsfx
                 </a>
-                <span class="category-list-count">5</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1971,10 +1965,42 @@
             
             <li class="category-list-item">
                 
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/musicianship">
+                    musicianship
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/production">
+                    production
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
                 <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/reaper">
                     reaper
                 </a>
-                <span class="category-list-count">14</span>
+                <span class="category-list-count">15</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/script">
+                    script
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/cn/tags/synth">
+                    synth
+                </a>
+                <span class="category-list-count">1</span>
             </li>
             
             <li class="category-list-item">
@@ -2205,13 +2231,28 @@
         <a href="https://RCJacH.github.io/cn/tags/bossa-nova" style="font-size: 12px;">bossa-nova</a>
         
         
+        <a href="https://RCJacH.github.io/cn/tags/exercise" style="font-size: 12px;">exercise</a>
+        
+        
         <a href="https://RCJacH.github.io/cn/tags/jsfx" style="font-size: 12px;">jsfx</a>
         
         
         <a href="https://RCJacH.github.io/cn/tags/midi" style="font-size: 12px;">midi</a>
         
         
+        <a href="https://RCJacH.github.io/cn/tags/musicianship" style="font-size: 12px;">musicianship</a>
+        
+        
+        <a href="https://RCJacH.github.io/cn/tags/production" style="font-size: 12px;">production</a>
+        
+        
         <a href="https://RCJacH.github.io/cn/tags/reaper" style="font-size: 12px;">reaper</a>
+        
+        
+        <a href="https://RCJacH.github.io/cn/tags/script" style="font-size: 12px;">script</a>
+        
+        
+        <a href="https://RCJacH.github.io/cn/tags/synth" style="font-size: 12px;">synth</a>
         
         
         <a href="https://RCJacH.github.io/cn/tags/%E4%B9%90%E5%99%A8" style="font-size: 12px;">乐器</a>

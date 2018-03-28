@@ -6,10 +6,23 @@
     <description>Recent content in Blogs on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>REAPER - RCMShip Perfect Pitch</title>
+      <link>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</guid>
+      <description>Download from here: RCMShip Perfect Pitch on Github
+or Simply add my repository in ReaPack:
+RCJacH ReaPack Repository
+Description RCMShip (MShip stands for musicianship) Perfect Pitch is a little game for exercising Perfect Pitch, the ability to recognize notes without any reference, using adaptive method of randomization.
+How to Play  Click START, the synth will play a tone. Guess the name of the tone by clicking on one of the note names.</description>
+    </item>
     
     <item>
       <title>REAPER Signal Flow</title>
@@ -24,10 +37,10 @@ Because of the potential complexity of our routing, from something as simple as 
     
     <item>
       <title>Tone Sweep - REAPER JSFX Percussion Synth</title>
-      <link>https://RCJacH.github.io/blog/tone-sweep/</link>
+      <link>https://RCJacH.github.io/blog/reaper-jsfx-tone-sweep/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/tone-sweep/</guid>
+      <guid>https://RCJacH.github.io/blog/reaper-jsfx-tone-sweep/</guid>
       <description>You can download it from here: Tone Sweep on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository

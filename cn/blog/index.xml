@@ -7,10 +7,26 @@
     <generator>Hugo -- gohugo.io</generator>
     <language>cn</language>
     <copyright>所有版权归RCJacH拥有。</copyright>
-    <lastBuildDate>Sun, 18 Mar 2018 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/cn/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-rcmship-perfect-pitch/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-rcmship-perfect-pitch/</guid>
+      <description>RCMShip Perfect Pitch下载地址
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RCJacH ReaPack Repository
+如何使用ReaPack？
+简介 RCMShip （MShip代表musicianship，即音乐修养、视唱练耳）Perfect Pitch是一款包含自适应随机算法的原创JSFX游戏，用来练习绝对音感的能力。
+游戏方式  点击 START后，游戏将播放一个固定音高。 猜测该音高的音名并点击相关按钮。 回答后，游戏将将显示正确答案，若答错也会显示所选答案。 点击 Next 将继续下一轮。  特色 自适应 当玩家做出回答后，回答的正确与否将影响当前所播放的音出现的几率。
+可选性 点击Setup将转至音符选择页面，在此你可以手动或随机选择游戏所包含的音高，限制游戏难度或者增加变化。
+可配置 点击Config按钮切换到设置页面，可以设置一些基本参数，例如音量、音符长度、播放的八度和八度跨越等。也可以切换至MIDI输出模式，用采样播放器或者其他合成器作为音源。
+进阶介绍 理论 来自404（wiki）：&amp;rdquo;Absolute pitch (AP), widely referred to as perfect pitch, is a rare auditory phenomenon characterized by the ability of a person to identify or re-create a given musical note without the benefit of a reference tone.&amp;rdquo; 绝对音感是一个罕见的听觉现象，指的是一个人有能力在没有参考音高的情况下识别或重现一个给定的音符音高。</description>
+    </item>
     
     <item>
       <title>关于棚改隔音</title>
@@ -123,10 +139,10 @@ Take Trim = 层音量衰减（主页面块儿上&amp;rdquo;边&amp;rdquo;往下�
     
     <item>
       <title>Tone Sweep – 原创JSFX电鼓合成器</title>
-      <link>https://RCJacH.github.io/cn/blog/tone-sweep/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-tone-sweep/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/tone-sweep/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-tone-sweep/</guid>
       <description>Tone Sweep下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 
@@ -228,7 +244,13 @@ NAME = “分组”,
       <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</guid>
       <description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
 这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
-下载地址： NoiseBuzz官网下载地址
+ v1.3 (2018-03-08)
+ Brown Noise Type. MIDI Trigger.
+Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility.  v1.2 (2017-04-08)
+ Width Control.  v1.1 (2017-03-11)
+ Decay &amp;amp; Sustain Control.  v1.0a (2017-01-31)
+Renamed to NoiseBuzz. v1.0 (2017-01-22)
+ Initial Release.   下载地址： RCNoiseBuzz官网下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
     </item>
     

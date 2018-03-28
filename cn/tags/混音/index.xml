@@ -75,7 +75,13 @@ NAME = “分组”,
       <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</guid>
       <description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
 这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
-下载地址： NoiseBuzz官网下载地址
+ v1.3 (2018-03-08)
+ Brown Noise Type. MIDI Trigger.
+Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility.  v1.2 (2017-04-08)
+ Width Control.  v1.1 (2017-03-11)
+ Decay &amp;amp; Sustain Control.  v1.0a (2017-01-31)
+Renamed to NoiseBuzz. v1.0 (2017-01-22)
+ Initial Release.   下载地址： RCNoiseBuzz官网下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
     </item>
     
