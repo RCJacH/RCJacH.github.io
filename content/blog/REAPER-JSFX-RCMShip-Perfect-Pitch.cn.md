@@ -1,8 +1,8 @@
 +++
 author = "RCJacH"
 title =  "REAPER - 原创JSFX小游戏RCMShip Perfect Pitch"
-tags = ["Production", "REAPER", "JSFX", "Script","Musicianship","Exercise","Synth"]
-categories = ["Scripts & Templates"]
+tags = ["音乐制作", "REAPER", "JSFX", "脚本","音乐修养","练习","合成器"]
+categories = ["脚本模板"]
 description = "一个练习绝对音准的JSFX游戏。"
 date = "2018-03-28"
 +++

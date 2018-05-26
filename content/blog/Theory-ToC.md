@@ -1,7 +1,7 @@
 +++
 title = "Music Theory: Introduction and Table of Content"
 date = 2018-05-26T01:53:16+08:00
-tags = ["Theory"]
+tags = ["Theory","Musicianship"]
 categories = ["Musicianship"]
 description = "Introduction and Table of Content to my new theory tutorial series, including topics related to music rudiments, harmony, counterpoint."
 menu = ""
@@ -9,8 +9,8 @@ banner = ""
 images = []
 +++
 
-## Introduction
-Get ready for a *"paradigm shift"* from THE leader of this blog. No I'm not releasing an analog hardware synth, the paradigm I'm talking about is that I will be posting series of tutorials on music theory - rudiments, harmony, and perhaps counterpoint. This article will serve as an introduction and table of content to the series, and hopefully will be updated frequently. Before that, allow me to explain why I decided to spend the time to write on these topics that are already fully covered in almost all of the theory books and blogs available.
+## Introduction {#introduction}
+Get ready for a *"paradigm shift"* from THE leader of this blog. No I'm not releasing an analog hardware synth, the paradigm I'm talking about is that I will be posting series of tutorials on music theory - rudiments, harmony, and perhaps counterpoint. This article will serve as an introduction and table of content to the series, and hopefully will be updated frequently (including chapter numbers). Before that, allow me to explain why I decided to spend the time to write on these topics that are already fully covered in almost all of the theory books and blogs available.
 
 Why another theory tutorial?
 
@@ -33,16 +33,11 @@ I sincerely wish for the readers of this tutorial series a happy learning experi
 <br>
 
 ## TABLE OF CONTENT
-1 Introduction  
-2 Rudiments  
-2.1 Note Name  
-2.2 Interval  
-2.3 Major Scales  
-2.4 Minor Scales  
-3 Harmony  
-3.1 Naming Scheme  
-3.2 Voicing  
-3.3 Function  
-3.4 Voice-Leading  
-3.5 Substitution  
-4 Counterpoint
+
+1. [Introduction](#introduction)  
+2. Rudiments  
+2.1. Note Name  
+2.2. Interval  
+2.3. Major Scales  
+3. Harmony  
+4. Counterpoint
