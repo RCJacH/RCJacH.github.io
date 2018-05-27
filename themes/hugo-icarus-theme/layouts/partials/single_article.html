@@ -25,9 +25,17 @@
 </section>
 {{- end -}}
 
-
-
 {{- if and (not (eq .Site.Params.staticman.username "")) (not .Params.disable_comments) -}}
     {{- partial "staticman/show-comments" . -}}
     {{- partial "staticman/form-comments" . -}}
+{{- end -}}
+
+{{- if (not .Params.disable_comments) -}}
+<section id="comments">
+    <script src="https://utteranc.es/client.js"
+            repo="RCJacH/rcjach.github.io"
+            issue-term="title"
+            async>
+    </script>
+</section>
 {{- end -}}
