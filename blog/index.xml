@@ -6,17 +6,27 @@
     <description>Recent content in Blogs on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 26 May 2018 01:53:16 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 05 Jun 2018 18:37:19 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>RCTheory Pitch Name</title>
+      <link>https://RCJacH.github.io/blog/rctheory/rctheory-pitch-name/</link>
+      <pubDate>Tue, 05 Jun 2018 18:37:19 +0800</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/rctheory/rctheory-pitch-name/</guid>
+      <description>Pitch Definition Pitch is the perceptual property of sound on a logarithmic frequency scale, it is the quality that permits the judgement of a sound being higher or lower.
+Naming Scheme  There are 7 repeating groups of pitches, called Pitch Classes, labeled using alphabets A B C D E F G. However, there are total of twelve different pitches within each repetition, meaning that there are (12 - 7 = ) five pitches per repetition that does not directly land on an alphabet.</description>
+    </item>
+    
+    <item>
       <title>Music Theory: Introduction and Table of Content</title>
-      <link>https://RCJacH.github.io/blog/theory-toc/</link>
+      <link>https://RCJacH.github.io/blog/rctheory/rctheory-toc/</link>
       <pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/theory-toc/</guid>
+      <guid>https://RCJacH.github.io/blog/rctheory/rctheory-toc/</guid>
       <description>Introduction Get ready for a &amp;ldquo;paradigm shift&amp;rdquo; from THE leader of this blog. No I&amp;rsquo;m not releasing an analog hardware synth, the paradigm I&amp;rsquo;m talking about is that I will be posting series of tutorials on music theory - rudiments, harmony, and perhaps counterpoint. This article will serve as an introduction and table of content to the series, and hopefully will be updated frequently (including chapter numbers). Before that, allow me to explain why I decided to spend the time to write on these topics that are already fully covered in almost all of the theory books and blogs available.</description>
     </item>
     

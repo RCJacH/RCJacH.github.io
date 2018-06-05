@@ -14,10 +14,10 @@
     
     <item>
       <title>乐理系列教程：前言及目录</title>
-      <link>https://RCJacH.github.io/cn/blog/theory-toc/</link>
+      <link>https://RCJacH.github.io/cn/blog/rctheory/rctheory-toc/</link>
       <pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/theory-toc/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/rctheory/rctheory-toc/</guid>
       <description> 前言 这篇为了宣布我将发布一系列乐理教程，包含乐理基础、和声学、对位法、及其它我目前还没想好的主题。这一页将作为系列的前言及目录，每出一篇新文章后会及时更新链接。
 作为前言，应该写一些东西哈，但我写完英文版后发现一些梗不好直译，所以只能照着轮廓重写一遍了。此篇大概讲一下为什么在当今乐理书与文章已经层出不穷的环境下，我还要坚持写此类教学文章。
 我观察到的是，虽然市场上有一些优秀的学习资料，大部分乐理教学系列都挺尴尬的。他们通常会遇到以下两个问题之一。
@@ -30,10 +30,10 @@ P.S. 国内当代还有一类：围绕话题抖段子。看之前很空虚，看
 目录  前言
  音乐基础
 2.1. 音名
-2.2. 音程
-2.3. 大调音阶
+2.2. 大调音阶
+2.3. 音程
  和声
- Counterpoint  </description>
+ 对位法  </description>
     </item>
     
   </channel>
