@@ -36,8 +36,8 @@ I sincerely wish for the readers of this tutorial series a happy learning experi
 
 1. [Introduction](#introduction)  
 2. Rudiments  
-2.1. Note Name  
-2.2. Interval  
-2.3. Major Scales  
+2.1. Pitch Name  
+2.2. Major Scale  
+2.3. Interval  
 3. Harmony  
 4. Counterpoint
