@@ -34,7 +34,7 @@
 
 
 
-<meta property="og:updated_time" content="2016-03-03T00:00:00&#43;00:00"/>
+<meta property="og:updated_time" content="2016-04-16T00:00:00&#43;00:00"/>
 
 
 
@@ -72,7 +72,7 @@
     <div class="outer">
       <a href="https://RCJacH.github.io/" id="logo">
           
-          <img src="https://RCJacH.github.io/img/logo.png" alt="Music Theory: Introduction and Table of Content logo" class="hidden-xs hidden-sm">
+          <img src="https://RCJacH.github.io/img/logo.png" alt="RCMTheory - Introduction and Table of Content logo" class="hidden-xs hidden-sm">
           
           
       </a>
@@ -165,7 +165,7 @@
     <div class="article-info profile-block">
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/blog">
-          22
+          23
           <span>Posts
           </span>
         </a>
@@ -258,6 +258,166 @@
     <section id="main">
     
     
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
+    <a href="https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/">
+    <h1 class="article-title" itemprop="name">
+        Vocal Recording &amp; Mixing Template by RCJacH
+    </h1>
+    </a>
+    
+        <div class="article-meta">
+            
+            <div class="article-date">
+                <i class="fa fa-calendar"></i>
+                <time datetime="2016-04-16 00:00:00 &#43;0000 UTC" itemprop="datePublished">April 16, 2016</time>
+                
+                    &middot;
+                    982
+                    words
+                
+                
+            </div>
+            
+            
+                
+                
+                <div class="article-category">
+                    <i class="fa fa-folder"></i>
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/categories/scripts--templates">Scripts &amp; Templates</a>
+                    
+                    
+                </div>
+                
+            
+
+            
+                
+                
+                <div class="article-category">
+                    <i class="fa fa-tags"></i>
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/production">Production</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/reaper">REAPER</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/template">Template</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/recording">Recording</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/mixing">Mixing</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/vocal">Vocal</a>
+                    
+                    
+                </div>
+                
+            
+        </div>
+        
+    
+
+</header>
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                A REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track
+            </p>
+            <button class="box button button-small" onclick="location.href='https:\/\/RCJacH.github.io\/blog\/vocal-recording-n-mixing-template-by-rcjach\/'" type="button">Read more</button>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/" data-id="4e58c72b95301cb3d5ecba665495b45a" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-weibo" target="_blank" title="Weibo"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
 
 <article class="article article-type-post" itemscope="" itemprop="blogPost">
     <div class="article-inner">
@@ -1611,150 +1771,6 @@
     </div>
 </article>
 
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://RCJacH.github.io/blog/rhythm-in-hex-part-1/">
-    <h1 class="article-title" itemprop="name">
-        Rhythm in Hexadecimal - Part 1
-    </h1>
-    </a>
-    
-        <div class="article-meta">
-            
-            <div class="article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2015-08-08 00:00:00 &#43;0000 UTC" itemprop="datePublished">August 8, 2015</time>
-                
-                    &middot;
-                    977
-                    words
-                
-                
-            </div>
-            
-            
-                
-                
-                <div class="article-category">
-                    <i class="fa fa-folder"></i>
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/categories/musicianship">Musicianship</a>
-                    
-                    
-                </div>
-                
-            
-
-            
-                
-                
-                <div class="article-category">
-                    <i class="fa fa-tags"></i>
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/tags/theory">Theory</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/tags/rhythm">Rhythm</a>
-                    
-                    
-                </div>
-                
-            
-        </div>
-        
-    
-
-</header>
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                Understanding rhythmic patterns with hexadecimal values.
-            </p>
-            <button class="box button button-small" onclick="location.href='https:\/\/RCJacH.github.io\/blog\/rhythm-in-hex-part-1\/'" type="button">Read more</button>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://RCJacH.github.io/blog/rhythm-in-hex-part-1/" data-id="30a2af464f71cbfbef6b0df801d57090" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-weibo" target="_blank" title="Weibo"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-    </div>
-</article>
-
 
 <nav id="page-nav">
 
@@ -1831,7 +1847,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/categories/musicianship">
                     musicianship
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">5</span>
             </li>
             
             <li class="category-list-item">
@@ -1928,7 +1944,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/musicianship">
                     musicianship
                 </a>
-                <span class="category-list-count">3</span>
+                <span class="category-list-count">4</span>
             </li>
             
             <li class="category-list-item">
@@ -2024,7 +2040,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/theory">
                     theory
                 </a>
-                <span class="category-list-count">5</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
