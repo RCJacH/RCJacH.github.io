@@ -205,25 +205,25 @@
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/categories/music-production/</loc>
-        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
         <loc>https://RCJacH.github.io/tags/music-production/</loc>
         <lastmod>2017-06-23T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/categories/musicianship/</loc>
-        <lastmod>2018-06-05T18:37:19+08:00</lastmod>
+        <loc>https://RCJacH.github.io/categories/music-production/</loc>
+        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://RCJacH.github.io/tags/musicianship/</loc>
+        <lastmod>2018-06-05T18:37:19+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/categories/musicianship/</loc>
         <lastmod>2018-06-05T18:37:19+08:00</lastmod>
         <priority>0</priority>
     </url>
