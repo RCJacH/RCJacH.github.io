@@ -58,5 +58,5 @@ Therefore, we should learn to construct the major scale first, with minimum numb
 
 ## Assignment
 
-Use the method from this article to deduce and list major scales with tonic of all note names, including those with enharmonic. Some major scales may require double sharp or double flats.
+It's your turn! Use the method from this article to **deduce and list major scales with tonic of all note names**, including those with enharmonic. *Some major scales may require double sharp or double flats*.
 
