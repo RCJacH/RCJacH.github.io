@@ -37,7 +37,7 @@ I sincerely wish for the readers of this tutorial series a happy learning experi
 1. [Introduction](#introduction)  
 2. Rudiments  
 [2.1. Pitch Name](../pitch-name)  
-2.2. Major Scale  
+[2.2. Major Scale](../the-major-scale)  
 2.3. Interval  
 3. Harmony  
 4. Counterpoint

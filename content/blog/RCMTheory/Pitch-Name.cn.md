@@ -54,7 +54,7 @@ images = []
 #### 频率与音高 {#logarithmic}
 作为参考，一个音高的频率每次重复都会增加一倍。例如，若A音高的频率为440Hz，当我们经过BCDEFG以及期间的5个额外音高后，下一个A的音高则是两倍的频率：880Hz。再下一个A则为1760Hz。同时因为共有12个不同的音高，每增加半音，我们用基础赫兹乘以2的12次方根。
 ![频率与音高线型刻度](https://user-images.githubusercontent.com/12930244/40973092-816d9d6c-68f5-11e8-8091-2bc305053d52.png)
-As the graph shows, the distance between each semitone in Hz gets larger as the pitch raises. 为了让任意频段的相邻音之间保持同样距离，我们需要使用对数刻度。
+上图中，当音高上升时，半音之间的距离也在增加。为了让任意频段的相邻音之间保持同样距离，我们需要使用对数刻度。
 ![频率与音高对数刻度](https://user-images.githubusercontent.com/12930244/40973093-81b1703c-68f5-11e8-80a9-28bf0035ca05.png)
 
 ## 细说
