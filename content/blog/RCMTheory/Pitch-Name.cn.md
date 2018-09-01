@@ -1,11 +1,11 @@
 +++
-title = "乐理系列教程 - 音名"
+title = "RCJacH乐理系列教程：音名"
 date = 2018-06-05T18:37:19+08:00
 tags = ["音乐修养", "乐理"]
 categories = ["音乐修养"]
 description = "理解音名只需要这五句话。"
 menu = ""
-banner = ""
+banner = "img/banners/rcmtheory/pitch_name.jpg"
 images = []
 +++
 
@@ -63,3 +63,7 @@ images = []
 比起所谓的34个彼此之间没有任何关联的固定音高，*记忆英文字母表中前七个字母应该轻松很多，任何其他音只需要加一个变音符号就可以了*。如果一个不够，就两个（或三个）。变音符号本身就是个修饰符号，不应该作为某些音符的固定名称来看待。这样，我们在之后的概念中就根本不需要去数半音全音，并且对音程、和弦也会有非常坚固的学习基础。
 
 <a name="AccidentalPNG">1</a>: http://linkwaregraphics.com/music/symbols/accidentals/
+
+<br>
+
+{{% content "../ToC.cn.md" %}}
