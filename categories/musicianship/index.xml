@@ -6,10 +6,20 @@
     <description>Recent content in Musicianship on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 01 Jul 2018 21:23:14 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 00:05:50 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/categories/musicianship/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Interval</title>
+      <link>https://RCJacH.github.io/blog/rcmtheory/interval/</link>
+      <pubDate>Thu, 04 Apr 2019 00:05:50 +0800</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/rcmtheory/interval/</guid>
+      <description>Definition Interval describes the relative distance between two notes that make sound simultaneously, continuously, or disjointedly.
+Properties  An interval is always measured from the lower sounding note to the higher sounding note, regardless of their chronological sequence of appearance. Intervals have two properties: quantity and quality. When combined, quality appears before quantity. Quantity is the measurement of distance between the alphabet of the two comparing notes, starting with the starting note as 1, adding 1 for each different alphabet (octave sensitive) it goes through after landing on the targeting note.</description>
+    </item>
     
     <item>
       <title>RCMTheory - The Major Scale</title>
