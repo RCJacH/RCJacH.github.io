@@ -2,6 +2,11 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     
     <url>
+        <loc>https://RCJacH.github.io/blog/gain-staging/</loc>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/rcmtheory/interval/</loc>
         <lastmod>2019-04-04T00:05:50+08:00</lastmod>
     </url>
@@ -135,7 +140,7 @@
     
     <url>
         <loc>https://RCJacH.github.io/blog/</loc>
-        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -205,30 +210,30 @@
     
     <url>
         <loc>https://RCJacH.github.io/tags/mixing/</loc>
-        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/music-production/</loc>
-        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://RCJacH.github.io/categories/music-production/</loc>
-        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/tags/musicianship/</loc>
-        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
+        <loc>https://RCJacH.github.io/tags/music-production/</loc>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://RCJacH.github.io/categories/musicianship/</loc>
+        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/musicianship/</loc>
         <lastmod>2019-04-04T00:05:50+08:00</lastmod>
         <priority>0</priority>
     </url>
@@ -252,19 +257,19 @@
     
     <url>
         <loc>https://RCJacH.github.io/</loc>
-        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://RCJacH.github.io/tags/reaper/</loc>
-        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
         <priority>0</priority>
     </url>
     
     <url>
         <loc>https://RCJacH.github.io/tags/recording/</loc>
-        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
         <priority>0</priority>
     </url>
     

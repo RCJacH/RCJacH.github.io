@@ -32,7 +32,7 @@
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://RCJacH.github.io/" />
 
-<meta property="og:updated_time" content="2019-04-04T00:05:50&#43;08:00"/>
+<meta property="og:updated_time" content="2019-04-07T01:42:15&#43;08:00"/>
 
     
     
@@ -61,7 +61,7 @@
     <div class="outer">
       <a href="https://RCJacH.github.io/" id="logo">
           
-          <img src="https://RCJacH.github.io/img/logo.png" alt="RCMTheory - The Major Scale logo" class="hidden-xs hidden-sm">
+          <img src="https://RCJacH.github.io/img/logo.png" alt="An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why logo" class="hidden-xs hidden-sm">
           
           
       </a>
@@ -154,7 +154,7 @@
     <div class="article-info profile-block">
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/blog">
-          24
+          25
           <span>Posts
           </span>
         </a>
@@ -254,6 +254,158 @@
         </a>
 
         <header class="article-header">
+    <a href="https://RCJacH.github.io/blog/gain-staging/">
+    <h1 class="article-title" itemprop="name">
+        An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why
+    </h1>
+    </a>
+    
+        <div class="article-meta">
+            
+            <div class="article-date">
+                <i class="fa fa-calendar"></i>
+                <time datetime="2019-04-07 01:42:15 &#43;0800 CST" itemprop="datePublished">April 7, 2019</time>
+                
+                    &middot;
+                    1128
+                    words
+                
+                
+            </div>
+            
+            
+                
+                
+                <div class="article-category">
+                    <i class="fa fa-folder"></i>
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/categories/music-production">Music Production</a>
+                    
+                    
+                </div>
+                
+            
+
+            
+                
+                
+                <div class="article-category">
+                    <i class="fa fa-tags"></i>
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/music-production">Music Production</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/reaper">REAPER</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/recording">Recording</a>
+                    &middot;
+                    
+                    
+                    <a class="article-category-link" href="https://RCJacH.github.io/tags/mixing">Mixing</a>
+                    
+                    
+                </div>
+                
+            
+        </div>
+        
+    
+
+</header>
+        <div class="article-entry" itemprop="articleBody">
+            <p>
+                What is Gain-Staging Gain-staging is essentially the practice of managing all static volume settings with a fixed reference point. Static volume setting is decibels of gain added or subtracted to a signal at one place in the signal flow, which remains unchanged through out the time span of the project playback. The goal of gain-staging is to ensure that any pair of input and output signals enclosing a signal processor chain match in average volume.
+            </p>
+            <button class="box button button-small" onclick="location.href='https:\/\/RCJacH.github.io\/blog\/gain-staging\/'" type="button">Read more</button>
+        </div>
+        <footer class="article-footer">
+    <a data-url="https://RCJacH.github.io/blog/gain-staging/" data-id="1ab562fb690f048df51b02958827fd2e" class="article-share-link">
+        <i class="fa fa-share"></i>
+        Share
+    </a>
+    
+
+    <script>
+    (function ($) {
+        
+        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
+            __SHARE_BUTTON_BINDED__ = true;
+        } else {
+            return;
+        }
+        $('body').on('click', function() {
+            $('.article-share-box.on').removeClass('on');
+        }).on('click', '.article-share-link', function(e) {
+            e.stopPropagation();
+
+            var $this = $(this),
+                url = $this.attr('data-url'),
+                encodedUrl = encodeURIComponent(url),
+                id = 'article-share-box-' + $this.attr('data-id'),
+                offset = $this.offset(),
+                box;
+
+            if ($('#' + id).length) {
+                box = $('#' + id);
+
+                if (box.hasClass('on')){
+                    box.removeClass('on');
+                    return;
+                }
+            } else {
+                var html = [
+                    '<div id="' + id + '" class="article-share-box">',
+                        '<input class="article-share-input" value="' + url + '">',
+                        '<div class="article-share-links">',
+                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
+                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-weibo" target="_blank" title="Weibo"></a>',
+                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
+                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
+                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
+                        '</div>',
+                    '</div>'
+                ].join('');
+
+              box = $(html);
+
+              $('body').append(box);
+            }
+
+            $('.article-share-box.on').hide();
+
+            box.css({
+                top: offset.top + 25,
+                left: offset.left
+            }).addClass('on');
+
+        }).on('click', '.article-share-box', function (e) {
+            e.stopPropagation();
+        }).on('click', '.article-share-box-input', function () {
+            $(this).select();
+        }).on('click', '.article-share-box-link', function (e) {
+            e.preventDefault();
+            e.stopPropagation();
+
+            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
+        });
+    })(jQuery);
+    </script>
+</footer>
+
+    </div>
+</article>
+
+<article class="article article-type-post" itemscope="" itemprop="blogPost">
+    <div class="article-inner">
+        
+        </a>
+
+        <header class="article-header">
     <a href="https://RCJacH.github.io/blog/rcmtheory/interval/">
     <h1 class="article-title" itemprop="name">
         Interval
@@ -267,7 +419,7 @@
                 <time datetime="2019-04-04 00:05:50 &#43;0800 CST" itemprop="datePublished">April 4, 2019</time>
                 
                     &middot;
-                    245
+                    1115
                     words
                 
                 
@@ -1676,154 +1828,6 @@
     </div>
 </article>
 
-<article class="article article-type-post" itemscope="" itemprop="blogPost">
-    <div class="article-inner">
-        
-        </a>
-
-        <header class="article-header">
-    <a href="https://RCJacH.github.io/blog/fundamental-guitar-voicing-for-piano-rollists/">
-    <h1 class="article-title" itemprop="name">
-        Fundamental Guitar Voicings for Pian(o roll)ists
-    </h1>
-    </a>
-    
-        <div class="article-meta">
-            
-            <div class="article-date">
-                <i class="fa fa-calendar"></i>
-                <time datetime="2016-07-05 00:00:00 &#43;0000 UTC" itemprop="datePublished">July 5, 2016</time>
-                
-                    &middot;
-                    725
-                    words
-                
-                
-            </div>
-            
-            
-                
-                
-                <div class="article-category">
-                    <i class="fa fa-folder"></i>
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/categories/music-production">Music Production</a>
-                    
-                    
-                </div>
-                
-            
-
-            
-                
-                
-                <div class="article-category">
-                    <i class="fa fa-tags"></i>
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/tags/music-production">Music Production</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/tags/guitar">Guitar</a>
-                    &middot;
-                    
-                    
-                    <a class="article-category-link" href="https://RCJacH.github.io/tags/midi">MIDI</a>
-                    
-                    
-                </div>
-                
-            
-        </div>
-        
-    
-
-</header>
-        <div class="article-entry" itemprop="articleBody">
-            <p>
-                Two simple chord shapes and variations for piano
-            </p>
-            <button class="box button button-small" onclick="location.href='https:\/\/RCJacH.github.io\/blog\/fundamental-guitar-voicing-for-piano-rollists\/'" type="button">Read more</button>
-        </div>
-        <footer class="article-footer">
-    <a data-url="https://RCJacH.github.io/blog/fundamental-guitar-voicing-for-piano-rollists/" data-id="f56acd8e98e287cb9a282c2e3bffa6d0" class="article-share-link">
-        <i class="fa fa-share"></i>
-        Share
-    </a>
-    
-
-    <script>
-    (function ($) {
-        
-        if (typeof(__SHARE_BUTTON_BINDED__) === 'undefined' || !__SHARE_BUTTON_BINDED__) {
-            __SHARE_BUTTON_BINDED__ = true;
-        } else {
-            return;
-        }
-        $('body').on('click', function() {
-            $('.article-share-box.on').removeClass('on');
-        }).on('click', '.article-share-link', function(e) {
-            e.stopPropagation();
-
-            var $this = $(this),
-                url = $this.attr('data-url'),
-                encodedUrl = encodeURIComponent(url),
-                id = 'article-share-box-' + $this.attr('data-id'),
-                offset = $this.offset(),
-                box;
-
-            if ($('#' + id).length) {
-                box = $('#' + id);
-
-                if (box.hasClass('on')){
-                    box.removeClass('on');
-                    return;
-                }
-            } else {
-                var html = [
-                    '<div id="' + id + '" class="article-share-box">',
-                        '<input class="article-share-input" value="' + url + '">',
-                        '<div class="article-share-links">',
-                            '<a href="https://twitter.com/intent/tweet?url=' + encodedUrl + '" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>',
-                            '<a href="http://service.weibo.com/share/share.php?url=' + encodedUrl + '" class="fa fa-weibo article-share-weibo" target="_blank" title="Weibo"></a>',
-                            '<a href="https://www.facebook.com/sharer.php?u=' + encodedUrl + '" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>',
-                            '<a href="http://pinterest.com/pin/create/button/?url=' + encodedUrl + '" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>',
-                            '<a href="https://plus.google.com/share?url=' + encodedUrl + '" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>',
-                        '</div>',
-                    '</div>'
-                ].join('');
-
-              box = $(html);
-
-              $('body').append(box);
-            }
-
-            $('.article-share-box.on').hide();
-
-            box.css({
-                top: offset.top + 25,
-                left: offset.left
-            }).addClass('on');
-
-        }).on('click', '.article-share-box', function (e) {
-            e.stopPropagation();
-        }).on('click', '.article-share-box-input', function () {
-            $(this).select();
-        }).on('click', '.article-share-box-link', function (e) {
-            e.preventDefault();
-            e.stopPropagation();
-
-            window.open(this.href, 'article-share-box-window-' + Date.now(), 'width=500,height=450');
-        });
-    })(jQuery);
-    </script>
-</footer>
-
-    </div>
-</article>
-
 
 <nav id="page-nav">
 
@@ -1888,7 +1892,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/categories/music-production">
                     music-production
                 </a>
-                <span class="category-list-count">5</span>
+                <span class="category-list-count">6</span>
             </li>
             
             <li class="category-list-item">
@@ -1977,7 +1981,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/mixing">
                     mixing
                 </a>
-                <span class="category-list-count">2</span>
+                <span class="category-list-count">3</span>
             </li>
             
             <li class="category-list-item">
@@ -1985,7 +1989,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/music-production">
                     music-production
                 </a>
-                <span class="category-list-count">6</span>
+                <span class="category-list-count">7</span>
             </li>
             
             <li class="category-list-item">
@@ -2017,7 +2021,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/reaper">
                     reaper
                 </a>
-                <span class="category-list-count">9</span>
+                <span class="category-list-count">10</span>
             </li>
             
             <li class="category-list-item">
@@ -2025,7 +2029,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/recording">
                     recording
                 </a>
-                <span class="category-list-count">4</span>
+                <span class="category-list-count">5</span>
             </li>
             
             <li class="category-list-item">
