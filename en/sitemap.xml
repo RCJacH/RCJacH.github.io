@@ -1,9 +1,85 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+    
+    <url>
+        <loc>https://RCJacH.github.io/blog/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/categories/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/exercise/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/categories/musicianship/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/rhythm/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/</loc>
+        <lastmod>2019-08-27T22:25:55+08:00</lastmod>
+        <priority>0</priority>
+    </url>
     
     <url>
         <loc>https://RCJacH.github.io/blog/gain-staging/</loc>
         <lastmod>2019-04-07T01:42:15+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/mixing/</loc>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/categories/music-production/</loc>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/music-production/</loc>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/reaper/</loc>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/recording/</loc>
+        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
+        <priority>0</priority>
     </url>
     
     <url>
@@ -12,8 +88,26 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/tags/musicianship/</loc>
+        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/theory/</loc>
+        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/rcmtheory/the-major-scale/</loc>
         <lastmod>2018-07-01T21:23:14+08:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/scales/</loc>
+        <lastmod>2018-07-01T21:23:14+08:00</lastmod>
+        <priority>0</priority>
     </url>
     
     <url>
@@ -27,13 +121,55 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/tags/jsfx/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/production/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</loc>
         <lastmod>2018-03-28T00:00:00+00:00</lastmod>
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/tags/script/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/categories/scripts-templates/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/synth/</loc>
+        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/midi/</loc>
+        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/reaper-signal-flow/</loc>
         <lastmod>2017-06-23T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/sound-design/</loc>
+        <lastmod>2017-05-05T00:00:00+00:00</lastmod>
+        <priority>0</priority>
     </url>
     
     <url>
@@ -47,6 +183,12 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/tags/workflow/</loc>
+        <lastmod>2016-09-22T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/reaper-jsfx-midi-note-beat-repeater/</loc>
         <lastmod>2016-07-24T00:00:00+00:00</lastmod>
     </url>
@@ -57,8 +199,26 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/tags/guitar/</loc>
+        <lastmod>2016-07-05T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/reaper-track-template-layout-rsgc/</loc>
         <lastmod>2016-06-16T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/template/</loc>
+        <lastmod>2016-06-16T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/vocal/</loc>
+        <lastmod>2016-04-16T00:00:00+00:00</lastmod>
+        <priority>0</priority>
     </url>
     
     <url>
@@ -82,6 +242,18 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/categories/guitar-playing/</loc>
+        <lastmod>2016-01-11T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/categories/methodology/</loc>
+        <lastmod>2016-01-11T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/3ns/3ns-ideology-behind-the-3ns-scale-system/</loc>
         <lastmod>2016-01-03T00:00:00+00:00</lastmod>
     </url>
@@ -97,8 +269,20 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/tags/beginner/</loc>
+        <lastmod>2015-12-05T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/single-string-scales/</loc>
         <lastmod>2015-12-05T00:00:00+00:00</lastmod>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/pitch/</loc>
+        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
+        <priority>0</priority>
     </url>
     
     <url>
@@ -117,18 +301,25 @@
     </url>
     
     <url>
+        <loc>https://RCJacH.github.io/categories/book-recommendation/</loc>
+        <lastmod>2015-07-12T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
+        <loc>https://RCJacH.github.io/tags/funk/</loc>
+        <lastmod>2015-07-12T00:00:00+00:00</lastmod>
+        <priority>0</priority>
+    </url>
+    
+    <url>
         <loc>https://RCJacH.github.io/blog/guitar-strumming-patterns/</loc>
         <lastmod>2015-07-12T00:00:00+00:00</lastmod>
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/blog/introduction/</loc>
-        <lastmod>2015-07-07T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/beginner/</loc>
-        <lastmod>2015-12-05T00:00:00+00:00</lastmod>
+        <loc>https://RCJacH.github.io/tags/strum-patterns/</loc>
+        <lastmod>2015-07-12T00:00:00+00:00</lastmod>
         <priority>0</priority>
     </url>
     
@@ -139,21 +330,8 @@
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/blog/</loc>
-        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/categories/book-recommendation/</loc>
-        <lastmod>2015-07-12T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/categories/</loc>
+        <loc>https://RCJacH.github.io/blog/introduction/</loc>
         <lastmod>2015-07-07T00:00:00+00:00</lastmod>
-        <priority>0</priority>
     </url>
     
     <url>
@@ -162,187 +340,13 @@
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/tags/exercise/</loc>
-        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
         <loc>https://RCJacH.github.io/faq/</loc>
         <lastmod>0001-01-01T00:00:00+00:00</lastmod>
     </url>
     
     <url>
-        <loc>https://RCJacH.github.io/tags/funk/</loc>
-        <lastmod>2015-07-12T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/guitar/</loc>
-        <lastmod>2016-07-05T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/categories/guitar-playing/</loc>
-        <lastmod>2016-01-11T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/jsfx/</loc>
-        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/categories/methodology/</loc>
-        <lastmod>2016-01-11T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/midi/</loc>
-        <lastmod>2017-06-23T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/mixing/</loc>
-        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/categories/music-production/</loc>
-        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/music-production/</loc>
-        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/categories/musicianship/</loc>
-        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/musicianship/</loc>
-        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/pitch/</loc>
-        <lastmod>2015-10-26T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/production/</loc>
-        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
         <loc>https://RCJacH.github.io/profile/</loc>
         <lastmod>0001-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/</loc>
-        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/reaper/</loc>
-        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/recording/</loc>
-        <lastmod>2019-04-07T01:42:15+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/rhythm/</loc>
-        <lastmod>2015-10-08T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/scales/</loc>
-        <lastmod>2018-07-01T21:23:14+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/script/</loc>
-        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/categories/scripts-templates/</loc>
-        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/sound-design/</loc>
-        <lastmod>2017-05-05T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/strum-patterns/</loc>
-        <lastmod>2015-07-12T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/synth/</loc>
-        <lastmod>2018-03-28T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/</loc>
-        <lastmod>2015-12-05T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/template/</loc>
-        <lastmod>2016-06-16T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/theory/</loc>
-        <lastmod>2019-04-04T00:05:50+08:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/vocal/</loc>
-        <lastmod>2016-04-16T00:00:00+00:00</lastmod>
-        <priority>0</priority>
-    </url>
-    
-    <url>
-        <loc>https://RCJacH.github.io/tags/workflow/</loc>
-        <lastmod>2016-09-22T00:00:00+00:00</lastmod>
-        <priority>0</priority>
     </url>
     
 </urlset>

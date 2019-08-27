@@ -6,10 +6,19 @@
     <description>Recent content in Blogs on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Apr 2019 01:42:15 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 22:25:55 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/blog/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>How to Really Use the Metronome</title>
+      <link>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</link>
+      <pubDate>Tue, 27 Aug 2019 22:25:55 +0800</pubDate>
+      
+      <guid>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</guid>
+      <description>I was practicing keyboard one day with a metronome - the click-sounding machinery that&amp;rsquo;s been collecting dust on my shelf since purchase (I jest. I use software counterpart such as Bounce Metronome, so it doesn&amp;rsquo;t really collect dust when I never open it) - when lethargy struck. You know, the desire to withdraw from the current activity when it&amp;rsquo;s becoming repetitive and dull, or the urge to dawdle away upon facing difficult tasks.</description>
+    </item>
     
     <item>
       <title>An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why</title>
@@ -26,7 +35,7 @@
       <pubDate>Thu, 04 Apr 2019 00:05:50 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/blog/rcmtheory/interval/</guid>
-      <description>Definition Interval describes the relative distance in pitch between two notes that make sound simultaneously, continuously, or disjoinedly.
+      <description>Definition Interval describes the relative distance in pitch between two musical notes.
 Properties  An interval is always measured from the lower sounding note to the higher sounding note, regardless of their chronological sequence of appearance. Intervals have two properties: quantity and quality. When combined, quality appears before quantity. Quantity is the measurement of distance between the alphabet of the two comparing notes, starting with the starting note as 1, adding 1 for each different alphabet (octave sensitive) it goes through after landing on the targeting note.</description>
     </item>
     

@@ -6,26 +6,35 @@
     <description>Recent content in Categories on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 07 Jul 2015 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 22:25:55 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>Blogging</title>
-      <link>https://RCJacH.github.io/categories/blogging/</link>
-      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
+      <title>Musicianship</title>
+      <link>https://RCJacH.github.io/categories/musicianship/</link>
+      <pubDate>Tue, 27 Aug 2019 22:25:55 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/categories/blogging/</guid>
+      <guid>https://RCJacH.github.io/categories/musicianship/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Book Recommendation</title>
-      <link>https://RCJacH.github.io/categories/book-recommendation/</link>
-      <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
+      <title>Music Production</title>
+      <link>https://RCJacH.github.io/categories/music-production/</link>
+      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/categories/book-recommendation/</guid>
+      <guid>https://RCJacH.github.io/categories/music-production/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scripts &amp; Templates</title>
+      <link>https://RCJacH.github.io/categories/scripts-templates/</link>
+      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/scripts-templates/</guid>
       <description></description>
     </item>
     
@@ -48,29 +57,20 @@
     </item>
     
     <item>
-      <title>Music Production</title>
-      <link>https://RCJacH.github.io/categories/music-production/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <title>Book Recommendation</title>
+      <link>https://RCJacH.github.io/categories/book-recommendation/</link>
+      <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/categories/music-production/</guid>
+      <guid>https://RCJacH.github.io/categories/book-recommendation/</guid>
       <description></description>
     </item>
     
     <item>
-      <title>Musicianship</title>
-      <link>https://RCJacH.github.io/categories/musicianship/</link>
-      <pubDate>Thu, 04 Apr 2019 00:05:50 +0800</pubDate>
+      <title>Blogging</title>
+      <link>https://RCJacH.github.io/categories/blogging/</link>
+      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/categories/musicianship/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Scripts Templates</title>
-      <link>https://RCJacH.github.io/categories/scripts-templates/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/categories/scripts-templates/</guid>
+      <guid>https://RCJacH.github.io/categories/blogging/</guid>
       <description></description>
     </item>
     
