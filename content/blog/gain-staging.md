@@ -1,5 +1,5 @@
 +++
-title = "Gain Staging"
+title = "An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why"
 date = 2019-04-07T19:51:01+08:00
 tags = ["Music Production", "REAPER", "Recording", "Mixing"]
 categories = ["Music Production"]
