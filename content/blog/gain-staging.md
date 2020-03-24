@@ -5,8 +5,6 @@ tags = ["Music Production", "REAPER", "Recording", "Mixing"]
 categories = ["Music Production"]
 description = ""
 menu = ""
-banner = ""
-images = []
 +++
 
 

@@ -5,8 +5,7 @@ tags = ["Exercise","Rhythm"]
 categories = ["Musicianship"]
 description = "A systematic approach to practice timing accuracy and steadiness with a metronome, with increasing level of challenging, using backbeats, displacement, and ratios."
 menu = ""
-banner = ""
-images = []
+banner = "img/banners/metronome-how.jpg"
 +++
 
 

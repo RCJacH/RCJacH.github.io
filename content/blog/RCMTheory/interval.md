@@ -5,8 +5,6 @@ tags = ["Theory","Musicianship"]
 categories = ["Musicianship"]
 description = "Learn the concept of intervals in four steps, with no hardcore memorization!"
 menu = ""
-banner = ""
-images = []
 +++
 
 
