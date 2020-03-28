@@ -6,33 +6,38 @@ categories = ["Design"]
 description = "A system of color schemes with continuous increase in perceived intensity and change in hue."
 +++
 
-I've always been fascinated with generating color schemes with algorithms - using set of rules to calculate the most effective combination of colors - rather than manually selecting a handful based on preferences, which I have tried once or twice without satisfying result. We'll save the discussion of the advantages of algorithmically generated color schemes over hand picked ones for later. For today, I would like to share with you an algorithm called cubehelix.
+I've always been fascinated with generating color schemes with algorithms - using set of rules to calculate the most effective combination of colors - rather than manually selecting a handful based on preferences, which I have tried once or twice with no satisfying result. We'll save the discussion of the advantages of algorithmically generated color schemes over hand picked ones for later. For today, I would like to share with you an algorithm called **CUBEHELIX**.
+
+Before we start, let's take a look at the traditional color schemes.
 
 Normally when you search for "color scheme", you will end up with something like these:
 
-![Monochromatic Color Scheme](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/monochromatic-color-palette.jpg)
+[![Monochromatic Color Scheme](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/monochromatic-color-palette.jpg)](https://paletton.com)
 
 ![ColorSchemer Studio](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/colorschemer-studio.jpg)
 
 Or polychromatic ones:
 
-![Colors.co](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/colors-co.jpg)
+[![Coolors.co](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/colors-co.jpg)](https://coolors.co)
 
-![klart.io](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/klart-io.jpg)
+[![klart.io](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/klart-io.jpg)](https://klart.io/colors)
 
 Gradients:
 
-![CoolHue](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/coolhue.jpg)
-![uiGradients](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/uigradients.jpg)
+[![CoolHue](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/coolhue.jpg)](https://webkul.github.io/coolhue/)
+
+[![uiGradients](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/uigradients.jpg)](https://uigradients.com/)
 
 Or even these tables of colors:
 [![Lyft color scheme](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/lyft-color-map.jpg)](https://design.lyft.com/re-approaching-color-9e604ba22c88)
 
 [![Color Wizard](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/color-wizard.jpg)](https://hypejunction.github.io/color-wizard/)
 
-Great tools they may be for creating interfaces or designs, but sometimes you just want something that gives you a list of colors to apply to display something (like audio spectrum) without manual selection.
+P.S. You can click the photo text for the link.
 
-In fact, I was working on a musical database project for orchestration, which is still work in progress, and I wished to incorporate a more vibrant visual feedback so that each note is colored by their musical function. I tried a dozen color schemes and they all look pretty ugly. The reason is that because since there might be a lot of notes, we might need a lot of colors or hues, and it is unknown which colors will be adjacent to each other, so the result is very unpredictive, and thus often very bizarre.
+Great tools for inspiration they may be for creating interfaces or designs, and mind you I do use them for that very purpose, but sometimes you may want something that gives you a final product, dismissing your impulse to accept or reject any single element. For example, when you want to generate the spectrum graph of an audio clip.
+
+In fact, I was working on a musical database project for orchestration, which is still work in progress, and I wished to incorporate a more vibrant visual feedback - to color notes by their musical function on the staff. I tried a dozen color schemes and unfortunately they all look pretty ugly for this intension. The reason is because since there might be a lot of notes, we might need a lot of colors or hues, and it is unknown which color will be adjacent to another, so the result is very unpredictive, and thus often quite bizarre.
 
 Until I came across cubehelix algorithm.
 
@@ -40,20 +45,20 @@ Until I came across cubehelix algorithm.
 
 I'm going to keep this brief, since the specifications and the paper can be found on the author's website on [CUBEHELIX](www.mrao.cam.ac.uk/~dag/CUBEHELIX/).
 
-Cubehelix pretty much generates a set of colors (of user defined length) with increasing lightness and saturation, while deviating away from grayscale, traversing through the color spaces in a spiral fashion. Well, an image might worth a thousand words. The result looks something like this:
+Cubehelix pretty much generates a set of colors (of user defined length) with increasing perceived intensity, while deviating away from grayscale, traversing through the color spaces in a spiral fashion. Well, an image might worth a thousand words. The result looks something like this:
 
 ![Cubehelix Gradient](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/cubehelix.jpg)
 
-What's better is that the increase of lightness of the generated result stays identical when the colors are converted to grayscale, or shifting the starting position of the hue. And this is important because red, green, and blue do not have the same perceived lightness, so often when you change up the base color, you kind of have to redo all the balances. So it's very handy for cubehelix to be able to change the starting color without worrying about the unbalance lightness between different colors.
+What's better is that the increase of lightness of the generated result stays identical when the colors are converted to grayscale, or when shifting hues. And this is important because red, green, and blue do not have the same perceived lightness, so often when you change up the base color, you kind of have to redo all the balances. So it's very handy to be able to change the starting color without worrying about the unbalance lightness between different colors.
 
 ![Cubehelix Gradient with luminance](https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/cubehelix-luminance.jpg)
 
 
 ## WHERE TO GET CUBEHELIX
 
-You can ~~buy~~ get your own cubehelix palettes from a lot of places. There are some online generators that you can use if you just want the final result without the actual algorithm.
+You can ~~buy~~ get your own cubehelix palettes *FOR FREE* from a lot of places. There are some online generators that you can use if you just want the final result without the actual algorithm.
 
-[Here is the official web demo of cubehelix algorithm](http://www.mrao.cam.ac.uk/~dag/CUBEHELIX/cubetry.html). You have five parameters to customize the result, preview by clicking the refresh plots button in the middle, and get the floats or hex with buttons at the button.
+[Here is the official web demo of cubehelix algorithm](http://www.mrao.cam.ac.uk/~dag/CUBEHELIX/cubetry.html). You have five parameters to customize, preview by clicking the refresh plots button in the middle, and get the list of floats, int8, or hex with buttons at the button.
 
 [And then here's another implementation of cubehelix with seven parameters](http://davidjohnstone.net/pages/cubehelix-gradient-picker), it also has a smooth gradient and luminance gradient view of the result. Another plus is that all blocks in the swatch are returned with a preview of the color, which is handy.
 
@@ -67,11 +72,11 @@ There are few implementations that I think worth mention, since it's available i
 
 [Cubehelix in Matplotlib near the bottom of the page](https://matplotlib.org/gallery/color/colormap_reference.html?highlight=cubehelix)
 
-And some other python modules, WHICH I TRIED BUT their implementations are not for general usage (mostly for plotting colored graphs), and installing the huge matplotlib for a simple color generator isn't worth the trouble, and many of them are not using numpy to optimize performance. So I invested some time to up my Py-Fu and wrote a module to generate a list of colors with cubehelix algorithm. And more customization.
+And some other python modules, WHICH I TRIED BUT their implementations are not for general usage (mostly for plotting colored graphs), and installing the huge matplotlib for a simple color generator isn't worth the trouble, and many of them are not using numpy to optimize performance. So I invested some time to up my Py-Fu and wrote a module to generate a list of colors with cubehelix algorithm. With more customization options.
 
 ## MY TAKE ON CUBEHELIX
 
-As a music producer, and I guess I currently still count as one, I've been using [Python programming language](https://www.python.org/) to do many wonderful things.
+As a music producer (and I guess I currently still count as one), I've been using [Python programming language](https://www.python.org/) to do many wonderful things, for example:
 
 ```python
 import numpy as np
@@ -96,3 +101,5 @@ I tried to allow maximum customization while still staying true to the original 
 
 
 The code is up on github @ [RCJACH - Color Systems](https://github.com/RCJacH/color_systems.git), still in its infancy stage, with nothing else on there, but it's growing.
+
+So that concludes my introduction to the cubehelix color scheme algorithm, ~~see you next year~~.
