@@ -1,325 +1,50 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>RCJacH</title>
-    <link>https://RCJacH.github.io/</link>
-    <description>Recent content on RCJacH</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Sat, 28 Mar 2020 14:42:02 +0800</lastBuildDate>
-    
-	<atom:link href="https://RCJacH.github.io/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Cubehelix Color System</title>
-      <link>https://RCJacH.github.io/blog/cubehelix-color-system/</link>
-      <pubDate>Sat, 28 Mar 2020 14:42:02 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/cubehelix-color-system/</guid>
-      <description>I&amp;rsquo;ve always been fascinated with generating color schemes with algorithms - using set of rules to calculate the most effective combination of colors - rather than manually selecting a handful based on personal preferences, which I have tried once or twice with no satisfying result. We&amp;rsquo;ll save the discussion of that for later. Today, I would like to share with you an algorithm called CUBEHELIX.
-Before we start, let&amp;rsquo;s take a look at the traditional color schemes.</description>
-    </item>
-    
-    <item>
-      <title>_In</title>
-      <link>https://RCJacH.github.io/contact/_in/</link>
-      <pubDate>Tue, 24 Mar 2020 21:41:45 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/contact/_in/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>How to REALLY Use the Metronome</title>
-      <link>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</link>
-      <pubDate>Tue, 27 Aug 2019 00:00:00 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</guid>
-      <description>I was practicing keyboard one day with a metronome - the click-sounding machinery that&amp;rsquo;s been collecting dust on my shelf since purchase (I jest. I use software counterpart such as Bounce Metronome, so it doesn&amp;rsquo;t really collect dust when I never open it) - when lethargy struck. You know, the desire to withdraw from the current activity when it&amp;rsquo;s becoming repetitive and dull, or the urge to dawdle away upon facing difficult tasks.</description>
-    </item>
-    
-    <item>
-      <title>An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why</title>
-      <link>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</link>
-      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</guid>
-      <description>What is Gain-Staging Gain-staging is essentially the practice of managing all static volume settings with a fixed reference point. Static volume setting is decibels of gain added or subtracted to a signal at one place in the signal flow, which remains unchanged through out the time span of the project playback. The goal of gain-staging is to ensure that any pair of input and output signals enclosing a signal processor chain match in average volume.</description>
-    </item>
-    
-    <item>
-      <title>Interval</title>
-      <link>https://RCJacH.github.io/blog/interval/</link>
-      <pubDate>Thu, 04 Apr 2019 00:00:00 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/interval/</guid>
-      <description>Definition Interval describes the relative distance in pitch between two musical notes.
-Properties  An interval is always measured from the lower sounding note to the higher sounding note, regardless of their chronological sequence of appearance. Intervals have two properties: quantity and quality. When combined, quality appears before quantity. Quantity is the measurement of distance between the alphabet of the two comparing notes, starting with the starting note as 1, adding 1 for each different alphabet (octave sensitive) it goes through after landing on the targeting note.</description>
-    </item>
-    
-    <item>
-      <title>RCMTheory - The Major Scale</title>
-      <link>https://RCJacH.github.io/blog/rcmtheory-the-major-scale/</link>
-      <pubDate>Sun, 01 Jul 2018 21:23:14 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/rcmtheory-the-major-scale/</guid>
-      <description>Definition The major scale is a selection of 7 notes within each frequency doubling based on a fixed relationship between each note, explained below.
-Properties  The major scale has 7 scale degrees of different pitch classes, sorted by pitch, from lower to higher. Each scale degree has a specific name. There are two semitones that occur between the 3rd and the 4th scale degree, also between the 7th and the first 1st (8th) degree.</description>
-    </item>
-    
-    <item>
-      <title>RCMTheory - Pitch Name</title>
-      <link>https://RCJacH.github.io/blog/rcmtheory-pitch-name/</link>
-      <pubDate>Tue, 05 Jun 2018 18:37:19 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/rcmtheory-pitch-name/</guid>
-      <description>Pitch Definition Pitch is the perceptual property of sound on a logarithmic frequency scale, it is the quality that permits the judgement of a sound being higher or lower.
-Naming Scheme  There are 7 repeating groups of pitches, called Pitch Classes, labeled using alphabets A B C D E F G. However, there are total of twelve different pitches within each repetition, meaning that there are (12 - 7 = ) five pitches per repetition that does not directly land on an alphabet.</description>
-    </item>
-    
-    <item>
-      <title>RCMTheory - Introduction and Table of Content</title>
-      <link>https://RCJacH.github.io/blog/rcmtheory-introduction-and-table-of-content/</link>
-      <pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/rcmtheory-introduction-and-table-of-content/</guid>
-      <description>Introduction Get ready for a &amp;ldquo;paradigm shift&amp;rdquo; from THE leader of this blog. No I&amp;rsquo;m not releasing an analog hardware synth, the paradigm I&amp;rsquo;m talking about is that I will be posting series of tutorials on music theory - rudiments, harmony, and perhaps counterpoint. This article will serve as an introduction and table of content to the series, and hopefully will be updated frequently (including chapter numbers). Before that, allow me to explain why I decided to spend the time to write on these topics that are already fully covered in almost all of the theory books and blogs available.</description>
-    </item>
-    
-    <item>
-      <title>REAPER - RCMShip Perfect Pitch</title>
-      <link>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</guid>
-      <description>Download from here: RCMShip Perfect Pitch on Github
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RCJacH</title><link>https://RCJacH.github.io/</link><description>Recent content on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Sat, 28 Mar 2020 14:42:02 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/index.xml" rel="self" type="application/rss+xml"/><item><title>Cubehelix Color Palette Algorithm</title><link>https://RCJacH.github.io/blog/cubehelix-color-palette-algorithm/</link><pubDate>Sat, 28 Mar 2020 14:42:02 +0800</pubDate><guid>https://RCJacH.github.io/blog/cubehelix-color-palette-algorithm/</guid><description>I&amp;rsquo;ve always been fascinated with generating color schemes with algorithms - using set of rules to calculate the most effective combination of colors - rather than manually selecting a handful based on personal preferences, which I have tried once or twice with no satisfying result. We&amp;rsquo;ll save the discussion of that for later. Today, I would like to share with you an algorithm called CUBEHELIX.
+Before we start, let&amp;rsquo;s take a look at the traditional color schemes.</description></item><item><title>_In</title><link>https://RCJacH.github.io/contact/_in/</link><pubDate>Tue, 24 Mar 2020 21:41:45 +0800</pubDate><guid>https://RCJacH.github.io/contact/_in/</guid><description/></item><item><title>How to REALLY Use the Metronome</title><link>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</link><pubDate>Tue, 27 Aug 2019 00:00:00 +0800</pubDate><guid>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</guid><description>I was practicing keyboard one day with a metronome - the click-sounding machinery that&amp;rsquo;s been collecting dust on my shelf since purchase (I jest. I use software counterpart such as Bounce Metronome, so it doesn&amp;rsquo;t really collect dust when I never open it) - when lethargy struck. You know, the desire to withdraw from the current activity when it&amp;rsquo;s becoming repetitive and dull, or the urge to dawdle away upon facing difficult tasks.</description></item><item><title>An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why</title><link>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</link><pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate><guid>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</guid><description>What is Gain-Staging Gain-staging is essentially the practice of managing all static volume settings with a fixed reference point. Static volume setting is decibels of gain added or subtracted to a signal at one place in the signal flow, which remains unchanged through out the time span of the project playback. The goal of gain-staging is to ensure that any pair of input and output signals enclosing a signal processor chain match in average volume.</description></item><item><title>Interval</title><link>https://RCJacH.github.io/blog/interval/</link><pubDate>Thu, 04 Apr 2019 00:00:00 +0800</pubDate><guid>https://RCJacH.github.io/blog/interval/</guid><description>Definition Interval describes the relative distance in pitch between two musical notes.
+Properties An interval is always measured from the lower sounding note to the higher sounding note, regardless of their chronological sequence of appearance. Intervals have two properties: quantity and quality. When combined, quality appears before quantity. Quantity is the measurement of distance between the alphabet of the two comparing notes, starting with the starting note as 1, adding 1 for each different alphabet (octave sensitive) it goes through after landing on the targeting note.</description></item><item><title>RCMTheory - The Major Scale</title><link>https://RCJacH.github.io/blog/rcmtheory-the-major-scale/</link><pubDate>Sun, 01 Jul 2018 21:23:14 +0800</pubDate><guid>https://RCJacH.github.io/blog/rcmtheory-the-major-scale/</guid><description>Definition The major scale is a selection of 7 notes within each frequency doubling based on a fixed relationship between each note, explained below.
+Properties The major scale has 7 scale degrees of different pitch classes, sorted by pitch, from lower to higher. Each scale degree has a specific name. There are two semitones that occur between the 3rd and the 4th scale degree, also between the 7th and the first 1st (8th) degree.</description></item><item><title>RCMTheory - Pitch Name</title><link>https://RCJacH.github.io/blog/rcmtheory-pitch-name/</link><pubDate>Tue, 05 Jun 2018 18:37:19 +0800</pubDate><guid>https://RCJacH.github.io/blog/rcmtheory-pitch-name/</guid><description>Pitch Definition Pitch is the perceptual property of sound on a logarithmic frequency scale, it is the quality that permits the judgement of a sound being higher or lower.
+Naming Scheme There are 7 repeating groups of pitches, called Pitch Classes, labeled using alphabets A B C D E F G. However, there are total of twelve different pitches within each repetition, meaning that there are (12 - 7 = ) five pitches per repetition that does not directly land on an alphabet.</description></item><item><title>RCMTheory - Introduction and Table of Content</title><link>https://RCJacH.github.io/blog/rcmtheory-introduction-and-table-of-content/</link><pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate><guid>https://RCJacH.github.io/blog/rcmtheory-introduction-and-table-of-content/</guid><description>Introduction Get ready for a &amp;ldquo;paradigm shift&amp;rdquo; from THE leader of this blog. No I&amp;rsquo;m not releasing an analog hardware synth, the paradigm I&amp;rsquo;m talking about is that I will be posting series of tutorials on music theory - rudiments, harmony, and perhaps counterpoint. This article will serve as an introduction and table of content to the series, and hopefully will be updated frequently (including chapter numbers). Before that, allow me to explain why I decided to spend the time to write on these topics that are already fully covered in almost all of the theory books and blogs available.</description></item><item><title>REAPER - RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</guid><description>Download from here: RCMShip Perfect Pitch on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
 Description RCMShip (MShip stands for musicianship) Perfect Pitch is a little game for exercising Perfect Pitch, the ability to recognize notes without any reference, using adaptive method of randomization.
-How to Play  Click START, the synth will play a tone. Guess the name of the tone by clicking on one of the note names.</description>
-    </item>
-    
-    <item>
-      <title>REAPER Signal Flow</title>
-      <link>https://RCJacH.github.io/blog/reaper-signal-flow/</link>
-      <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/reaper-signal-flow/</guid>
-      <description>What is signal flow?
+How to Play Click START, the synth will play a tone. Guess the name of the tone by clicking on one of the note names.</description></item><item><title>REAPER Signal Flow</title><link>https://RCJacH.github.io/blog/reaper-signal-flow/</link><pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/reaper-signal-flow/</guid><description>What is signal flow?
 For our interest in digital audio production, signal flow is how signal data, either audio or MIDI, travel through various stages of the DAW calculation.
-Because of the potential complexity of our routing, from something as simple as building a send track to something more abstract such as designing modular synth or multi-track template with parameter modulations, to have a clear mental picture of the signal flow, it would be quite beneficial to know what stages and in what order our signals are going through within the DAW.</description>
-    </item>
-    
-    <item>
-      <title>Tone Sweep - REAPER JSFX Percussion Synth</title>
-      <link>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</link>
-      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</guid>
-      <description>You can download it from here: Tone Sweep on Github
+Because of the potential complexity of our routing, from something as simple as building a send track to something more abstract such as designing modular synth or multi-track template with parameter modulations, to have a clear mental picture of the signal flow, it would be quite beneficial to know what stages and in what order our signals are going through within the DAW.</description></item><item><title>Tone Sweep - REAPER JSFX Percussion Synth</title><link>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</link><pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</guid><description>You can download it from here: Tone Sweep on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
 Description: This synth generates a monophonic sweeping tone when receiving a MIDI note input. Intended for designing percussive sounds, such as kicks, snares, toms, or sound FXs in electronic music genres.
-Quick Instruction:   Set a starting and ending note.
-  If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
-    </item>
-    
-    <item>
-      <title>REAPER Toolbar System</title>
-      <link>https://RCJacH.github.io/blog/reaper-toolbar-system/</link>
-      <pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/reaper-toolbar-system/</guid>
-      <description>I recently discovered an interesting and efficient way of using Reaper&amp;rsquo;s customizable toolbars.
+Quick Instruction: Set a starting and ending note.
+If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description></item><item><title>REAPER Toolbar System</title><link>https://RCJacH.github.io/blog/reaper-toolbar-system/</link><pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/reaper-toolbar-system/</guid><description>I recently discovered an interesting and efficient way of using Reaper&amp;rsquo;s customizable toolbars.
 In other DAWs, the toolbars would remain stagnant throughout the sessions, and the only change you can apply to them would be either to move them or hide them.
-In Reaper, since we are lucky enough to have many customizable toolbars available, while able to customize our toolbars with any action, it wouldn&amp;rsquo;t take long before our screen becomes like this</description>
-    </item>
-    
-    <item>
-      <title>REAPER JS: MIDI Note Beat Repeater</title>
-      <link>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</link>
-      <pubDate>Sun, 24 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</guid>
-      <description>Download MIDI Note Beat Repeater JSFX and put it somewhere within the Effects folder of your Reaper Resources Path.
+In Reaper, since we are lucky enough to have many customizable toolbars available, while able to customize our toolbars with any action, it wouldn&amp;rsquo;t take long before our screen becomes like this</description></item><item><title>REAPER JS: MIDI Note Beat Repeater</title><link>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</link><pubDate>Sun, 24 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</guid><description>Download MIDI Note Beat Repeater JSFX and put it somewhere within the Effects folder of your Reaper Resources Path.
 Update: Description: This script is made to emulate the note repeating function in Native Instrument Maschine hardware.
 I have never used Maschine myself, thus I do not know how it really works.
 However, I did watch some video that demonstrated great workflow for inputting hihat patterns.
-How to use: You can use this script in two ways:</description>
-    </item>
-    
-    <item>
-      <title>Fundamental Guitar Voicings for Pian(o roll)ists</title>
-      <link>https://RCJacH.github.io/blog/fundamental-guitar-voicings-for-piano-rollists/</link>
-      <pubDate>Tue, 05 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/fundamental-guitar-voicings-for-piano-rollists/</guid>
-      <description>For guitarist, from beginners to advanced players, there is a chord system called CAGED system, where you take the form of C, A, G, E, D barre chords and move them across the fretboard over different roots.
+How to use: You can use this script in two ways:</description></item><item><title>Fundamental Guitar Voicings for Pian(o roll)ists</title><link>https://RCJacH.github.io/blog/fundamental-guitar-voicings-for-piano-rollists/</link><pubDate>Tue, 05 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/fundamental-guitar-voicings-for-piano-rollists/</guid><description>For guitarist, from beginners to advanced players, there is a chord system called CAGED system, where you take the form of C, A, G, E, D barre chords and move them across the fretboard over different roots.
 (img from http://www.cagedguitarsystem.net/)
-So you only need to learn at most 5 basic chord shapes to start playing chord progressions on the guitar. However, for pianists, this concept might be a bit difficult to understand without basic guitar knowledge, and learning the guitar for a short time isn&amp;rsquo;t always the most efficient and effective method of approach to arranging for chordal playing on guitar.</description>
-    </item>
-    
-    <item>
-      <title>REAPER Track Template - Layout RSGC</title>
-      <link>https://RCJacH.github.io/blog/reaper-track-template-layout-rsgc/</link>
-      <pubDate>Thu, 16 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/reaper-track-template-layout-rsgc/</guid>
-      <description>Here&amp;rsquo;s a Reaper Track Template that I believe would improve your production workflow. It&amp;rsquo;s called &amp;ldquo;Layout RSGC&amp;rdquo;, which stands for Reference, Sections, Grooves, and Chords, a group of four tracks. These four tracks are used to construct a general layout for our song production, which is vital for commercial projects that is tight on schedule, with no time for any experimentation or trying out new ideas. It is way easier to insert the track template and copy n&amp;rsquo; pasting existing items rather than handwriting everything from scratch, which we may have been doing in the past.</description>
-    </item>
-    
-    <item>
-      <title>Vocal Recording &amp; Mixing Template by RCJacH</title>
-      <link>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</link>
-      <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</guid>
-      <description>Vocal Recording &amp;amp; Mixing Template
+So you only need to learn at most 5 basic chord shapes to start playing chord progressions on the guitar. However, for pianists, this concept might be a bit difficult to understand without basic guitar knowledge, and learning the guitar for a short time isn&amp;rsquo;t always the most efficient and effective method of approach to arranging for chordal playing on guitar.</description></item><item><title>REAPER Track Template - Layout RSGC</title><link>https://RCJacH.github.io/blog/reaper-track-template-layout-rsgc/</link><pubDate>Thu, 16 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/reaper-track-template-layout-rsgc/</guid><description>Here&amp;rsquo;s a Reaper Track Template that I believe would improve your production workflow. It&amp;rsquo;s called &amp;ldquo;Layout RSGC&amp;rdquo;, which stands for Reference, Sections, Grooves, and Chords, a group of four tracks. These four tracks are used to construct a general layout for our song production, which is vital for commercial projects that is tight on schedule, with no time for any experimentation or trying out new ideas. It is way easier to insert the track template and copy n&amp;rsquo; pasting existing items rather than handwriting everything from scratch, which we may have been doing in the past.</description></item><item><title>Vocal Recording &amp; Mixing Template by RCJacH</title><link>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</link><pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</guid><description>Vocal Recording &amp;amp; Mixing Template
 By RCJacH
 Explanation Vocal Recording &amp;amp; Mixing Template by RCJacH is a REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track, including native functional FXs (with a few JS effects) on each track with track controls directly visible on the mixer.
-This template works the best with the default REAPER themes. All dynamic related FXs are designed to work around signals that are recorded with RMS level of -20dBFS.</description>
-    </item>
-    
-    <item>
-      <title>How to Use Track Manager in REAPER</title>
-      <link>https://RCJacH.github.io/blog/how-to-use-track-manager-in-reaper/</link>
-      <pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/how-to-use-track-manager-in-reaper/</guid>
-      <description>When we are dealing with MIDI drumset, guitar, and other sample libraries that requires either multiple output or routing, the default setup may show up like this:
-See the lines of space below the topmost track? That&amp;rsquo;s all the microphone outputs of a drum library. They display no audio information other than level meters, but taking up a huge chunk of space in the arranger view, especially when zoomed in. It will fire up your frustration during your working sessions, taking up scrolling time which you could have saved for music making, so we are better off throwing them out of our sight.</description>
-    </item>
-    
-    <item>
-      <title>Recording Volume Calibration</title>
-      <link>https://RCJacH.github.io/blog/recording-volume-calibration/</link>
-      <pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/recording-volume-calibration/</guid>
-      <description>I have seen many people, from amateurs to professionals (in China), myself included, struggling with digital volume level calibration while tracking. Many people do not bother having a standard with levels and many lack the understanding of impact of leveling in tracking, resulting in level inconsistency between tracks or even takes. It took me quite a while to come across articles explaining at what level we should be recording at and why, and thus helped me greatly by providing recordings at consistent level while removing any doubts of &amp;ldquo;am I recording too hot or too quiet?</description>
-    </item>
-    
-    <item>
-      <title>3NS: The Three Fundamental Finger Patterns</title>
-      <link>https://RCJacH.github.io/blog/3ns-the-three-fundamental-finger-patterns/</link>
-      <pubDate>Mon, 11 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/3ns-the-three-fundamental-finger-patterns/</guid>
-      <description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
+This template works the best with the default REAPER themes. All dynamic related FXs are designed to work around signals that are recorded with RMS level of -20dBFS.</description></item><item><title>How to Use Track Manager in REAPER</title><link>https://RCJacH.github.io/blog/how-to-use-track-manager-in-reaper/</link><pubDate>Thu, 03 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/how-to-use-track-manager-in-reaper/</guid><description>When we are dealing with MIDI drumset, guitar, and other sample libraries that requires either multiple output or routing, the default setup may show up like this:
+See the lines of space below the topmost track? That&amp;rsquo;s all the microphone outputs of a drum library. They display no audio information other than level meters, but taking up a huge chunk of space in the arranger view, especially when zoomed in. It will fire up your frustration during your working sessions, taking up scrolling time which you could have saved for music making, so we are better off throwing them out of our sight.</description></item><item><title>Recording Volume Calibration</title><link>https://RCJacH.github.io/blog/recording-volume-calibration/</link><pubDate>Sat, 06 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/recording-volume-calibration/</guid><description>I have seen many people, from amateurs to professionals (in China), myself included, struggling with digital volume level calibration while tracking. Many people do not bother having a standard with levels and many lack the understanding of impact of leveling in tracking, resulting in level inconsistency between tracks or even takes. It took me quite a while to come across articles explaining at what level we should be recording at and why, and thus helped me greatly by providing recordings at consistent level while removing any doubts of &amp;ldquo;am I recording too hot or too quiet?</description></item><item><title>3NS: The Three Fundamental Finger Patterns</title><link>https://RCJacH.github.io/blog/3ns-the-three-fundamental-finger-patterns/</link><pubDate>Mon, 11 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/3ns-the-three-fundamental-finger-patterns/</guid><description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
 2.Ideology behind the 3NS Scale System
 3.The Three Fundamental Finger Patterns
 4.The Horizontal Transitions
 5.Arpeggios
-The Three Fundamental Finger Patterns Reminder of the main ideas In the last article, we talked about some of the basic observations regarding guitar fingering, and listed three essential sequences of diatonic scales and how we play them on one single string. We shall name them by their intervallic distance as SW (Semi-Whole), WS (Whole-Semi), and WW (Whole-Whole).</description>
-    </item>
-    
-    <item>
-      <title>3NS: Ideology behind the 3NS System</title>
-      <link>https://RCJacH.github.io/blog/3ns-ideology-behind-the-3ns-system/</link>
-      <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/3ns-ideology-behind-the-3ns-system/</guid>
-      <description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
+The Three Fundamental Finger Patterns Reminder of the main ideas In the last article, we talked about some of the basic observations regarding guitar fingering, and listed three essential sequences of diatonic scales and how we play them on one single string. We shall name them by their intervallic distance as SW (Semi-Whole), WS (Whole-Semi), and WW (Whole-Whole).</description></item><item><title>3NS: Ideology behind the 3NS System</title><link>https://RCJacH.github.io/blog/3ns-ideology-behind-the-3ns-system/</link><pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/3ns-ideology-behind-the-3ns-system/</guid><description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
 2.Ideology behind the 3NS Scale System
 3.The Three Fundamental Finger Patterns
 4.The Horizontal Transitions
 5.Arpeggios
-Ideology behind the 3NS System What is special about 3NS system comparing to the CAGED system or others? NOTE: this is mainly an explanation of the why behind this system, if you want to get to the actual learning process right away, skip the follow content and go directly to The Three Fundamental Finger Patterns.</description>
-    </item>
-    
-    <item>
-      <title>Three-Note-Per-String Scale System</title>
-      <link>https://RCJacH.github.io/blog/three-note-per-string-scale-system/</link>
-      <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/three-note-per-string-scale-system/</guid>
-      <description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
+Ideology behind the 3NS System What is special about 3NS system comparing to the CAGED system or others? NOTE: this is mainly an explanation of the why behind this system, if you want to get to the actual learning process right away, skip the follow content and go directly to The Three Fundamental Finger Patterns.</description></item><item><title>Three-Note-Per-String Scale System</title><link>https://RCJacH.github.io/blog/three-note-per-string-scale-system/</link><pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/three-note-per-string-scale-system/</guid><description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
 2.Ideology behind the 3NS Scale System
 3.The Three Fundamental Finger Patterns
 4.The Horizontal Transitions
 5.Arpeggios
-Introduction Scales, up and down the neck, although necessary for making conscious musical decisions, are often regarded as tedious chores that kills passion and desires for music making. How long have you been practicing or struggling with them, learning all the positions, memorizing the fingerings for each position, and managing your way through the mistakes?</description>
-    </item>
-    
-    <item>
-      <title>The Guitar Fretboard Exercise</title>
-      <link>https://RCJacH.github.io/blog/the-guitar-fretboard-exercise/</link>
-      <pubDate>Sun, 13 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/the-guitar-fretboard-exercise/</guid>
-      <description>Recently I have realized that a very important piece of information in the guitar category was missing from this blog, and that is fretboard familiarity to its fundamental element - knowing the note names on the fretboard. It is so vital that I would say this is THE ability required to making music consciously on guitar. Thus I wish to share it with you!
-I believe the origin of this exercise was from Joe Satriani&amp;rsquo;s Colume in GUITAR For The Practicing Musicians magazine, which was collected into a book called the Guitar Secrets.</description>
-    </item>
-    
-    <item>
-      <title>Single-String Scales</title>
-      <link>https://RCJacH.github.io/blog/single-string-scales/</link>
-      <pubDate>Sat, 05 Dec 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/single-string-scales/</guid>
-      <description>Introduction As guitarists, our exercises are filled with all kinds of diatonic and chromatic scales or chordscales, along with various techniques, licks, and comping methods. Today, I&amp;rsquo;d like to present a very efficient and effective method of practicing scales, and that is the Single-String Scales. This is a great way to getting familiar with the fretboard scale-wise, breaking out of the old habit of staying within a single position, and thinking more musically.</description>
-    </item>
-    
-    <item>
-      <title>Solfège</title>
-      <link>https://RCJacH.github.io/blog/solf%C3%A8ge/</link>
-      <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/solf%C3%A8ge/</guid>
-      <description>When singing melodic ideas, it is uncommon for most music enthusiasts to get familiar with note names, C D E and such, since we will eventually face the problem of requiring to sing a two-syllable note name (C Sharp or G Flat) under one note. What is more doable (pun intended) is to use a solfège or a solmization system to have a single syllable assigned to each note.
-There are seven syllables in any solfège system, just as there are seven pitch classes, and they are: Do, Re, Mi, Fa, Sol, La, and Ti.</description>
-    </item>
-    
-    <item>
-      <title>Rhythm in Hexadecimal - Part 2</title>
-      <link>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-2/</link>
-      <pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-2/</guid>
-      <description>Continuing from part 1 of Rhythm in Hex.
+Introduction Scales, up and down the neck, although necessary for making conscious musical decisions, are often regarded as tedious chores that kills passion and desires for music making. How long have you been practicing or struggling with them, learning all the positions, memorizing the fingerings for each position, and managing your way through the mistakes?</description></item><item><title>The Guitar Fretboard Exercise</title><link>https://RCJacH.github.io/blog/the-guitar-fretboard-exercise/</link><pubDate>Sun, 13 Dec 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/the-guitar-fretboard-exercise/</guid><description>Recently I have realized that a very important piece of information in the guitar category was missing from this blog, and that is fretboard familiarity to its fundamental element - knowing the note names on the fretboard. It is so vital that I would say this is THE ability required to making music consciously on guitar. Thus I wish to share it with you!
+I believe the origin of this exercise was from Joe Satriani&amp;rsquo;s Colume in GUITAR For The Practicing Musicians magazine, which was collected into a book called the Guitar Secrets.</description></item><item><title>Single-String Scales</title><link>https://RCJacH.github.io/blog/single-string-scales/</link><pubDate>Sat, 05 Dec 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/single-string-scales/</guid><description>Introduction As guitarists, our exercises are filled with all kinds of diatonic and chromatic scales or chordscales, along with various techniques, licks, and comping methods. Today, I&amp;rsquo;d like to present a very efficient and effective method of practicing scales, and that is the Single-String Scales. This is a great way to getting familiar with the fretboard scale-wise, breaking out of the old habit of staying within a single position, and thinking more musically.</description></item><item><title>Solfège</title><link>https://RCJacH.github.io/blog/solf%C3%A8ge/</link><pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/solf%C3%A8ge/</guid><description>When singing melodic ideas, it is uncommon for most music enthusiasts to get familiar with note names, C D E and such, since we will eventually face the problem of requiring to sing a two-syllable note name (C Sharp or G Flat) under one note. What is more doable (pun intended) is to use a solfège or a solmization system to have a single syllable assigned to each note.
+There are seven syllables in any solfège system, just as there are seven pitch classes, and they are: Do, Re, Mi, Fa, Sol, La, and Ti.</description></item><item><title>Rhythm in Hexadecimal - Part 2</title><link>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-2/</link><pubDate>Thu, 08 Oct 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-2/</guid><description>Continuing from part 1 of Rhythm in Hex.
 THE TRIPLETS Done with the 4-note patterns, we can apply the same principle to the triplets as well, limiting to only 8 patterns in total, named: 0, 1, 2, 3, A, B, C, F. Can you guess which pattern each symbol represents?
 Let&amp;rsquo;s review them in a list:
-   4-note 3-Note Name       0     1     2     3     4     5     6     7     8     9     A     B     C     D     E     F    I&amp;rsquo;m sure all of you are thoughtful enough to realize the following problem: How do we distinguish the difference between 4-note pattern and 3-note pattern if they share the same name?</description>
-    </item>
-    
-    <item>
-      <title>Rhythm in Hexadecimal - Part 1</title>
-      <link>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-1/</link>
-      <pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-1/</guid>
-      <description>Observation I&amp;rsquo;ve always been unfond of the typical academic rhythmic teachings around the world. Yes they do provide indepth explaination of rhythms in both macroscopic and microscopic level, however they lack a quick solution for the students that haven&amp;rsquo;t spent months or years of training in rhythm playing. Some twenty years ago in the western world, children are taught musicianship at a very early age, and with musical influence from the family and some spare practising time, they can get quite advanced in musical learning.</description>
-    </item>
-    
-    <item>
-      <title>Guitar Strumming Patterns</title>
-      <link>https://RCJacH.github.io/blog/guitar-strumming-patterns/</link>
-      <pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/guitar-strumming-patterns/</guid>
-      <description>For the test project which code explained in the last post, I have been doing midi mock ups of guitar strumming patterns, matching up the velocity, speed, and range to the audio files to get a sense of humanization. From the analysis and past guitar playing experiences, here are few tips on guitar strumming.
- When strumming, most proficient guitarist work with subtractive method. Instead of counting where to strum, they have their hands moving up and down on the most active subdivisions and simply float over the strings without touching them when not strumming.</description>
-    </item>
-    
-    <item>
-      <title>Introduction</title>
-      <link>https://RCJacH.github.io/blog/introduction/</link>
-      <pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/introduction/</guid>
-      <description>So after years of making various excuses to justify not picking up pen and pencil, or keyboard in fact, plus some serious degree of procrastination, I am finally convinced to start up blogging again. It took me days to actually research on the availability of the huge variety of popular blogger, comparing their pros and cons, before settling on the most useable (and coughaccessbilitycough) one. Yes, github, no ads, fast connection, and customizeable.</description>
-    </item>
-    
-    <item>
-      <title>FAQ</title>
-      <link>https://RCJacH.github.io/faq/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/faq/</guid>
-      <description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
-1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description>
-    </item>
-    
-  </channel>
-</rss>
+4-note 3-Note Name 0 1 2 3 4 5 6 7 8 9 A B C D E F I&amp;rsquo;m sure all of you are thoughtful enough to realize the following problem: How do we distinguish the difference between 4-note pattern and 3-note pattern if they share the same name?</description></item><item><title>Rhythm in Hexadecimal - Part 1</title><link>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-1/</link><pubDate>Sat, 08 Aug 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/rhythm-in-hexadecimal-part-1/</guid><description>Observation I&amp;rsquo;ve always been unfond of the typical academic rhythmic teachings around the world. Yes they do provide indepth explaination of rhythms in both macroscopic and microscopic level, however they lack a quick solution for the students that haven&amp;rsquo;t spent months or years of training in rhythm playing. Some twenty years ago in the western world, children are taught musicianship at a very early age, and with musical influence from the family and some spare practising time, they can get quite advanced in musical learning.</description></item><item><title>Guitar Strumming Patterns</title><link>https://RCJacH.github.io/blog/guitar-strumming-patterns/</link><pubDate>Sun, 12 Jul 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/guitar-strumming-patterns/</guid><description>For the test project which code explained in the last post, I have been doing midi mock ups of guitar strumming patterns, matching up the velocity, speed, and range to the audio files to get a sense of humanization. From the analysis and past guitar playing experiences, here are few tips on guitar strumming.
+When strumming, most proficient guitarist work with subtractive method. Instead of counting where to strum, they have their hands moving up and down on the most active subdivisions and simply float over the strings without touching them when not strumming.</description></item><item><title>Introduction</title><link>https://RCJacH.github.io/blog/introduction/</link><pubDate>Tue, 07 Jul 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/introduction/</guid><description>So after years of making various excuses to justify not picking up pen and pencil, or keyboard in fact, plus some serious degree of procrastination, I am finally convinced to start up blogging again. It took me days to actually research on the availability of the huge variety of popular blogger, comparing their pros and cons, before settling on the most useable (and coughaccessbilitycough) one. Yes, github, no ads, fast connection, and customizeable.</description></item><item><title>FAQ</title><link>https://RCJacH.github.io/faq/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/faq/</guid><description>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. Aenean ultricies mi vitae est. Mauris placerat eleifend leo.
+1. WHAT TO DO IF I HAVE STILL NOT RECEIVED THE ORDER? Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante.</description></item></channel></rss>

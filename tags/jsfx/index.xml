@@ -1,55 +1,14 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>JSFX on RCJacH</title>
-    <link>https://RCJacH.github.io/tags/jsfx/</link>
-    <description>Recent content in JSFX on RCJacH</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en</language>
-    <lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://RCJacH.github.io/tags/jsfx/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>REAPER - RCMShip Perfect Pitch</title>
-      <link>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</guid>
-      <description>Download from here: RCMShip Perfect Pitch on Github
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JSFX on RCJacH</title><link>https://RCJacH.github.io/tags/jsfx/</link><description>Recent content in JSFX on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en</language><lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/tags/jsfx/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER - RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</guid><description>Download from here: RCMShip Perfect Pitch on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
 Description RCMShip (MShip stands for musicianship) Perfect Pitch is a little game for exercising Perfect Pitch, the ability to recognize notes without any reference, using adaptive method of randomization.
-How to Play  Click START, the synth will play a tone. Guess the name of the tone by clicking on one of the note names.</description>
-    </item>
-    
-    <item>
-      <title>Tone Sweep - REAPER JSFX Percussion Synth</title>
-      <link>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</link>
-      <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</guid>
-      <description>You can download it from here: Tone Sweep on Github
+How to Play Click START, the synth will play a tone. Guess the name of the tone by clicking on one of the note names.</description></item><item><title>Tone Sweep - REAPER JSFX Percussion Synth</title><link>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</link><pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</guid><description>You can download it from here: Tone Sweep on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
 Description: This synth generates a monophonic sweeping tone when receiving a MIDI note input. Intended for designing percussive sounds, such as kicks, snares, toms, or sound FXs in electronic music genres.
-Quick Instruction:   Set a starting and ending note.
-  If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
-    </item>
-    
-    <item>
-      <title>REAPER JS: MIDI Note Beat Repeater</title>
-      <link>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</link>
-      <pubDate>Sun, 24 Jul 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</guid>
-      <description>Download MIDI Note Beat Repeater JSFX and put it somewhere within the Effects folder of your Reaper Resources Path.
+Quick Instruction: Set a starting and ending note.
+If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description></item><item><title>REAPER JS: MIDI Note Beat Repeater</title><link>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</link><pubDate>Sun, 24 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/blog/reaper-js-midi-note-beat-repeater/</guid><description>Download MIDI Note Beat Repeater JSFX and put it somewhere within the Effects folder of your Reaper Resources Path.
 Update: Description: This script is made to emulate the note repeating function in Native Instrument Maschine hardware.
 I have never used Maschine myself, thus I do not know how it really works.
 However, I did watch some video that demonstrated great workflow for inputting hihat patterns.
-How to use: You can use this script in two ways:</description>
-    </item>
-    
-  </channel>
-</rss>
+How to use: You can use this script in two ways:</description></item></channel></rss>

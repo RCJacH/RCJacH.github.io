@@ -1,24 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>编曲 on RCJacH</title>
-    <link>https://RCJacH.github.io/cn/tags/%E7%BC%96%E6%9B%B2/</link>
-    <description>Recent content in 编曲 on RCJacH</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>cn</language>
-    <copyright>所有版权归RCJacH拥有。</copyright>
-    <lastBuildDate>Sat, 18 Jun 2016 00:00:00 +0000</lastBuildDate>
-    
-	<atom:link href="https://RCJacH.github.io/cn/tags/%E7%BC%96%E6%9B%B2/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Reaper：工程策划音轨模板</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E7%A8%8B%E7%AD%96%E5%88%92%E9%9F%B3%E8%BD%A8%E6%A8%A1%E6%9D%BF/</link>
-      <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E7%A8%8B%E7%AD%96%E5%88%92%E9%9F%B3%E8%BD%A8%E6%A8%A1%E6%9D%BF/</guid>
-      <description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>编曲 on RCJacH</title><link>https://RCJacH.github.io/cn/tags/%E7%BC%96%E6%9B%B2/</link><description>Recent content in 编曲 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>cn</language><copyright>所有版权归RCJacH拥有。</copyright><lastBuildDate>Sat, 18 Jun 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/%E7%BC%96%E6%9B%B2/index.xml" rel="self" type="application/rss+xml"/><item><title>Reaper：工程策划音轨模板</title><link>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E7%A8%8B%E7%AD%96%E5%88%92%E9%9F%B3%E8%BD%A8%E6%A8%A1%E6%9D%BF/</link><pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E7%A8%8B%E7%AD%96%E5%88%92%E9%9F%B3%E8%BD%A8%E6%A8%A1%E6%9D%BF/</guid><description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
 你可以这里下载RSGC英文版或者RSGC中文版。
 下载之后，解压放到REAPER资源文件目录内的Track Templates文件夹，之后直接在主窗口左半栏中，点击右键出现的Insert Track From Template或中译的通过模板插入新的轨道选项里，选择Layout RSGC就能加载了。
 看一下截图：
@@ -38,17 +18,8 @@
 和弦轨： 用这个轨道标出歌曲的和弦。在这轨里，我继续使用了空白块在轨道上显示和弦名称，因为用它调整位置和长度的话会很方便。同时，空白块也可以使用Heda的Note Reader脚本，能让我们在进行爵士相关的即兴时提供实时的和弦显示功能。
 我在这轨上保留了一个空白块，简单用鼠标拖拽就可以将其复制。对比手动建立空白块省去了许多步骤。
 小贴士：
- 我们可以使用 RSGC 进行制作分析：分析参考轨中歌曲的律动、和弦和段落，然后将其保存为一个新音轨模板，在今后可作为易用的参考。 对你自己所有的歌曲进行同样的操作，这是一种快速为歌曲确定律动与和弦结构的方法。我们也可以在改编时加载模板作为歌曲参考。 我们甚至可以把自己歌曲的RSGC策划发给需要录音的乐手，这样他(们)就不用拿着个TXT文件每个小节地去对你所发的音频了。  其他没了，玩得愉快。如果有什么问题或者建议的话，请随时提出。能提高工作效率的东西肯定是极好的。
-下载RSGC英文版 下载RSGC中文版</description>
-    </item>
-    
-    <item>
-      <title>REAPER简介</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper%E7%AE%80%E4%BB%8B/</link>
-      <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/cn/blog/reaper%E7%AE%80%E4%BB%8B/</guid>
-      <description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
+我们可以使用 RSGC 进行制作分析：分析参考轨中歌曲的律动、和弦和段落，然后将其保存为一个新音轨模板，在今后可作为易用的参考。 对你自己所有的歌曲进行同样的操作，这是一种快速为歌曲确定律动与和弦结构的方法。我们也可以在改编时加载模板作为歌曲参考。 我们甚至可以把自己歌曲的RSGC策划发给需要录音的乐手，这样他(们)就不用拿着个TXT文件每个小节地去对你所发的音频了。 其他没了，玩得愉快。如果有什么问题或者建议的话，请随时提出。能提高工作效率的东西肯定是极好的。
+下载RSGC英文版 下载RSGC中文版</description></item><item><title>REAPER简介</title><link>https://RCJacH.github.io/cn/blog/reaper%E7%AE%80%E4%BB%8B/</link><pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reaper%E7%AE%80%E4%BB%8B/</guid><description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
 国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是因为某些功能不顺手、不稳定或者满足不了需求而心里默默跑过了一万只羊陀。
 所以Reaper诞生了。目前有一些大牌的游戏与影视音效、音乐设计师公开表达他们对Reaper的爱：
 David Farmer (霍比特人、蚁人、暗黑3、魔兽世界等)
@@ -66,8 +37,4 @@ Ryan Canestro (影视作品列表)
 自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 多采样率 在使用其他DAW的时候，当你拖进来任何与工程文件不同采样率的音频或者mp3时，宿主都会自动转换成一个与工程采样率一致的wav音频文件。这样不仅增加了硬盘负担，也降低了工作效率（转码也需要时间呐！）。尤其是对于声音设计师、影视音效师这种经常会用到不同来源的采样的音频工作者来说，能够把各种采样率以及各种格式的音频自由地拼在一个工程内是多么舒适的一件事情。
-轻量级 + Portable Reaper的安装文件只有10-20mb，安装之后也才60mb左右。你没看错，Megabytes不是Gigabytes!</description>
-    </item>
-    
-  </channel>
-</rss>
+轻量级 + Portable Reaper的安装文件只有10-20mb，安装之后也才60mb左右。你没看错，Megabytes不是Gigabytes!</description></item></channel></rss>
