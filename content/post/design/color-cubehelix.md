@@ -6,7 +6,7 @@ categories = ["Design"]
 description = "A system of color schemes with continuous increase in perceived intensity and change in hue."
 +++
 
-I've always been fascinated with generating color schemes with algorithms - using set of rules to calculate the most effective combination of colors - rather than manually selecting a handful based on personal preferences, which I have tried once or twice with no satisfying result. We'll save the discussion of the advantages of algorithmically generated color schemes over hand picked ones for later. For today, I would like to share with you an algorithm called **CUBEHELIX**.
+I've always been fascinated with generating color schemes with algorithms - using set of rules to calculate the most effective combination of colors - rather than manually selecting a handful based on personal preferences, which I have tried once or twice with no satisfying result. We'll save the discussion of that for later. Today, I would like to share with you an algorithm called **CUBEHELIX**.
 
 Before we start, let's take a look at the traditional color schemes.
 
@@ -35,9 +35,9 @@ Or even a full table:
 
 *Hint: Texts are links.*
 
-Great tools for inspiration they may be for creating interfaces or designs, and mind you I do use them for that very purpose, but sometimes you may want something that gives you a final product, dismissing your impulse to accept or reject any single element, so you won't end up procrastinating over hesitation. Especially with data visualizations, generating the spectrum graph of an audio clip for example.
+Great tools for inspiration they may be for creating interfaces or designs, and I do use them for that purpose, but sometimes you may want something that just gives you good results hands down. Something to suppress your impulse to ponder upon selection of individual elements, so you won't end up procrastinating over hesitation. Especially with data visualizations, generating the spectrum graph of an audio clip for example.
 
-In fact, I was working on a musical database project for orchestration, which is still work in progress, and I wished to incorporate a more vibrant visual feedback - to color notes by their musical function on the staff. I tried a dozen color schemes and, unfortunately, they all look pretty ugly for this intension. The reason is that since there might be a lot of notes on the page, we might need a lot of colors or hues to distinguish them, and no one knows in advance what color will be adjacent to what other color. The result is unpredictive, and thus often bizarre.
+In fact, I was working on a musical database project for orchestration, which is still work in progress, and I wished to incorporate a more vibrant visual feedback - to color notes by their musical function on the staff. I tried a dozen color schemes and, unfortunately, they all look pretty ugly for this intension. The reason is that since there might be a lot of notes on the page, we might need a lot of colors or hues to distinguish them, and no one knows in advance what colors will be next to each other. The result is unpredictive, and thus often bizarre.
 
 Until I came across cubehelix algorithm.
 
@@ -45,7 +45,7 @@ Until I came across cubehelix algorithm.
 
 I'm going to keep this brief, since the specifications and the paper can be found on the author's website on [CUBEHELIX](www.mrao.cam.ac.uk/~dag/CUBEHELIX/).
 
-Cubehelix pretty much generates a set of colors (of user defined length) with increasing perceived intensity, while deviating away from grayscale, traversing through the color spaces in a spiral fashion.
+Cubehelix **generates a set of colors (of user defined length) with increasing perceived intensity, while deviating away from grayscale, traversing through the color spaces in a spiral fashion**.
 
 Well, they say that an image is worth a thousand ~~bucks~~ words. The result looks something like this:
 
@@ -58,7 +58,7 @@ What's better is that the increase of lightness of the generated result stays id
 
 ## WHERE TO GET CUBEHELIX
 
-You can ~~buy~~ get your own cubehelix palettes *FOR FREE* from a lot of places. There are some online generators that you can use if you just want the final result without the actual algorithm.
+You can ~~buy~~ get your own cubehelix palettes *FOR FREE* from a lot of places. There are some online generators that you can use if you just want a list of colors without the actual algorithm.
 
 [Here is the official web demo of cubehelix algorithm](http://www.mrao.cam.ac.uk/~dag/CUBEHELIX/cubetry.html). You have five parameters to customize, preview by clicking the refresh plots button in the middle, and get the list of floats, int8, or hex with buttons at the button.
 
@@ -95,13 +95,13 @@ I tried to allow maximum customization while still staying true to the original 
 
 **Rotations**: The number of cycles of the spiral. So 1 means the list starts with initial color, let's say red, then goes through green and blue, and finally arrives at red again at the end of the list. 0 means monochrome, and negative number reverse the direction of the spiral rotation. You can also enter a tuple of two colors, to set the Hue parameter not at the beginning, but somewhere in the middle. So a Hue of 1 with Rotations (-0.5, 0.7) will convert to Hue of 0.5 (1 - 0.5) and rotation of 1.2 (0.5 + 0.7).
 
-**Saturation**: The vibrancy of the colors, 0 being grayscale and 1 being pure color. You can input a tuple of two numbers as well, so the list starts with one saturation and gradually change to another.
+**Saturation**: The vibrancy of the colors, 0 being gray and 1 being pure color. You can input a tuple of two numbers as well, so the list starts with one saturation value and gradually shifts to another.
 
-**Lightness**: The lightness of the colors, 0 being black and 1 being white. Again you can input a tuple of two numbers so the lightness increases as intended in the original algorithm.
+**Lightness**: The lightness of the colors, 0 being black and 1 being white. Again you can input a tuple of two numbers so the lightness increases or decreases as intended in the original algorithm.
 
-**Gamma**: Emphasis of either lower intensity or higher intensity. I guess it's some sort of a curve, since it's just an exponential number to adjust lightness.
+**Gamma**: Emphasis of either lower intensity or higher intensity. It's just an exponential curve to adjust lightness.
 
 
-The code is up on github @ [RCJACH - Color Systems](https://github.com/RCJacH/color_systems.git), still in its infancy stage, with nothing else on there, but it's growing.
+The code is up on GitHub @ [RCJACH - Color Systems](https://github.com/RCJacH/color_systems.git), still in its infancy stage, with nothing else on there, but it's growing. I'll update this post when an elaborated documentation is provided.
 
 So that concludes my introduction to the cubehelix color scheme algorithm, ~~see you next year~~.
