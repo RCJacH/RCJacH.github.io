@@ -4,7 +4,7 @@
         {{ .Title }}
     </h1>
     </a>
-    {{if eq .Section "blog"}}
+    {{if in .Site.Params.mainSections .Section }}
         <div class="article-meta">
             {{ if not .Params.nodateline }}
             <div class="article-date">
