@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Pitch on RCJacH</title>
@@ -13,11 +13,12 @@
     
     <item>
       <title>Solfège</title>
-      <link>https://RCJacH.github.io/blog/solfege/</link>
+      <link>https://RCJacH.github.io/blog/solf%C3%A8ge/</link>
       <pubDate>Mon, 26 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/solfege/</guid>
-      <description>When singing melodic ideas, it is uncommon for most music enthusiasts to get familiar with note names, C D E and such, since we will eventually face the problem of requiring to sing a two-syllable note name (C Sharp or G Flat) under one note. What is more doable (pun intended) is to use a solfège or a solmization system to have a single syllable assigned to each note.</description>
+      <guid>https://RCJacH.github.io/blog/solf%C3%A8ge/</guid>
+      <description>When singing melodic ideas, it is uncommon for most music enthusiasts to get familiar with note names, C D E and such, since we will eventually face the problem of requiring to sing a two-syllable note name (C Sharp or G Flat) under one note. What is more doable (pun intended) is to use a solfège or a solmization system to have a single syllable assigned to each note.
+There are seven syllables in any solfège system, just as there are seven pitch classes, and they are: Do, Re, Mi, Fa, Sol, La, and Ti.</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>节奏 on RCJacH</title>
@@ -14,25 +14,25 @@
     
     <item>
       <title>音乐创作之 全排列 脚本</title>
-      <link>https://RCJacH.github.io/cn/blog/script-list-permutation/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%E4%B9%8B-%E5%85%A8%E6%8E%92%E5%88%97-%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Mon, 13 Feb 2017 20:38:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/script-list-permutation/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%E4%B9%8B-%E5%85%A8%E6%8E%92%E5%88%97-%E8%84%9A%E6%9C%AC/</guid>
       <description>为了让音乐创作之全排列技巧变得更直观，我做了一个简单的脚本。
 全排列脚本地址
- 这个脚本按着输入的音符（或者字符）以及所需要的变化数量，随机生成几个修饰方式以及相应的全排列。
-使用方法：  第一行的变量为音程修饰的总数，改成0则生成无修饰的全排列。
- 第二行的大括号内为所使用的字符，第一项和最后一项是范围之外的临时变化。中间可以输入任意数量的字符。默认为C大调的1 2 3 4（以及作为临时变化的7和5）
- 设置好了之后点击上方的Run，就可以在低下的结果栏里显示出来所有的排列。
+这个脚本按着输入的音符（或者字符）以及所需要的变化数量，随机生成几个修饰方式以及相应的全排列。
+使用方法：   第一行的变量为音程修饰的总数，改成0则生成无修饰的全排列。
+  第二行的大括号内为所使用的字符，第一项和最后一项是范围之外的临时变化。中间可以输入任意数量的字符。默认为C大调的1 2 3 4（以及作为临时变化的7和5）
+  设置好了之后点击上方的Run，就可以在低下的结果栏里显示出来所有的排列。
   此脚本可以作为一个学习、检查、或者激发灵感的工具，真正弹奏的话还是建议把这个全排列技术练成本能。</description>
     </item>
     
     <item>
       <title>音乐创作之 全排列 技巧</title>
-      <link>https://RCJacH.github.io/cn/blog/compositional-permutation/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%E4%B9%8B-%E5%85%A8%E6%8E%92%E5%88%97-%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Mon, 13 Feb 2017 20:37:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/compositional-permutation/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%E4%B9%8B-%E5%85%A8%E6%8E%92%E5%88%97-%E6%8A%80%E5%B7%A7/</guid>
       <description>全排列是一个组合数学概念，简单来说就是因为1+2=2+1，所以1与2之和的组合有两个（组合总数公式为n!）。
 在音乐即兴、作曲中，全排列是一个发展主题的好工具。我们可以通过使用全排列技巧来扩展一个简短的音乐动机，避免不断构思新的无关联的动机，这样能让音乐作品更统一，更有逻辑。在我们即兴课上，全排列是最基础的一个练习。每个人被要求背下四位数的全排列，把它变成本能，并有能力随时随地调取这个列表。
 四位数的全排列表如下（共4!=24组）：
@@ -41,10 +41,10 @@
     
     <item>
       <title>REAPER网格</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-grid-system/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper%E7%BD%91%E6%A0%BC/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-grid-system/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper%E7%BD%91%E6%A0%BC/</guid>
       <description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
 它长这个样子
 或者这个样子
@@ -58,27 +58,26 @@ MIDI界面的底端
 注：全音符是四个四分音符，所以如果用非4/4的节奏谱号可能会比较难理解。
 注2：每个小节重新开始计算。
 通过简单的计算我们就可以得出
-全音符九连音 = 1&amp;frasl;9
-四分音符七连音 = 1/(7*4)=1&amp;frasl;28
+全音符九连音 = 1/9
+四分音符七连音 = 1/(7*4)=1/28
 或者试一试不规律的组合，例如
-5&amp;frasl;27
+5/27
 此外，利用这种设置可以开启比较不寻常的节奏分解，例如把三拍分成五个音
-3&amp;frasl;20
-我用不同组合的五连音做了个短Demo。
- </description>
+3/20
+我用不同组合的五连音做了个短Demo。</description>
     </item>
     
     <item>
       <title>更有效的节奏概念 - 16进制节奏型</title>
-      <link>https://RCJacH.github.io/cn/blog/rhythm-in-hex-intro/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E6%9B%B4%E6%9C%89%E6%95%88%E7%9A%84%E8%8A%82%E5%A5%8F%E6%A6%82%E5%BF%B5-16%E8%BF%9B%E5%88%B6%E8%8A%82%E5%A5%8F%E5%9E%8B/</link>
       <pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/rhythm-in-hex-intro/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E6%9B%B4%E6%9C%89%E6%95%88%E7%9A%84%E8%8A%82%E5%A5%8F%E6%A6%82%E5%BF%B5-16%E8%BF%9B%E5%88%B6%E8%8A%82%E5%A5%8F%E5%9E%8B/</guid>
       <description>对于音乐学习者来说，尤其是小时候没有机会接触音乐教育的成年人，节奏通常是一个很头疼的问题。我们经常看到这些人在唱歌的时候会跟不上伴奏、弹琴的时候找不到拍子，可能听歌的时候也无法跟上律动。其中一些人能感受到自己的无奈，另一些人选择了沉默，有的人甚至还没有意识到自己的问题。
 节奏是音乐最基础的元素，其重要性甚至超越了音高。当我们无法感受到稳定的节奏，或者没有能力融入歌曲的律动，就无法完全进入音乐状态，就会被音乐隔离在外。无论是演唱、演奏、还是聆听，如果能跟上歌曲的律动就能瞬间进入音乐状态。
 很多人认为节奏的掌握，甚至音乐本身，是需要从小到大十几年甚至几十年的累计。我不敢苟同。这些基本的音乐素养，对于一个18岁之前接触过音乐创造（泛指吹拉弹打唱等任何非纯听歌的音乐活动）的成年人，是可以在短期（几个月至十几个月）通过更有效的理解与练习方式，坚持每天几分钟的练习，来达到很可观的水平。有的在节奏熟练度甚至能达到内地职业乐手的水平（虽然内地职业乐手水平也不是多高的标准）。
 对此，我提出一个新的节奏理解与练习的方式：比起单独去分辨每一个节奏元素，不如去熟悉每一拍常见的节奏组合，这样我们才会把注意力从一点转移到每一个片段，然后逐渐拉远到整体。当我们以节拍为主体的时候，我们才敢去感受节奏本身，感受作曲家最初的音乐目的。
-原文为英文，今后会抽空翻译成中文。点击阅读Rhythm in Hex</description>
+原文为英文，今后会抽空翻译成中文。[点击阅读Rhythm in Hex]({{ relref . &amp;ldquo;Rhythm-in-Hex-part-1.md&amp;rdquo; }})</description>
     </item>
     
   </channel>

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>网站推荐 on RCJacH</title>
@@ -14,24 +14,18 @@
     
     <item>
       <title>在线吉他指板</title>
-      <link>https://RCJacH.github.io/cn/blog/website-online-guitar-fretboard/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E5%9C%A8%E7%BA%BF%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF/</link>
       <pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/website-online-guitar-fretboard/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E5%9C%A8%E7%BA%BF%E5%90%89%E4%BB%96%E6%8C%87%E6%9D%BF/</guid>
       <description>最近一个朋友用vexflow脚本做了个在线吉他指板。目前不支持移动端，但电脑端的朋友可以试试玩，点击任何一品添加记号。
-
 页面低端有三个选项，所有选项只对之后添加的记号有影响。Showname代表记号显示音名，Sharp/Flat选择表示这个显示的音名如非自然音会使用升号或降号。Playback指的是每次点击会播放对应音高的音频。听起来不是采样，估计是用算法合成的？
 右键指板可以选择保存为本地图片。
-
 这个网页还可以添加一些querystring来修改参数，比如说：
 http://yxonic.github.io/fret/index.html?strings=6&amp;amp;start=1&amp;amp;end=11&amp;amp;width=800&amp;amp;tuning=Eb,Bb,Gb,Db,Ab,Eb
-
 上面地址中的strings=6代表有六根弦，如果想要个贝司指板可以改成strings=4。
-
 后面start=1表示从1品开始(最低品)，end=11代表最高只到11品。Width=800应该表示指板整体像素长度。后面的Tuning应该是从上到下（细到粗弦）的顺序。
-
 以上这些参数都可以随便调节，疯嗨吧！
-
 PS. 以后博客各种谱子也争取运用vexflow的技术生成图片，近期会把功能嵌入到本博客。</description>
     </item>
     

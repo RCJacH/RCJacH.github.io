@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Musicianship on RCJacH</title>
@@ -6,56 +6,56 @@
     <description>Recent content in Musicianship on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Thu, 04 Apr 2019 00:05:50 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 04 Apr 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/tags/musicianship/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Interval</title>
-      <link>https://RCJacH.github.io/blog/rcmtheory/interval/</link>
-      <pubDate>Thu, 04 Apr 2019 00:05:50 +0800</pubDate>
+      <link>https://RCJacH.github.io/blog/interval/</link>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/rcmtheory/interval/</guid>
+      <guid>https://RCJacH.github.io/blog/interval/</guid>
       <description>Definition Interval describes the relative distance in pitch between two musical notes.
 Properties  An interval is always measured from the lower sounding note to the higher sounding note, regardless of their chronological sequence of appearance. Intervals have two properties: quantity and quality. When combined, quality appears before quantity. Quantity is the measurement of distance between the alphabet of the two comparing notes, starting with the starting note as 1, adding 1 for each different alphabet (octave sensitive) it goes through after landing on the targeting note.</description>
     </item>
     
     <item>
       <title>RCMTheory - The Major Scale</title>
-      <link>https://RCJacH.github.io/blog/rcmtheory/the-major-scale/</link>
+      <link>https://RCJacH.github.io/blog/rcmtheory-the-major-scale/</link>
       <pubDate>Sun, 01 Jul 2018 21:23:14 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/rcmtheory/the-major-scale/</guid>
+      <guid>https://RCJacH.github.io/blog/rcmtheory-the-major-scale/</guid>
       <description>Definition The major scale is a selection of 7 notes within each frequency doubling based on a fixed relationship between each note, explained below.
 Properties  The major scale has 7 scale degrees of different pitch classes, sorted by pitch, from lower to higher. Each scale degree has a specific name. There are two semitones that occur between the 3rd and the 4th scale degree, also between the 7th and the first 1st (8th) degree.</description>
     </item>
     
     <item>
       <title>RCMTheory - Pitch Name</title>
-      <link>https://RCJacH.github.io/blog/rcmtheory/pitch-name/</link>
+      <link>https://RCJacH.github.io/blog/rcmtheory-pitch-name/</link>
       <pubDate>Tue, 05 Jun 2018 18:37:19 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/rcmtheory/pitch-name/</guid>
+      <guid>https://RCJacH.github.io/blog/rcmtheory-pitch-name/</guid>
       <description>Pitch Definition Pitch is the perceptual property of sound on a logarithmic frequency scale, it is the quality that permits the judgement of a sound being higher or lower.
 Naming Scheme  There are 7 repeating groups of pitches, called Pitch Classes, labeled using alphabets A B C D E F G. However, there are total of twelve different pitches within each repetition, meaning that there are (12 - 7 = ) five pitches per repetition that does not directly land on an alphabet.</description>
     </item>
     
     <item>
       <title>RCMTheory - Introduction and Table of Content</title>
-      <link>https://RCJacH.github.io/blog/rcmtheory/toc/</link>
+      <link>https://RCJacH.github.io/blog/rcmtheory-introduction-and-table-of-content/</link>
       <pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/rcmtheory/toc/</guid>
+      <guid>https://RCJacH.github.io/blog/rcmtheory-introduction-and-table-of-content/</guid>
       <description>Introduction Get ready for a &amp;ldquo;paradigm shift&amp;rdquo; from THE leader of this blog. No I&amp;rsquo;m not releasing an analog hardware synth, the paradigm I&amp;rsquo;m talking about is that I will be posting series of tutorials on music theory - rudiments, harmony, and perhaps counterpoint. This article will serve as an introduction and table of content to the series, and hopefully will be updated frequently (including chapter numbers). Before that, allow me to explain why I decided to spend the time to write on these topics that are already fully covered in almost all of the theory books and blogs available.</description>
     </item>
     
     <item>
       <title>REAPER - RCMShip Perfect Pitch</title>
-      <link>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</link>
+      <link>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</guid>
+      <guid>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</guid>
       <description>Download from here: RCMShip Perfect Pitch on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository

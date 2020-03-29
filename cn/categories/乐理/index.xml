@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>乐理 on RCJacH</title>
@@ -14,10 +14,10 @@
     
     <item>
       <title>音乐创作之 全排列 技巧</title>
-      <link>https://RCJacH.github.io/cn/blog/compositional-permutation/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%E4%B9%8B-%E5%85%A8%E6%8E%92%E5%88%97-%E6%8A%80%E5%B7%A7/</link>
       <pubDate>Mon, 13 Feb 2017 20:37:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/compositional-permutation/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E9%9F%B3%E4%B9%90%E5%88%9B%E4%BD%9C%E4%B9%8B-%E5%85%A8%E6%8E%92%E5%88%97-%E6%8A%80%E5%B7%A7/</guid>
       <description>全排列是一个组合数学概念，简单来说就是因为1+2=2+1，所以1与2之和的组合有两个（组合总数公式为n!）。
 在音乐即兴、作曲中，全排列是一个发展主题的好工具。我们可以通过使用全排列技巧来扩展一个简短的音乐动机，避免不断构思新的无关联的动机，这样能让音乐作品更统一，更有逻辑。在我们即兴课上，全排列是最基础的一个练习。每个人被要求背下四位数的全排列，把它变成本能，并有能力随时随地调取这个列表。
 四位数的全排列表如下（共4!=24组）：

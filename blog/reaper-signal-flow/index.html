@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>REAPER Signal Flow &middot; RCJacH</title>
-    <meta name="generator" content="Hugo 0.56.3" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta charset="utf-8">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
@@ -34,8 +34,6 @@
     
     <meta itemprop="name" content="REAPER Signal Flow">
 <meta itemprop="description" content="Diagram showing the signal flow of REAPER">
-
-
 <meta itemprop="datePublished" content="2017-06-23T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2017-06-23T00:00:00&#43;00:00" />
 <meta itemprop="wordCount" content="244">
@@ -43,7 +41,6 @@
 
 
 <meta itemprop="keywords" content="Music Production,REAPER,MIDI,Recording,Mixing," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="REAPER Signal Flow"/>
 <meta name="twitter:description" content="Diagram showing the signal flow of REAPER"/>
@@ -65,7 +62,7 @@
     <div class="outer">
       <a href="https://RCJacH.github.io/" id="logo">
           
-          <img src="https://RCJacH.github.io/img/logo.png" alt="Blogs logo" class="hidden-xs hidden-sm">
+          <img src="https://RCJacH.github.io/img/logo.png" alt="FAQ logo" class="hidden-xs hidden-sm">
           
           
       </a>
@@ -73,7 +70,7 @@
           
 
           
-          <a class="main-nav-link" href="https://RCJacH.github.io/blog/"><h3>Blog</h3></a>
+          <a class="main-nav-link" href="https://RCJacH.github.io/post/"><h3>Blog</h3></a>
           
           <a class="main-nav-link" href="https://RCJacH.github.io/profile/"><h3>Profile</h3></a>
           
@@ -111,7 +108,7 @@
           
 
           
-          <td><a class="main-nav-link" href="https://RCJacH.github.io/blog/"><h3>Blog</h3></a></td>
+          <td><a class="main-nav-link" href="https://RCJacH.github.io/post/"><h3>Blog</h3></a></td>
 
           
           <td><a class="main-nav-link" href="https://RCJacH.github.io/profile/"><h3>Profile</h3></a></td>
@@ -157,8 +154,8 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        <a href="https://RCJacH.github.io/blog">
-          26
+        <a href="https://RCJacH.github.io/post">
+          0
           <span>Posts
           </span>
         </a>
@@ -166,7 +163,7 @@
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/tags/">
           
-            23
+            25
           
           <span>
             Tags
@@ -318,7 +315,7 @@
         
             
                 
-                <a class="article-category-link" href="https://RCJacH.github.io/cn/blog/reaper-signal-flow/">
+                <a class="article-category-link" href="https://RCJacH.github.io/cn/blog/reaper%E4%BF%A1%E5%8F%B7%E6%B5%81/">
                     中文: REAPER信号流
                     
                 </a>
@@ -328,48 +325,44 @@
 
 </header><div class="article-entry" itemprop="articleBody">
             <p>What is signal flow?</p>
-
 <p>For our interest in digital audio production, signal flow is how signal data, either audio or MIDI, travel through various stages of the DAW calculation.</p>
-
 <p>Because of the potential complexity of our routing, from something as simple as building a send track to something more abstract such as designing modular synth or multi-track template with parameter modulations, to have a clear mental picture of the signal flow, it would be quite beneficial to know what stages and in what order our signals are going through within the DAW.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <p>So I made a diagram to demonstrate this.</p>
-
-<p><img src="https://user-images.githubusercontent.com/12930244/27482740-39ed437c-5855-11e7-9a39-1653e57a6d8d.png" alt="REAPER Signal Flow Simplified" /></p>
-
+<p><img src="https://user-images.githubusercontent.com/12930244/27482740-39ed437c-5855-11e7-9a39-1653e57a6d8d.png" alt="REAPER Signal Flow Simplified"></p>
 <p>Excluding the analog input and output stages, there are only 4 stages: <strong>Take</strong>, <strong>Item</strong>, <strong>Track</strong>, and <strong>Master</strong>. Each stage behaves in an identical way in terms of summing audio, their main difference is the scope of usage.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <p>Here&rsquo;s a more thorough graph with envelopes.</p>
-
-<p><img src="https://user-images.githubusercontent.com/12930244/27483019-42944a2e-5856-11e7-9559-9bed228d78ea.png" alt="REAPER Signal Flow with volume, sends, and envelopes" /></p>
-
-<p><br></p>
-
+<p><img src="https://user-images.githubusercontent.com/12930244/27483019-42944a2e-5856-11e7-9559-9bed228d78ea.png" alt="REAPER Signal Flow with volume, sends, and envelopes"></p>
+<!-- raw HTML omitted -->
 <p>Few things to consider</p>
-
 <ul>
-<li><p>We know that REAPER has only one type of tracks that can do many things.</p></li>
-
-<li><p>For sends, the signal is pass to the receiving track in the same way item signals are passed to the containing track.</p></li>
-
-<li><p>Folder tracks are like mini-master tracks, summing all signals of its children before processing.</p></li>
-
-<li><p>Audio/MIDI channels are simply parallel routings within a path.</p></li>
-
-<li><p>Audio is summed per input channel.</p></li>
-
-<li><p>Volume Fader works parellel alongside Trim Volume and Volume envelope, providing potentially three layers of volume adjustment on the same spot for easy access.</p></li>
-
-<li><p>Monitor FX are bypassed for rendering</p></li>
+<li>
+<p>We know that REAPER has only one type of tracks that can do many things.</p>
+</li>
+<li>
+<p>For sends, the signal is pass to the receiving track in the same way item signals are passed to the containing track.</p>
+</li>
+<li>
+<p>Folder tracks are like mini-master tracks, summing all signals of its children before processing.</p>
+</li>
+<li>
+<p>Audio/MIDI channels are simply parallel routings within a path.</p>
+</li>
+<li>
+<p>Audio is summed per input channel.</p>
+</li>
+<li>
+<p>Volume Fader works parellel alongside Trim Volume and Volume envelope, providing potentially three layers of volume adjustment on the same spot for easy access.</p>
+</li>
+<li>
+<p>Monitor FX are bypassed for rendering</p>
+</li>
 </ul>
 
         </div>
         <footer class="article-footer">
-    <a data-url="https://RCJacH.github.io/blog/reaper-signal-flow/" data-id="0e9b3d65f788cfe16076d08f9dd1039d" class="article-share-link">
+    <a data-url="https://RCJacH.github.io/blog/reaper-signal-flow/" data-id="db2a133e89d1b3a12b5c0ebc41557c01" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
@@ -445,7 +438,7 @@
     </div>
 <nav id="article-nav">
     
-    <a href="https://RCJacH.github.io/blog/reaper-jsfx-tone-sweep/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Older
       </strong>
@@ -453,7 +446,7 @@
     </a>
     
     
-    <a href="https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/" id="article-nav-newer" class="article-nav-link-wrap">
+    <a href="https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/" id="article-nav-newer" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Newer
       </strong>
@@ -496,6 +489,14 @@
                 
                 <a class="category-list-link" href="https://RCJacH.github.io/categories/book-recommendation">
                     book-recommendation
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/categories/design">
+                    design
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -561,6 +562,22 @@
                 
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/beginner">
                     beginner
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/tags/color">
+                    color
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/tags/design">
+                    design
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -682,7 +699,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/script">
                     script
                 </a>
-                <span class="category-list-count">3</span>
+                <span class="category-list-count">4</span>
             </li>
             
             <li class="category-list-item">
@@ -759,6 +776,12 @@
         
         
         <a href="https://RCJacH.github.io/tags/beginner" style="font-size: 12px;">beginner</a>
+        
+        
+        <a href="https://RCJacH.github.io/tags/color" style="font-size: 12px;">color</a>
+        
+        
+        <a href="https://RCJacH.github.io/tags/design" style="font-size: 12px;">design</a>
         
         
         <a href="https://RCJacH.github.io/tags/exercise" style="font-size: 12px;">exercise</a>
@@ -844,7 +867,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       <a href="https://RCJacH.github.io/">
-        COPYRIGHT &copy; 2019
+        COPYRIGHT &copy; 2020
         RCJacH. ALL RIGHTS RESERVED.
       </a>
     </div>

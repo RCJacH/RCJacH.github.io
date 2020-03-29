@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Workflow on RCJacH</title>
@@ -18,7 +18,6 @@
       
       <guid>https://RCJacH.github.io/blog/reaper-toolbar-system/</guid>
       <description>I recently discovered an interesting and efficient way of using Reaper&amp;rsquo;s customizable toolbars.
-
 In other DAWs, the toolbars would remain stagnant throughout the sessions, and the only change you can apply to them would be either to move them or hide them.
 In Reaper, since we are lucky enough to have many customizable toolbars available, while able to customize our toolbars with any action, it wouldn&amp;rsquo;t take long before our screen becomes like this</description>
     </item>

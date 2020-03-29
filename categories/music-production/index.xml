@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Music Production on RCJacH</title>
@@ -6,17 +6,17 @@
     <description>Recent content in Music Production on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Apr 2019 01:42:15 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2019 19:51:01 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/categories/music-production/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why</title>
-      <link>https://RCJacH.github.io/blog/gain-staging/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <link>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</link>
+      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/gain-staging/</guid>
+      <guid>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</guid>
       <description>What is Gain-Staging Gain-staging is essentially the practice of managing all static volume settings with a fixed reference point. Static volume setting is decibels of gain added or subtracted to a signal at one place in the signal flow, which remains unchanged through out the time span of the project playback. The goal of gain-staging is to ensure that any pair of input and output signals enclosing a signal processor chain match in average volume.</description>
     </item>
     
@@ -38,17 +38,16 @@ Because of the potential complexity of our routing, from something as simple as 
       
       <guid>https://RCJacH.github.io/blog/reaper-toolbar-system/</guid>
       <description>I recently discovered an interesting and efficient way of using Reaper&amp;rsquo;s customizable toolbars.
-
 In other DAWs, the toolbars would remain stagnant throughout the sessions, and the only change you can apply to them would be either to move them or hide them.
 In Reaper, since we are lucky enough to have many customizable toolbars available, while able to customize our toolbars with any action, it wouldn&amp;rsquo;t take long before our screen becomes like this</description>
     </item>
     
     <item>
       <title>Fundamental Guitar Voicings for Pian(o roll)ists</title>
-      <link>https://RCJacH.github.io/blog/fundamental-guitar-voicing-for-piano-rollists/</link>
+      <link>https://RCJacH.github.io/blog/fundamental-guitar-voicings-for-piano-rollists/</link>
       <pubDate>Tue, 05 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/fundamental-guitar-voicing-for-piano-rollists/</guid>
+      <guid>https://RCJacH.github.io/blog/fundamental-guitar-voicings-for-piano-rollists/</guid>
       <description>For guitarist, from beginners to advanced players, there is a chord system called CAGED system, where you take the form of C, A, G, E, D barre chords and move them across the fretboard over different roots.
 (img from http://www.cagedguitarsystem.net/)
 So you only need to learn at most 5 basic chord shapes to start playing chord progressions on the guitar. However, for pianists, this concept might be a bit difficult to understand without basic guitar knowledge, and learning the guitar for a short time isn&amp;rsquo;t always the most efficient and effective method of approach to arranging for chordal playing on guitar.</description>

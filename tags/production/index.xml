@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Production on RCJacH</title>
@@ -13,10 +13,10 @@
     
     <item>
       <title>REAPER - RCMShip Perfect Pitch</title>
-      <link>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</link>
+      <link>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</guid>
+      <guid>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</guid>
       <description>Download from here: RCMShip Perfect Pitch on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
@@ -26,30 +26,27 @@ How to Play  Click START, the synth will play a tone. Guess the name of the tone
     
     <item>
       <title>Tone Sweep - REAPER JSFX Percussion Synth</title>
-      <link>https://RCJacH.github.io/blog/reaper-jsfx-tone-sweep/</link>
+      <link>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/reaper-jsfx-tone-sweep/</guid>
+      <guid>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</guid>
       <description>You can download it from here: Tone Sweep on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
-
 Description: This synth generates a monophonic sweeping tone when receiving a MIDI note input. Intended for designing percussive sounds, such as kicks, snares, toms, or sound FXs in electronic music genres.
-
-Quick Instruction:  Set a starting and ending note.
- If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
+Quick Instruction:   Set a starting and ending note.
+  If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
     </item>
     
     <item>
       <title>Vocal Recording &amp; Mixing Template by RCJacH</title>
-      <link>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</link>
+      <link>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</link>
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</guid>
+      <guid>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</guid>
       <description>Vocal Recording &amp;amp; Mixing Template
 By RCJacH
-Explanation 
-Vocal Recording &amp;amp; Mixing Template by RCJacH is a REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track, including native functional FXs (with a few JS effects) on each track with track controls directly visible on the mixer.
+Explanation Vocal Recording &amp;amp; Mixing Template by RCJacH is a REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track, including native functional FXs (with a few JS effects) on each track with track controls directly visible on the mixer.
 This template works the best with the default REAPER themes. All dynamic related FXs are designed to work around signals that are recorded with RMS level of -20dBFS.</description>
     </item>
     

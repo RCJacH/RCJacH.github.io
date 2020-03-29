@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Exercise on RCJacH</title>
@@ -6,7 +6,7 @@
     <description>Recent content in Exercise on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Aug 2019 22:25:55 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 27 Aug 2019 00:00:00 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/tags/exercise/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,7 +14,7 @@
     <item>
       <title>How to REALLY Use the Metronome</title>
       <link>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</link>
-      <pubDate>Tue, 27 Aug 2019 22:25:55 +0800</pubDate>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/blog/how-to-really-use-the-metronome/</guid>
       <description>I was practicing keyboard one day with a metronome - the click-sounding machinery that&amp;rsquo;s been collecting dust on my shelf since purchase (I jest. I use software counterpart such as Bounce Metronome, so it doesn&amp;rsquo;t really collect dust when I never open it) - when lethargy struck. You know, the desire to withdraw from the current activity when it&amp;rsquo;s becoming repetitive and dull, or the urge to dawdle away upon facing difficult tasks.</description>
@@ -22,10 +22,10 @@
     
     <item>
       <title>REAPER - RCMShip Perfect Pitch</title>
-      <link>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</link>
+      <link>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/reaper-jsfx-rcmship-perfect-pitch/</guid>
+      <guid>https://RCJacH.github.io/blog/reaper-rcmship-perfect-pitch/</guid>
       <description>Download from here: RCMShip Perfect Pitch on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
@@ -35,46 +35,43 @@ How to Play  Click START, the synth will play a tone. Guess the name of the tone
     
     <item>
       <title>3NS: The Three Fundamental Finger Patterns</title>
-      <link>https://RCJacH.github.io/blog/3ns/3ns-the-three-fundamental-finger-patterns/</link>
+      <link>https://RCJacH.github.io/blog/3ns-the-three-fundamental-finger-patterns/</link>
       <pubDate>Mon, 11 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/3ns/3ns-the-three-fundamental-finger-patterns/</guid>
+      <guid>https://RCJacH.github.io/blog/3ns-the-three-fundamental-finger-patterns/</guid>
       <description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
 2.Ideology behind the 3NS Scale System
 3.The Three Fundamental Finger Patterns
 4.The Horizontal Transitions
 5.Arpeggios
-
-The Three Fundamental Finger Patterns Reminder of the main ideas In the last article, we talked about some of the basic observations regarding guitar fingering, and listed three essential sequences of diatonic scales and how we play them on one single string.</description>
+The Three Fundamental Finger Patterns Reminder of the main ideas In the last article, we talked about some of the basic observations regarding guitar fingering, and listed three essential sequences of diatonic scales and how we play them on one single string. We shall name them by their intervallic distance as SW (Semi-Whole), WS (Whole-Semi), and WW (Whole-Whole).</description>
     </item>
     
     <item>
       <title>3NS: Ideology behind the 3NS System</title>
-      <link>https://RCJacH.github.io/blog/3ns/3ns-ideology-behind-the-3ns-scale-system/</link>
+      <link>https://RCJacH.github.io/blog/3ns-ideology-behind-the-3ns-system/</link>
       <pubDate>Sun, 03 Jan 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/3ns/3ns-ideology-behind-the-3ns-scale-system/</guid>
+      <guid>https://RCJacH.github.io/blog/3ns-ideology-behind-the-3ns-system/</guid>
       <description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
 2.Ideology behind the 3NS Scale System
 3.The Three Fundamental Finger Patterns
 4.The Horizontal Transitions
 5.Arpeggios
-
 Ideology behind the 3NS System What is special about 3NS system comparing to the CAGED system or others? NOTE: this is mainly an explanation of the why behind this system, if you want to get to the actual learning process right away, skip the follow content and go directly to The Three Fundamental Finger Patterns.</description>
     </item>
     
     <item>
       <title>Three-Note-Per-String Scale System</title>
-      <link>https://RCJacH.github.io/blog/3ns/three-note-per-string-scale-system/</link>
+      <link>https://RCJacH.github.io/blog/three-note-per-string-scale-system/</link>
       <pubDate>Sun, 27 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/3ns/three-note-per-string-scale-system/</guid>
+      <guid>https://RCJacH.github.io/blog/three-note-per-string-scale-system/</guid>
       <description>This post is part of the Three-Note-Per-String (3NS) Scale System series 1.Introduction
 2.Ideology behind the 3NS Scale System
 3.The Three Fundamental Finger Patterns
 4.The Horizontal Transitions
 5.Arpeggios
-
 Introduction Scales, up and down the neck, although necessary for making conscious musical decisions, are often regarded as tedious chores that kills passion and desires for music making. How long have you been practicing or struggling with them, learning all the positions, memorizing the fingerings for each position, and managing your way through the mistakes?</description>
     </item>
     
@@ -85,7 +82,6 @@ Introduction Scales, up and down the neck, although necessary for making conscio
       
       <guid>https://RCJacH.github.io/blog/the-guitar-fretboard-exercise/</guid>
       <description>Recently I have realized that a very important piece of information in the guitar category was missing from this blog, and that is fretboard familiarity to its fundamental element - knowing the note names on the fretboard. It is so vital that I would say this is THE ability required to making music consciously on guitar. Thus I wish to share it with you!
-
 I believe the origin of this exercise was from Joe Satriani&amp;rsquo;s Colume in GUITAR For The Practicing Musicians magazine, which was collected into a book called the Guitar Secrets.</description>
     </item>
     

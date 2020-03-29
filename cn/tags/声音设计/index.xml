@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>声音设计 on RCJacH</title>
@@ -14,31 +14,26 @@
     
     <item>
       <title>Tone Sweep – 原创JSFX电鼓合成器</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-tone-sweep/</link>
+      <link>https://RCJacH.github.io/cn/blog/tone-sweep-%E5%8E%9F%E5%88%9Bjsfx%E7%94%B5%E9%BC%93%E5%90%88%E6%88%90%E5%99%A8/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-tone-sweep/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/tone-sweep-%E5%8E%9F%E5%88%9Bjsfx%E7%94%B5%E9%BC%93%E5%90%88%E6%88%90%E5%99%A8/</guid>
       <description>Tone Sweep下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
-
 介绍： Tone Sweep是一款能生成一个音高变化（扫频）的单音电鼓合成器。主要用于设计电子音乐中使用的鼓，例如低鼓，军鼓，铜鼓，以及音效。
-
-用法：  设置起始音高（StartingNote）以及目标音高（EndingNote）。
- 通过拖动图形的X和Y轴按需求设置扫频的曲线和时长。
- 使用Envelope图形以及下方参数设计音量包络。
- 输入MIDI或者用MIDI键盘输入音符，播放一下。
- 阅读下方更具体的参数解说。
-  
-控制器类别： 通用 Ctrl+鼠标左键重置至默认数值。
+用法：   设置起始音高（StartingNote）以及目标音高（EndingNote）。
+  通过拖动图形的X和Y轴按需求设置扫频的曲线和时长。
+  使用Envelope图形以及下方参数设计音量包络。
+  输入MIDI或者用MIDI键盘输入音符，播放一下。
+  阅读下方更具体的参数解说。
+  控制器类别： 通用 Ctrl+鼠标左键重置至默认数值。
 推子 可以通过直接点击推子或者按住鼠标左键后左右拖动来设置一个数值。拖动时可按下Shift或Alt键微调：Shift改变0.01，Alt改变1。注意，要先松开鼠标左键，后松开修饰键，否则数值将被设置为鼠标位置对应的数值。
 选框 点击改变改参数的开启状态。
 拖拽框 点击按住鼠标左键并上下拖动鼠标来改变数值，拖动时按住Shift可微调。
 图形 点击按住鼠标左键并拖动鼠标来开遍数值，拖动时按住Shift可微调。X轴和Y轴可能分别影响两个不同的参数。
-
 界面参数说明： 概述页面 这个是插入JSFX后显示的第一个页面，包含了此合成器的两个最主要的元素，音高扫频和音量包络。
 任何图形的X轴参数决定了其长度，Y轴参数决定了曲线的坡度。音量包络图形则包含三个不同的部分，Attack，Hold，和Decay。每个部分有他自己的X和Y轴。音量包络图形下方有几个拖拽框可以改变曲线形状以及时长。
 在整个界面最低端有一个不可操作的波形图样，作为视觉参考。
-
 音高页面 第二个页面是音高页面，包含了此合成器中所有与音高、频率有关的参数。
 Pitch 音高 A4：这个参数是音高标准，指的是A4（MIDI音高69）这个音的频率，默认为440。
 Starting Note：扫频的起始音高。
@@ -47,31 +42,25 @@ Fine Tune：这两个操作将改变对应音高的音分，即百分之一个�
 Sweep 扫频 Time：这个指的是扫频，从起始音高到目标音高，总共需要花的时长（毫秒）。
 Curve &amp;amp; Multiplier：这两个参数决定了扫频的曲线坡度。
 Shape：这个参数决定了曲线的形状。
-此页面右下角的*音高曲线图形*与概述页面中的相同。
-
+此页面右下角的音高曲线图形与概述页面中的相同。
 音量包络页面 此页面包含了所有对音量包络有影响的参数。此合成器，作为电鼓合成器，音量包络只有三个阶段，Attack（起音）、Hold（停留)、Decay（衰减），或AHD。
-*起音*阶段指的是，当接收到MIDI音符触发信息后，包络值从0%到达100%的阶段；*停留*阶段指的是当达到100%后所持续的时间；经过停留阶段，包络值开始从100%*衰减*至0%
+起音阶段指的是，当接收到MIDI音符触发信息后，包络值从0%到达100%的阶段；停留阶段指的是当达到100%后所持续的时间；经过停留阶段，包络值开始从100%衰减至0%
 起音和衰减阶段的曲线控制原理与扫频曲线原理相同。
 音量包络图形与概括页面的图形一样。
-
-波形页面 波形页面所包含的是那些会改变输出信号音色的参数。</description>
+波形页面 波形页面所包含的是那些会改变输出信号音色的参数。
+Waveform：通过此参数选择合成器的基础波形。
+Modulations 调制 此合成器有两个调制选项，AM振幅调制（Amplitude Modulation）和FM频率调制（Frequency Modulation）。AM通过一个波形来改变源信号的振幅，而FM则通过一个波形变动源信号的频率。</description>
     </item>
     
     <item>
       <title>Reaper JSFX: NoiseBuzz噪音生成器</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz%E5%99%AA%E9%9F%B3%E7%94%9F%E6%88%90%E5%99%A8/</link>
       <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz%E5%99%AA%E9%9F%B3%E7%94%9F%E6%88%90%E5%99%A8/</guid>
       <description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
 这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
- v1.3 (2018-03-08)
- Brown Noise Type. MIDI Trigger.
-Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility.  v1.2 (2017-04-08)
- Width Control.  v1.1 (2017-03-11)
- Decay &amp;amp; Sustain Control.  v1.0a (2017-01-31)
-Renamed to NoiseBuzz. v1.0 (2017-01-22)
- Initial Release.   下载地址： RCNoiseBuzz官网下载地址
+ v1.3 (2018-03-08)   Brown Noise Type. MIDI Trigger.  Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility.  v1.2 (2017-04-08)   Width Control.   v1.1 (2017-03-11)   Decay &amp;amp; Sustain Control.   v1.0a (2017-01-31)  Renamed to NoiseBuzz.  v1.0 (2017-01-22)   Initial Release.  下载地址： RCNoiseBuzz官网下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
     </item>
     

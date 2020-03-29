@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Mixing on RCJacH</title>
@@ -6,17 +6,17 @@
     <description>Recent content in Mixing on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Sun, 07 Apr 2019 01:42:15 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Apr 2019 19:51:01 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/tags/mixing/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>An Elaborated Summary of the Technique of Gain-Staging - 1. What and Why</title>
-      <link>https://RCJacH.github.io/blog/gain-staging/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <link>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</link>
+      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/gain-staging/</guid>
+      <guid>https://RCJacH.github.io/blog/an-elaborated-summary-of-the-technique-of-gain-staging-1.-what-and-why/</guid>
       <description>What is Gain-Staging Gain-staging is essentially the practice of managing all static volume settings with a fixed reference point. Static volume setting is decibels of gain added or subtracted to a signal at one place in the signal flow, which remains unchanged through out the time span of the project playback. The goal of gain-staging is to ensure that any pair of input and output signals enclosing a signal processor chain match in average volume.</description>
     </item>
     
@@ -33,14 +33,13 @@ Because of the potential complexity of our routing, from something as simple as 
     
     <item>
       <title>Vocal Recording &amp; Mixing Template by RCJacH</title>
-      <link>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</link>
+      <link>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</link>
       <pubDate>Sat, 16 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/vocal-recording-n-mixing-template-by-rcjach/</guid>
+      <guid>https://RCJacH.github.io/blog/vocal-recording-mixing-template-by-rcjach/</guid>
       <description>Vocal Recording &amp;amp; Mixing Template
 By RCJacH
-Explanation 
-Vocal Recording &amp;amp; Mixing Template by RCJacH is a REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track, including native functional FXs (with a few JS effects) on each track with track controls directly visible on the mixer.
+Explanation Vocal Recording &amp;amp; Mixing Template by RCJacH is a REAPER template for recording and rough mixing lead vocal and vocal harmonies against an instrumental track, including native functional FXs (with a few JS effects) on each track with track controls directly visible on the mixer.
 This template works the best with the default REAPER themes. All dynamic related FXs are designed to work around signals that are recorded with RMS level of -20dBFS.</description>
     </item>
     

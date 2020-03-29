@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Tags on RCJacH</title>
@@ -6,15 +6,42 @@
     <description>Recent content in Tags on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Aug 2019 22:25:55 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 14:42:02 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Color</title>
+      <link>https://RCJacH.github.io/tags/color/</link>
+      <pubDate>Sat, 28 Mar 2020 14:42:02 +0800</pubDate>
+      
+      <guid>https://RCJacH.github.io/tags/color/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Design</title>
+      <link>https://RCJacH.github.io/tags/design/</link>
+      <pubDate>Sat, 28 Mar 2020 14:42:02 +0800</pubDate>
+      
+      <guid>https://RCJacH.github.io/tags/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Script</title>
+      <link>https://RCJacH.github.io/tags/script/</link>
+      <pubDate>Sat, 28 Mar 2020 14:42:02 +0800</pubDate>
+      
+      <guid>https://RCJacH.github.io/tags/script/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Exercise</title>
       <link>https://RCJacH.github.io/tags/exercise/</link>
-      <pubDate>Tue, 27 Aug 2019 22:25:55 +0800</pubDate>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/exercise/</guid>
       <description></description>
@@ -23,7 +50,7 @@
     <item>
       <title>Rhythm</title>
       <link>https://RCJacH.github.io/tags/rhythm/</link>
-      <pubDate>Tue, 27 Aug 2019 22:25:55 +0800</pubDate>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/rhythm/</guid>
       <description></description>
@@ -32,7 +59,7 @@
     <item>
       <title>Mixing</title>
       <link>https://RCJacH.github.io/tags/mixing/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/mixing/</guid>
       <description></description>
@@ -41,7 +68,7 @@
     <item>
       <title>Music Production</title>
       <link>https://RCJacH.github.io/tags/music-production/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/music-production/</guid>
       <description></description>
@@ -50,7 +77,7 @@
     <item>
       <title>REAPER</title>
       <link>https://RCJacH.github.io/tags/reaper/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/reaper/</guid>
       <description></description>
@@ -59,7 +86,7 @@
     <item>
       <title>Recording</title>
       <link>https://RCJacH.github.io/tags/recording/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/recording/</guid>
       <description></description>
@@ -68,7 +95,7 @@
     <item>
       <title>Musicianship</title>
       <link>https://RCJacH.github.io/tags/musicianship/</link>
-      <pubDate>Thu, 04 Apr 2019 00:05:50 +0800</pubDate>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/musicianship/</guid>
       <description></description>
@@ -77,7 +104,7 @@
     <item>
       <title>Theory</title>
       <link>https://RCJacH.github.io/tags/theory/</link>
-      <pubDate>Thu, 04 Apr 2019 00:05:50 +0800</pubDate>
+      <pubDate>Thu, 04 Apr 2019 00:00:00 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/tags/theory/</guid>
       <description></description>
@@ -107,15 +134,6 @@
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
       <guid>https://RCJacH.github.io/tags/production/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Script</title>
-      <link>https://RCJacH.github.io/tags/script/</link>
-      <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
-      
-      <guid>https://RCJacH.github.io/tags/script/</guid>
       <description></description>
     </item>
     

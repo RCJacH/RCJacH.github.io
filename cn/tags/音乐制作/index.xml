@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>音乐制作 on RCJacH</title>
@@ -14,10 +14,10 @@
     
     <item>
       <title>RCJacH - TV动画《钢之炼金术师》/ TVアニメ「鋼の錬金術師」OST「Main Theme」【吉他版】</title>
-      <link>https://RCJacH.github.io/cn/blog/rcjach-the-fullmetal-alchemist/</link>
+      <link>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</link>
       <pubDate>Fri, 31 Aug 2018 23:53:54 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/rcjach-the-fullmetal-alchemist/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</guid>
       <description>这次翻弹的是钢之炼金术师主题曲，思考了很久编配方式。之后写文章细讲创作思路及制作技巧。
 音频地址：
 全职猎人OST正義の怒り 吉他版 音频 网易云音乐
@@ -30,10 +30,10 @@ REAPER</description>
     
     <item>
       <title>RCJacH - TV动画《全职猎人》/ TVアニメ「ハンター×ハンター」OST「正義の怒り」【吉他版】</title>
-      <link>https://RCJacH.github.io/cn/blog/rcjach-hxh-seigi-no-ikari/</link>
+      <link>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E5%85%A8%E8%81%8C%E7%8C%8E%E4%BA%BA/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BCost%E6%AD%A3%E7%BE%A9%E3%81%AE%E6%80%92%E3%82%8A%E5%90%89%E4%BB%96%E7%89%88/</link>
       <pubDate>Mon, 02 Jul 2018 16:36:45 +0800</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/rcjach-hxh-seigi-no-ikari/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E5%85%A8%E8%81%8C%E7%8C%8E%E4%BA%BA/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BC%E3%83%8F%E3%83%B3%E3%82%BF%E3%83%BCost%E6%AD%A3%E7%BE%A9%E3%81%AE%E6%80%92%E3%82%8A%E5%90%89%E4%BB%96%E7%89%88/</guid>
       <description>翻弹系列n年没更新了，老贼更的都比我快。这次献上Hiatus X Hiatus，哦不 Hunter X Hunter 次回预告OST「正義の怒り」吉他版翻弹。
 音频地址：
 全职猎人OST正義の怒り 吉他版 音频 网易云音乐
@@ -51,10 +51,10 @@ PS. 超小声：录音之前忘了换弦了&amp;hellip;</description>
     
     <item>
       <title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-rcmship-perfect-pitch/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper-%E5%8E%9F%E5%88%9Bjsfx%E5%B0%8F%E6%B8%B8%E6%88%8Frcmship-perfect-pitch/</link>
       <pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-rcmship-perfect-pitch/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper-%E5%8E%9F%E5%88%9Bjsfx%E5%B0%8F%E6%B8%B8%E6%88%8Frcmship-perfect-pitch/</guid>
       <description>RCMShip Perfect Pitch下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RCJacH ReaPack Repository
 如何使用ReaPack？
@@ -62,128 +62,66 @@ RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RC
 游戏方式  点击 START后，游戏将播放一个固定音高。 猜测该音高的音名并点击相关按钮。 回答后，游戏将将显示正确答案，若答错也会显示所选答案。 点击 Next 将继续下一轮。  特色 自适应 当玩家做出回答后，回答的正确与否将影响当前所播放的音出现的几率。
 可选性 点击Setup将转至音符选择页面，在此你可以手动或随机选择游戏所包含的音高，限制游戏难度或者增加变化。
 可配置 点击Config按钮切换到设置页面，可以设置一些基本参数，例如音量、音符长度、播放的八度和八度跨越等。也可以切换至MIDI输出模式，用采样播放器或者其他合成器作为音源。
-进阶介绍 理论 来自404（wiki）：&amp;rdquo;Absolute pitch (AP), widely referred to as perfect pitch, is a rare auditory phenomenon characterized by the ability of a person to identify or re-create a given musical note without the benefit of a reference tone.&amp;rdquo; 绝对音感是一个罕见的听觉现象，指的是一个人有能力在没有参考音高的情况下识别或重现一个给定的音符音高。</description>
+进阶介绍 理论 来自404（wiki）：&amp;ldquo;Absolute pitch (AP), widely referred to as perfect pitch, is a rare auditory phenomenon characterized by the ability of a person to identify or re-create a given musical note without the benefit of a reference tone.&amp;rdquo; 绝对音感是一个罕见的听觉现象，指的是一个人有能力在没有参考音高的情况下识别或重现一个给定的音符音高。
+绝对音感通常被视为一个与生俱来的能力，而当前虽然有一些科研性或商业性的相关产品，但还未能证明其对大众的有效性。 然而，虽然音频工作者们（录音师、混音师、母带师）需要花数些年的时间练习分辨音频的振幅、频率、时间等各种性质，长时间地针对绝对音感进行相关练习的人可能并不是多数。 在这种情况下，对于绝对音感是天生而来的主张可能没有太多的实际证明。</description>
     </item>
     
     <item>
       <title>RCJacH - 不规则世界</title>
-      <link>https://RCJacH.github.io/cn/blog/rcjach-anomaly-world/</link>
+      <link>https://RCJacH.github.io/cn/blog/rcjach-%E4%B8%8D%E8%A7%84%E5%88%99%E4%B8%96%E7%95%8C/</link>
       <pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/rcjach-anomaly-world/</guid>
-      <description>不规则世界 Anomaly World - Feat. Euphia 作曲 : RCJacH
-作词 : Euphia
-棕色瞳孔里看见
-乞力马扎罗山的雪
-冻结格林尼治时间
-蓝色石头坠落不见
-十一维度画面
-谁在冷静求解
-原地踏步的人多危险
-穿过这道光圈
-深渊还是桃源
-为何不睁开眼就以为那是昙花一现
-穿梭人间炊烟
-我不想再冬眠
-颠覆空间 画出一道抛物线
-看见不规则世界出现
-一切开始从零改变
-黑天鹅太常见
-什么规则对我没差别
-看见不规则世界出现
-迷恋这一刻灵光闪现
-悬念是多项选
-忽然间我爱上冒险
-忽然间我爱上冒险
-忽然间
-看不出差别的表面美化
-你真的流连忘返吗
-面对真实虚假
-透过倔强
-抑制不住的渴望
-和你同样
-和你同样想
-穿过这道光圈
-深渊还是桃源
-为何不睁开眼就以为那是昙花一现
-穿梭人间炊烟
-我不想再冬眠
-颠覆空间 画出一道抛物线
-看见不规则世界出现
-一切开始从零改变
-黑天鹅太常见
-什么规则对我没差别
-看见不规则世界出现
-迷恋这一刻灵光闪现
-悬念是多项选
-忽然间我爱上冒险
-看见不规则世界出现
-一切开始从零改变
-黑天鹅太常见
-什么规则对我没差别
-看见不规则世界出现
-迷恋这一刻灵光闪现
-悬念是多项选
-忽然间我爱上冒险
-忽然间我爱上冒险
-忽然间我爱上</description>
+      <guid>https://RCJacH.github.io/cn/blog/rcjach-%E4%B8%8D%E8%A7%84%E5%88%99%E4%B8%96%E7%95%8C/</guid>
+      <description>不规则世界 Anomaly World - Feat. Euphia 作曲 : RCJacH作词 : Euphia棕色瞳孔里看见乞力马扎罗山的雪冻结格林尼治时间蓝色石头坠落不见十一维度画面谁在冷静求解原地踏步的人多危险穿过这道光圈深渊还是桃源为何不睁开眼就以为那是昙花一现穿梭人间炊烟我不想再冬眠颠覆空间 画出一道抛物线看见不规则世界出现一切开始从零改变黑天鹅太常见什么规则对我没差别看见不规则世界出现迷恋这一刻灵光闪现悬念是多项选忽然间我爱上冒险忽然间我爱上冒险忽然间看不出差别的表面美化你真的流连忘返吗面对真实虚假透过倔强抑制不住的渴望和你同样和你同样想穿过这道光圈深渊还是桃源为何不睁开眼就以为那是昙花一现穿梭人间炊烟我不想再冬眠颠覆空间 画出一道抛物线看见不规则世界出现一切开始从零改变黑天鹅太常见什么规则对我没差别看见不规则世界出现迷恋这一刻灵光闪现悬念是多项选忽然间我爱上冒险看见不规则世界出现一切开始从零改变黑天鹅太常见什么规则对我没差别看见不规则世界出现迷恋这一刻灵光闪现悬念是多项选忽然间我爱上冒险忽然间我爱上冒险忽然间我爱上</description>
     </item>
     
     <item>
       <title>REAPER信号流</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper%E4%BF%A1%E5%8F%B7%E6%B5%81/</link>
       <pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper%E4%BF%A1%E5%8F%B7%E6%B5%81/</guid>
       <description>什么是信号流？
 在数字音频制作领域，信号流指的是信号（例如音频或MIDI）是如何经过DAW中每一层运算的。
 因为我们在实际使用中常常会需要建立路由，无论是简单的信号发送、搭建模块合成器、还是建立使用Parameter Modulation的多轨模板，清晰地了解信号在DAW中的路径以及运算顺序会有非常大的帮助。
-
 所以我画了以下这张图。
-排除模拟输入(Input)以及输出(Output)，Reaper总共有四个信号处理阶段：Take（层），Item（块），Track（轨），Master（总线）。每一个阶段在音频运算方面是完全一样的（单纯的加法），唯一的区别只是使用方式以而已。
-
+排除模拟输入(Input)以及输出(Output)，Reaper总共有四个信号处理阶段：Take（层），Item（块），Track（轨），Master**（总线）**。每一个阶段在音频运算方面是完全一样的（单纯的加法），唯一的区别只是使用方式以而已。
 以下则是一张包含包络的细节图。
 注释：
-Take Trim = 层音量衰减（主页面块儿上&amp;rdquo;边&amp;rdquo;往下拽的衰减）。
-
+Take Trim = 层音量衰减（主页面块儿上&amp;quot;边&amp;quot;往下拽的衰减）。
 另外几点
- 我们知道REAPER只有一种万能轨道。
- 信号发送到另一轨的思路与块的信号输入至所包含轨性质是一样的。
- 母轨道(Folder Track)就像微型总线一样，把所有子轨道的信号加在一块儿再处理。
- 音频/MIDI通道是同路由上平行的信号流。
- 音频只会相加同通道的信号。
- 音量推子、Trim包络、音量包络三者可以同时使用，也就是说可以同时有三层音量调整的方法（平衡、段落、微调之类的）。
- 监听FX（Monitor FX）在音频渲染时是旁通的。
+  我们知道REAPER只有一种万能轨道。
+  信号发送到另一轨的思路与块的信号输入至所包含轨性质是一样的。
+  母轨道(Folder Track)就像微型总线一样，把所有子轨道的信号加在一块儿再处理。
+  音频/MIDI通道是同路由上平行的信号流。
+  音频只会相加同通道的信号。
+  音量推子、Trim包络、音量包络三者可以同时使用，也就是说可以同时有三层音量调整的方法（平衡、段落、微调之类的）。
+  监听FX（Monitor FX）在音频渲染时是旁通的。
   </description>
     </item>
     
     <item>
       <title>Tone Sweep – 原创JSFX电鼓合成器</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-tone-sweep/</link>
+      <link>https://RCJacH.github.io/cn/blog/tone-sweep-%E5%8E%9F%E5%88%9Bjsfx%E7%94%B5%E9%BC%93%E5%90%88%E6%88%90%E5%99%A8/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-tone-sweep/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/tone-sweep-%E5%8E%9F%E5%88%9Bjsfx%E7%94%B5%E9%BC%93%E5%90%88%E6%88%90%E5%99%A8/</guid>
       <description>Tone Sweep下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
-
 介绍： Tone Sweep是一款能生成一个音高变化（扫频）的单音电鼓合成器。主要用于设计电子音乐中使用的鼓，例如低鼓，军鼓，铜鼓，以及音效。
-
-用法：  设置起始音高（StartingNote）以及目标音高（EndingNote）。
- 通过拖动图形的X和Y轴按需求设置扫频的曲线和时长。
- 使用Envelope图形以及下方参数设计音量包络。
- 输入MIDI或者用MIDI键盘输入音符，播放一下。
- 阅读下方更具体的参数解说。
-  
-控制器类别： 通用 Ctrl+鼠标左键重置至默认数值。
+用法：   设置起始音高（StartingNote）以及目标音高（EndingNote）。
+  通过拖动图形的X和Y轴按需求设置扫频的曲线和时长。
+  使用Envelope图形以及下方参数设计音量包络。
+  输入MIDI或者用MIDI键盘输入音符，播放一下。
+  阅读下方更具体的参数解说。
+  控制器类别： 通用 Ctrl+鼠标左键重置至默认数值。
 推子 可以通过直接点击推子或者按住鼠标左键后左右拖动来设置一个数值。拖动时可按下Shift或Alt键微调：Shift改变0.01，Alt改变1。注意，要先松开鼠标左键，后松开修饰键，否则数值将被设置为鼠标位置对应的数值。
 选框 点击改变改参数的开启状态。
 拖拽框 点击按住鼠标左键并上下拖动鼠标来改变数值，拖动时按住Shift可微调。
 图形 点击按住鼠标左键并拖动鼠标来开遍数值，拖动时按住Shift可微调。X轴和Y轴可能分别影响两个不同的参数。
-
 界面参数说明： 概述页面 这个是插入JSFX后显示的第一个页面，包含了此合成器的两个最主要的元素，音高扫频和音量包络。
 任何图形的X轴参数决定了其长度，Y轴参数决定了曲线的坡度。音量包络图形则包含三个不同的部分，Attack，Hold，和Decay。每个部分有他自己的X和Y轴。音量包络图形下方有几个拖拽框可以改变曲线形状以及时长。
 在整个界面最低端有一个不可操作的波形图样，作为视觉参考。
-
 音高页面 第二个页面是音高页面，包含了此合成器中所有与音高、频率有关的参数。
 Pitch 音高 A4：这个参数是音高标准，指的是A4（MIDI音高69）这个音的频率，默认为440。
 Starting Note：扫频的起始音高。
@@ -192,30 +130,30 @@ Fine Tune：这两个操作将改变对应音高的音分，即百分之一个�
 Sweep 扫频 Time：这个指的是扫频，从起始音高到目标音高，总共需要花的时长（毫秒）。
 Curve &amp;amp; Multiplier：这两个参数决定了扫频的曲线坡度。
 Shape：这个参数决定了曲线的形状。
-此页面右下角的*音高曲线图形*与概述页面中的相同。
-
+此页面右下角的音高曲线图形与概述页面中的相同。
 音量包络页面 此页面包含了所有对音量包络有影响的参数。此合成器，作为电鼓合成器，音量包络只有三个阶段，Attack（起音）、Hold（停留)、Decay（衰减），或AHD。
-*起音*阶段指的是，当接收到MIDI音符触发信息后，包络值从0%到达100%的阶段；*停留*阶段指的是当达到100%后所持续的时间；经过停留阶段，包络值开始从100%*衰减*至0%
+起音阶段指的是，当接收到MIDI音符触发信息后，包络值从0%到达100%的阶段；停留阶段指的是当达到100%后所持续的时间；经过停留阶段，包络值开始从100%衰减至0%
 起音和衰减阶段的曲线控制原理与扫频曲线原理相同。
 音量包络图形与概括页面的图形一样。
-
-波形页面 波形页面所包含的是那些会改变输出信号音色的参数。</description>
+波形页面 波形页面所包含的是那些会改变输出信号音色的参数。
+Waveform：通过此参数选择合成器的基础波形。
+Modulations 调制 此合成器有两个调制选项，AM振幅调制（Amplitude Modulation）和FM频率调制（Frequency Modulation）。AM通过一个波形来改变源信号的振幅，而FM则通过一个波形变动源信号的频率。</description>
     </item>
     
     <item>
       <title>Reaper字符串快捷键系统：Vimper Solo</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-vimper-solo/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%B3%BB%E7%BB%9Fvimper-solo/</link>
       <pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-vimper-solo/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper%E5%AD%97%E7%AC%A6%E4%B8%B2%E5%BF%AB%E6%8D%B7%E9%94%AE%E7%B3%BB%E7%BB%9Fvimper-solo/</guid>
       <description>当我们开始挖掘REAPER内隐藏着的几千个操作（Action），并且随着ReaPack的成长不断添加新的用户自制脚本与扩展时，我们会发现当我们需要自定义快捷键时，能用到的键位越来越少。而为了充分利用现有的字母、数字、以及符号键，我们通常需要加上各种如Ctrl，Alt甚至Win的修饰键进行各种高难度的键位组合，而且经常过几天可能就会忘掉一大半。
 为了避免这种尴尬，我做了一个按组归类快捷键的脚本。它是依照VIM文本编辑器快捷键的理念，通过一串字符触发快捷键的。
 点击这里下载Vimper Solo。
 通过这个脚本，我们不需要去记各种修饰键，只需按组激发对应的键位就好了。例如，在这个脚本内，同一个m键可以根据不同的分组静音轨道、块或层，但在REAPER里，我们得去想到三个不同的修饰键组合来触发这三个不同的功能。有的时候由于记不住某个操作是要按Shift还是要按Ctrl还是Ctrl+Shift需要反复去试，浪费很多时间。
-使用方法：  解压后把整个文件夹放到资源目录的Script文件夹内，然后在Reaper的Action List中加载RCJacH_Vimper Solo并为其设置一个快捷键（我用的是分号;）。
- 触发脚本，根据GUI窗口提示进入不同的分组并触发不同的操作。
- 使用Backspace退格键返回上一层菜单。
- 也可以在Action List中加载RCJacH_Vimper Solo Repeat Action来反复触发上一次触发操作。
+使用方法：   解压后把整个文件夹放到资源目录的Script文件夹内，然后在Reaper的Action List中加载RCJacH_Vimper Solo并为其设置一个快捷键（我用的是分号;）。
+  触发脚本，根据GUI窗口提示进入不同的分组并触发不同的操作。
+  使用Backspace退格键返回上一层菜单。
+  也可以在Action List中加载RCJacH_Vimper Solo Repeat Action来反复触发上一次触发操作。
   在Bindings.lua文件里，可以依照现有项设置新的快捷键或者修改现有的快捷键。
 格式：
 分组= {
@@ -231,51 +169,42 @@ NAME = “分组”,
     
     <item>
       <title>Reaper JSFX: NoiseBuzz噪音生成器</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz%E5%99%AA%E9%9F%B3%E7%94%9F%E6%88%90%E5%99%A8/</link>
       <pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-noisebuzz%E5%99%AA%E9%9F%B3%E7%94%9F%E6%88%90%E5%99%A8/</guid>
       <description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
 这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
- v1.3 (2018-03-08)
- Brown Noise Type. MIDI Trigger.
-Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility.  v1.2 (2017-04-08)
- Width Control.  v1.1 (2017-03-11)
- Decay &amp;amp; Sustain Control.  v1.0a (2017-01-31)
-Renamed to NoiseBuzz. v1.0 (2017-01-22)
- Initial Release.   下载地址： RCNoiseBuzz官网下载地址
+ v1.3 (2018-03-08)   Brown Noise Type. MIDI Trigger.  Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility.  v1.2 (2017-04-08)   Width Control.   v1.1 (2017-03-11)   Decay &amp;amp; Sustain Control.   v1.0a (2017-01-31)  Renamed to NoiseBuzz.  v1.0 (2017-01-22)   Initial Release.  下载地址： RCNoiseBuzz官网下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
     </item>
     
     <item>
       <title>REAPER JSFX - AB Comparison 8路信号对比脚本</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison-8%E8%B7%AF%E4%BF%A1%E5%8F%B7%E5%AF%B9%E6%AF%94%E8%84%9A%E6%9C%AC/</link>
       <pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-ab-comparison-8%E8%B7%AF%E4%BF%A1%E5%8F%B7%E5%AF%B9%E6%AF%94%E8%84%9A%E6%9C%AC/</guid>
       <description>昨天做了个JSFX小脚本：AB Comparison。目的是更方便的监听和对比不同信号（比如说不同插件、不同轨道）。
 这个脚本可以根据所设置的节拍或者微秒长度，自动切换到不同的双声道通道。同时还包含一个盲听模式。
-使用方法：  在任意音轨上放置 AB Comparison 这个JS脚本。
- 将所需对比的乐器、插件、音轨设置成不同的双声道输出，例：插件1 = 1-2，插件2 = 3-4，插件3 = 5-6&amp;hellip;一共能接收8个双声道输入。
- 将 # of Input 设置成需要对比的双声道个数。
- 将 Switch Beat length 设置为自动切换通道的拍数（每n拍切换一次）。或者，使用 Millisecond Mode 并将其设置为自动切换的毫秒数。
- 选择切换模式：
-   Manual = 手动模式，点击0-9任意触发按钮（或对应小键盘数字）切换到对应双声道通道。
- Sequential = 循序模式，输出通道将按照所设置的间隔自动切换到下一个双声道。
- Random = 随机模式，输出通道将按照所设置的间隔自动切换到一个不同的随机双声道。
- Guessing = 盲听模式，随机切换到一个双声道，并隐藏显示正播放的通道。点击0-9任意触发按钮显示正在播放的通道。
-  使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。
-Output Channel Display 显示正在播放的通道。循序模式和随机模式内，点击0-9任意触发按钮返回至手动模式，并切换到该通道。
-下载地址： AB Comparison官网下载地址
-RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
+使用方法：   在任意音轨上放置 AB Comparison 这个JS脚本。
+  将所需对比的乐器、插件、音轨设置成不同的双声道输出，例：插件1 = 1-2，插件2 = 3-4，插件3 = 5-6&amp;hellip;一共能接收8个双声道输入。
+  将 # of Input 设置成需要对比的双声道个数。
+  将 Switch Beat length 设置为自动切换通道的拍数（每n拍切换一次）。或者，使用 Millisecond Mode 并将其设置为自动切换的毫秒数。
+  选择切换模式：
+    Manual = 手动模式，点击0-9任意触发按钮（或对应小键盘数字）切换到对应双声道通道。
+  Sequential = 循序模式，输出通道将按照所设置的间隔自动切换到下一个双声道。
+  Random = 随机模式，输出通道将按照所设置的间隔自动切换到一个不同的随机双声道。
+  Guessing = 盲听模式，随机切换到一个双声道，并隐藏显示正播放的通道。点击0-9任意触发按钮显示正在播放的通道。
+  使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。</description>
     </item>
     
     <item>
       <title>REAPER网格</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-grid-system/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper%E7%BD%91%E6%A0%BC/</link>
       <pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-grid-system/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper%E7%BD%91%E6%A0%BC/</guid>
       <description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
 它长这个样子
 或者这个样子
@@ -289,37 +218,32 @@ MIDI界面的底端
 注：全音符是四个四分音符，所以如果用非4/4的节奏谱号可能会比较难理解。
 注2：每个小节重新开始计算。
 通过简单的计算我们就可以得出
-全音符九连音 = 1&amp;frasl;9
-四分音符七连音 = 1/(7*4)=1&amp;frasl;28
+全音符九连音 = 1/9
+四分音符七连音 = 1/(7*4)=1/28
 或者试一试不规律的组合，例如
-5&amp;frasl;27
+5/27
 此外，利用这种设置可以开启比较不寻常的节奏分解，例如把三拍分成五个音
-3&amp;frasl;20
-我用不同组合的五连音做了个短Demo。
- </description>
+3/20
+我用不同组合的五连音做了个短Demo。</description>
     </item>
     
     <item>
       <title>REAPER工具栏系统</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-toolbar-system/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E5%85%B7%E6%A0%8F%E7%B3%BB%E7%BB%9F/</link>
       <pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-toolbar-system/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E5%85%B7%E6%A0%8F%E7%B3%BB%E7%BB%9F/</guid>
       <description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
-
 在其他DAW里，工具栏通常是固定不变的，我们最多只能移动或者隐藏它们。
 但是在Reaper里，因为我们很幸运地拥有不少可自定义的工具栏，并且能在工具栏内添加任何操作，可能过不了多久我们的屏幕就变成这样了：
 可能有些人会觉得这样排列工具栏在做大项目里是必要的，不过要在这么多图标里找到需要的操作还是要花一些时间的。
 我们不如在单块面板上使用多个工具栏，然后把他们都连成一整个工具栏系统！
-
 我现在的界面是这样的：
-
 作为参考，以下是我对工具栏系统的组成思路。
 我现在在主界面以及钢琴卷界面设置了两个层次的工具栏。
 最上层的工具栏所包含的操作拥有两个目的。一是触发工程范围的事件，比如说重设MIDI设备、打开各种窗口（sws自动配色 或 heda的Note Reader）。二是作为状态栏，显示一些用快捷键触发的开关性的动作，如节拍器、预卷、吸附网格、包络跟随块等。
 旁边的工具栏包含日常常用的操作，分为五类：
-音轨 块 音频 包络 插件 
-用来切换的命令是这个：
+音轨 块 音频 包络 插件 用来切换的命令是这个：
 同样功能的包含工具栏2至工具栏16，以及相关的MIDI工具栏。
 这样，我们可以在母工具栏里设置一系列切换到子工具栏的操作，并在所有的子工具栏里加上一个回到母工具栏的操作。
 我的钢琴卷工具栏也是用同样的方法设置的，只不过状态栏和操作栏全部放到了同一个横向面板中。
@@ -330,23 +254,18 @@ MIDI界面的底端
     
     <item>
       <title>Reaper JSFX: Maschine式音符重复器</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-maschine%E5%BC%8F%E9%9F%B3%E7%AC%A6%E9%87%8D%E5%A4%8D%E5%99%A8/</link>
       <pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</guid>
-      <description> 下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-maschine%E5%BC%8F%E9%9F%B3%E7%AC%A6%E9%87%8D%E5%A4%8D%E5%99%A8/</guid>
+      <description>下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
 官网下载地址
 官网论坛地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
-更新： * v1.1 (2016-10-09)
-+ 改名
-+ 音符长度
-+ 对齐格子
-# 修改了音符准确性
-  说明： 这个脚本是用来模拟N.I.公司Maschine硬件上的Note Repeat(音符重复）功能的。我没用过硬件，所以可能在用法会有一些出入。但通过一些视频我发现这个功能在做HiHat方面很优秀，所以做了个脚本模拟一下。
+更新： 说明： 这个脚本是用来模拟N.I.公司Maschine硬件上的Note Repeat(音符重复）功能的。我没用过硬件，所以可能在用法会有一些出入。但通过一些视频我发现这个功能在做HiHat方面很优秀，所以做了个脚本模拟一下。
 使用方法如下： 这个脚本可以以两种方法使用：
- 作为轨道的输入FX。为所有的参数设置CC控制器，在第四个参数（开关）开启的状态下在你的MIDI键盘上按住一个（或多个）音，这个音就会以第一个参数（Rate）所设置的时值重复触发所按下的音符。第二个参数（Type）决定所选时值是普通、三连音还是附点音符。
- 作为普通FX插入轨道，排序至你的乐器之前。在钢琴卷帘中画出要出发的音符，用包络来控制参数。你也可以添加第二轨，用它录下第一轨的MIDI输出而得来实际重复的音符。这样你可以更细腻地去修改所生成的片段。
+  作为轨道的输入FX。为所有的参数设置CC控制器，在第四个参数（开关）开启的状态下在你的MIDI键盘上按住一个（或多个）音，这个音就会以第一个参数（Rate）所设置的时值重复触发所按下的音符。第二个参数（Type）决定所选时值是普通、三连音还是附点音符。
+  作为普通FX插入轨道，排序至你的乐器之前。在钢琴卷帘中画出要出发的音符，用包络来控制参数。你也可以添加第二轨，用它录下第一轨的MIDI输出而得来实际重复的音符。这样你可以更细腻地去修改所生成的片段。
   用Normal Type Lock参数（第三个）来做Drill类型的片段非常轻松。你可以试试把它设置成1/8，Type设置成Triplet，然后通过改变Rate来做出加花式的8分音符、16分音符、甚至32分音符三连音。这个参数能让你节省很多反复调节交替正常和三连音的时间。
 Channel Pressure，通道触后，可以用来改变重复音符的力度：输出力度 = 通道触后。
 看图。
@@ -355,10 +274,10 @@ Channel Pressure，通道触后，可以用来改变重复音符的力度：输�
     
     <item>
       <title>RCJacH - 在下坂本有何贵干登场曲 吉他版 乐谱</title>
-      <link>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga-score/</link>
+      <link>https://RCJacH.github.io/cn/blog/rcjach-%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%E6%9C%89%E4%BD%95%E8%B4%B5%E5%B9%B2%E7%99%BB%E5%9C%BA%E6%9B%B2-%E5%90%89%E4%BB%96%E7%89%88-%E4%B9%90%E8%B0%B1/</link>
       <pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga-score/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/rcjach-%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%E6%9C%89%E4%BD%95%E8%B4%B5%E5%B9%B2%E7%99%BB%E5%9C%BA%E6%9B%B2-%E5%90%89%E4%BB%96%E7%89%88-%E4%B9%90%E8%B0%B1/</guid>
       <description>乐谱地址：（注意调弦是Drop D：DADGBE）
 在下坂本有何贵干 吉他版 乐谱 度盘 密码: hw67
 在下坂本有何贵干 吉他版 乐谱 Github
@@ -373,10 +292,10 @@ Channel Pressure，通道触后，可以用来改变重复音符的力度：输�
     
     <item>
       <title>RCJacH - TV动画《在下坂本有何贵干》 登场曲/ TVアニメ「坂本ですが?」入場曲【吉他版】</title>
-      <link>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga/</link>
+      <link>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%E6%9C%89%E4%BD%95%E8%B4%B5%E5%B9%B2-%E7%99%BB%E5%9C%BA%E6%9B%B2/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E5%9D%82%E6%9C%AC%E3%81%A7%E3%81%99%E3%81%8C%E5%85%A5%E5%A0%B4%E6%9B%B2%E5%90%89%E4%BB%96%E7%89%88/</link>
       <pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E5%9C%A8%E4%B8%8B%E5%9D%82%E6%9C%AC%E6%9C%89%E4%BD%95%E8%B4%B5%E5%B9%B2-%E7%99%BB%E5%9C%BA%E6%9B%B2/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E5%9D%82%E6%9C%AC%E3%81%A7%E3%81%99%E3%81%8C%E5%85%A5%E5%A0%B4%E6%9B%B2%E5%90%89%E4%BB%96%E7%89%88/</guid>
       <description>今天坂本完结撒花，为此献上登场曲一首。
 设备：
 Fender HighWay One Telecaster (Lindy Fralin Pickups）
@@ -387,49 +306,42 @@ REAPER
     
     <item>
       <title>如何寻找Reaper资源文件目录</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-resource-folder/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E5%A6%82%E4%BD%95%E5%AF%BB%E6%89%BEreaper%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/</link>
       <pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-resource-folder/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E5%A6%82%E4%BD%95%E5%AF%BB%E6%89%BEreaper%E8%B5%84%E6%BA%90%E6%96%87%E4%BB%B6%E7%9B%AE%E5%BD%95/</guid>
       <description>在使用REAPER的过程中，无论是在添加主题、脚本、插件、还是轨道/工程模板的时候，都需要把相应的文件放到一个叫做资源文件目录的文件夹中。那么这个文件夹到底在哪儿呢？以下提供几个能找到它的方法。
-
 最直接的方式：我们打开Reaper之后，在其默认菜单里的Option（选项）中，倒数第五个命令是Show REAPER resource path in explorer/finder&amp;hellip;（在Explorer/Finder中打开REAPER资源文件目录…），点击之后就会在系统默认的文件浏览器中打开该目录了。
-
 以上介绍的方式通常能解决大部分寻找资源文件目录的需求， 可实际上我们可能会遇到特殊的情况，需要通过手动的方式去寻找这个资源文件目录。方法如下。
 在windows系统下，不同的系统版本中的地址稍有不同，分别是：
 Win XP与之前的系统：
-C:\Documents andSettings(username)\Application Data\REAPER
+C:\Documents andSettings(username)\Application Data\REAPER\
 Win 7与之后的系统：
-C:\USERS&amp;lt;username&amp;gt;\AppData\Roaming\REAPER
-
+C:\USERS&amp;lt;username&amp;gt;\AppData\Roaming\REAPER\
 以上地址，把带括号替换成你的电脑用户名，直接粘贴至文件浏览器的地址栏里，点击前往或按Enter键就到达了。更便捷的链接是这个：
 %appdata%\REAPER
 同样直接粘贴至文件浏览器的地址栏里就可以了。
-
 Mac OS 系统下，该地址为：
-/Users/ /Library/Application Support/REAPER
+/Users//Library/Application Support/REAPER
 同样，把替换成你的电脑用户名即可。
-
 此外，REAPER对于资源文件目录的优先值为：先搜索主程序所在的文件夹，如果没有资源文件，再搜索系统默认的资源文件地址（之前所介绍的）。所以如果找不到相关的资源，不放也查看一下Reaper运行文件所在的地址吧。</description>
     </item>
     
     <item>
       <title>Reaper：工程策划音轨模板</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-track-template-layout-rsgc/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E7%A8%8B%E7%AD%96%E5%88%92%E9%9F%B3%E8%BD%A8%E6%A8%A1%E6%9D%BF/</link>
       <pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-track-template-layout-rsgc/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper%E5%B7%A5%E7%A8%8B%E7%AD%96%E5%88%92%E9%9F%B3%E8%BD%A8%E6%A8%A1%E6%9D%BF/</guid>
       <description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
 你可以这里下载RSGC英文版或者RSGC中文版。
 下载之后，解压放到REAPER资源文件目录内的Track Templates文件夹，之后直接在主窗口左半栏中，点击右键出现的Insert Track From Template或中译的通过模板插入新的轨道选项里，选择Layout RSGC就能加载了。
-
 看一下截图：
 为了不让这四轨干扰我们正常的制作流程，我把它们从调音台界面隐藏了，同时我也禁用了它们的MIDI以及音频的输入。
-
 那么我们怎么使用这个模板呢？请容我解释一下模板中每一轨的功能。
 参考轨： 我们可以直接把参考的音频拖到这个音轨中，无论是该风格的制作/混音/母带参考品还是歌曲的小样版本。
 为了针对可能出现的频段监听需求，我在效果链中放个了ReaEQ，当高切低切用，并且把频率参数设置成了轨道控制钮。
-段落轨： 这个音轨是用来排列歌曲不同段落的。这个方面我发现用Reaper的空白块(Empty Item)功能会比用各种标记（Markers）或者区域（Regions）要更便捷。同时我们还能直接选中需要导出的段落，使用&amp;ldquo;Loop points: Set Loop Points to Items&amp;rdquo;这个操作（Actions），然后在导出界面右上角的Bounds选项里选择&amp;ldquo;Time Selection&amp;rdquo;或选区。
+段落轨： 这个音轨是用来排列歌曲不同段落的。这个方面我发现用Reaper的空白块(Empty Item)功能会比用各种标记（Markers）或者区域（Regions）要更便捷。同时我们还能直接选中需要导出的段落，使用&amp;ldquo;Loop points: Set Loop Points to Items&amp;rdquo;这个操作（Actions），然后在导出界面右上角的Bounds选项里选择**&amp;ldquo;Time Selection&amp;rdquo;**或**选区**。
 此模板内包含了所有我能想到的段落名称作为一个个单独的空白块。这样我们可以直接加载模板，利用现有的块来拼出歌曲的轮廓，然后删掉剩下的那些不需要的块。
 在此之上，我用ReaMIDIControl加了一轨没有任何实际影响的包络，命名为Energy Map/能量线，主要是画出歌曲的动态起伏。我们可以模仿上一条的参考轨来画出符合风格的能量线。
 律动轨： 律动轨是用来制定出歌曲每个段落中的多层节奏律动的。我们可以直接插入一个MIDI块，然后如下图一样画出律动：
@@ -440,7 +352,6 @@ Mac OS 系统下，该地址为：
 在这个基础之上，我们甚至可以把不同的律动层设置为不同的MIDI通道，这样我们能够专注单一的律动层而做出设计。当我们在MIDI编辑器里让其他轨道可见的时候，Reaper只会显示所选的MIDI通道里的音符。
 和弦轨： 用这个轨道标出歌曲的和弦。在这轨里，我继续使用了空白块在轨道上显示和弦名称，因为用它调整位置和长度的话会很方便。同时，空白块也可以使用Heda的Note Reader脚本，能让我们在进行爵士相关的即兴时提供实时的和弦显示功能。
 我在这轨上保留了一个空白块，简单用鼠标拖拽就可以将其复制。对比手动建立空白块省去了许多步骤。
-
 小贴士：
  我们可以使用 RSGC 进行制作分析：分析参考轨中歌曲的律动、和弦和段落，然后将其保存为一个新音轨模板，在今后可作为易用的参考。 对你自己所有的歌曲进行同样的操作，这是一种快速为歌曲确定律动与和弦结构的方法。我们也可以在改编时加载模板作为歌曲参考。 我们甚至可以把自己歌曲的RSGC策划发给需要录音的乐手，这样他(们)就不用拿着个TXT文件每个小节地去对你所发的音频了。  其他没了，玩得愉快。如果有什么问题或者建议的话，请随时提出。能提高工作效率的东西肯定是极好的。
 下载RSGC英文版 下载RSGC中文版</description>
@@ -448,10 +359,10 @@ Mac OS 系统下，该地址为：
     
     <item>
       <title>RCJacH - A Quest for Vocal Harmony (AQVH)</title>
-      <link>https://RCJacH.github.io/cn/blog/rcjach-a-quest-for-vocal-harmony/</link>
+      <link>https://RCJacH.github.io/cn/blog/rcjach-a-quest-for-vocal-harmony-aqvh/</link>
       <pubDate>Sun, 17 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/rcjach-a-quest-for-vocal-harmony/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/rcjach-a-quest-for-vocal-harmony-aqvh/</guid>
       <description>A Quest for Vocal Harmony (AQVH) 是一首教学用阿卡贝拉作品，由我个人创作制作完成。这首总长只有54秒的歌曲，集中展现了12种基础人声和声编配手法。
 歌词：
 Bass Goes
@@ -471,25 +382,25 @@ I sang to thee.</description>
     
     <item>
       <title>模拟信号与电子信号的音量关系：-20 dBFS = 0 VU</title>
-      <link>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%94%B5%E5%AD%90%E4%BF%A1%E5%8F%B7%E7%9A%84%E9%9F%B3%E9%87%8F%E5%85%B3%E7%B3%BB-20-dbfs-0-vu/</link>
       <pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E6%A8%A1%E6%8B%9F%E4%BF%A1%E5%8F%B7%E4%B8%8E%E7%94%B5%E5%AD%90%E4%BF%A1%E5%8F%B7%E7%9A%84%E9%9F%B3%E9%87%8F%E5%85%B3%E7%B3%BB-20-dbfs-0-vu/</guid>
       <description>这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。
 图中有以下几点需要注意：
- 电子信号会在0 dBFS的状态下遭遇电子削波，而模拟信号会在+24 dBu（也就是+20VU）的状态下遭遇削波。
- 模拟设备在0VU以上会有逐渐增强的过载失真。
- 因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的输出音量平均值保持在-20dBFS左右（之后细讲），这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。
- 在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。
+  电子信号会在0 dBFS的状态下遭遇电子削波，而模拟信号会在+24 dBu（也就是+20VU）的状态下遭遇削波。
+  模拟设备在0VU以上会有逐渐增强的过载失真。
+  因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的输出音量平均值保持在-20dBFS左右（之后细讲），这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。
+  在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。
   </description>
     </item>
     
     <item>
       <title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater-cc%E5%B1%8F%E8%94%BD%E5%99%A8/</link>
       <pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater-cc%E5%B1%8F%E8%94%BD%E5%99%A8/</guid>
       <description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
 如图，这个插件只有一个选项：你想要屏蔽的CC。你也可以通过选择最顶项来屏蔽所有的CC。
 具体使用方法就是，当你点击通道上的录音键之后，通道会出现一个IN FX的选项。如下图中橙色箭头所指位置。
@@ -499,59 +410,49 @@ IN FX指的是Input FX（输入效果），也就是在你的信号录入电脑�
     
     <item>
       <title>ReaComp到底有多强大？Pro Tools用户哭了。</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-reacomp-the-great/</link>
+      <link>https://RCJacH.github.io/cn/blog/reacomp%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%BC%BA%E5%A4%A7pro-tools%E7%94%A8%E6%88%B7%E5%93%AD%E4%BA%86/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-reacomp-the-great/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reacomp%E5%88%B0%E5%BA%95%E6%9C%89%E5%A4%9A%E5%BC%BA%E5%A4%A7pro-tools%E7%94%A8%E6%88%B7%E5%93%AD%E4%BA%86/</guid>
       <description>在音频处理方面，压缩一词经常被捧上天。尤其是对听感的音量变化还不是很敏感的那些初学者们，会觉得压缩处理好像是一个非常神秘的步骤。其实压缩器的性质与手动调音量一样- 衰减音量大的部分并提升音量小的部分 – 只不过压缩比手动画音量能在更短的时间内做出反应与相对措施。那么他对音频具体有什么影响呢？我们来通过Reaper自带的ReaComp来观察一下。
 ReaComp的界面的确不是最华丽的，但麻雀虽小五脏俱全：
 音频信号压缩的原理是把输入信号分成两份，一份通过压缩本身的信号处理，而另一份则被用于检测衡量信号。这两份信号都可以在ReaComp内进行一定程度的处理来达到所需的效果。我们用图来解释一下ReaComp内的参数分别是什么。
 假设我们输入的音频是这个样子，中间有一段音量突出的片段。
-
 如果我们想用压缩来控制这个片段的话，我们需要调四个参数。最重要的两个是ReaComp左侧的阈值 (Threshold)以及正中央的压缩比例 (Ratio)。当输入音频音量高于阈值时，会按着所设置的Ratio对高出的范围进行衰减 (GR = Gain Reduction)。例，当输入音量比阈值高出4dB而Ratio为4:1时，超出阈值的片段会衰减至所超出范围的四分之一，输出音量则会比阈值高出1dB。
 剩下的Attack和Release两个参数是用来控制衰减行为的时间b。Attack参数决定了音频从高于阈值那一刻起到最高衰减所需要的时间，而Release决定了在音频低于阈值后衰减恢复到0dB的时间。我们看一下这张图可能会更容易理解，图中的压缩比例为无限:1，也就是说GR会把超出音量降至阈值。
-
 Class Attack选项会改变Attack的曲线，让音头衰减更慢一点，如图:
-
 Auto Release选项是根据GR程度来计算是否需要延长Release的时间。假设我们在压缩军鼓时选择了Auto Release。如果GR是3dB，那么ReaComp会采取Release设置的x微秒；如果GR达到了20dB，Auto Release选项会让Release时间超出x，让Release时间变长。可惜的是，这样的设置在听觉上不是很舒服。许多模拟压缩所采取的Auto Release是根据GR时间长度来决定Release时间，也就是说在军鼓上衰减5dB与在贝斯上衰减5dB所造成的Release时长是不一样的。期待ReaComp能在未来的哪天实现这个功能。
 在Ratio下方有一个Knee Size参数，他决定了GR与Threshold的关系。什么意思呢？想象一下，我们录过的主人声。有一些句子唱的很轻，一些句子音量稍微高一点，而副歌的时候音量会非常大。这个时候使用同一个阈值与压缩比例显然不是很合适。为什么呢？因为如果我们把阈值设置成仅仅低于副歌部分，那么前面的句子就不会被影响；而如果我们需要压缩所有信号，可能Ratio不会让副歌的音量衰减到平均范围，或者会让主歌部分压缩太多。这个时候，我们可以通过Knee Size来让GR变得更圆滑，让信号在Threshold前后Knee/2的范围内都有着不同比例的压缩。如图。
 无压缩
 Hard Knee
 Soft Knee
-
 Knee Size 之下的Detector input决定了检测信号的识别方式。可选项为双声道、单声道左/右、侧链双声道以及单声道（通过Channel 3 - 4的信号来激发对Channel 1 - 2的压缩）、以及Feedback (通过输出信号来激发压缩，让压缩稍微更圆润一点)。我们可以根据压缩的不同目的来选择不同识别方式，具体会在今后的文章中介绍。
-
 再往下的两个参数分别是低通（Low Pass）与高通 (High Pass)，这个是用来调节检测信号的频段。假设我们的输入音频是一个低频比较重的木吉他，而他的低频与高频动态不是很平均的话，当低频超过了阈值，它就会触发我们不想要的衰减。这个时候如果我们把High Pass调到高于这个低频的频段，就可以让压缩只根据高频的动态来对整个信号进行适应的衰减。另一种用法是把两个参数调成齿音的频段，可以当成一个De-Esser用了。
-
 好吧，我承认以上的参数一般压缩插件也都有（虽然调制范围有不同），并不会让ReaComp显得多么独特。但不用怕，接下来的两个参数正是ReaComp的杀手锏，那就是RMS Size和Pre-Comp。
 RMS是什么？RMS，Root Mean-Square，简单来说就是一段时间的平均值。当RMS为0的时候，检测的动态为瞬间峰值的音量，也就是很多其他压缩插件的Peak Mode。如果我们把RMS调成10ms，算法会以10ms为单位检测这段时间的平均值来判断是否需要压缩，这样我们能让衰减更圆滑一点。ReaComp的RMS最高可以调到1000ms，也就是一秒。如果能调到5分钟的话差不多能直接自动做母带压缩了呵呵。
 Pre-Comp算法相对更复杂一点，但我们目前可以把他看成信号检测预留时间。例如，当我们有一个特别短的音头需要压缩掉的时候，把Attack调成0（这是模拟压缩做不到的一点）则会造成一定程度的失真（因为音频采样需要从某个点瞬间移动到另一个点）。针对这个现象，我们可以调Pre-Comp，让插件在处理音头之前就已经开始进行衰减了，这样当我们处理到音头的时候就不会造成突然地失真。效果如下图：
-
 注意，因为使用Pre-Comp需要让插件提前识别之后的音频，会增加宿主的延迟，所以可能这个工具更适合后期混音而非现场演奏、录音。
-
 好了，我们把ReaComp中大部分参数意义复习了一遍，也该讲一讲它的神奇之处了。这个技巧最先由Cockos论坛会员ashcat_lt提出，准备好颠覆我们对压缩的概念吧。
-
 我们知道RMS是截取一个段落的平均值，我们又知道Pre-Comp能让插件“预知”一段时间的音量。那么如果我们把Pre-Comp设置成RMS的一半左右，我们处理的则是一个峰值与它前后一段时间的平均值。这样等于音量会自然地在峰值之前衰减，而在峰值之后恢复。同时，因为Attack和Release已经包含在整个程序内了，我们不需要额外地添加Attack和Release。峰值的音头形状可能稍微取决于RMS与Pre-Comp * 2之差。利用这个方法，我们可以把Knee Size和Threshold调到比平常高一点的位置，让输入音频一直保持Knee中间的状态，GR大概保持在1.5dB以下就好了。这个压缩技术的效果就是在保留音头的情况下非常自然地降低了动态范围，甚至根本听不出来压缩的痕迹!
-操作起来很简单，你只需要如下图这样设置，然后根据你的输入及目的来调制红色框内的Threshold、Ratio、与Knee Size(其实都可以不动)。</description>
+操作起来很简单，你只需要如下图这样设置，然后根据你的输入及目的来调制红色框内的Threshold、Ratio、与Knee Size(其实都可以不动)。
+我还做了一个ReaComp预设，并把Ratio和Knee size通过Automation Modulation与Pre-Comp连到了一起，这样你的Pre-Comp时间越长GR越圆滑，反而如果Pre-Comp很短的话GR也会更猛一点。用这个预设你只需要调制Threshold和Pre-Comp，然后把RMS调到Pre-Comp的两倍左右就可以坐等奇迹了！使用方法：把zip文件解压缩至资源文件目录的FXChain下面，然后在你的FX列表内FX菜单里选择Add FXChain，之后双击加载这个预设文件就好了。
+Pro Tools和Mac的用户有没有心动？其实你们也可以用任何可调制Pre-Comp/Lookahead与RMS值的压缩插件来达到这个效果，例如Klanghelm的DC8C。只可惜它的RMS最高限制是100 ms，更何况ReaComp是免费的呢。</description>
     </item>
     
     <item>
       <title>你还在画CC吗？其实Reaper这么用更强大！</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E4%BD%A0%E8%BF%98%E5%9C%A8%E7%94%BBcc%E5%90%97%E5%85%B6%E5%AE%9Ereaper%E8%BF%99%E4%B9%88%E7%94%A8%E6%9B%B4%E5%BC%BA%E5%A4%A7/</link>
       <pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E4%BD%A0%E8%BF%98%E5%9C%A8%E7%94%BBcc%E5%90%97%E5%85%B6%E5%AE%9Ereaper%E8%BF%99%E4%B9%88%E7%94%A8%E6%9B%B4%E5%BC%BA%E5%A4%A7/</guid>
       <description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
 虽然目前有一些能提高CC效率的工具，例如这款MIDI Velocity/CC Tool。
 但他们治标不治本，无法大幅度提升编曲效率。尤其当我们做吉他
 做弦乐
 弦乐组
 或任何需要画大量CC表情控制器的时候，这些工具所能给予的帮助实在是少得可怜。
-
-再加上一个技术性的原因：Reaper工程文件是可以当成文本文件直接打开并修改的！我们可以用文本编辑器把某个插件段落的代码删掉，来挽救一个持续崩溃的工程。懂行的朋友还可以用GIT来监测工程版本，是一个很方便的功能。但我们开始画CC的时候会发现，因为每一个点都会明确记载，所以工程文件会变得无比巨大，轨道稍微多一点的工程体积会上到几十兆甚至一百多兆。如果你还开启了定时文件备份的功能（比如说每15分钟备份至新文件），你会在几小时之后发现硬盘空间少了好几个G！这真是一个迫使你去换新固态硬盘的好办法…
-
+再加上一个技术性的原因：Reaper工程文件是可以当成文本文件直接打开并修改的！我们可以用文本编辑器把某个插件段落的代码删掉，来挽救一个持续崩溃的工程。懂行的朋友还可以用GIT来监测工程版本，是一个很方便的功能。但我们开始画CC的时候会发现，因为每一个点都会明确记载，所以工程文件会变得无比巨大，轨道稍微多一点的工程体积会上到__几十兆甚至一百多兆__。如果你还开启了定时文件备份的功能（比如说每15分钟备份至新文件），你会在几小时之后发现硬盘空间少了好几个G！这真是一个迫使你去换新固态硬盘的好办法…
 而参数包络在Reaper里反而更受到重视，不仅可以使用曲线，也有很厉害的脚本插件，比如说这款Envelope Point Generator
-
 所以，我下了一个决定：用包络来代替CC！用包络来画曲线不仅减少了工程文件大小，也能让修改的时候变得很轻松（时间和位置只需拖拉一个点，而不需要每一个CC信息都细修）。
 那么这个怎么做到的呢？有以下两种方法。
 一，用ReaControlMIDI来控制CC参数。 Reaper自带的ReaControlMIDI长这个样子:
@@ -560,95 +461,88 @@ Pre-Comp算法相对更复杂一点，但我们目前可以把他看成信号检
 这个时候我们点击轨道上的trim标签
 来打开包络设置。
 我们能看到ReaControlMIDI所有可以操作的参数，其中包含CC1、PW、和CC11。我们只需点击红色圈内的选框就能把包络当成CC来画啦！
-
 二，使用音源参数 当我们把上一个小节的方法运用到音源参数的时候，会比通过ReaControlMIDI中转成CC更直接。我们可以直接控制任何音源所有可以操作的外部参数，例如这款免费合成器Helm所包含的一部分参数:
 Reaper版本5.1开始支持用MIDI CC来直接控制参数，不需要经过ReaControlMIDI，如图。
+MIDI Link - CC 来直接控制Helm合成器参数&#34;
 注释：选择一个可控制的参数，通过选择Param -&amp;gt; MIDI Link -&amp;gt; CC -&amp;gt; 我们需要的控制器编号。图中使用的JS只是模拟CC 1的输入。
-
 如果想利用插件（如JS脚本或序列器）在原MIDI基础上添加新信息的话，只需要右键插件输入输出选项，在MIDI output菜单里选择Merges with MIDI bus（感谢Tee先生的补充），如图：
-
 当然，我们在编曲时使用CC最多的恐怕是Kontakt内的采样音源。我们可以通过Auto一栏的Host Automation（宿主自动化）来设置。
 有一些音源，尤其是Native Instruments自家的音源，已经给你设置好了，比如说这款Granduer钢琴。
 这种音源你可以马上用起来！比如在钢琴轨上通过修改”Color”、”Transient”、“Tonal Depth”三个包络，让音源在不同段落包含着不同的音色与音头强度，比后期压缩要更有针对性。
-
 对于非NI本厂的音源来说，很遗憾，我们没有办法享受到已调制好的预设。所以需要自己动手，做一次最初的设置，然后保存为乐器模板。方法如下:
-
 首先加载音源，例如Orange Tree Samples公司出品的Strawberry吉他，然后把Host里任何一栏拖拉到需要调制的参数上。如果这个参数是可以通过外部调制的（按钮与旋钮），鼠标箭头会变成一个带有加号的箭头，否则说明此参数不能被外部控制（下拉菜单）。
 稍微花一点时间把所有参数都设置成宿主自动化吧，必要的话可以用Param菜单的Alias Parameter功能为某个包络控制起一个自己能看得懂的名字。
 当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
-记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！</description>
+记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！
+因编曲需要，我已经设置好了几个Kontakt乐器的配置，并为每个参数设置了英文名称。有兴趣的朋友可以随意下载使用。
+Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description>
     </item>
     
     <item>
       <title>录音输入音量标准</title>
-      <link>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E5%BD%95%E9%9F%B3%E8%BE%93%E5%85%A5%E9%9F%B3%E9%87%8F%E6%A0%87%E5%87%86/</link>
       <pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E5%BD%95%E9%9F%B3%E8%BE%93%E5%85%A5%E9%9F%B3%E9%87%8F%E6%A0%87%E5%87%86/</guid>
       <description>这篇文章是录音输入音量标准的解说。
 我发现国内的录音爱好者和一些职业录音师，对于输入音量并没有一个绝对标准（除了用耳朵听这种无法衡量的行为），这导致同一个录音工程的同一轨会有不同音量标准的文件，甚至输入太热导致爆音。由于语言与文化的差别，我决定不逐字翻译，仅把结论和简单的理由列了出来。
 关于录音输入音量所需注意的事项：
- 用24位或更高的音频录音。   正式录音前，试录整个演奏中音量最大的部分，并观察你的输入音量。
- 用你链接麦克风之后的第一个音量/增益控制钮调整输入音量，以保证你的硬件本身不会爆音。它通常在你的麦克风前级上（别名话放）。让平均音量处于-18dB左右，偶尔峰值达到-10dB左右。
- 如果你拥有高端的话放并想要利用其饱和度(Saturation)为录音染色，在上一个步骤的状态下慢慢提升你的输入音量达到渴望的染色，再把设备输出音量往回调到平均值-18dB左右。
- 不要动DAW里录音轨的音量推子！这样你才能清晰地看到你的输入音量是多少。
- 如果你觉得输入音量太小听不到，拉低工程内其他音轨的音量，并把你的监听音量开大。不要因为听不到录音的音轨而提升录音轨音量！
- 重要的事情说三遍，不要动DAW里录音轨的音量推子！
+ 用24位或更高的音频录音。    正式录音前，试录整个演奏中音量最大的部分，并观察你的输入音量。
+  用你链接麦克风之后的第一个音量/增益控制钮调整输入音量，以保证你的硬件本身不会爆音。它通常在你的麦克风前级上（别名话放）。让平均音量处于-18dB左右，偶尔峰值达到-10dB左右。
+  如果你拥有高端的话放并想要利用其饱和度(Saturation)为录音染色，在上一个步骤的状态下慢慢提升你的输入音量达到渴望的染色，再把设备输出音量往回调到平均值-18dB左右。
+  不要动DAW里录音轨的音量推子！这样你才能清晰地看到你的输入音量是多少。
+  如果你觉得输入音量太小听不到，拉低工程内其他音轨的音量，并把你的监听音量开大。不要因为听不到录音的音轨而提升录音轨音量！
+  重要的事情说三遍，不要动DAW里录音轨的音量推子！
   原因：
- 24位音频的动态范围是144dB，而16位音频的动态范围是96dB。计算方法为6乘以比特位数。
- 大多数硬件信噪比在70dB-80dB之间，再加上30dB-50dB的乐器动态范围，就超出了96dB能精准记载的程度，降低了信噪比，导致噪音音量的提升。
- 后期各阶段的压缩会继续降低信噪比。
- 为了不让音量峰值部分爆音，我们还需要为预留一些额外的空间，称为动态余量。
- 在后期处理中，使用软硬件效果器之前，我们依然需要把音频输入音量调到一个标准范围（通常效果器对不同动态会有不同的失真与压缩处理）。
- 24位音频的144dB的动态范围能够精确地记载录音信号，同时也能预留出动态余量，所以请好好利用其优势！
+  24位音频的动态范围是144dB，而16位音频的动态范围是96dB。计算方法为6乘以比特位数。
+  大多数硬件信噪比在70dB-80dB之间，再加上30dB-50dB的乐器动态范围，就超出了96dB能精准记载的程度，降低了信噪比，导致噪音音量的提升。
+  后期各阶段的压缩会继续降低信噪比。
+  为了不让音量峰值部分爆音，我们还需要为预留一些额外的空间，称为动态余量。
+  在后期处理中，使用软硬件效果器之前，我们依然需要把音频输入音量调到一个标准范围（通常效果器对不同动态会有不同的失真与压缩处理）。
+  24位音频的144dB的动态范围能够精确地记载录音信号，同时也能预留出动态余量，所以请好好利用其优势！
   </description>
     </item>
     
     <item>
       <title>REAPER简介</title>
-      <link>https://RCJacH.github.io/cn/blog/reaper-introduction/</link>
+      <link>https://RCJacH.github.io/cn/blog/reaper%E7%AE%80%E4%BB%8B/</link>
       <pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/reaper-introduction/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/reaper%E7%AE%80%E4%BB%8B/</guid>
       <description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
-
 国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是因为某些功能不顺手、不稳定或者满足不了需求而心里默默跑过了一万只羊陀。
-
 所以Reaper诞生了。目前有一些大牌的游戏与影视音效、音乐设计师公开表达他们对Reaper的爱：
 David Farmer (霍比特人、蚁人、暗黑3、魔兽世界等)
 Ariel Gross (质量效应、星球大战游戏等)
 Eduardo Vaisman (分裂细胞6：黑名单、孤岛惊魂4等)
 Ryan Canestro (影视作品列表)
 除了音频处理功能上有实力与其他DAW竞争，Reaper包含了一下几个其他DAW只能仰望的特征：
-价格 Reaper支持60天无限制的免费试用，并且用户可以在试用期之后继续使用，而限制只有打开界面时5秒钟的购买提示。如需购买正版，Reaper针对年营业额低于两万美金的商业个体或团体，以各种教育机构有一个60刀的折扣版，比不少插件都要*便宜很多*。同时，每一个正版的授权可以免费享用两个大版本的升级。如果你是版本5点几发布时购买的授权，你可以免费升级到6.99。按照Cockos他们家一年半一个大版本升级的进度来算，代表着3年左右的免费升级。相比之下Cubase8升到8.5还得花钱的是不是弱爆了?
-更新速度 Reaper平均每两天放出一次微型的beta版本更新，修正一些Bug、添加一些API、增加一些新功能之类的。每次更新之后团队会在论坛里获得一些反馈，通常出现任何问题可能*当天*就修复了（每年元旦第二天就开始持续更新了）。
+价格 Reaper支持60天无限制的免费试用，并且用户可以在试用期之后继续使用，而限制只有打开界面时5秒钟的购买提示。如需购买正版，Reaper针对年营业额低于两万美金的商业个体或团体，以各种教育机构有一个60刀的折扣版，比不少插件都要便宜很多。同时，每一个正版的授权可以免费享用两个大版本的升级。如果你是版本5点几发布时购买的授权，你可以免费升级到6.99。按照Cockos他们家一年半一个大版本升级的进度来算，代表着3年左右的免费升级。相比之下Cubase8升到8.5还得花钱的是不是弱爆了?
+更新速度 Reaper平均每两天放出一次微型的beta版本更新，修正一些Bug、添加一些API、增加一些新功能之类的。每次更新之后团队会在论坛里获得一些反馈，通常出现任何问题可能当天就修复了（每年元旦第二天就开始持续更新了）。
 当然啦，普通用户可能不需要保持最新版本，而且beta版通常是为开发人员准备的。这种互联网形式的更新与反馈速度倒是值得学习一下。
 自定义界面、菜单、宏 这点是Cockos公司创始人Justin Frankel (之前是Winamp的开发者) 一直强调的。先不说自定义快捷键这种行业标准，Reaper里差不多所有的界面与菜单都可以自定义。很多人首次打开Reaper觉得界面不美，但其实我们可以使用官网上用户自制的皮肤。
-比如这个： 这个： 这个： 或者适合双屏的这个： 也有很多模仿款的： PT Logic皮肤与付费版 Sonar皮肤 Adobe Audition 2017皮肤 
-菜单方面，很多人刚开始使用的时候会觉得很乱没有逻辑。我之前也这么觉得，所以在这里推荐一下我目前正在使用的菜单系统，ReaMenus（貌似需要SWS扩展）。
-
+比如这个： 这个： 这个： 或者适合双屏的这个： 也有很多模仿款的： PT Logic皮肤与付费版 Sonar皮肤 Adobe Audition 2017皮肤 菜单方面，很多人刚开始使用的时候会觉得很乱没有逻辑。我之前也这么觉得，所以在这里推荐一下我目前正在使用的菜单系统，ReaMenus（貌似需要SWS扩展）。
 使用方法： 把ReaMenus下载文件放到Reaper的资源文件目录中的MenuSets文件夹内，在Option菜单里的Customize menus/toolbars选项内，下方有一个Import。点击后选择新下载的文件，你就能看到整个菜单都变了样子呢！可惜目前菜单不支持K酱的中文翻译版，以后说不定。
 而宏又是什么呢？在Reaper里，一个宏是一群操作的组合。通过宏，我们可以用一个快捷键执行多个操作。例如我们可以按一个键Solo所有名字里带有DR的轨道（鼓组），或者一键把选中的item通过原轨道效果导出成音频段放在新的一轨中（保留音量、相位包络和发送设置），也可以结合多个自制脚本达到意想不到的效果。
-
 自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。
-RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description>
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
+多采样率 在使用其他DAW的时候，当你拖进来任何与工程文件不同采样率的音频或者mp3时，宿主都会自动转换成一个与工程采样率一致的wav音频文件。这样不仅增加了硬盘负担，也降低了工作效率（转码也需要时间呐！）。尤其是对于声音设计师、影视音效师这种经常会用到不同来源的采样的音频工作者来说，能够把各种采样率以及各种格式的音频自由地拼在一个工程内是多么舒适的一件事情。
+轻量级 + Portable Reaper的安装文件只有10-20mb，安装之后也才60mb左右。你没看错，Megabytes不是Gigabytes!</description>
     </item>
     
     <item>
       <title>英文缩写规则</title>
-      <link>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</link>
+      <link>https://RCJacH.github.io/cn/blog/%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E8%A7%84%E5%88%99/</link>
       <pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</guid>
+      <guid>https://RCJacH.github.io/cn/blog/%E8%8B%B1%E6%96%87%E7%BC%A9%E5%86%99%E8%A7%84%E5%88%99/</guid>
       <description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
 英文缩写：（abbreviation，来自于拉丁语中的brevis，代表short简短）
- Shortening：缩略一个词使它保留原单词的前几个字母，一般会在结尾加一个句号&amp;rdquo;.&amp;rdquo; 例：cont. = continued。
- 注释：如果缩略单词能形成另外一个单词，句号会被省略。例：limo = limousine。
- 这种缩略不一定是非正式用语，比如：bus = autobus，taxi = taxicab等等。
- 注释：有些时候会为了发音或拼写对缩略单词进行变化，例如：bike = bicycle。
-  Contraction：使用单词第一个字母与最后一个字母，并省略中间的字母。例如：Dr. doctor, St. = saint/street。需要在结尾加句号&amp;rdquo;.&amp;ldquo;。另一种缩短方式是用单引号apostrophe &amp;lsquo; 来标注省略字母，比如说：can&amp;rsquo;t = cannot，didn&amp;rsquo;t = did not等等。
- 注释：我个人发现另一种缩短的方法：省略元音与重复的字母，保留辅音。例如：cls. = Class， src = source，gtr = guitar。  Initialism：对于词组，可以使用每个词的首写字母。CIA/C.I.A.，US/U.S.。这种缩写方法越来越倾向不使用句号来分开字母。
- Acronyms：这种缩写方法是让词组的每个词形成另外一个完整的单词，比如：AIDS，laser，或者像DAW以及Reaper。这种情况缩写反而成为了常用的词汇，而完整体通常用于解释目的。
+ Shortening：缩略一个词使它保留原单词的前几个字母，一般会在结尾加一个句号&amp;rdquo;.&amp;rdquo; 例：cont. = continued。    注释：如果缩略单词能形成另外一个单词，句号会被省略。例：limo = limousine。
+  这种缩略不一定是非正式用语，比如：bus = autobus，taxi = taxicab等等。
+  注释：有些时候会为了发音或拼写对缩略单词进行变化，例如：bike = bicycle。
+  Contraction：使用单词第一个字母与最后一个字母，并省略中间的字母。例如：Dr. doctor, St. = saint/street。需要在结尾加句号&amp;rdquo;.&amp;quot;。另一种缩短方式是用单引号apostrophe &#39; 来标注省略字母，比如说：can&amp;rsquo;t = cannot，didn&amp;rsquo;t = did not等等。   注释：我个人发现另一种缩短的方法：省略元音与重复的字母，保留辅音。例如：cls. = Class， src = source，gtr = guitar。   Initialism：对于词组，可以使用每个词的首写字母。CIA/C.I.A.，US/U.S.。这种缩写方法越来越倾向不使用句号来分开字母。
+  Acronyms：这种缩写方法是让词组的每个词形成另外一个完整的单词，比如：AIDS，laser，或者像DAW以及Reaper。这种情况缩写反而成为了常用的词汇，而完整体通常用于解释目的。
   灵活地去运用以上四个方法，我们便可很便捷地、系统地去简化音频相关英文单词。例如之前的PAD Sequence Glitter可以写成 PD sq Gltr，而后者可以标记为EG w trem。这样一眼就知道每一轨代表什么乐器了。</description>
     </item>
     

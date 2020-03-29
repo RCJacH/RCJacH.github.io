@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Sound Design on RCJacH</title>
@@ -13,18 +13,16 @@
     
     <item>
       <title>Tone Sweep - REAPER JSFX Percussion Synth</title>
-      <link>https://RCJacH.github.io/blog/reaper-jsfx-tone-sweep/</link>
+      <link>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</link>
       <pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>https://RCJacH.github.io/blog/reaper-jsfx-tone-sweep/</guid>
+      <guid>https://RCJacH.github.io/blog/tone-sweep-reaper-jsfx-percussion-synth/</guid>
       <description>You can download it from here: Tone Sweep on Github
 or Simply add my repository in ReaPack:
 RCJacH ReaPack Repository
-
 Description: This synth generates a monophonic sweeping tone when receiving a MIDI note input. Intended for designing percussive sounds, such as kicks, snares, toms, or sound FXs in electronic music genres.
-
-Quick Instruction:  Set a starting and ending note.
- If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
+Quick Instruction:   Set a starting and ending note.
+  If necessary, change the Pitch Sweep Curve and length by dragging the Pitch Curve Graph, x axis for length, and y axis for curve.</description>
     </item>
     
   </channel>

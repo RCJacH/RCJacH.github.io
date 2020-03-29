@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <title>Recording Volume Calibration &middot; RCJacH</title>
-    <meta name="generator" content="Hugo 0.56.3" />
+    <meta name="generator" content="Hugo 0.68.3" />
     <meta charset="utf-8">
     <meta name="robots" content="all,follow">
     <meta name="googlebot" content="index,follow,snippet,archive">
@@ -34,16 +34,13 @@
     
     <meta itemprop="name" content="Recording Volume Calibration">
 <meta itemprop="description" content="Why we are recording at 24 bit and averaging around -18dBFS.">
-
-
 <meta itemprop="datePublished" content="2016-02-06T00:00:00&#43;00:00" />
 <meta itemprop="dateModified" content="2016-02-06T00:00:00&#43;00:00" />
-<meta itemprop="wordCount" content="1217">
+<meta itemprop="wordCount" content="1236">
 
 
 
 <meta itemprop="keywords" content="Recording,REAPER," />
-
     <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Recording Volume Calibration"/>
 <meta name="twitter:description" content="Why we are recording at 24 bit and averaging around -18dBFS."/>
@@ -65,7 +62,7 @@
     <div class="outer">
       <a href="https://RCJacH.github.io/" id="logo">
           
-          <img src="https://RCJacH.github.io/img/logo.png" alt="Blogs logo" class="hidden-xs hidden-sm">
+          <img src="https://RCJacH.github.io/img/logo.png" alt="FAQ logo" class="hidden-xs hidden-sm">
           
           
       </a>
@@ -73,7 +70,7 @@
           
 
           
-          <a class="main-nav-link" href="https://RCJacH.github.io/blog/"><h3>Blog</h3></a>
+          <a class="main-nav-link" href="https://RCJacH.github.io/post/"><h3>Blog</h3></a>
           
           <a class="main-nav-link" href="https://RCJacH.github.io/profile/"><h3>Profile</h3></a>
           
@@ -111,7 +108,7 @@
           
 
           
-          <td><a class="main-nav-link" href="https://RCJacH.github.io/blog/"><h3>Blog</h3></a></td>
+          <td><a class="main-nav-link" href="https://RCJacH.github.io/post/"><h3>Blog</h3></a></td>
 
           
           <td><a class="main-nav-link" href="https://RCJacH.github.io/profile/"><h3>Profile</h3></a></td>
@@ -157,8 +154,8 @@
     </div>
     <div class="article-info profile-block">
       <div class="article-info-block">
-        <a href="https://RCJacH.github.io/blog">
-          26
+        <a href="https://RCJacH.github.io/post">
+          0
           <span>Posts
           </span>
         </a>
@@ -166,7 +163,7 @@
       <div class="article-info-block">
         <a href="https://RCJacH.github.io/tags/">
           
-            23
+            25
           
           <span>
             Tags
@@ -265,7 +262,7 @@
                 <time datetime="2016-02-06 00:00:00 &#43;0000 UTC" itemprop="datePublished">February 6, 2016</time>
                 
                     &middot;
-                    1217
+                    1236
                     words
                 
                 
@@ -306,7 +303,7 @@
         
             
                 
-                <a class="article-category-link" href="https://RCJacH.github.io/cn/blog/recording-volume-calibration/">
+                <a class="article-category-link" href="https://RCJacH.github.io/cn/blog/%E5%BD%95%E9%9F%B3%E8%BE%93%E5%85%A5%E9%9F%B3%E9%87%8F%E6%A0%87%E5%87%86/">
                     中文: 录音输入音量标准
                     
                 </a>
@@ -315,83 +312,44 @@
     
 
 </header><div class="article-entry" itemprop="articleBody">
-            
-
-<p>I have seen many people, from amateurs to professionals (in China), myself included, struggling with digital volume level calibration while tracking. Many people do not bother having a standard with levels and many lack the understanding of impact of leveling in tracking, resulting in level inconsistency between tracks or even takes. It took me quite a while to come across articles explaining at what level we should be recording at and why, and thus helped me greatly by providing recordings at consistent level while removing any doubts of &ldquo;am I recording too hot or too quiet?&rdquo;</p>
-
-<p><br></p>
-
+            <p>I have seen many people, from amateurs to professionals (in China), myself included, struggling with digital volume level calibration while tracking. Many people do not bother having a standard with levels and many lack the understanding of impact of leveling in tracking, resulting in level inconsistency between tracks or even takes. It took me quite a while to come across articles explaining at what level we should be recording at and why, and thus helped me greatly by providing recordings at consistent level while removing any doubts of &ldquo;am I recording too hot or too quiet?&rdquo;</p>
+<!-- raw HTML omitted -->
 <p>I would like to share this idea with as little terminology as possible for the purpose that people with little technical background can understand as well, so I will not touch on sample rate, quantization, and dithering. However, there is one central concept that I need to explain. <strong>Bit Depth</strong>.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h2 id="what-is-bit-depth">What is Bit Depth?</h2>
-
 <p><em>Bit depth</em> is a term used in digital audio recording, recording to audio into a computer of some sort that is, referring to the digits of binary numbers used to represent the <strong>dynamic range</strong>, the level difference between the loudest and of quietest peaks, of your audio signal. To avoid touching upon sampling basics, so I will explain bit depth with an analogy.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <p>Imagine bit depth as the <em>size of your newly bought house or condo</em>. The meter square is calculated as 6 times the number of bits, so if it&rsquo;s an 8 bit audio, you would have 6 x 8 = 48dB (or dBFS, decibels full scale, unit for measuring sound volume level in the digital domain) of dynamic range to use for your audio.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <p>Now imagine the audio signal as your furniture:</p>
-
-<p><img src="/img/Content/RVC/Audio Signal.png" alt="Audio Signal" /></p>
-
+<p>![Audio Signal](/img/Content/RVC/Audio Signal.png)</p>
 <p>They are placed against the surrounding walls, which is the digital noise floor sitting at the bottom of your dynamic range, looking like this when zoomed out:</p>
-
-<p><img src="/img/Content/RVC/Noise Floor.png" alt="Noise Floor" /></p>
-
-<p><br></p>
-
-<p>The bigger the house, the more furniture we can put into our house. If our apartment is a 6m<sup>2</sup> room, the only thing we can stick into the room would be a single size bed, squeezing up walking space that is scarce to begin with. We want a full set of house furniture, and a full range of dynamic, decorating each room and each difference section of our musical piece. That requires a bigger house.</p>
-
-<p><br></p>
-
+<p>![Noise Floor](/img/Content/RVC/Noise Floor.png)</p>
+<!-- raw HTML omitted -->
+<p>The bigger the house, the more furniture we can put into our house. If our apartment is a 6m<!-- raw HTML omitted -->2<!-- raw HTML omitted --> room, the only thing we can stick into the room would be a single size bed, squeezing up walking space that is scarce to begin with. We want a full set of house furniture, and a full range of dynamic, decorating each room and each difference section of our musical piece. That requires a bigger house.</p>
+<!-- raw HTML omitted -->
 <p>Comparing to the modern recording in 24 bit, traditional recordings and CD quality wave files are in 16 bit, a 96 dB dynamic range, which is sufficient enough for any playback purposes for ever. Why? For two reasons. First, we have around <a href="http://www.head-fi.org/t/415361/24bit-vs-16bit-the-myth-exploded#post_5533890">50dB SPL of noise floor in normal rooms</a>, any sound played below that noise floor will be in audible. Adding 96dB of dynamic range on top of that, the loudest peak would be at 146dB SPL, more than enough to <a href="http://www.gcaudio.com/resources/howtos/loudness.html">cause some permanent health damages to the listeners</a>. Another reason is that the widest dynamic range of commercial recordings is 60dB. Some popular songs contain <a href="http://dr.loudness-war.info/">as little as 5dB of dynamic range</a>. What&rsquo;s in the other 91dB? Noise, period.</p>
-
-<p><br></p>
-
-<p>Translating into the house analogy, most people would consider that a 96m<sup>2</sup> condo is large enough for daily lives unless they are considering building a dance floor in the middle of their living room. Bigger houses cost more money just as higher bit depth cost most hard drive spaces, exponentially. For every one bit we increase, we are doubling the number of values that we are storing. So the difference between 16 bit and 24 bit isn&rsquo;t just a 2<sup>8</sup> = 256 values of 8 bit, the actual difference in the number of values stored per captured sample is 2<sup>24</sup> – 2<sup>16</sup> = 16,711,680!</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
+<p>Translating into the house analogy, most people would consider that a 96m<!-- raw HTML omitted -->2<!-- raw HTML omitted --> condo is large enough for daily lives unless they are considering building a dance floor in the middle of their living room. Bigger houses cost more money just as higher bit depth cost most hard drive spaces, exponentially. For every one bit we increase, we are doubling the number of values that we are storing. So the difference between 16 bit and 24 bit isn&rsquo;t just a 2<!-- raw HTML omitted -->8<!-- raw HTML omitted --> = 256 values of 8 bit, the actual difference in the number of values stored per captured sample is 2<!-- raw HTML omitted -->24<!-- raw HTML omitted --> – 2<!-- raw HTML omitted -->16<!-- raw HTML omitted --> = 16,711,680!</p>
+<!-- raw HTML omitted -->
 <p>So why do we still need 24 bit for recording?</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <p><strong>Avoiding noise and increasing headroom.</strong></p>
-
 <p>Because we are recording through microphones, pre-amps, and audio interfaces, every single piece of hardware in the signal chain will generate some level of noise by itself, normally <a href="https://www.gearslutz.com/board/5080834-post5.html">around 70 - 80dB</a> below the actual recorded signal, call the Signal to Noise Ratio or SNR. If we are recording signals with dynamic range of 30dB (See a <a href="http://www.samplemodeling.com/forum/viewtopic.php?p=4254#p4254">rough list of instrument dynamic range</a>), we are likely adding that 30dB to the 80dB hardware noise, which is 110dB, below the 96dB noise floor, therefore reducing the SNR by 14dB. However, if we are recording to a 24 bit audio file, we will have 24 * 6 = 144dB of dynamic range which is far greater than 110dB, thus capable of maintaining original SNR. Of course, the real theory is way more complex than what I can possibly explain within one paragraph, I&rsquo;m keeping it short for the purpose of introducing this idea.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <p>Furthermore, the modern production sound is often constructed with tons of compression, which will reduce the signal to noise ratio, increasing the noise floor by a bit. Multiply that by the number of compression stages during post-production, number of tracks, and further compression done by audio streaming services, we are pushing the noise floor up quite a bit. With that in mind, we need to strive for greater SNR at the source of our recordings.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <p>The other issue to watch out for is headroom. Headroom refers to the amount of extra space we are leaving for the transients that occasionally exceeds the average level of our audio without clipping (again simplified for better understanding). What is clipping? Clipping is a nasty wave distortion that cuts the top of the audio flat:</p>
-
-<p><img src="/img/Content/RVC/Clipped Sine Wave.png" alt="Clipped Sine Wave" /></p>
-
+<p>![Clipped Sine Wave](/img/Content/RVC/Clipped Sine Wave.png)</p>
 <p>Generating tons of harsh harmonics:</p>
-
-<p><img src="/img/Content/RVC/Clipping Freq.gif" alt="Frequency of a 40HZ Sine Wave Clipped at -6dB" /></p>
-
+<p>![Frequency of a 40HZ Sine Wave Clipped at -6dB](/img/Content/RVC/Clipping Freq.gif)</p>
 <p>It is the red dot on the top of your audio track:
-<img src="/img/Content/RVC/Clipped Track.png" alt="Clipped Track" /></p>
-
-<p><br></p>
-
+![Clipped Track](/img/Content/RVC/Clipped Track.png)</p>
+<!-- raw HTML omitted -->
 <p>We should avoid hard clipping in most of our recordings, especially before we fully acknowledge the sound of clipping, which is why we need to leave some headroom for our recording. If the average of our signal is around -6dB showing shown on the input meter, any transients 6dB higher than average will result in clipping. Things are more exaggerated with vocal takes, since we want to build the dance floor! We want to scream our heart out and then whisper out the most sincere message, sometimes within one phrase. Therefore if we are setting up our input while whispering or humming, we will definitely hear a sharp unnatural distortion when the chorus comes in.</p>
-
-<p><br></p>
-
+<!-- raw HTML omitted -->
 <h2 id="conclusion">Conclusion</h2>
-
 <p>As you can see from above, since we have more space with 24 bit depth, we should make good use of that. Below is a list of things to watch out for when recording:</p>
-
 <ul>
 <li>Record in <em>24 bit</em> audio.</li>
 <li>Prior to the actual recording process, play the loudest part of the section and watch the input meters.</li>
@@ -404,7 +362,7 @@
 
         </div>
         <footer class="article-footer">
-    <a data-url="https://RCJacH.github.io/blog/recording-volume-calibration/" data-id="47e5841c4083adba9d79e41cfc7c9bcb" class="article-share-link">
+    <a data-url="https://RCJacH.github.io/blog/recording-volume-calibration/" data-id="a7538f2033aa6d98b2c440cbf82b69e2" class="article-share-link">
         <i class="fa fa-share"></i>
         Share
     </a>
@@ -480,7 +438,7 @@
     </div>
 <nav id="article-nav">
     
-    <a href="https://RCJacH.github.io/blog/3ns/3ns-the-three-fundamental-finger-patterns/" id="article-nav-older" class="article-nav-link-wrap">
+    <a href="https://RCJacH.github.io/blog/3ns-the-three-fundamental-finger-patterns/" id="article-nav-older" class="article-nav-link-wrap">
       <strong class="article-nav-caption">
           Older
       </strong>
@@ -531,6 +489,14 @@
                 
                 <a class="category-list-link" href="https://RCJacH.github.io/categories/book-recommendation">
                     book-recommendation
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/categories/design">
+                    design
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -596,6 +562,22 @@
                 
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/beginner">
                     beginner
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/tags/color">
+                    color
+                </a>
+                <span class="category-list-count">1</span>
+            </li>
+            
+            <li class="category-list-item">
+                
+                <a class="category-list-link" href="https://RCJacH.github.io/tags/design">
+                    design
                 </a>
                 <span class="category-list-count">1</span>
             </li>
@@ -717,7 +699,7 @@
                 <a class="category-list-link" href="https://RCJacH.github.io/tags/script">
                     script
                 </a>
-                <span class="category-list-count">3</span>
+                <span class="category-list-count">4</span>
             </li>
             
             <li class="category-list-item">
@@ -794,6 +776,12 @@
         
         
         <a href="https://RCJacH.github.io/tags/beginner" style="font-size: 12px;">beginner</a>
+        
+        
+        <a href="https://RCJacH.github.io/tags/color" style="font-size: 12px;">color</a>
+        
+        
+        <a href="https://RCJacH.github.io/tags/design" style="font-size: 12px;">design</a>
         
         
         <a href="https://RCJacH.github.io/tags/exercise" style="font-size: 12px;">exercise</a>
@@ -879,7 +867,7 @@
   <div class="outer">
     <div id="footer-info" class="inner">
       <a href="https://RCJacH.github.io/">
-        COPYRIGHT &copy; 2019
+        COPYRIGHT &copy; 2020
         RCJacH. ALL RIGHTS RESERVED.
       </a>
     </div>

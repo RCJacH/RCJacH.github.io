@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on RCJacH</title>
@@ -6,15 +6,24 @@
     <description>Recent content in Categories on RCJacH</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en</language>
-    <lastBuildDate>Tue, 27 Aug 2019 22:25:55 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 28 Mar 2020 14:42:02 +0800</lastBuildDate>
     
 	<atom:link href="https://RCJacH.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>Design</title>
+      <link>https://RCJacH.github.io/categories/design/</link>
+      <pubDate>Sat, 28 Mar 2020 14:42:02 +0800</pubDate>
+      
+      <guid>https://RCJacH.github.io/categories/design/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>Musicianship</title>
       <link>https://RCJacH.github.io/categories/musicianship/</link>
-      <pubDate>Tue, 27 Aug 2019 22:25:55 +0800</pubDate>
+      <pubDate>Tue, 27 Aug 2019 00:00:00 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/categories/musicianship/</guid>
       <description></description>
@@ -23,7 +32,7 @@
     <item>
       <title>Music Production</title>
       <link>https://RCJacH.github.io/categories/music-production/</link>
-      <pubDate>Sun, 07 Apr 2019 01:42:15 +0800</pubDate>
+      <pubDate>Sun, 07 Apr 2019 19:51:01 +0800</pubDate>
       
       <guid>https://RCJacH.github.io/categories/music-production/</guid>
       <description></description>
