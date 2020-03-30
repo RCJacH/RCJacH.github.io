@@ -1,4 +1,32 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RCJacH</title><link>https://RCJacH.github.io/cn/</link><description>Recent content on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>cn</language><copyright>所有版权归RCJacH拥有。</copyright><lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/index.xml" rel="self" type="application/rss+xml"/><item><title>RCJacH - TV动画《钢之炼金术师》/ TVアニメ「鋼の錬金術師」OST「Main Theme」【吉他版】</title><link>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</link><pubDate>Fri, 31 Aug 2018 23:53:54 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</guid><description>这次翻弹的是钢之炼金术师主题曲，思考了很久编配方式。之后写文章细讲创作思路及制作技巧。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RCJacH</title><link>https://RCJacH.github.io/cn/</link><description>Recent content on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>cn</language><copyright>所有版权归RCJacH拥有。</copyright><lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/index.xml" rel="self" type="application/rss+xml"/><item><title>Cubehelix颜色表算法</title><link>https://RCJacH.github.io/cn/blog/cubehelix%E9%A2%9C%E8%89%B2%E8%A1%A8%E7%AE%97%E6%B3%95/</link><pubDate>Mon, 30 Mar 2020 16:56:11 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/cubehelix%E9%A2%9C%E8%89%B2%E8%A1%A8%E7%AE%97%E6%B3%95/</guid><description>我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。
+在进入主题之前，我们先回顾一下传统的配色表通常是什么样的。
+当你在某些打不开的搜索引擎上搜索色图色表的时候，搜索结果通常是这样的：
+或者像这种多色系的：
+渐变：
+甚至整个配色表：
+小贴士: 文字可点击
+这类工具在平面设计或者UI设计阶段的确能够激发灵感，但人嘛，一年总有那么十几个月想用一键生成的工具。【严肃脸】主要是因为它们可以抑制我们人类在选择单个元素时犹豫不决，反复推敲的冲动，有效的降低了拖延病的发作机率。【伪
+不过话说回来，有时自动生成的算法的确更有利一点，尤其是在构造可视化数据的时候，例如音频频谱图。
+别说，我之前就在开发一个配器相关的音乐数据库（目前仍然 WIP）。由于是五线谱，纯黑白的极简主义有点太单调了，毕竟漫画还有彩图封面呢不是么。所以当时想要加点更生动的视觉反馈 - 把每个音符依据他们在和弦中的功能进行染色。我尝试了十几种颜色表，很遗憾，都很丑。倒不是色表的问题，主要是因为由于出现的音符较多，关系比较复杂，所以为了表明音符之间的关联，需要很多不同的颜色，不同的色调。而由于这个数据库又无法提前知道哪个颜色最终会挨着哪个颜色&amp;hellip; 所以渲染后经常会出现一些挑战审美极限的结果。不美。
+直到它出现了。
+什么是 CUBEHELIX 由于作者很慷慨地为CUBEHELIX 算法专门建立了一个网页，解释了其创作思路并给出论文地址，我在此就跳过长篇大论，简单地介绍一下好了。
+Cubehelix &amp;ldquo;立方螺旋&amp;rdquo; 算法会生成给定数量的颜色列表。此颜色表拥有线性增加的强度曲线，同时也会在色轮周围旋转产生各种颜色的渐变。
+英文有句话说一张图顶千字稿费，我们还是上图吧。立方螺旋颜色表长这个样子：
+这个算法还有另一个优点。生成的色表在转换为灰度或替换色调后，其强度的变化不会有影响。这点挺重要的，因为红绿蓝三色本身的感知亮度是不一样的，所以如果更改了基础色，还需要再修一遍整体平衡。这个算法能够在不破坏亮度平衡的情况下替换起始颜色在应用上还是非常省心的。
+伸手党通道 您可以通过以下渠道购买 咳咳 免费获取 cubehelix 色表。如果只需要生成结果，而不需要引用算法的话，以下几个在线的生成器就足够了。
+原官方在线效果预览。这里有五个参数，点击页面中间的 refresh plots 按钮在右侧预览颜色，通过下方四个按钮能在新页面中获取浮点、8位定点、或16进制字符串格式的颜色列表。
+另一个有七个参数的在线预览。这款还能显示更顺滑的渐变以及亮度渐变。另一个亮点是结果色表所有的颜色在十六进制编号旁边还会有个颜色预览，便于挑选。
+如果你想要脚本版，我之前贴的官贴里面最下方有个列表。
+以下几款是我觉得值得点名的，因为这些库还挺常见的。
+Cubehelix in Chroma.js
+Cubehelix in MATLAB
+Cubehelix in Matplotlib，在页面最底左右
+Github上有很多python脚本也加了&amp;quot;立方螺旋&amp;quot;算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个能生成颜色列表的cubehelix算法模块. 并多加了一点可自定义的参数。
+敝人的脚本 作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用Python来写各种日常自动化的脚本，例如：
+import numpy as np
+print(&amp;#34;Hello World!&amp;#34;)
+# 不会了
+我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.</description></item><item><title>RCJacH - TV动画《钢之炼金术师》/ TVアニメ「鋼の錬金術師」OST「Main Theme」【吉他版】</title><link>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</link><pubDate>Fri, 31 Aug 2018 23:53:54 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</guid><description>这次翻弹的是钢之炼金术师主题曲，思考了很久编配方式。之后写文章细讲创作思路及制作技巧。
 音频地址：
 全职猎人OST正義の怒り 吉他版 音频 网易云音乐
 ハンターハンターOST正義の怒り Guitar Cover SoundCloud
