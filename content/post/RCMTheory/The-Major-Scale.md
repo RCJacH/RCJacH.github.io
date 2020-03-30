@@ -4,6 +4,7 @@ date = 2018-07-01T21:23:14+08:00
 tags = ["Theory","Musicianship","Scales"]
 categories = ["Musicianship"]
 description = "Learn how to formulate a major scale based on any note."
+banner = "img/banners/rcmtheory/major_scale.jpg"
 +++
 
 ## Definition
