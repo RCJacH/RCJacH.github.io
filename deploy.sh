@@ -2,8 +2,13 @@
 
 echo -e "\033[0;32mDeploying updates to GitHub...\033[0m"
 
+branch=$(git rev-parse --abbrev-ref HEAD)
+msg="Publish: $branch - `date`"
+
+echo -e "$msg"
+
 # Build the project.
-hugo # if using a theme, replace with `hugo -t <YOURTHEME>`
+hugo --minify # if using a theme, replace with `hugo -t <YOURTHEME>`
 
 # Go To Public folder
 cd public
@@ -11,7 +16,6 @@ cd public
 git add .
 
 # Commit changes.
-msg="rebuilding site `date`"
 if [ $# -eq 1 ]
   then msg="$1"
 fi
