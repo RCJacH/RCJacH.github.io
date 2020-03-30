@@ -4,6 +4,7 @@ date = 2018-07-01T21:23:14+08:00
 tags = ["乐理","音乐修养","音阶"]
 categories = ["音乐修养"]
 description = "如何以任何音为基础建立大调音阶。"
+banner = "img/banners/rcmtheory/major_scale.jpg"
 +++
 
 ## 定义
