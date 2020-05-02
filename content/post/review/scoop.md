@@ -9,32 +9,35 @@ banner = ""
 images = []
 +++
 
-Two days ago I was suddenly struck by rage upon seeing a popup window while working on a project.
-I had always been a forgiving person when it comes to popups.
-Of course, that's after all the filters that's installed on my browser.
-Closing them quietly would be my typical reaction.
-However, perhaps the sheer number of update pop ups is too numerous and too frequent (I'm looking at you adobe flash player), it becomes a time-consuming chore just to click through all those "next"s every day.
-Not to mention that the popups will break your focus, normally at the worst time possible when you are working.
+I had always been a forgiving person when it comes to popups, thanks to the four ad blockers installed on each and every one of my web browsers.
+However, ad blockers are restricted to web browsing, they are powerless against the popups from your operating system.
+Of course, being a forgiving person that I am, closing them quietly without complain would be an expected reaction.
 
-Anyway, I spend some time thinking through this problem, and began searching for a solution.
-I have a vague impression of chocolatey on windows.
+Perhaps the sheer number of programs installed, used, and maintained are too great, or perhaps their frequency of updates too high (I'm looking at you adobe flash player), it has became a time-consuming chore just to deal with them every day.
+Not to mention that the popups will break your focus, often at the worst time possible.
+And don't get me started on the incompatibility of Zen mode with multiple monitors...
+
+Anyway, I spent some time thinking through this problem two days ago.
+I had a vague recollection of a software called [*Chocolatey*](https://chocolatey.org/) on Windows that claims to provide a solution to managing multiple applications.
 I even had it installed.
-So I tried installing some programs with it.
-And, unsurprisingly, the program was installed in "C:\Program Files\".
-Uh, I hate to pollute Program Files folder.
-In fact, I try to keep my programs installed in C:\Tools folder, categorized, to avoid the annoying Run As Administrator popup.
+So let's trying using Chocolatey!
 
-After a searching session, I came across a built-in solution, but unfortunately, a premium one.
-I totally understand that money keeps a project going.
-So I uninstalled chocolatey.
-Hey, I'm not a corporate client they are targeting.
+But since this post isn't about chocolatey, I'll skip the battle and on to the results.
 
-The other reason I uninstalled chocolatey is that while searching, I came across a similar package manager called Scoop.
-It's free.
-It doesn't give me any popups.
-It doesn't pollute Program Files.
-It doesn't pollute Path.
-That sounds like something I can use.
+Chocolatey installs programs to `C:\Program Files\`.
+And I hate to pollute `Program Files` folder, because doing anything within it requires a Run As Administrator popup.
+Installing else where **IS** a built-in solution, but, unfortunately, a *premium* one.
+
+So I uninstalled Chocolatey.
+Hey, I'm not a corporate client they are targeting at.
+
+The other reason I uninstalled chocolatey is that while searching for the said solution, I came across a similar package manager called Scoop.
+
+It's free.\
+It doesn't display any popup.\
+It doesn't pollute Program Files.\
+It doesn't pollute Path in environment variables.\
+That sounds like exactly what I was looking for!
 
 ## What is Scoop
 
