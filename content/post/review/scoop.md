@@ -150,35 +150,13 @@ Type 'scoop help <command>' to get help for a specific command.
 ```
 
 Some commands are used for developers or maintainers to create an app manifest - a JSON file that describes how to install/uninstall a program.
-As a user, the six most commonly used commands are `bucket`, `install`, `list`, `search`, `uninstall`, and `update`.
-
-### Scoop Bucket
-
-There are something Scoop does not have, for everything else, there's ~~M@sterCard~~ the Scoop bucket!
-
-A bucket, in Scoop's term, is basically a repository consisting of multiple app manifests.
-I guess it's called a bucket because we are dealing with scoop.
-
-![scoop and bucket from http://stewartdollhousecreations.com/](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/ice_cream_bucket.jpg)
-
-Not all programs are enlisted in the default `main` bucket, a list of Scoop buckets can be found in the [scoop-directory](https://rasa.github.io/scoop-directory/).
-The most common one is the `scoop-extras`, so add that to our Scoop using the following command.
-
-```commandline
-scoop bucket add extras
-```
-
-Wait for a while since this bucket contains more than a thousand apps.
-
-![scoop bucket add extras](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_bucket_add_extras.png)
-
-Now we can install [REAPER](http://reaper.fm) with Scoop :).
+As a user, the six most commonly used commands are `install`, `bucket`, `install`, `list`, `search`, `uninstall`, and `update`.
 
 ### Scoop Install
 
 This command allow us to install programs.
 
-Since Scoop requires `git` to update, let's install `git` with scoop.
+Since Scoop requires `git` to basically do everything, let's install `git` with scoop.
 
 ```commandline
 scoop install git
@@ -216,6 +194,29 @@ Oh, did I mention that most programs installed by scoop are *portable*?
 Meaning that programs have all settings residing inside the program folder, rather than the windows registry.
 So you can copy the entire program folder to another windows machine, and it will still open without problems.
 Thus called portable.
+
+
+### Scoop Bucket
+
+There are something Scoop does not have, for everything else, there's ~~M@sterCard~~ the Scoop bucket!
+
+A bucket, in Scoop's term, is basically a repository consisting of multiple app manifests.
+I guess it's called a bucket because we are dealing with scoop.
+
+![scoop and bucket from http://stewartdollhousecreations.com/](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/ice_cream_bucket.jpg)
+
+Not all programs are enlisted in the default `main` bucket, a list of Scoop buckets can be found in the [scoop-directory](https://rasa.github.io/scoop-directory/).
+The most common one is the `scoop-extras`, so add that to our Scoop using the following command.
+
+```commandline
+scoop bucket add extras
+```
+
+Wait for a while since this bucket contains more than a thousand apps.
+
+![scoop bucket add extras](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_bucket_add_extras.png)
+
+Now we can install [REAPER](http://reaper.fm) with Scoop :).
 
 ### Scoop List
 
