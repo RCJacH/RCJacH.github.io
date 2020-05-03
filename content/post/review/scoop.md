@@ -35,28 +35,29 @@ The other reason I uninstalled chocolatey is that while searching for the said s
 It's free.\
 It doesn't display any pop-up.\
 It doesn't pollute Program Files.\
-It doesn't pollute Path in environment variables.\
-That sounds like exactly what I was looking for!
+It doesn't pollute Path in environment variables.
+
+That sounds exactly like what I was looking for!
 
 ## What is Scoop
 
 This is a scoop.
 
-![Photo of ice-cream scoop](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/ice_cream_scoop.jpg)
+![Photo of ice-cream scoop from Amazon](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/ice_cream_scoop.jpg)
 
 In all seriousness, this is probably what that Scoop is named after, but I digress.
 
 [**Scoop**](http://scoop.sh/) is a [*package manager*](https://en.wikipedia.org/wiki/Package_manager).
 
 A package manager is basically a centralized command line installer.
-Rather than using a GUI installer provided by the software developer, which takes time to find, to click through the endless "Yes"es and "Next"s, package manager allows us to install packages, another name for programs, automatically from various developers by typing commands in the Terminal, Command prompt, or PowerShell prompt.
+Rather than using a GUI installer provided by the software developer, which takes time to find, to click through the matrices of "Yes" and "Next", package manager allows us to install packages, another name for programs, automatically from various developers by typing commands in the Terminal, Command prompt, or PowerShell prompt.
 
 Those that use the Unix system are probably using one of them on a daily basis.
 Think `apt-get` of Debian, `yum` of Fedora, or `pacman` of Arch Linux.
 
-Don't worry even if you are not familiar with the command line, I will try to provide an installation and usage walkthrough as thorough as possible.
+Don't worry, even if you are not familiar with the command line, I will try to provide an installation and usage walkthrough as thoroughly as possible.
 
-## Sounds Great, Where Do I Start?
+## Sounds Great, Where Do I Start
 
 Open PowerShell prompt on windows by:
 
@@ -106,7 +107,7 @@ If there's no connection error, you will likely see this:
 
 Congratulations, you've now installed Scoop.
 
-## What can I do with Scoop?
+## What can I do with Scoop
 
 Since Scoop is a package manager, the first thing we can do is...
 
@@ -115,7 +116,7 @@ Scoop makes it easier by providing the `Scoop help` command.
 It returns the following:
 
 ```commandline
-Usage: Scoop <command> [<args>]
+Usage: scoop <command> [<args>]
 
 Some useful commands are:
 
@@ -145,7 +146,7 @@ virustotal  Look for app's hash on virustotal.com
 which       Locate a shim/executable (similar to 'which' on Linux)
 
 
-Type 'Scoop help <command>' to get help for a specific command.
+Type 'scoop help <command>' to get help for a specific command.
 ```
 
 Some commands are used for developers or maintainers to create an app manifest - a JSON file that describes how to install/uninstall a program.
@@ -171,7 +172,7 @@ Wait for a while since this bucket contains more than a thousand apps.
 
 ![scoop bucket add extras](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_bucket_add_extras.png)
 
-Now we can install [REAPER](http://reaper.fm) with scoop :).
+Now we can install [REAPER](http://reaper.fm) with Scoop :).
 
 ### Scoop Install
 
@@ -189,14 +190,14 @@ I find the log from Scoop brief but efficient.
 It displays all results that is caused by the installation process, and discards all the details for debugging that clog up the screen for normal usage.
 In this case, we realize that in order to install `git`, Scoop has to install `7zip` first to extract the compressed package, so it automatically installed `7zip`.
 
-Now check the start menu, windows will display `7-Zip`, `Git GUI`, and `Git Bash` as recently added programs. They will also appear under the folder called `Scoop Apps` in the start menu.
+Now check the start menu, windows will display `7-Zip`, `Git GUI`, and `Git Bash` as recently added programs. They will also appear under the folder `Scoop Apps`.
 
 ![Windows start menu after installing git with Scoop](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/start_menu_screenshot_after_installing_git.png)
 
 Since we gave no options to `scoop install`, our `git` and `7zip` was installed under the default location `\path\to\scoop\apps\`.
 This allows us to run the programs without administrator's permission.
 
-If there's a desire to install programs globally, we can use the option `-g`.
+If there's a desire to install programs globally, we can use the option `-g`, as in `scoop install -g git`.
 
 But before that, we should consider where to place our global apps folder.
 The default global folder is `C:\ProgramData\scoop\apps\`, but we can change that using the following command.
@@ -209,7 +210,7 @@ $env:SCOOP_GLOBAL='{{GlobalAppsPath}}'
 Again, change the `{{GlobalAppsPath}}` to your desired folder path, such as `C:\apps`.
 
 Feel free to explore the other options as well, but I have yet to find a situation to use them.
-Use the `Scoop help install` command to see full list of options available.
+Use the `scoop help install` command to see full list of options available.
 
 Oh, did I mention that most programs installed by scoop are *portable*?
 Meaning that programs have all settings residing inside the program folder, rather than the windows registry.
@@ -218,7 +219,7 @@ Thus called portable.
 
 ### Scoop List
 
-This command lists all installed apps, displaying their version info, their installed location name, and which bucket they came from.
+This command lists all installed apps, displaying their version info, whether they are global installation, and the bucket they were installed from.
 
 Since we only have two programs installed, our list is short and clear.
 
@@ -243,7 +244,7 @@ Here's an example of `scoop search` with a query word of `zip`, listing all avai
 
 ### Scoop Uninstall
 
-Quick and easy way to uninstall a target app.
+Quick and easy way to uninstall an app.
 
 ![scoop uninstall 7zip](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_uninstall_7zip.png)
 
@@ -319,32 +320,30 @@ You get the picture.
 This will update an app, including scoop itself.
 
 By default, as in using `scoop update` without argument, scoop will update itself with git, and displays all new commit logs that was pushed since the last update.
-Scoop also updates automatically anytime we install or update a new app, along with the buckets that was added locally.
+Scoop also updates automatically anytime we install or update an app, along with the buckets that has been added.
 
-We can specify which app(s) to update by adding their name as arguments: `scoop update 7zip git`.
+We can specify which app(s) to update by adding their names as arguments: `scoop update 7zip git`.
 We can also tell scoop to update everything by using the asterisk `scoop update *`.
 
 Again, globally installed apps must use the `-g` option in the update command.
 
-## What's Next?
+## What's Next
 
 Now that we are familiar with the basics of Scoop, we can install apps to our heart's content.
 
-We can replace all those programs installed in `C:\Program Files` with the ones from Scoop so we can update them all at ones at a convenient time, without being bothered by their own notifications.
+We can replace all those programs installed in `C:\Program Files` with the ones from Scoop so we can update them all at once at a convenient time, without being bothered by their own notifications.
 
 We can clear the downloaded compressed installer to save hard-drive space by using `scoop cache rm <app>`, and clearing all cache using the asterisk.
 
 We can remove older versions of installed apps by using `scoop cleanup <app>`, with global option `-g` or remove cache option `-k` mentioned above.
 Asterisk works for this command as well.
 
-We can prevent app(s) from updating by using `scoop hold <apps>`.
-Reverting that using `scoop unhold <apps>`.
+We can prevent app(s) from updating by using `scoop hold <apps>`, and reverting that using `scoop unhold <apps>`.
 
 And, of course, what's a package manager without the ability to automate on multiple systems?
-Scoop has a command to export apps list to a text file, but I've yet to find the way to import from it, as mentioned in the `scoop help`.
+Scoop has a command to export apps list to a text file, but I've yet to find the way to import from it.
 
 Fortunately, there is an app called [scoop-backup](https://github.com/KNOXDEV/scoop-backup) that allows simple backup by saving apps list as a .ps1 or a compressed .bat file, and running that file will restore the entire Scoop installation.
-I have not had the chance to try this, but it sounds promising.
 
 One more thing...
 
