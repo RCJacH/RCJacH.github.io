@@ -9,23 +9,22 @@ banner = ""
 images = []
 +++
 
-I had always been a forgiving person when it comes to popups, thanks to the four ad blockers installed on each and every one of my web browsers.
-However, ad blockers are restricted to web browsing, they are powerless against the popups from your operating system.
+I had always been a forgiving person when it comes to pop-ups, thanks to the four ad blockers installed on each and every one of my web browsers.
+However, ad blockers are restricted to web browsing, they are powerless against the pop-ups from the operating system.
 Of course, being a forgiving person that I am, closing them quietly without complain would be an expected reaction.
 
-Perhaps the sheer number of programs installed, used, and maintained are too great, or perhaps their frequency of updates too high (I'm looking at you adobe flash player), it has became a time-consuming chore just to deal with them every day.
-Not to mention that the popups will break your focus, often at the worst time possible.
-And don't get me started on the incompatibility of Zen mode with multiple monitors...
+But perhaps the sheer number of programs installed, used, and maintained is too great in the modern digital world, or perhaps the rate of updates too frequent (I'm looking at you Adobe Flash Player), it has became a time-consuming chore just to deal with them every day.
+Not to mention that the pop-ups will break your focus, your workflow, your gaming experience, often at the worst time possible...
 
 Anyway, I spent some time thinking through this problem two days ago.
 I had a vague recollection of a software called [*Chocolatey*](https://chocolatey.org/) on Windows that claims to provide a solution to managing multiple applications.
 I even had it installed.
 So let's trying using Chocolatey!
 
-But since this post isn't about chocolatey, I'll skip the battle and on to the results.
+But since this post isn't about Chocolatey, I'll skip the battle and on to the results.
 
 Chocolatey installs programs to `C:\Program Files\`.
-And I hate to pollute `Program Files` folder, because doing anything within it requires a Run As Administrator popup.
+And I hate to pollute `Program Files` folder, because doing anything within it requires a Run As Administrator pop-up.
 Installing else where **IS** a built-in solution, but, unfortunately, a *premium* one.
 
 So I uninstalled Chocolatey.
@@ -34,7 +33,7 @@ Hey, I'm not a corporate client they are targeting at.
 The other reason I uninstalled chocolatey is that while searching for the said solution, I came across a similar package manager called [*Scoop*](http://scoop.sh/).
 
 It's free.\
-It doesn't display any popup.\
+It doesn't display any pop-up.\
 It doesn't pollute Program Files.\
 It doesn't pollute Path in environment variables.\
 That sounds like exactly what I was looking for!
@@ -112,7 +111,7 @@ Congratulations, you've now installed Scoop.
 Since Scoop is a package manager, the first thing we can do is...
 
 Actually the first thing we should do is to read the manual of what Scoop can do.
-Scoop makes this easier by with the `Scoop help` command.
+Scoop makes it easier by providing the `Scoop help` command.
 It returns the following:
 
 ```commandline
@@ -170,7 +169,7 @@ scoop bucket add extras
 
 Wait for a while since this bucket contains more than a thousand apps.
 
-![scoop bucket add extras]()
+![scoop bucket add extras](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_bucket_add_extras.png)
 
 Now we can install [REAPER](http://reaper.fm) with scoop :).
 
@@ -187,7 +186,7 @@ scoop install git
 ![Installed git with Scoop](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_install_git.png)
 
 I find the log from Scoop brief but efficient.
-It displays all results that is caused by the installation process, and discards all the details that might clog up the screen but provides little use for anything other than debugging.
+It displays all results that is caused by the installation process, and discards all the details for debugging that clog up the screen for normal usage.
 In this case, we realize that in order to install `git`, Scoop has to install `7zip` first to extract the compressed package, so it automatically installed `7zip`.
 
 Now check the start menu, windows will display `7-Zip`, `Git GUI`, and `Git Bash` as recently added programs. They will also appear under the folder called `Scoop Apps` in the start menu.
@@ -209,7 +208,7 @@ $env:SCOOP_GLOBAL='{{GlobalAppsPath}}'
 
 Again, change the `{{GlobalAppsPath}}` to your desired folder path, such as `C:\apps`.
 
-Feel free to explore the other options as well, but I have yet to find a applicable situation to use them.
+Feel free to explore the other options as well, but I have yet to find a situation to use them.
 Use the `Scoop help install` command to see full list of options available.
 
 Oh, did I mention that most programs installed by scoop are *portable*?
@@ -221,11 +220,11 @@ Thus called portable.
 
 This command lists all installed apps, displaying their version info, their installed location name, and which bucket they came from.
 
-Since we only installed two programs, our list is short and clear.
+Since we only have two programs installed, our list is short and clear.
 
 ![list of scoop apps, 7zip and git](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_list.png)
 
-As this list grows, displaying the whole list might be no longer helpful in order to find specific packages.
+As the size grows, displaying the whole list might no longer be helpful in order to find specific packages.
 In that case, we can give it a query word.
 For example list all apps with the string 'zip' using `scoop list zip` and it will display `7zip` but not `git`.
 
@@ -233,19 +232,18 @@ For example list all apps with the string 'zip' using `scoop list zip` and it wi
 
 ### Scoop Search
 
-This command allows us to search an installable app, optionally by a query word.
+This command allows us to search installable app(s), optionally by a query word.
 
-So in essence, `scoop search` lists all available apps (thousands), and `scoop search zip` lists all available apps that contains the string `zip`, grouped by their bucket.
+In essence, `scoop search` is like `scoop list`, but including uninstalled apps as well.
+It lists all available apps (thousands), grouped by the bucket they came from.
+
+Here's an example of `scoop search` with a query word of `zip`, listing all available apps that contains the queried string.
 
 ![scoop search zip](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_search_zip.png)
 
 ### Scoop Uninstall
 
 Quick and easy way to uninstall a target app.
-
-```commandline
-scoop uninstall 7zip
-```
 
 ![scoop uninstall 7zip](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_uninstall_7zip.png)
 
@@ -254,8 +252,8 @@ But do note that **anything installed globally has to be removed globally with**
 The other option is `-p` as in purge. This will remove all files that persists between updates.
 
 Plus!
-Scoop can be uninstalled by scoop itself! Which is many times more convenient than chocolatey.
-Compare this simple one-liner from scoop:
+Scoop can be uninstalled by Scoop itself! Which is many times more convenient than Chocolatey.
+Compare this simple one-liner from Scoop:
 
 ```commandline
 scoop uninstall scoop
@@ -323,7 +321,7 @@ This will update an app, including scoop itself.
 By default, as in using `scoop update` without argument, scoop will update itself with git, and displays all new commit logs that was pushed since the last update.
 Scoop also updates automatically anytime we install or update a new app, along with the buckets that was added locally.
 
-We can specify which app(s) to update by adding their name as argument: `scoop update 7zip git`.
+We can specify which app(s) to update by adding their name as arguments: `scoop update 7zip git`.
 We can also tell scoop to update everything by using the asterisk `scoop update *`.
 
 Again, globally installed apps must use the `-g` option in the update command.
@@ -334,10 +332,9 @@ Now that we are familiar with the basics of Scoop, we can install apps to our he
 
 We can replace all those programs installed in `C:\Program Files` with the ones from Scoop so we can update them all at ones at a convenient time, without being bothered by their own notifications.
 
-We can clear the downloaded compressed installer to save hard-drive space by using `scoop cache rm <app>`.
-Clear all using the asterisk.
+We can clear the downloaded compressed installer to save hard-drive space by using `scoop cache rm <app>`, and clearing all cache using the asterisk.
 
-We can remove older versions of installed apps by using `scoop cleanup <app>`, with global option '-g' or remove cache option `-k` mentioned above.
+We can remove older versions of installed apps by using `scoop cleanup <app>`, with global option `-g` or remove cache option `-k` mentioned above.
 Asterisk works for this command as well.
 
 We can prevent app(s) from updating by using `scoop hold <apps>`.
@@ -349,6 +346,8 @@ Scoop has a command to export apps list to a text file, but I've yet to find the
 Fortunately, there is an app called [scoop-backup](https://github.com/KNOXDEV/scoop-backup) that allows simple backup by saving apps list as a .ps1 or a compressed .bat file, and running that file will restore the entire Scoop installation.
 I have not had the chance to try this, but it sounds promising.
 
-And one last thing.
-[There's a list of open-source/freeware games](https://github.com/Calinou/scoop-games).
+One more thing...
+
+[There's a bucket filled with open-source/freeware games](https://github.com/Calinou/scoop-games).
+
 Have fun.
