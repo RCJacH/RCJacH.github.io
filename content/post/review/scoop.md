@@ -43,7 +43,7 @@ That sounds like exactly what I was looking for!
 
 This is a scoop.
 
-![Photo of ice-cream scoop]()
+![Photo of ice-cream scoop](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/ice_cream_scoop.jpg)
 
 In all seriousness, this is probably what that Scoop is named after, but I digress.
 
@@ -71,7 +71,7 @@ Then make sure you have PowerShell 5.0 or higher by inputting the following comm
 $psversiontable.psversion.major
 ```
 
-![New PowerShell instance displaying major version number]()
+![New PowerShell instance displaying major version number](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_version.png)
 
 If the returned Version number is lower than 5 (likely on Windows 7), you will have to install it manually from here:
 
@@ -103,7 +103,7 @@ iwr -useb get.Scoop.sh | iex
 
 If there's no connection error, you will likely see this:
 
-![Screenshot after installing Scoop]()
+![Screenshot after installing Scoop](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_installed.png)
 
 Congratulations, you've now installed Scoop.
 
@@ -159,7 +159,7 @@ There are something Scoop does not have, for everything else, there's ~~M@sterCa
 A bucket, in Scoop's term, is basically a repository consisting of multiple app manifests.
 I guess it's called a bucket because we are dealing with scoop.
 
-![scoop and bucket from http://stewartdollhousecreations.com/]()
+![scoop and bucket from http://stewartdollhousecreations.com/](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/ice_cream_bucket.jpg)
 
 Not all programs are enlisted in the default `main` bucket, a list of Scoop buckets can be found in the [scoop-directory](https://rasa.github.io/scoop-directory/).
 The most common one is the `scoop-extras`, so add that to our Scoop using the following command.
@@ -184,7 +184,7 @@ Since Scoop requires `git` to update, let's install `git` with scoop.
 scoop install git
 ```
 
-![Installed git with Scoop]()
+![Installed git with Scoop](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_install_git.png)
 
 I find the log from Scoop brief but efficient.
 It displays all results that is caused by the installation process, and discards all the details that might clog up the screen but provides little use for anything other than debugging.
@@ -192,7 +192,7 @@ In this case, we realize that in order to install `git`, Scoop has to install `7
 
 Now check the start menu, windows will display `7-Zip`, `Git GUI`, and `Git Bash` as recently added programs. They will also appear under the folder called `Scoop Apps` in the start menu.
 
-![Windows start menu after installing git with Scoop]()
+![Windows start menu after installing git with Scoop](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/start_menu_screenshot_after_installing_git.png)
 
 Since we gave no options to `scoop install`, our `git` and `7zip` was installed under the default location `\path\to\scoop\apps\`.
 This allows us to run the programs without administrator's permission.
@@ -223,13 +223,13 @@ This command lists all installed apps, displaying their version info, their inst
 
 Since we only installed two programs, our list is short and clear.
 
-![list of scoop apps, 7zip and git]()
+![list of scoop apps, 7zip and git](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_list.png)
 
 As this list grows, displaying the whole list might be no longer helpful in order to find specific packages.
 In that case, we can give it a query word.
 For example list all apps with the string 'zip' using `scoop list zip` and it will display `7zip` but not `git`.
 
-![scoop list zip]()
+![scoop list zip](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_list_zip.png)
 
 ### Scoop Search
 
@@ -237,7 +237,7 @@ This command allows us to search an installable app, optionally by a query word.
 
 So in essence, `scoop search` lists all available apps (thousands), and `scoop search zip` lists all available apps that contains the string `zip`, grouped by their bucket.
 
-![scoop search zip]()
+![scoop search zip](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_search_zip.png)
 
 ### Scoop Uninstall
 
@@ -247,7 +247,7 @@ Quick and easy way to uninstall a target app.
 scoop uninstall 7zip
 ```
 
-![scoop uninstall 7zip]()
+![scoop uninstall 7zip](https://raw.githubusercontent.com/RCJacH/BlogImages/master/review/scoop/powershell_screenshot_scoop_uninstall_7zip.png)
 
 But do note that **anything installed globally has to be removed globally with** `-g` **option** just like in `scoop install`.
 
