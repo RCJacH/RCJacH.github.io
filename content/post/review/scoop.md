@@ -1,15 +1,13 @@
 +++
 title = "Review: Scoop"
 date = 2020-05-01T08:08:53+08:00
-tags = []
-categories = []
-description = ""
-menu = ""
-banner = ""
+tags = ["review", "software"]
+categories = ["product-review"]
+description = "Simple, clean, and handy command line installer for Windows, built with PowerShell and git."
 images = []
 +++
 
-I had always been a forgiving person when it comes to pop-ups, thanks to the four ad blockers installed on each and every one of my web browsers.
+I have always been a forgiving person when it comes to pop-ups, thanks to the four ad blockers installed on each and every one of my web browsers.
 However, ad blockers are restricted to web browsing, they are powerless against the pop-ups from the operating system.
 Of course, being a forgiving person that I am, closing them quietly without complain would be an expected reaction.
 
