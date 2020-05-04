@@ -23,7 +23,4 @@ Cubehelix in MATLAB
 Cubehelix in Matplotlib，在页面最底左右
 Github上有很多python脚本也加了&amp;quot;立方螺旋&amp;quot;算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个能生成颜色列表的cubehelix算法模块. 并多加了一点可自定义的参数。
 敝人的脚本 作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用Python来写各种日常自动化的脚本，例如：
-import numpy as np
-print(&amp;#34;Hello World!&amp;#34;)
-# 不会了
-我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.</description></item></channel></rss>
+import numpy as np print(&amp;#34;Hello World!&amp;#34;) # 不会了 我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.</description></item></channel></rss>

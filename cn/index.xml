@@ -23,10 +23,7 @@ Cubehelix in MATLAB
 Cubehelix in Matplotlib，在页面最底左右
 Github上有很多python脚本也加了&amp;quot;立方螺旋&amp;quot;算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个能生成颜色列表的cubehelix算法模块. 并多加了一点可自定义的参数。
 敝人的脚本 作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用Python来写各种日常自动化的脚本，例如：
-import numpy as np
-print(&amp;#34;Hello World!&amp;#34;)
-# 不会了
-我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.</description></item><item><title>RCJacH - TV动画《钢之炼金术师》/ TVアニメ「鋼の錬金術師」OST「Main Theme」【吉他版】</title><link>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</link><pubDate>Fri, 31 Aug 2018 23:53:54 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</guid><description>这次翻弹的是钢之炼金术师主题曲，思考了很久编配方式。之后写文章细讲创作思路及制作技巧。
+import numpy as np print(&amp;#34;Hello World!&amp;#34;) # 不会了 我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.</description></item><item><title>RCJacH - TV动画《钢之炼金术师》/ TVアニメ「鋼の錬金術師」OST「Main Theme」【吉他版】</title><link>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</link><pubDate>Fri, 31 Aug 2018 23:53:54 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-tv%E5%8A%A8%E7%94%BB%E9%92%A2%E4%B9%8B%E7%82%BC%E9%87%91%E6%9C%AF%E5%B8%88/-tv%E3%82%A2%E3%83%8B%E3%83%A1%E9%8B%BC%E3%81%AE%E9%8C%AC%E9%87%91%E8%A1%93%E5%B8%ABostmain-theme%E5%90%89%E4%BB%96%E7%89%88/</guid><description>这次翻弹的是钢之炼金术师主题曲，思考了很久编配方式。之后写文章细讲创作思路及制作技巧。
 音频地址：
 全职猎人OST正義の怒り 吉他版 音频 网易云音乐
 ハンターハンターOST正義の怒り Guitar Cover SoundCloud
