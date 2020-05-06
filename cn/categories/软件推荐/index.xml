@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>软件推荐 on RCJacH</title><link>https://RCJacH.github.io/cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/</link><description>Recent content in 软件推荐 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>cn</language><copyright>所有版权归RCJacH拥有。</copyright><lastBuildDate>Wed, 06 May 2020 01:02:12 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/categories/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90/index.xml" rel="self" type="application/rss+xml"/><item><title>软件推荐: Windows的程序管理器，Scoop</title><link>https://RCJacH.github.io/cn/blog/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90-windows%E7%9A%84%E7%A8%8B%E5%BA%8F%E7%AE%A1%E7%90%86%E5%99%A8scoop/</link><pubDate>Wed, 06 May 2020 01:02:12 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/%E8%BD%AF%E4%BB%B6%E6%8E%A8%E8%8D%90-windows%E7%9A%84%E7%A8%8B%E5%BA%8F%E7%AE%A1%E7%90%86%E5%99%A8scoop/</guid><description>我对弹出窗口一向抱有很宽容的态度，这要归功于网络浏览器的四大护法（Ghostery, AdGuard AdBlocker, Privacy Badger, uMatrix）。 不过，四大护法仅限于网页浏览，它们面对系统自带的弹窗无能为力。 当然，作为一个宽容的人，我不应该手动限制弹窗的自由，应该允许他们在法制下茁壮成长。
+所以我决定去添加更多的护法。
+在Windows上，我已经拥有了一个强大的软件删除工具，名曰Bulk Crap Uninstaller。 它能够在删除软件的时候屏蔽大部分弹窗，并且清除大部分遗留文件和相关注册表信息。
+但是那些还有生命力的软件经常在打开时用弹窗热情地提醒我该充值更新了，亲。
+直接关掉它们多过意不去。
+果然还是应该让护法处理这些人情世道。
+在我朦胧的印象中，Windows有一款比较知名的软件管理器，叫Chocolatey。
+呃，不是巧克力拿铁（Choco-Latte），可能是巧克力拿鉄。
+搜了一下居然装过。 那让我们试着用用Chocolatey吧！
+由于本文并非关于Chocolatey，我们在此将跳过战斗画面。
+Chocolatey的问题是所有程序都被安装到C:\Program Files\。 然而我痛恨污染Program Files文件夹，因为做任何修改都需要管理员权限。 更何况备份起来非常困难，每个软件都得单独备份。 重装一次系统至少需要三天的空白期重新安装各种软件，尤其是针对音乐这种落后n年的软件产业。 后来查到Chocolatey允许安装至其他位置，但很可惜，是个付费功能。
+所以我把它删了。毕竟我只是个伸手党。
+我删除Chocolatey的另一个原因是在搜索上述功能时，我找到了另一款功能相似的工具：Scoop。
+免费开源。 没有弹窗。 不会污染Program Files。 不会污染环境变量。 软件皆为绿色版本。 满足了护法的所有条件，何乐而不为呢？
+Scoop是什么 这个东西叫scoop。
+scoop 长柄勺, 球形勺。 虽然我们今天讨论的并不是勺子，但这可能是此软件名字的来源，所以导致里面一些功能命名也与其相关。
+Scoop是一个Windows用的软件包管理系统。
+软件包管理系统是在电脑中自动安装、配制、卸载和升级软件包的工具组合。
+所以比起花时间寻找、下载、运行每个开发商分别提供的图形安装器，点击每个窗口中的“是”与“下一步”，软件包管理系统能自动获取目标软件所选版本的安装文件，并按照预先设置的规则自动安装，自动配置，或者自动删除。 用Unix系统的朋友们估计每天都在面对这种工具，例如Debian的apt-get，Fedora的yum，Arch Linux的pacman…… 对的，大部分软件包管理系统是在命令行工作的。 不过不要担心，我会尽量把安装和使用流程写得详细一点，这样哪怕你对命令行不是很熟悉也能快速上手。
+我系好安全带了，油门在哪儿 首先确认你用的是Windows系统，然后通过以下操作打开PowerShell：
+在键盘上按下Win+R 输入powershell 键盘按下Enter键 然后你需要通过以下命令来确认你的PowerShell版本至少是5.0。 输入字符（拷贝粘贴）后按Enter键。
+$psversiontable.psversion.major 如果返回的版本号小于5.0（部分Windows 7早期版本）你需要手动安装PowerShell：
+微软官网PowerShell 5.1下载地址</description></item></channel></rss>
