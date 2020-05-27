@@ -9,29 +9,33 @@ banner = ""
 images = []
 +++
 
-It's astonishing that many people consider creativity as something unnurtured, something divine, something out of this world.
-Instead of acquiring knowledge and skills with a systematic approach as the building blocks of one's musical ability, there are people that wish to believe in uncontrolled inspiration from unrelated stimuli.
-Perhaps to prove that they are one of the musical geniuses, who receives direct injection of insight from unknown spiritual forces, like the child prodigies constantly being aggrandized by the media since Mozart's time.
+It's astonishing that many people consider creativity as something unnurtured, divine, something out of this world.
+
+Instead of seeking knowledge and acquiring skills as the building blocks of one's musical ability, there are people who wish to believe in uncontrolled inspiration from unrelated stimuli.
+Perhaps to prove that they are one of the musical geniuses, who receives direct injection of insight from unknown spiritual forces, like those child prodigies constantly being aggrandized by the media since Mozart's time.
 
 Make sense, how else can you make a living within any artistic discipline unless you are a child prodigy?
 
-Though we often forget, or perhaps neglecting by choice, the traumatizing trainings Mozart had to go through in his childhood might be the most straightforward path to excellence, but the least exciting one.
+Though we often forget, or perhaps neglecting by choice, the traumatizing trainings Mozart had to go through in his childhood, which might be the most straightforward path to supremacy.
+
+The least exciting one unfortunately.
 
 I'm not a genius, nor do I have the budget to maintain the persona of a prodigy, I can't afford to amuse myself with artificially manipulated information.
 So I place my bet on the ordinary path of systematic training.
 
-I don't mean scales and arpeggios. Those are important for gaining playing techniques as instrumentalists, they do help with creating beautiful sounding melodic fragments, but in order to have absolute command over the composition as a whole, we need something else.
-What we really need is the ability to envision, to predict, and to design how music happens, so our creation can take the audience on a roller-coaster ride, capturing their full attention with rise and falls, maintaining interest through out the whole duration of the composition.
+I don't mean scales and arpeggios.
+Those are important for gaining playing techniques as instrumentalists, and they certainly help with creating beautiful sounding melodic fragments, but in order to have absolute command over the composition as a whole, we need something else.
+What we really need is the ability to envision and to design how music happens, so it can take the audience on a roller-coaster ride, capturing their full attention with rises and falls, maintaining interest through out the whole duration of the composition.
 
 Of course, that's a hefty ambition.
 Let's start somewhere modest and concrete.
 
-How about the basis of polyphonic music?
+How about the basis of all polyphonic music?
 Counterpoint.
 
 ## What is Counterpoint
 
-In essence, **counterpoint** is thinking polyphony as lines:
+In essence, **counterpoint** is thinking music in lines:
 
 ![]()
 
@@ -39,25 +43,29 @@ rather than blocks:
 
 ![]()
 
-It's about writing multiple melodies that function as a whole when layered on top of each other, by governing the relationship between each note vertically and horizontally, to create a sense of motion musically.
-For each set of notes, we measure the degree of tension between each pair, estimate the tolerance of dissonance at the time of occurrence, then making an artistic choice of where each note should move to.
+It's about writing multiple melodies that function as a whole when layered on top of each other, by governing the relationship between each note vertically and horizontally, to create musical motion.
+For each set of notes, we measure the degree of tension between each pair, estimate the tolerance of dissonance at the time of occurrence, then making an artistic choice of where each note should move to, and thus creating a new set to evaluate.
 
 Oops, did I just describe the art of voice leading in the jazz world?
 
-Yes, in the modern sense, voice leading **IS** counterpoint.
+Yes, in the modern sense, voice leading does fall under the categories of counterpoint.
 
 We are way past the age of learning counterpoint only as a mean to write contrapuntal chorales of the Baroque era.
-It is a great pedagogical method to learning harmony and melody.
+It's a great pedagogical method to learning musical harmony.
+After all, counterpoint **IS** the predecessor of harmony, historically.
 
-The mindset behind counterpoint is to give meanings to notes - notes are no longer isolated and static that trigger on and off at specific time, but intertwined and dynamic with each mind of their own.
-Just by doing this, we create sense of direction where each note of a chord moves to a note from the next.
+The mindset behind counterpoint is to give meanings to notes.
+Notes are no longer isolated and static like the blurred background sets in a film, but intertwined and dynamic with each mind of their own as the characters of music, some leading, some supportive.
+By doing this, we create a sense of direction where each note of a chord moves to a note from the next.
 And with direction comes origin, destination, and thus purpose, then with purpose comes expectation, and expectation, well, it's what composition is all about.
 
-## What is the pre-requisite for learning counterpoint
+## What Is the Pre-Requisite for Learning Counterpoint
 
 You need to have the rudiments of music theory learnt and well-memorized, that means pitch names, accidentals, intervals, the major scale formula, and note values (length).
 Each concept takes less than a day to learn, with a good teacher and a good material.
-However learning them only as a concept is not sufficient, we need the reaction speed gained from familiarity, thus we have to spend as much time practicing as possible, to drill it into our brain as second nature, like addition and subtraction in math.
+
+However learning them only as a concept is not sufficient, we need the reaction speed gained from familiarity.
+Thus we have to spend as much time practicing as possible, to drill it into our brain as second nature, like addition and subtraction in math.
 
 Think about it, we will be doing *A LOT* of exercises to learn counterpoint.
 Each exercise has a length of 10 or more notes, and may requires multiple iterations to complete successfully, to put it lightly.
@@ -67,28 +75,57 @@ To gain efficiency in learning counterpoint and its derivatives, we have to redu
 It's not difficult, and it doesn't take years of training to do so.
 I have seen educated adults with no prior musical trainings achieve said level within a month with the following daily exercise:
 
-List all notes from all 21 major scales by pitch name.
-Start from the 7 major scales built on root with no accidental, i.e. ABCDEFG, then those with sharpened and flattened roots.
+Write out a list of all pitch names from all 21 major scales.
+
+Start from the 7 major scales built on root with no accidental, i.e. `A B C D E F G`, then those with flattened and sharpened roots.
+
+So start with:
+
+`A B C# D E F# G#`
+
+`B C# D# E F# G# A#`
+
+...et cetera.
+
+Then those with flattened roots:
+
+`Ab Bb C Db Eb...`
+
+`Bb C D Eb...`
+
+And sharpened ones:
+
+`A# B# Cx...`
+
+`B# Cx...`
 
 It takes half an hour to write the full list initially, 15 minutes after a week, around 10 after two weeks, and aim for three in a month.
 Three minutes for 21 scales means 7 per minute, so less than 10 seconds per scale, thus 1.5 seconds per note on average.
 
-Also, because we are writing out all major scales, including ones with no practical meaning, such as Fb and B#, we are in reality preparing for everything related to pitch names in music.
-Well, at least with single accidentals, but I believe once we get used to single sharps and flats, doubles and triples are within reach as well.
+Also, because we are writing out all major scales, including ones with no practical meanings, such as Fb major and B# major, we preparing ourselves to face all possible pitch names that might occur in music.
 
 ## I Am Prepared, How Do I Start Learning Counterpoint
 
 We will be using a variation of species counterpoint.
 Species counterpoint is just a fancy name for learning counterpoint with progressive difficulty.
-Like a game campaign, starting with strict restrictions, unlocking new contents with each passing level, until we get to the final one with all resources, skills, and units available for deployment.
+Like a game campaign, starting with strict restrictions, unlocking new contents with each passing level, until we get to the final one with all skills learnt, and all units available for deployment.
 
-Prepare a pen, pieces of paper, and a keyboard instrument.
-Pen and paper to write down the solution to each exercise, to verify its correctness.
-Keyboard to provide immediate feedback, both aurally and visually, which is one of the required conditions for deliberate practice.
+So let's prepare our battle field.
+Grab a pen and pieces of staff paper - ***Gasp*** WHAT IS THAT?
+*Sign* or a notation software...
+You know I used to use notation software when learning counterpoint initially, but because it does everything for you, accidentals, interval check, ease of editing, you are not doing the work yourself, which means you are not progressing as you should be.
+I aced my exams, but had to relearn everything after graduation.
 
-I used to use notation software when learning counterpoint, and although it does give feedback immediately, it makes editing too easy, resulting in you spending less time doing mental imaging.
-Mental imaging is imagining the expected result before the execution, and fine-tune the expectation with the actual result, which is another requirement for deliberate practice.
-We want to force ourselves to think through much of the exercise before committing to it, to gain the ability to plan, to plot, to structure our musical ideas.
+So grab a pen and some staff paper.
+
+A keyboard instrument as well if possible, to provide immediate feedback, both aurally and visually, which is one of the required conditions for deliberate practice.
+
+Actually, I would suggesting doing all exercises on piano/keyboard, writing everything down only after you finish each exercise to record and verify.
+By playing everything on piano, it forces ourselves to think through much of the exercise before committing to it, to gain the ability to plan, to plot, to structure our musical ideas.
+
+Try to adopt mental imaging as much as possible.
+Mental imaging is the technique of simulating the execution before you carry it out.
+By doing so and correcting your expectation with the actual result, you can improve the accuracy of your prediction, which gives you a fine-tuned perception of visual and aural connection in musical context.
 
 If that already sounds intimidating, don't worry, we only need to play one note per hand, and we are not even required to use two hands at the beginning.
 
