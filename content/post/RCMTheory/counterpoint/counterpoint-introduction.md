@@ -1,9 +1,9 @@
 +++
 title = "Applied Counterpoint - Introduction"
 date = 2020-05-21T04:37:29+08:00
-tags = []
-categories = []
-description = ""
+tags = ["Theory", "Musicianship"]
+categories = ["Musicianship"]
+description = "Counterpoint as a method to learning melody and harmony."
 menu = ""
 banner = ""
 images = []
@@ -45,7 +45,7 @@ Oops, did I just describe the art of voice leading in the jazz world?
 Yes, in the modern sense, voice leading does fall under the categories of counterpoint.
 
 We are way past the age of learning counterpoint only as a mean to write contrapuntal chorales of the Baroque era.
-It's a great pedagogical method to learning musical harmony.
+It's a great pedagogical method to learning melody and musical harmony.
 After all, counterpoint **IS** the predecessor of harmony, historically.
 
 The mindset behind counterpoint is to give meanings to notes.
