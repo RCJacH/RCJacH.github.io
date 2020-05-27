@@ -35,13 +35,7 @@ Counterpoint.
 
 ## What is Counterpoint
 
-In essence, **counterpoint** is thinking music in lines:
-
-![]()
-
-rather than blocks:
-
-![]()
+In essence, **counterpoint** is thinking music in lines rather than blocks.
 
 It's about writing multiple melodies that function as a whole when layered on top of each other, by governing the relationship between each note vertically and horizontally, to create musical motion.
 For each set of notes, we measure the degree of tension between each pair, estimate the tolerance of dissonance at the time of occurrence, then making an artistic choice of where each note should move to, and thus creating a new set to evaluate.
