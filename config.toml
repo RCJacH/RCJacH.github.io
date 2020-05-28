@@ -12,7 +12,7 @@ footnotereturnlinkcontents = "↩"
 
 
 [permalinks]
-    post = "/blog/:title/"
+    post = "/blog/:filename/"
 
 
 [menu]
