@@ -3,9 +3,9 @@ title = "Applied Counterpoint - Introduction"
 date = 2020-05-21T04:37:29+08:00
 tags = ["Theory", "Musicianship"]
 categories = ["Musicianship"]
-description = "Counterpoint as a method to learning melody and harmony."
+description = "Counterpoint as a method to learning melody and harmony, in stages with progressive difficulty."
 menu = ""
-banner = ""
+banner = "img/banners/rcmtheory/counterpoint/introduction.jpg"
 images = []
 +++
 
@@ -31,11 +31,11 @@ Of course, that's a hefty ambition.
 Let's start somewhere modest and concrete.
 
 How about the basis of all polyphonic music?
-Counterpoint.
+*Counterpoint*.
 
 ## What is Counterpoint
 
-In essence, **counterpoint** is thinking music in lines rather than blocks.
+In essence, **counterpoint is thinking music in lines rather than blocks.**
 
 It's about writing multiple melodies that function as a whole when layered on top of each other, by governing the relationship between each note vertically and horizontally, to create musical motion.
 For each set of notes, we measure the degree of tension between each pair, estimate the tolerance of dissonance at the time of occurrence, then making an artistic choice of where each note should move to, and thus creating a new set to evaluate.
@@ -55,11 +55,11 @@ And with direction comes origin, destination, and thus purpose, then with purpos
 
 ## What Is the Pre-Requisite for Learning Counterpoint
 
-You need to have the rudiments of music theory learnt and well-memorized, that means pitch names, accidentals, intervals, the major scale formula, and note values (length).
+You need to have the rudiments of music theory learnt and well-memorized, including pitch names, accidentals, intervals, the major scale formula, and note values (length).
 Each concept takes less than a day to learn, with a good teacher and a good material.
 
 However learning them only as a concept is not sufficient, we need the reaction speed gained from familiarity.
-Thus we have to spend as much time practicing as possible, to drill it into our brain as second nature, like addition and subtraction in math.
+Thus we have to spend as much time practicing as possible, to drill it into our brain as second nature like addition and subtraction in math.
 
 Think about it, we will be doing *A LOT* of exercises to learn counterpoint.
 Each exercise has a length of 10 or more notes, and may requires multiple iterations to complete successfully, to put it lightly.
@@ -69,7 +69,7 @@ To gain efficiency in learning counterpoint and its derivatives, we have to redu
 It's not difficult, and it doesn't take years of training to do so.
 I have seen educated adults with no prior musical trainings achieve said level within a month with the following daily exercise:
 
-Write out a list of all pitch names from all 21 major scales.
+**Write out a list of all pitch names from all 21 major scales.**
 
 Start from the 7 major scales built on root with no accidental, i.e. `A B C D E F G`, then those with flattened and sharpened roots.
 
@@ -96,7 +96,7 @@ And sharpened ones:
 It takes half an hour to write the full list initially, 15 minutes after a week, around 10 after two weeks, and aim for three in a month.
 Three minutes for 21 scales means 7 per minute, so less than 10 seconds per scale, thus 1.5 seconds per note on average.
 
-Also, because we are writing out all major scales, including ones with no practical meanings, such as Fb major and B# major, we preparing ourselves to face all possible pitch names that might occur in music.
+Also, because we are writing out all major scales, including ones with no practical meanings, such as `Fb` major and `B#` major, we preparing ourselves to face all possible pitch names that might occur in music.
 
 ## I Am Prepared, How Do I Start Learning Counterpoint
 
@@ -107,7 +107,7 @@ Like a game campaign, starting with strict restrictions, unlocking new contents 
 So let's prepare our battle field.
 Grab a pen and pieces of staff paper - ***Gasp*** WHAT IS THAT?
 *Sign* or a notation software...
-You know I used to use notation software when learning counterpoint initially, but because it does everything for you, accidentals, interval check, ease of editing, you are not doing the work yourself, which means you are not progressing as you should be.
+You know I used to use notation software when learning counterpoint initially, but because it does everything for you, accidentals, interval checking, ease of editing, you are not doing the work yourself, which means you are not progressing as much as you should be.
 I aced my exams, but had to relearn everything after graduation.
 
 So grab a pen and some staff paper.
