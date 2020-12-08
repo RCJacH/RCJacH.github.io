@@ -67,36 +67,9 @@ If we spend a minute counting semitones for each note, it will take 10 minutes j
 
 To gain efficiency in learning counterpoint and its derivatives, we have to reduce the reaction time of rudiments down to less than three seconds, and if possible, one second.
 It's not difficult, and it doesn't take years of training to do so.
-I have seen educated adults with no prior musical trainings achieve said level within a month with the following daily exercise:
+I have seen educated adults with no prior musical trainings achieve said level within a month.
 
-**Write out a list of all pitch names from all 21 major scales.**
-
-Start from the 7 major scales built on root with no accidental, i.e. `A B C D E F G`, then those with flattened and sharpened roots.
-
-So start with:
-
-`A B C# D E F# G#`
-
-`B C# D# E F# G# A#`
-
-...et cetera.
-
-Then those with flattened roots:
-
-`Ab Bb C Db Eb...`
-
-`Bb C D Eb...`
-
-And sharpened ones:
-
-`A# B# Cx...`
-
-`B# Cx...`
-
-It takes half an hour to write the full list initially, 15 minutes after a week, around 10 after two weeks, and aim for three in a month.
-Three minutes for 21 scales means 7 per minute, so less than 10 seconds per scale, thus 1.5 seconds per note on average.
-
-Also, because we are writing out all major scales, including ones with no practical meanings, such as `Fb` major and `B#` major, we preparing ourselves to face all possible pitch names that might occur in music.
+Read more about it here: [How to Practice Music Theory Rudiments](../how-to-practice-music-theory-rudiments)
 
 ## I Am Prepared, How Do I Start Learning Counterpoint
 
