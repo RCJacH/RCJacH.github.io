@@ -8,19 +8,19 @@ menu = ""
 banner = "img/banners/rcmtheory/practice_rudiments.jpg"
 +++
 
-So you have challenged yourself for a few weeks, and now capable of doing the [basic exercise](./how-to-practice-music-theory-rudiments) under 5 or even 3 minutes.
+So you have challenged yourself for a few weeks, and are now capable of doing the [music theory rudiments exercise](./how-to-practice-music-theory-rudiments) under 5 or even 3 minutes.
 Great!
 Let's turn the difficulty level up a notch.
 
 There are three derivatives based on the original that you can try playing with to keep yourself interested and excited.
-They work by each incorporating an additional rule into the existing game.
+Each of them incorporates an additional rule into the existing game.
 The rules are:
 
 1. Direction.
-2. Intervals.
+2. Interval.
 3. Displacement.
 
-Let's walkthrough each of them separately.
+Let's take a look at what they are.
 
 ## Direction
 
@@ -40,19 +40,20 @@ Now try expanding the gap between each of them.
 Write every other pitch names until all seven are written, e.g. `C E G B D F A`.
 That looks like a chord in the tertian harmonic language.
 
-What happens if we skip two or three notes?
+What happens if we skip every two or three notes?
 
 Read up on [quartal and quintal harmony](https://en.wikipedia.org/wiki/Quartal_and_quintal_harmony) if you are interested.
 
 ## Displacement
 
 So far, we've been constructing scales from the tonic, but we don't need to constrain ourselves from exploring other possibilities.
-By shifting the sequence of a scale, we can experiment with other notes being the tonic of that scale.
+By shifting the note sequence of a scale, we can experiment with other notes being the tonic of that scale.
 
 For example, by shifting sequence of `C` major scale by one to the left, we get `D E F G A B C D`.
-Now we have what's called a **mode**, and in this case, the `D Dorian` mode, but the name is not as important as the concept.
+Now we have what's called a [**musical mode**](https://en.wikipedia.org/wiki/Musical_mode), and in this case, the `D Dorian` mode, but the name is not as important as the concept itself.
 
 Because major scales contain seven different pitches, we can build seven different modes from it.
+They have have different sonic characters, so play with all of them.
 
 ## Conclusion
 
