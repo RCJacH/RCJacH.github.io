@@ -3,11 +3,11 @@ title: "Scooping"
 date: 2021-02-24T21:57:35+08:00
 tags: ["Analysis", "Jacob Collier", "Theory", "Vocal Arrangement"]
 categories: ["Videos"]
-description: "Compilation and analysis of Jacob Collier's use of a vocal arrangement technique called Scooping (as described in June Lee's transcriptions)."
+description: "Compilation and analysis of Jacob Collier's use of a vocal arrangement technique called Scooping."
 banner: "img/banners/analysis/jacob-collier/Jacob Collier - Collection of Gospel Scoopings.png"
 ---
 
-So I made a compilation and analysis video of one of Jacob Collier's vocal arrangement techniques, called Scooping (as described in June Lee's transcriptions).
+I made a compilation and analysis video of one of Jacob Collier's vocal arrangement techniques, called Scooping (as described in June Lee's transcriptions).
 
 From my understanding, the gospel-oriented scooping is a set of two chords, with step-wise motion voice-leadings, often in straight eighth or sixteenth notes.
 
@@ -20,7 +20,7 @@ It functions as either an uplifter or a downlifter, using the pentatonic scale, 
 Several observations after attempting to apply this techinque in my work:
 
 1. Pay attention to the word choices.
-   Jacob Collier uses "Wow" for many scooping instances, but the effect is too recognizeable, and might not be fitting for genres other than the Steve Wonder type of R&B.
+   Jacob Collier uses "wow" or "oh" for many scooping instances, but the effect is too recognizeable, and might not be fitting for genres other than the Steve Wonder type of R&B.
 2. Note-choice is important.
    Sometimes the most prominant voice is not the top one.
    Jacob Collier uses a lot of volume automation to bring out important voices, usually the one in pentatonic scale, in post-production.
