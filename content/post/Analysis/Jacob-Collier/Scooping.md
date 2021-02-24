@@ -1,5 +1,5 @@
 ---
-title: "Scooping"
+title: "How Jacob Collier uses a Vocal Arrangement Technique called Scooping"
 date: 2021-02-24T21:57:35+08:00
 tags: ["Analysis", "Jacob Collier", "Theory", "Vocal Arrangement"]
 categories: ["Videos"]
