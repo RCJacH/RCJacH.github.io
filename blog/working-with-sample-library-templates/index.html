@@ -1,0 +1,236 @@
+<!doctype html><html lang=en><head><title>Working with Sample Sample Library Templates in REAPER &#183; RCJacH</title><meta name=generator content="Hugo 0.81.0"><meta charset=utf-8><meta name=robots content="all,follow"><meta name=googlebot content="index,follow,snippet,archive"><meta name=viewport content="width=device-width,initial-scale=1,maximum-scale=1"><meta name=author content="RCJacH"><meta name=description content="Comparison of 3 different approaches to templating with large sample libraries."><link rel=canonical href=https://RCJacH.github.io/blog/working-with-sample-library-templates/><link rel=icon href=https://RCJacH.github.io/img/favicon.ico><link rel=apple-touch-icon href=https://RCJacH.github.io/img/apple-touch-icon.png><link rel=stylesheet href=https://RCJacH.github.io/css/style.css><link rel=stylesheet href=https://RCJacH.github.io/css/font-awesome.min.css><link rel=stylesheet href=https://RCJacH.github.io/css/monokai.css><link rel=stylesheet href=https://RCJacH.github.io/fancybox/jquery.fancybox.css><link rel=stylesheet href=https://RCJacH.github.io/css/flag.css><link href="https://fonts.googleapis.com/css?family=Open+Sans:400italic,400,600" rel=stylesheet type=text/css><link href="https://fonts.googleapis.com/css?family=Source+Code+Pro" rel=stylesheet type=text/css><meta property="og:title" content="Working with Sample Sample Library Templates in REAPER"><meta property="og:description" content="Comparison of 3 different approaches to templating with large sample libraries."><meta property="og:type" content="article"><meta property="og:url" content="https://RCJacH.github.io/blog/working-with-sample-library-templates/"><meta property="article:section" content="post"><meta property="article:published_time" content="2021-05-11T10:58:38+08:00"><meta property="article:modified_time" content="2021-05-11T10:58:38+08:00"><meta itemprop=name content="Working with Sample Sample Library Templates in REAPER"><meta itemprop=description content="Comparison of 3 different approaches to templating with large sample libraries."><meta itemprop=datePublished content="2021-05-11T10:58:38+08:00"><meta itemprop=dateModified content="2021-05-11T10:58:38+08:00"><meta itemprop=wordCount content="1821"><meta itemprop=keywords content="reaper,template,production,workflow,"><meta name=twitter:card content="summary"><meta name=twitter:title content="Working with Sample Sample Library Templates in REAPER"><meta name=twitter:description content="Comparison of 3 different approaches to templating with large sample libraries."><script src=https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js></script></head><body><div class=container><div id=container><header id=header><div id=header-main class=header-inner><div class=outer><a href=https://RCJacH.github.io/ id=logo><img src=https://RCJacH.github.io/img/logo.png alt="FAQ logo" class="hidden-xs hidden-sm"></a><nav id=main-nav><a class=main-nav-link href=https://RCJacH.github.io/post/><h3>Blog</h3></a><a class=main-nav-link href=https://RCJacH.github.io/profile/><h3>Profile</h3></a><a class=main-nav-link href=https://RCJacH.github.io/contact/><h3>Contact</h3></a></nav><nav id=sub-nav><div class=profile id=profile-nav><a id=profile-anchor href=javascript:;><img class=avatar src=https://RCJacH.github.io/img/profile-pic.jpg><i class="fa fa-caret-down"></i></a></div></nav><div id=search-form-wrap><form action=//google.com/search method=get accept-charset=utf-8 class=search-form><input type=search name=q class=search-form-input placeholder=Search>
+<button type=submit class=search-form-submit></button>
+<input type=hidden name=sitesearch value=https://RCJacH.github.io/></form></div><nav id=lang-nav><a class=main-nav-link href=https://RCJacH.github.io/><h3><i class="flag-icon flag-icon-ca"></i>English</h3></a><a class=main-nav-link href=https://RCJacH.github.io/cn/><h3><i class="flag-icon flag-icon-cn"></i>中文</h3></a></nav></div></div><div id=main-nav-mobile class="header-sub header-inner"><table class="menu outer"><tbody><tr><td><a class=main-nav-link href=https://RCJacH.github.io/post/><h3>Blog</h3></a></td><td><a class=main-nav-link href=https://RCJacH.github.io/profile/><h3>Profile</h3></a></td><td><a class=main-nav-link href=https://RCJacH.github.io/contact/><h3>Contact</h3></a></td><td><form action=//google.com/search method=get accept-charset=utf-8 class=search-form><input type=search name=q class=search-form-input placeholder=Search>
+<input type=hidden name=sitesearch value=https://RCJacH.github.io/></form><td><a class=main-nav-link href=https://RCJacH.github.io/><h3><i class="flag-icon flag-icon-ca"></i>English</h3></a><a class=main-nav-link href=https://RCJacH.github.io/cn/><h3><i class="flag-icon flag-icon-cn"></i>中文</h3></a></td></td></tr></tbody></table></div></header><div class=outer><aside id=profile><div class="inner profile-inner"><div class="base-info profile-block"><img id=avatar src=https://RCJacH.github.io/img/profile-pic.jpg><h2 id=name>RCJacH</h2><h3 id=title>Music Composer, Songwriter, and Producer for the casual and serious listeners.</h3><span id=location><i class="fa fa-map-marker"></i>Earth</span></div><div class="article-info profile-block"><div class=article-info-block><a href=https://RCJacH.github.io/post>0
+<span>Posts</span></a></div><div class=article-info-block><a href=https://RCJacH.github.io/tags/>30
+<span>Tags</span></a></div></div><div class="profile-block social-links"><table><tr><td><a href=//github.com/RCJacH target=_blank title=GitHub><i class="fa fa-github"></i></a></td><td><a href=//vimeo.com/rcjach target=_blank title=Vimeo><i class="fa fa-vimeo"></i></a></td><td><a href=//pinterest.com/rcjach target=_blank title=Pinterest><i class="fa fa-pinterest"></i></a></td><td><a href=//weibo.com/rcjach target=_blank title=Weibo><i class="fa fa-weibo"></i></a></td><td><a href=https://RCJacH.github.io/index.xml target=_blank title=RSS><i class="fa fa-rss"></i></a></td></tr></table></div></div></aside><section id=main><article id=page-undefined class="article article-type-page" itemscope itemprop=blogPost><div class=article-inner><header class=article-header><a href=https://RCJacH.github.io/blog/working-with-sample-library-templates/><h1 class=article-title itemprop=name>Working with Sample Sample Library Templates in REAPER</h1></a><div class=article-meta><div class=article-date><i class="fa fa-calendar"></i><time datetime="2021-05-11 10:58:38 +0800 CST" itemprop=datePublished>May 11, 2021</time>
+&#183;
+1821
+words</div><div class=article-category><i class="fa fa-folder"></i><a class=article-category-link href=https://RCJacH.github.io/categories/music-production>music-production</a></div><div class=article-category><i class="fa fa-tags"></i><a class=article-category-link href=https://RCJacH.github.io/tags/reaper>reaper</a>
+&#183;
+<a class=article-category-link href=https://RCJacH.github.io/tags/template>template</a>
+&#183;
+<a class=article-category-link href=https://RCJacH.github.io/tags/production>production</a>
+&#183;
+<a class=article-category-link href=https://RCJacH.github.io/tags/workflow>workflow</a></div></div></header><div class=article-entry itemprop=articleBody><p>This blog post functions as a prelude to my tutorial on setting up a <strong>Sample Library Server</strong> with REAPER.
+I&rsquo;m going to explain why you would want to set one up by comparing several different approaches to templating with large sample libraries.</p><p>To understand the benefits of having a dedicated server for sample libraries,
+we need to look at some of the problems composers are facing when producing music.</p><h2 id=problems-when-working-with-sample-libraries>Problems when Working with Sample Libraries</h2><h3 id=problems-with-sample-libraries>Problems with Sample Libraries</h3><p>The problem with sample libraries lies in the size of ensembles and time required to set them up for professional production.</p><p>We are bless with having dozens of unique instruments at our arsenal,
+each capable of producing several varied timbres
+by altering the note, dynamics, and articulation.
+If we integrate the thousands of potential doublings into even more diversified textures,
+we can create millions of different aural experiences with orchestral instruments alone,
+not to mention all those exotic ones modern composers are intrigued by.</p><p>Although there has been a revival of chamber music in cinematic soundtracks,
+media composers are expected to be able to work with the whole orchestra.</p><p>There&rsquo;s a lot to work with, and thus a lot of work.</p><p>Unless you at the level of John Williams or Howard Shore,
+getting enough budget recording live and still making a fortune with the leftovers,
+you probably have to work with virtual orchestra,
+or more often referred to by the somewhat inaccurate term <strong>sample libraries</strong>.</p><p>But the truth is, sample libraries are hard to work with.</p><p>Not only are they expensive,
+they also tend to differ in microphone outputs, gain calibrations,
+and sometimes MIDI configurations.
+Furthermore, to achieve a bigger and thicker sound,
+approximating that of a real recording session,
+composers often layer multiple libraries to combine strengths and to avoid weaknesses.</p><p>You can play with the libraries fresh out of the box,
+however, from personal experience, that did not work well.
+It is time consuming to work with unfamiliar sample libraries,
+checking manuals to search for controllers assignments,
+calibrating expression curves,
+allocating dedicated time for mixing,
+simulating the room space with microphone bleeds,
+mixing and matching different libraries for the best combination.
+All that extra but essential labor makes your music production profession unsustainable.</p><p>The solution?</p><p>Take some off-production time to make a template for later usage.</p><p>It has became a common practice to build a grand template for the virtual orchestra,
+loading all articulations from every sample library that is ever going to be used,
+with a systematic naming scheme,
+colored track groups,
+pre-configured FX,
+pre-routed busses,
+and all kinds of preset features you can imagine.</p><p>An example of this is the <a href=http://otr.storyteller.im/>Orchestral Template for REAPER by storyteller</a>.</p><p>Then during actual production,
+they would either start the new project with this template,
+muting and hiding tracks they do not need for the session,
+or copy parts of the template into their working project.</p><p>I call this the Single Template Approach.
+It&rsquo;s been the standard for decades, and still is used by many active composers,
+such as Blakus and Mike Verta.
+Some even go as far as building hardware controllers for their template,
+<em>cough</em>Hans Zimmer<em>cough</em>.</p><p>Anyway, the Single Template Approach may save lots of time omitting the initial setups,
+yet using it may invoke some other problems.</p><h3 id=problems-with-single-template-approach>Problems with Single Template Approach</h3><p>The biggest problem with Single Template Approach is, again, the size,
+but this time the file size.</p><p>If you are using REAPER,
+you probably, and you should, know that REAPER allows you to automatically save
+a backup file every x minutes.
+Because losing progress is the worst enemy to getting work done on time,
+I set mine to saving a backup every 5 minutes when not recording.
+<img src=/img/Content/REAPER/preference_project_backup.png alt="REAPER Preferences to backup every 5 minutes when not recording"></p><p>Similar features should be included for other DAWs as well.</p><p>Here comes the problem, if we load everything into the project itself,
+and because plugin settings are written as BASE64 strings,
+the file size of the project will be enormous,
+usually expanding into three digit megabytes.
+If we were to save a backup every so often,
+it could take up a gigabyte of hard drive space every hour,
+and eventually hundreds of gigabytes of hard drive for the entire project.</p><p>As a result, you may have to compensate by either backup less often,
+delete older backup files that are less relevant,
+or start piling up external hard drives.
+Either way, the efficiency of using backup files will be negatively affected.</p><p>On a side note, there is a way around that with REAPER.</p><p>Because REAPER project file is saved as text files,
+meaning you are able to open and edit it with a text editor,
+and I often do,
+you can use a version control system,
+<a href=https://git-scm.com/>git</a> for instance,
+to track changes to the project.
+So rather than saving the whole project automatically,
+you will be committing only the deltas between your project saves.
+This will shrink the overall backup substantially,
+and you can for example only commit when significant change is made,
+keeping the backup files in between the commits,
+deleting them after every commit.
+Although if the committing is done manually,
+it might break your workflow,
+which may be hazardous to creativity.</p><p>That concludes the side note.</p><p>To add to the complication,
+the second, and slightly more annoying,
+aspect with the Single Template Approach is the slow initialization time.</p><p>Because we are loading along with the project all libraries,
+and presumably modern colossal ones
+(628GB for Spitfire&rsquo;s BBC Symphony Orchestra or 450+GB for Orchestral Tools),
+the loading time of projects would be slightly longer than pure MIDI ones.
+Once I had to wait 30 minutes to completely load up a session,
+only to mute a note on the request of the client.
+If you need to switch between multiple projects during work,
+you either have to wait for samples to load or open multiple projects simultaneously.
+Doing so not only makes work sessions more difficult to manage,
+but also renders REAPER&rsquo;s &ldquo;Play background projects&rdquo; action useless.
+And if any fault plugins happen to crash your DAW&mldr;
+you&rsquo;ll be rewarded lots of coffee breaks.</p><p>These two issues may be bearable for some people,
+but let us also explore two workarounds,
+each with advantage and disadvantages of their own,
+so we don&rsquo;t have to put up with the issues mentioned above.</p><h2 id=alternatives-to-the-single-template-approach>Alternatives to the Single Template Approach</h2><h3 id=using-track-template>Using Track Template</h3><p>REAPER allows you to save a selection of tracks, optionally with items,
+as track templates that can be imported into the current project.
+There&rsquo;s also FX chain template were you can extract multiple effects,
+along with their settings,
+to be inserted together onto single or multiple tracks.
+With the combination of those two features,
+we can break that massive template down into modules,
+and insert only partials that are necessary.</p><p>For example,
+if we want to save the string section as template,
+rather than saving the whole ensemble,
+we can split it apart into three components:</p><ol><li>The Group Containers.
+Rather than having all instruments on the same indentation,
+make good use of REAPER&rsquo;s folder tracks to categorize them by section,
+i.e. Violin I, Violin II, Violas, etc., along with relevant FXs,
+such as Airwindows console pairs or bus compressors.
+Then save only the folder tracks together as a template.</li><li>The Sample Libraries.
+Save the tracks with only the sample library instrument (such as Kontakt),
+and preferably separated by manufacturer, articulation,
+or anything else that you use to distinguish different use of libraries.
+Inserted tracks are better to be used rather than to be deleted.</li><li>The Channel Effects.
+Sometimes you may want to add EQ, compressor, or analog colored distortions
+to certain libraries to blend them better,
+but work without those effects when played solo.
+Thus you should keep these optional effects separate from your template,
+so save them as FX chains.</li></ol><p>Of course, you are free to combine any of them on any level for more straightforward workflow.</p><p>This approach is the preferred way for most REAPER projects.
+It is recommended for people working on single non-related projects -
+songs, rather than soundtracks.
+Because cohesion is not expected between different songs,
+and once a song is done, it&rsquo;s done.</p><p>With quick turnarounds,
+producers of songs might not even notice the downside of this approach -
+<em>maintainability</em>.
+Media producers working on soundtracks may find it less favorable,
+because their work may involve much more back and forth editing between cues and edits.
+Unfortunately, changing parameters is costly for bigger projects,
+you have to open and edit the projects one by one.</p><p>So that&rsquo;s where a Sample Library Server comes in.</p><h3 id=using-sample-library-server>Using Sample Library Server</h3><p>A Sample Library Server is <strong>a dedicated REAPER instance that host the Single Template project</strong>.
+It takes streamed MIDI input from your working project in another REAPER instance or another DAW,
+play them through your sample libraries,
+and send the result audio back to your working project.</p><p>A free resemblance of the commercial product <a href=https://www.vsl.co.at/en/Vienna_Software_Package/Vienna_Ensemble_Pro>Vienna Ensemble Pro</a>.</p><p>This solves both problems mentioned above regarding Single Template Approach.</p><p>Firstly, you&rsquo;re running the template isolated from your working project,
+so you don&rsquo;t need to backup along with it.
+And now your working project would only consist of MIDI data,
+stripped away all plugin settings,
+with minimum file size,
+meaning that you can backup more often.</p><p>Secondly, because all audios are streamed from this mega template,
+you only need to load your samples <em>once</em> -
+only when you start up your computer.
+Also since you are mainly working with MIDI,
+and most crashes usually happen only during interactions with the interface,
+the chance of crashing, and thus restarting,
+your template is largely diminished.</p><p>It is essentially the standard Single Template Approach without the drawbacks,
+with additional benefits such as that any change you make to your template will be immediately reflected in all of your working projects.</p><p>Although there is one thing about it that&rsquo;s not optimal.</p><p>Processing Consumption.</p><p>If you have a computer with exceptional hardware,
+high frequency and cores/threads,
+that can handle running all your sample libraries simultaneously,
+by all means go for it,
+it would be a smooth ride for you.</p><p>On the other hand,
+if your workstation isn&rsquo;t up to par with the requirement of your template,
+your computer will explode when playing tutti.</p><p>Just kidding.</p><p>You won&rsquo;t be able to play all instruments at once without exhausting CPU power.
+Not only that, because you have to render online for your final export,
+you won&rsquo;t be able to exploit REAPER&rsquo;s function of varying the rendering speed,
+and thus whatever you can playback without audio dropouts in real time will be the upper limit to your final mixdown,
+anything above that will induce stutters and crackles to your rendered audio.</p><h2 id=conclusion>Conclusion</h2><p>Now that you are informed,
+you can make an educated choice in how to work with large sample libraries.
+If you are interested in setting up a Sample Library Server,
+keep an eye on the update of this blog.</p></div><footer class=article-footer><a data-url=https://RCJacH.github.io/blog/working-with-sample-library-templates/ data-id=3f5882c29dc3a383d41de72e714ed380 class=article-share-link><i class="fa fa-share"></i>Share</a>
+<script>(function(a){if(typeof __SHARE_BUTTON_BINDED__=='undefined'||!__SHARE_BUTTON_BINDED__)__SHARE_BUTTON_BINDED__=!0;else return;a('body').on('click',function(){a('.article-share-box.on').removeClass('on')}).on('click','.article-share-link',function(i){var d,f,c,e,g,b,h;if(i.stopPropagation(),d=a(this),f=d.attr('data-url'),c=encodeURIComponent(f),e='article-share-box-'+d.attr('data-id'),g=d.offset(),a('#'+e).length){if(b=a('#'+e),b.hasClass('on')){b.removeClass('on');return}}else h=['<div id="'+e+'" class="article-share-box">','<input class="article-share-input" value="'+f+'">','<div class="article-share-links">','<a href="https://twitter.com/intent/tweet?url='+c+'" class="fa fa-twitter article-share-twitter" target="_blank" title="Twitter"></a>','<a href="http://service.weibo.com/share/share.php?url='+c+'" class="fa fa-weibo article-share-weibo" target="_blank" title="Weibo"></a>','<a href="https://www.facebook.com/sharer.php?u='+c+'" class="fa fa-facebook article-share-facebook" target="_blank" title="Facebook"></a>','<a href="http://pinterest.com/pin/create/button/?url='+c+'" class="fa fa-pinterest article-share-pinterest" target="_blank" title="Pinterest"></a>','<a href="https://plus.google.com/share?url='+c+'" class="fa fa-google article-share-google" target="_blank" title="Google+"></a>','</div>','</div>'].join(''),b=a(h),a('body').append(b);a('.article-share-box.on').hide(),b.css({top:g.top+25,left:g.left}).addClass('on')}).on('click','.article-share-box',function(a){a.stopPropagation()}).on('click','.article-share-box-input',function(){a(this).select()}).on('click','.article-share-box-link',function(a){a.preventDefault(),a.stopPropagation(),window.open(this.href,'article-share-box-window-'+Date.now(),'width=500,height=450')})})(jQuery)</script></footer></div><nav id=article-nav><a href=https://RCJacH.github.io/blog/scooping/ id=article-nav-older class=article-nav-link-wrap><strong class=article-nav-caption>Older</strong><div class=article-nav-title>How Jacob Collier uses a Vocal Arrangement Technique called Scooping</div></a></nav></article><section id=comments><script src=https://utteranc.es/client.js repo=RCJacH/rcjach.github.io issue-term=title async></script></section></section><aside id=sidebar><div class=widget-wrap><h3 class=widget-title>Categories</h3><div class=widget><ul class=category-list><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/blogging>blogging</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/book-recommendation>book-recommendation</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/design>design</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/guitar-playing>guitar-playing</a>
+<span class=category-list-count>6</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/methodology>methodology</a>
+<span class=category-list-count>5</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/music-production>music-production</a>
+<span class=category-list-count>7</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/musicianship>musicianship</a>
+<span class=category-list-count>10</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/product-review>product-review</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/scripts-templates>scripts-templates</a>
+<span class=category-list-count>5</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/categories/videos>videos</a>
+<span class=category-list-count>1</span></li></ul></div></div><div class=widget-wrap><h3 class=widget-title>Tags</h3><div class=widget><ul class=category-list><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/analysis>analysis</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/beginner>beginner</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/color>color</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/design>design</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/exercise>exercise</a>
+<span class=category-list-count>9</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/funk>funk</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/guitar>guitar</a>
+<span class=category-list-count>7</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/jacob-collier>jacob-collier</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/jsfx>jsfx</a>
+<span class=category-list-count>3</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/midi>midi</a>
+<span class=category-list-count>3</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/mixing>mixing</a>
+<span class=category-list-count>3</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/music-production>music-production</a>
+<span class=category-list-count>7</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/musicianship>musicianship</a>
+<span class=category-list-count>8</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/pitch>pitch</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/production>production</a>
+<span class=category-list-count>4</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/reaper>reaper</a>
+<span class=category-list-count>11</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/recording>recording</a>
+<span class=category-list-count>5</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/review>review</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/rhythm>rhythm</a>
+<span class=category-list-count>4</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/scales>scales</a>
+<span class=category-list-count>5</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/script>script</a>
+<span class=category-list-count>4</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/software>software</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/sound-design>sound-design</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/strum-patterns>strum-patterns</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/synth>synth</a>
+<span class=category-list-count>2</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/template>template</a>
+<span class=category-list-count>3</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/theory>theory</a>
+<span class=category-list-count>11</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/vocal>vocal</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/vocal-arrangement>vocal-arrangement</a>
+<span class=category-list-count>1</span></li><li class=category-list-item><a class=category-list-link href=https://RCJacH.github.io/tags/workflow>workflow</a>
+<span class=category-list-count>4</span></li></ul></div></div><div class=widget-wrap><h3 class=widget-title>Tag cloud</h3><div class="widget tagcloud"><a href=https://RCJacH.github.io/tags/analysis style=font-size:12px>analysis</a>
+<a href=https://RCJacH.github.io/tags/beginner style=font-size:12px>beginner</a>
+<a href=https://RCJacH.github.io/tags/color style=font-size:12px>color</a>
+<a href=https://RCJacH.github.io/tags/design style=font-size:12px>design</a>
+<a href=https://RCJacH.github.io/tags/exercise style=font-size:12px>exercise</a>
+<a href=https://RCJacH.github.io/tags/funk style=font-size:12px>funk</a>
+<a href=https://RCJacH.github.io/tags/guitar style=font-size:12px>guitar</a>
+<a href=https://RCJacH.github.io/tags/jacob-collier style=font-size:12px>jacob-collier</a>
+<a href=https://RCJacH.github.io/tags/jsfx style=font-size:12px>jsfx</a>
+<a href=https://RCJacH.github.io/tags/midi style=font-size:12px>midi</a>
+<a href=https://RCJacH.github.io/tags/mixing style=font-size:12px>mixing</a>
+<a href=https://RCJacH.github.io/tags/music-production style=font-size:12px>music-production</a>
+<a href=https://RCJacH.github.io/tags/musicianship style=font-size:12px>musicianship</a>
+<a href=https://RCJacH.github.io/tags/pitch style=font-size:12px>pitch</a>
+<a href=https://RCJacH.github.io/tags/production style=font-size:12px>production</a>
+<a href=https://RCJacH.github.io/tags/reaper style=font-size:12px>reaper</a>
+<a href=https://RCJacH.github.io/tags/recording style=font-size:12px>recording</a>
+<a href=https://RCJacH.github.io/tags/review style=font-size:12px>review</a>
+<a href=https://RCJacH.github.io/tags/rhythm style=font-size:12px>rhythm</a>
+<a href=https://RCJacH.github.io/tags/scales style=font-size:12px>scales</a>
+<a href=https://RCJacH.github.io/tags/script style=font-size:12px>script</a>
+<a href=https://RCJacH.github.io/tags/software style=font-size:12px>software</a>
+<a href=https://RCJacH.github.io/tags/sound-design style=font-size:12px>sound-design</a>
+<a href=https://RCJacH.github.io/tags/strum-patterns style=font-size:12px>strum-patterns</a>
+<a href=https://RCJacH.github.io/tags/synth style=font-size:12px>synth</a>
+<a href=https://RCJacH.github.io/tags/template style=font-size:12px>template</a>
+<a href=https://RCJacH.github.io/tags/theory style=font-size:12px>theory</a>
+<a href=https://RCJacH.github.io/tags/vocal style=font-size:12px>vocal</a>
+<a href=https://RCJacH.github.io/tags/vocal-arrangement style=font-size:12px>vocal-arrangement</a>
+<a href=https://RCJacH.github.io/tags/workflow style=font-size:12px>workflow</a></div></div><div id=toTop class="fa fa-angle-up"></div></aside></div></div><footer id=footer><div class=outer><div id=footer-info class=inner><a href=https://RCJacH.github.io/>COPYRIGHT &copy; 2021
+RCJacH. ALL RIGHTS RESERVED.</a></div></div></footer><script src=https://RCJacH.github.io/fancybox/jquery.fancybox.pack.js></script><script src=https://RCJacH.github.io/js/script.js></script><script src=https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.9.0/highlight.min.js></script><script src=https://RCJacH.github.io/js/contact-form.js></script><script src=https://RCJacH.github.io/js/functions.js></script><script>hljs.initHighlightingOnLoad()</script><script type=text/x-mathjax-config>
+MathJax.Hub.Config({
+  tex2jax: {
+    inlineMath: [['$','$'], ['\\(','\\)']]}
+  });
+</script><script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script></body></html>
