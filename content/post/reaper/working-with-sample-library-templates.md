@@ -51,7 +51,7 @@ It is time consuming to work with unfamiliar sample libraries,
 checking manuals to search for controllers assignments,
 calibrating expression curves,
 allocating dedicated time for mixing,
-possibly simulating the room space with microphone bleeds,
+simulating the room space with microphone bleeds,
 mixing and matching different libraries for the best combination.
 All that extra but essential labor makes your music production profession unsustainable.
 
@@ -182,7 +182,7 @@ we can split it apart into three components:
    or anything else that you use to distinguish different use of libraries.
    Inserted tracks are better to be used rather than to be deleted.
 3. The Channel Effects.
-   Sometimes you may want add EQ, compressor, or analog colored distortions
+   Sometimes you may want to add EQ, compressor, or analog colored distortions
    to certain libraries to blend them better,
    but work without those effects when played solo.
    Thus you should keep these optional effects separate from your template,
@@ -241,7 +241,7 @@ Processing Consumption.
 
 If you have a computer with exceptional hardware,
 high frequency and cores/threads,
-that can handle running all your sample libraries simultaneous,
+that can handle running all your sample libraries simultaneously,
 by all means go for it,
 it would be a smooth ride for you.
 
@@ -262,4 +262,4 @@ anything above that will induce stutters and crackles to your rendered audio.
 Now that you are informed,
 you can make an educated choice in how to work with large sample libraries.
 If you are interested in setting up a Sample Library Server,
-keep an eye on the update.
+keep an eye on the update of this blog.
