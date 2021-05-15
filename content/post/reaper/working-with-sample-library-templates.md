@@ -1,5 +1,5 @@
 +++
-title = "Working with Sample Sample Library Templates in REAPER"
+title = "Working with Sample Library Templates in REAPER"
 date = 2021-05-11T10:58:38+08:00
 tags = ["reaper", "template", "production", "workflow"]
 categories = ["music-production"]
