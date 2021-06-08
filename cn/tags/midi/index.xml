@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MIDI on RCJacH</title><link>https://RCJacH.github.io/cn/tags/midi/</link><description>Recent content in MIDI on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>cn</language><copyright>所有版权归RCJacH拥有。</copyright><lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/midi/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER信号流</title><link>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</link><pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reaper-signal-flow/</guid><description>什么是信号流？
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>MIDI on RCJacH</title><link>https://RCJacH.github.io/cn/tags/midi/</link><description>Recent content in MIDI on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 23 Jun 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/midi/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER信号流</title><link>https://RCJacH.github.io/cn/posts/reaper-signal-flow/</link><pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-signal-flow/</guid><description>什么是信号流？
 在数字音频制作领域，信号流指的是信号（例如音频或MIDI）是如何经过DAW中每一层运算的。
 因为我们在实际使用中常常会需要建立路由，无论是简单的信号发送、搭建模块合成器、还是建立使用Parameter Modulation的多轨模板，清晰地了解信号在DAW中的路径以及运算顺序会有非常大的帮助。
 所以我画了以下这张图。
@@ -13,7 +13,7 @@ Take Trim = 层音量衰减（主页面块儿上&amp;quot;边&amp;quot;往下拽
 音频/MIDI通道是同路由上平行的信号流。
 音频只会相加同通道的信号。
 音量推子、Trim包络、音量包络三者可以同时使用，也就是说可以同时有三层音量调整的方法（平衡、段落、微调之类的）。
-监听FX（Monitor FX）在音频渲染时是旁通的。</description></item><item><title>REAPER网格</title><link>https://RCJacH.github.io/cn/blog/reaper-grid-system/</link><pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reaper-grid-system/</guid><description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
+监听FX（Monitor FX）在音频渲染时是旁通的。</description></item><item><title>REAPER网格</title><link>https://RCJacH.github.io/cn/posts/reaper-grid-system/</link><pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-grid-system/</guid><description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
 它长这个样子
 或者这个样子
 我们通常会把网格设置成常用的音符长度，例如八分音符、十六分音符等二的倍数(2 * 2^n)，或者三连音的倍数(3 * 2^n)。可是当我们需要稍微不常见的(例如五连音、七连音、九连音)或者不规则的细分时，这些选项就不太够用了。
@@ -32,22 +32,27 @@ MIDI界面的底端
 5/27
 此外，利用这种设置可以开启比较不寻常的节奏分解，例如把三拍分成五个音
 3/20
-我用不同组合的五连音做了个短Demo。</description></item><item><title>Reaper JSFX: Maschine式音符重复器</title><link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</link><pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-note-beat-repeater/</guid><description>下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
+我用不同组合的五连音做了个短Demo。</description></item><item><title>Reaper JSFX: Maschine式音符重复器</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-note-beat-repeater/</link><pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-note-beat-repeater/</guid><description>下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
 官网下载地址
 官网论坛地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
-更新： 说明： 这个脚本是用来模拟N.I.公司Maschine硬件上的Note Repeat(音符重复）功能的。我没用过硬件，所以可能在用法会有一些出入。但通过一些视频我发现这个功能在做HiHat方面很优秀，所以做了个脚本模拟一下。
+更新： * v1.1 (2016-10-09)
++ 改名
++ 音符长度
++ 对齐格子
+# 修改了音符准确性
+说明： 这个脚本是用来模拟N.I.公司Maschine硬件上的Note Repeat(音符重复）功能的。我没用过硬件，所以可能在用法会有一些出入。但通过一些视频我发现这个功能在做HiHat方面很优秀，所以做了个脚本模拟一下。
 使用方法如下： 这个脚本可以以两种方法使用：
 作为轨道的输入FX。为所有的参数设置CC控制器，在第四个参数（开关）开启的状态下在你的MIDI键盘上按住一个（或多个）音，这个音就会以第一个参数（Rate）所设置的时值重复触发所按下的音符。第二个参数（Type）决定所选时值是普通、三连音还是附点音符。
 作为普通FX插入轨道，排序至你的乐器之前。在钢琴卷帘中画出要出发的音符，用包络来控制参数。你也可以添加第二轨，用它录下第一轨的MIDI输出而得来实际重复的音符。这样你可以更细腻地去修改所生成的片段。
 用Normal Type Lock参数（第三个）来做Drill类型的片段非常轻松。你可以试试把它设置成1/8，Type设置成Triplet，然后通过改变Rate来做出加花式的8分音符、16分音符、甚至32分音符三连音。这个参数能让你节省很多反复调节交替正常和三连音的时间。
 Channel Pressure，通道触后，可以用来改变重复音符的力度：输出力度 = 通道触后。
 看图。
-输入： 过程： 输出：</description></item><item><title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title><link>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</link><pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reaper-jsfx-midi-cc-eater/</guid><description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
+输入： 过程： 输出：</description></item><item><title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-cc-eater/</link><pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-cc-eater/</guid><description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
 如图，这个插件只有一个选项：你想要屏蔽的CC。你也可以通过选择最顶项来屏蔽所有的CC。
 具体使用方法就是，当你点击通道上的录音键之后，通道会出现一个IN FX的选项。如下图中橙色箭头所指位置。
 IN FX指的是Input FX（输入效果），也就是在你的信号录入电脑之前所处理的效果。他会对你录入的MIDI/音频有不可恢复的影响（Destructive），所以除了这种特殊需求以外很少去运用INFX。录音的朋友们尽量不要用这个Input FX为录音加压缩防爆音什么的…如果你录入的音频是爆音的，通常在出声卡的时候已经爆音了，所以你在DAW添加什么效果都没有用。具体请参考这篇录音输入音量标准。
-点击这里通过官网Stash下载MIDI CC Eater，然后放到资源文件目录下的Effects/MIDI文件夹内就可以在Reaper里调用了！</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reaper-no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
+点击这里通过官网Stash下载MIDI CC Eater，然后放到资源文件目录下的Effects/MIDI文件夹内就可以在Reaper里调用了！</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/posts/reaper-no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
 虽然目前有一些能提高CC效率的工具，例如这款MIDI Velocity/CC Tool。
 但他们治标不治本，无法大幅度提升编曲效率。尤其当我们做吉他
 做弦乐
