@@ -1,0 +1,76 @@
+title: RCJacH
+author: RCJacH
+theme: RCPaperMod
+themesDir: themes
+baseURL: "https://RCJacH.github.io/"
+languageCode: en-us
+description: "RCJacH is a music composer, songwriter, and producer."
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+params:
+  display_full_langname: true
+
+  ui:
+    readingtime_disable: true
+
+  gravatar:
+    email: rcjach@outlook.com
+
+  share:
+    - facebook
+    - linkedin
+    - pinterest
+    - reddit
+    - telegram
+    - tumblr
+    - twitter
+    - mail
+
+languages:
+  en:
+    languageName: English
+    weight: 1
+    menu:
+      main:
+        - name: Archive
+          url: posts
+          weight: 1
+        - name: Portfolio
+          url: portfolio
+          weight: 2
+  cn:
+    languageName: 中文
+    weight: 2
+    menu:
+      main:
+        - name: 博客
+          url: posts
+          weight: 1
+        - name: 资料
+          url: portfolio
+          weight: 2
+    share:
+      - baidu
+      - douban
+      - linkedin
+      - qq
+      - weibo
+      - mail
+    social:
+      bilibili: 259824695
+      github: rcjach
+      linkedin: ruochen-han-a00956107
+      weibo: rcjach
+      zhihu: rcjach
+
+social:
+  facebook: rcjach
+  github: rcjach
+  instagram: rcjach
+  linkedin: ruochen-han-a00956107
+  twitter: rcjach
+  youtube: UCWFuwY3WjPjhHCcMpkuixwQ

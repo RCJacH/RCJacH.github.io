@@ -2,3 +2,6 @@
 	path = public
 	url = https://github.com/RCJacH/RCJacH.github.io.git
 	branch = master
+[submodule "themes/RCPaperMod"]
+	path = themes/RCPaperMod
+	url = https://github.com/RCJacH/RCPaperMod
