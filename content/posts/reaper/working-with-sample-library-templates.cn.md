@@ -1,7 +1,6 @@
 ---
 title: "音源模板及常见问题"
 date: 2021-06-09T07:20:52+08:00
-draft: true
 tags:
     - reaper
     - 模板
