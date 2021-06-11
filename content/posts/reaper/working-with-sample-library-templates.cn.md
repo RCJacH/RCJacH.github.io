@@ -8,7 +8,7 @@ tags:
     - 工作流程
 categories:
     - 音乐制作
-description: ""
+description: 介绍并对比三种音乐制作中搭建大型音源模板的思路。
 cover:
     image:
 ---
