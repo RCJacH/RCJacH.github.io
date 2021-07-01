@@ -37,7 +37,7 @@ languages:
     menu:
       main:
         - name: Archive
-          url: posts
+          url: post
           weight: 1
         - name: Portfolio
           url: portfolio
@@ -48,7 +48,7 @@ languages:
     menu:
       main:
         - name: 博客
-          url: posts
+          url: post
           weight: 1
         - name: 资料
           url: portfolio
