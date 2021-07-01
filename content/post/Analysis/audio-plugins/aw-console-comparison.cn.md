@@ -1,10 +1,9 @@
 ---
 title: "如何挑选Airwindows Console插件系列"
 date: 2021-07-01T16:48:52+08:00
-draft: true
 tags: ["插件分析", "音乐制作", "混音", "音频插件"]
 categories: ["音乐制作"]
-description: "让我们把所有的Airwindows Console插件都拿出来溜溜看看是驴是马。"
+description: "把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。"
 ---
 
 [Airwindows的仿调音台Summing功能的Console插件系列](http://www.airwindows.com/?s=console)是好东西，
