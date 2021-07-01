@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JSFX on RCJacH</title><link>https://RCJacH.github.io/cn/tags/jsfx/</link><description>Recent content in JSFX on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/jsfx/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-rcmship-perfect-pitch/</guid><description>RCMShip Perfect Pitch下载地址
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>JSFX on RCJacH</title><link>https://RCJacH.github.io/cn/tags/jsfx/</link><description>Recent content in JSFX on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/jsfx/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-rcmship-perfect-pitch/</guid><description>RCMShip Perfect Pitch下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RCJacH ReaPack Repository
 如何使用ReaPack？
 简介 RCMShip （MShip代表musicianship，即音乐修养、视唱练耳）Perfect Pitch是一款包含自适应随机算法的原创JSFX游戏，用来练习绝对音感的能力。
@@ -6,7 +6,7 @@ RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RC
 可选性 点击Setup将转至音符选择页面，在此你可以手动或随机选择游戏所包含的音高，限制游戏难度或者增加变化。
 可配置 点击Config按钮切换到设置页面，可以设置一些基本参数，例如音量、音符长度、播放的八度和八度跨越等。也可以切换至MIDI输出模式，用采样播放器或者其他合成器作为音源。
 进阶介绍 理论 来自404（wiki）：&amp;ldquo;Absolute pitch (AP), widely referred to as perfect pitch, is a rare auditory phenomenon characterized by the ability of a person to identify or re-create a given musical note without the benefit of a reference tone.&amp;rdquo; 绝对音感是一个罕见的听觉现象，指的是一个人有能力在没有参考音高的情况下识别或重现一个给定的音符音高。
-绝对音感通常被视为一个与生俱来的能力，而当前虽然有一些科研性或商业性的相关产品，但还未能证明其对大众的有效性。 然而，虽然音频工作者们（录音师、混音师、母带师）需要花数些年的时间练习分辨音频的振幅、频率、时间等各种性质，长时间地针对绝对音感进行相关练习的人可能并不是多数。 在这种情况下，对于绝对音感是天生而来的主张可能没有太多的实际证明。</description></item><item><title>Tone Sweep – 原创JSFX电鼓合成器</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-tone-sweep/</link><pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-tone-sweep/</guid><description>Tone Sweep下载地址
+绝对音感通常被视为一个与生俱来的能力，而当前虽然有一些科研性或商业性的相关产品，但还未能证明其对大众的有效性。 然而，虽然音频工作者们（录音师、混音师、母带师）需要花数些年的时间练习分辨音频的振幅、频率、时间等各种性质，长时间地针对绝对音感进行相关练习的人可能并不是多数。 在这种情况下，对于绝对音感是天生而来的主张可能没有太多的实际证明。</description></item><item><title>Tone Sweep – 原创JSFX电鼓合成器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-tone-sweep/</link><pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-tone-sweep/</guid><description>Tone Sweep下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 介绍： Tone Sweep是一款能生成一个音高变化（扫频）的单音电鼓合成器。主要用于设计电子音乐中使用的鼓，例如低鼓，军鼓，铜鼓，以及音效。
 用法： 设置起始音高（StartingNote）以及目标音高（EndingNote）。
@@ -37,10 +37,10 @@ Shape：这个参数决定了曲线的形状。
 音量包络图形与概括页面的图形一样。
 波形页面 波形页面所包含的是那些会改变输出信号音色的参数。
 Waveform：通过此参数选择合成器的基础波形。
-Modulations 调制 此合成器有两个调制选项，AM振幅调制（Amplitude Modulation）和FM频率调制（Frequency Modulation）。AM通过一个波形来改变源信号的振幅，而FM则通过一个波形变动源信号的频率。</description></item><item><title>Reaper JSFX: NoiseBuzz噪音生成器</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-noisebuzz/</link><pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-noisebuzz/</guid><description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
+Modulations 调制 此合成器有两个调制选项，AM振幅调制（Amplitude Modulation）和FM频率调制（Frequency Modulation）。AM通过一个波形来改变源信号的振幅，而FM则通过一个波形变动源信号的频率。</description></item><item><title>Reaper JSFX: NoiseBuzz噪音生成器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-noisebuzz/</link><pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-noisebuzz/</guid><description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
 这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
 v1.3 (2018-03-08) Brown Noise Type. MIDI Trigger. Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility. v1.2 (2017-04-08) Width Control. v1.1 (2017-03-11) Decay &amp;amp; Sustain Control. v1.0a (2017-01-31) Renamed to NoiseBuzz. v1.0 (2017-01-22) Initial Release. 下载地址： RCNoiseBuzz官网下载地址
-RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description></item><item><title>REAPER JSFX - AB Comparison 8路信号对比脚本</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-ab-comparison/</link><pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-ab-comparison/</guid><description>昨天做了个JSFX小脚本：AB Comparison。目的是更方便的监听和对比不同信号（比如说不同插件、不同轨道）。
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description></item><item><title>REAPER JSFX - AB Comparison 8路信号对比脚本</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-ab-comparison/</link><pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-ab-comparison/</guid><description>昨天做了个JSFX小脚本：AB Comparison。目的是更方便的监听和对比不同信号（比如说不同插件、不同轨道）。
 这个脚本可以根据所设置的节拍或者微秒长度，自动切换到不同的双声道通道。同时还包含一个盲听模式。
 使用方法： 在任意音轨上放置 AB Comparison 这个JS脚本。
 将所需对比的乐器、插件、音轨设置成不同的双声道输出，例：插件1 = 1-2，插件2 = 3-4，插件3 = 5-6&amp;hellip;一共能接收8个双声道输入。
@@ -51,7 +51,7 @@ Manual = 手动模式，点击0-9任意触发按钮（或对应小键盘数字�
 Sequential = 循序模式，输出通道将按照所设置的间隔自动切换到下一个双声道。
 Random = 随机模式，输出通道将按照所设置的间隔自动切换到一个不同的随机双声道。
 Guessing = 盲听模式，随机切换到一个双声道，并隐藏显示正播放的通道。点击0-9任意触发按钮显示正在播放的通道。
-使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。</description></item><item><title>Reaper JSFX: Maschine式音符重复器</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-note-beat-repeater/</link><pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-note-beat-repeater/</guid><description>下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
+使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。</description></item><item><title>Reaper JSFX: Maschine式音符重复器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-note-beat-repeater/</link><pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-note-beat-repeater/</guid><description>下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
 官网下载地址
 官网论坛地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
@@ -67,7 +67,7 @@ RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 用Normal Type Lock参数（第三个）来做Drill类型的片段非常轻松。你可以试试把它设置成1/8，Type设置成Triplet，然后通过改变Rate来做出加花式的8分音符、16分音符、甚至32分音符三连音。这个参数能让你节省很多反复调节交替正常和三连音的时间。
 Channel Pressure，通道触后，可以用来改变重复音符的力度：输出力度 = 通道触后。
 看图。
-输入： 过程： 输出：</description></item><item><title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title><link>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-cc-eater/</link><pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-jsfx-midi-cc-eater/</guid><description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
+输入： 过程： 输出：</description></item><item><title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-cc-eater/</link><pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-cc-eater/</guid><description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
 如图，这个插件只有一个选项：你想要屏蔽的CC。你也可以通过选择最顶项来屏蔽所有的CC。
 具体使用方法就是，当你点击通道上的录音键之后，通道会出现一个IN FX的选项。如下图中橙色箭头所指位置。
 IN FX指的是Input FX（输入效果），也就是在你的信号录入电脑之前所处理的效果。他会对你录入的MIDI/音频有不可恢复的影响（Destructive），所以除了这种特殊需求以外很少去运用INFX。录音的朋友们尽量不要用这个Input FX为录音加压缩防爆音什么的…如果你录入的音频是爆音的，通常在出声卡的时候已经爆音了，所以你在DAW添加什么效果都没有用。具体请参考这篇录音输入音量标准。

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工作效率 on RCJacH</title><link>https://RCJacH.github.io/cn/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/</link><description>Recent content in 工作效率 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 22 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER工具栏系统</title><link>https://RCJacH.github.io/cn/posts/reaper-toolbar-system/</link><pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-toolbar-system/</guid><description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>工作效率 on RCJacH</title><link>https://RCJacH.github.io/cn/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/</link><description>Recent content in 工作效率 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 22 Sep 2016 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/%E5%B7%A5%E4%BD%9C%E6%95%88%E7%8E%87/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER工具栏系统</title><link>https://RCJacH.github.io/cn/post/reaper-toolbar-system/</link><pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-toolbar-system/</guid><description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
 在其他DAW里，工具栏通常是固定不变的，我们最多只能移动或者隐藏它们。
 但是在Reaper里，因为我们很幸运地拥有不少可自定义的工具栏，并且能在工具栏内添加任何操作，可能过不了多久我们的屏幕就变成这样了：
 可能有些人会觉得这样排列工具栏在做大项目里是必要的，不过要在这么多图标里找到需要的操作还是要花一些时间的。
@@ -14,7 +14,7 @@
 我的钢琴卷工具栏也是用同样的方法设置的，只不过状态栏和操作栏全部放到了同一个横向面板中。
 状态 选择 音符 CC 呵呵，我讨厌CC
 和弦 （为了迅速输入和弦并且修改声部排列）
-当然，以上的截图并非是这个系统的最终状态。我会慢慢更新并完善它：添加一些常用的操作，并删除一些不常用的。不过，这个系统理念能够更有效的利用、整理、分类Reaper的工具栏，节省我们屏幕中宝贵的显示空间。</description></item><item><title>Reaper：工程策划音轨模板</title><link>https://RCJacH.github.io/cn/posts/reaper-track-template-layout-rsgc/</link><pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-track-template-layout-rsgc/</guid><description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
+当然，以上的截图并非是这个系统的最终状态。我会慢慢更新并完善它：添加一些常用的操作，并删除一些不常用的。不过，这个系统理念能够更有效的利用、整理、分类Reaper的工具栏，节省我们屏幕中宝贵的显示空间。</description></item><item><title>Reaper：工程策划音轨模板</title><link>https://RCJacH.github.io/cn/post/reaper-track-template-layout-rsgc/</link><pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-track-template-layout-rsgc/</guid><description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
 你可以这里下载RSGC英文版或者RSGC中文版。
 下载之后，解压放到REAPER资源文件目录内的Track Templates文件夹，之后直接在主窗口左半栏中，点击右键出现的Insert Track From Template或中译的通过模板插入新的轨道选项里，选择Layout RSGC就能加载了。
 看一下截图：
@@ -35,7 +35,7 @@
 我在这轨上保留了一个空白块，简单用鼠标拖拽就可以将其复制。对比手动建立空白块省去了许多步骤。
 小贴士：
 我们可以使用 RSGC 进行制作分析：分析参考轨中歌曲的律动、和弦和段落，然后将其保存为一个新音轨模板，在今后可作为易用的参考。 对你自己所有的歌曲进行同样的操作，这是一种快速为歌曲确定律动与和弦结构的方法。我们也可以在改编时加载模板作为歌曲参考。 我们甚至可以把自己歌曲的RSGC策划发给需要录音的乐手，这样他(们)就不用拿着个TXT文件每个小节地去对你所发的音频了。 其他没了，玩得愉快。如果有什么问题或者建议的话，请随时提出。能提高工作效率的东西肯定是极好的。
-下载RSGC英文版 下载RSGC中文版</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/posts/reaper-no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/reaper-no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
+下载RSGC英文版 下载RSGC中文版</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/post/reaper-no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
 虽然目前有一些能提高CC效率的工具，例如这款MIDI Velocity/CC Tool。
 但他们治标不治本，无法大幅度提升编曲效率。尤其当我们做吉他
 做弦乐
@@ -65,7 +65,7 @@ MIDI Link - CC 来直接控制Helm合成器参数"
 当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
 记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！
 因编曲需要，我已经设置好了几个Kontakt乐器的配置，并为每个参数设置了英文名称。有兴趣的朋友可以随意下载使用。
-Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/posts/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/posts/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
+Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/post/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
 英文缩写：（abbreviation，来自于拉丁语中的brevis，代表short简短）
 Shortening：缩略一个词使它保留原单词的前几个字母，一般会在结尾加一个句号&amp;quot;.&amp;quot; 例：cont. = continued。 注释：如果缩略单词能形成另外一个单词，句号会被省略。例：limo = limousine。
 这种缩略不一定是非正式用语，比如：bus = autobus，taxi = taxicab等等。
