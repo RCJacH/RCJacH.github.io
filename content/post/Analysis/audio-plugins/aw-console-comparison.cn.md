@@ -39,7 +39,7 @@ description: "让我们把所有的Airwindows Console插件都拿出来溜溜看
 挑出适合的，
 舍弃用不上的。
 为此，我创建了一个专门对比所有Airwindows Console插件的REAPER工程，
-来看看每种Console到底染了什么颜色，
+来看看每种Console到底染了什么色，
 有什么区别，
 哪个是最优选。
 
@@ -47,21 +47,25 @@ description: "让我们把所有的Airwindows Console插件都拿出来溜溜看
 
 [工程放到REAPER官网上了，点击这里进入下载页面](https://stash.reaper.fm/v/42335/aw%20Console%20Comparison.rpp)。
 
-使用方法：
+使用方式：
 
 1. 播放工程。
 2. 把单个静音的轨道Solo来听正弦波过Console Channel + Bus的声音。
-    静音的轨道名是所用的Console名称。
-3. 有一个没有挂插件的None轨道，可以当成干信号，也可以用来反向抵消其他轨来听失真染色的声音。
-4. 总线挂了几个自带的测量插件，尤其是频谱，对理解每个染色具体什么样能有些帮助。
-5. 三个Source音源轨挂了三个ReaSynths，
+    静音的轨道名是所用的Console插件名称。
+3. 有一个没有挂插件的None轨道，
+    可以当成参考用的干信号，
+    也可以用来反向抵消其他轨来听失真染色的声音。
+4. 总线挂了几个自带的测量插件，
+    应该能对理解每个染色具体什么样能有些帮助，
+    尤其是频谱。
+5. 三个Source音轨挂了都挂上了自带的ReaSynths音源，
     其中source 1在播放440Hz，
     source 2为880Hz（第一个泛音），
     source 3则是用来测试非泛音的频率。
 
 经过对比，我观察到了以下几点：
 
-1. 部分插件哪怕仅有单轨输入也会产生失真，
+1. 大部分插件哪怕仅有单轨输入也会产生失真，
     除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。
 2. 多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。
 3. 所有失真都会产生直流偏差（0Hz信号），
@@ -79,7 +83,7 @@ description: "让我们把所有的Airwindows Console插件都拿出来溜溜看
 6. 根据我个人的判断，最好听的几款如下：
    1. Atmosphere。据说是为了模拟声音在空气中融合的听感。
         其失真较平均，没有突兀的听感。
-   2. Console5。失真更饱满，全频段直接上到奈奎斯特；
+   2. Console5。更饱满，全频段失真上至奈奎斯特；
         [Console5Dark](https://gearspace.com/board/showpost.php?p=13053669&postcount=147)，
         此变异与原版反向后差别在-80dB左右，
         而且主要是原频率以及前几个泛音，
@@ -98,5 +102,5 @@ description: "让我们把所有的Airwindows Console插件都拿出来溜溜看
 总结一下，
 日常用PurestConsole，
 Console7当成超级模拟染色的Summing盒（它CPU用量最高），
-PDConsole来当软胶（指粘合多个轨道），
+PDConsole来当软胶（胶指粘合多个轨道的功能），
 Console5或者Console5Dark当纽约式指脸怼人的硬胶。
