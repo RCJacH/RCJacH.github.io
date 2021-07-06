@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on RCJacH</title><link>https://RCJacH.github.io/cn/post/</link><description>Recent content in Posts on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 16:48:52 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/post/index.xml" rel="self" type="application/rss+xml"/><item><title>如何挑选Airwindows Console插件系列</title><link>https://RCJacH.github.io/cn/post/analysis/audio-plugins/aw-console-comparison/</link><pubDate>Thu, 01 Jul 2021 16:48:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/analysis/audio-plugins/aw-console-comparison/</guid><description>Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on RCJacH</title><link>https://RCJacH.github.io/cn/post/</link><description>Recent content in Posts on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 16:48:52 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/post/index.xml" rel="self" type="application/rss+xml"/><item><title>如何挑选Airwindows Console插件系列</title><link>https://RCJacH.github.io/cn/blog/aw-console-comparison/</link><pubDate>Thu, 01 Jul 2021 16:48:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/aw-console-comparison/</guid><description>Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。
 最近我终于想明白了如何在REAPER内搭建Console系统 （之后有空再翻译）， 所以在想办法把Console插件直接嵌入到各种模板里。
 不过他家插件有个小小的问题……选择太多了。
 目前为止， 他已经出了两百多个免费插件了， 光Console相关的插件就已经有12个。 而且他每周都在开发新算法， 我作为用户反而有点跟不上他的开发速度。
@@ -7,7 +7,7 @@
 工程放到REAPER官网上了，点击这里进入下载页面。
 使用方式：
 播放工程。 把单个静音的轨道Solo来听正弦波过Console Channel + Bus的声音。 静音的轨道名是所用的Console插件名称。 有一个没有挂插件的None轨道， 可以当成参考用的干信号， 也可以用来反向抵消其他轨来听失真染色的声音。 总线挂了几个自带的测量插件， 应该能对理解每个染色具体什么样能有些帮助， 尤其是频谱。 三个Source音轨挂了都挂上了自带的ReaSynths音源， 其中source 1在播放440Hz， source 2为880Hz（第一个泛音）， source 3则是用来测试非泛音的频率。 经过对比，我观察到了以下几点：
-大部分插件哪怕仅有单轨输入也会产生失真， 除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。 多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。 所有失真都会产生直流偏差（0Hz信号）， 所以在ConsoleBus之后需要添加一个直流滤波器。 此方面自带的ReaEQ是所有插件中CPU用量最少的， 用它加一个20Hz的高通可以过滤大部分的偏差。 如果你想把其全部切除， Airwindows的Infrasonic插件能完美实现， 代价是更高的CPU用量。 染色是非线性的。 更高的输入音量会使过载算法产生更多泛音， 并且整个信号会在接近0dB的地方被削波， 所以别忘了Gain-Staging。 仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。 根据我个人的判断，最好听的几款如下： Atmosphere。据说是为了模拟声音在空气中融合的听感。 其失真较平均，没有突兀的听感。 Console5。更饱满，全频段失真上至奈奎斯特； Console5Dark， 此变异与原版反向后差别在-80dB左右， 而且主要是原频率以及前几个泛音， 但用Span把两个信号叠起来又看不出来什么区别。 此款CPU用量更少； Console5Raw，一个更干净的版本， 不过据说会出现一些不稳定的直流偏差。 Console7。听起来更空洞，基音音量会稍微小一点。 它还有个失真稍微更大一点的兄弟叫Console7Cascade。 PDConsole，PD代表Purest Drive。此款听起来失真量最小。 PurestConsole初版。 经不严谨测试它能跟PurestConsole2完全抵消， 但这款的CPU用量是所有Console里面最少的，都不到二代的一半。 而且！！这款跟Atmosphere也能完全抵消！！ 总结一下， 日常用PurestConsole， Console7当成超级模拟染色的Summing盒（它CPU用量最高）， PDConsole来当软胶（胶指粘合多个轨道的功能）， Console5或者Console5Dark当纽约式指脸怼人的硬胶。</description></item><item><title>音源模板及常见问题</title><link>https://RCJacH.github.io/cn/post/reaper/working-with-sample-library-templates/</link><pubDate>Wed, 09 Jun 2021 07:20:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/reaper/working-with-sample-library-templates/</guid><description>我在2019年的时候提出过并尝试过用REAPER来搭建音源服务器的概念， 后来断断续续有人询问搭建方式，所以打算记录下来供大家参考。
+大部分插件哪怕仅有单轨输入也会产生失真， 除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。 多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。 所有失真都会产生直流偏差（0Hz信号）， 所以在ConsoleBus之后需要添加一个直流滤波器。 此方面自带的ReaEQ是所有插件中CPU用量最少的， 用它加一个20Hz的高通可以过滤大部分的偏差。 如果你想把其全部切除， Airwindows的Infrasonic插件能完美实现， 代价是更高的CPU用量。 染色是非线性的。 更高的输入音量会使过载算法产生更多泛音， 并且整个信号会在接近0dB的地方被削波， 所以别忘了Gain-Staging。 仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。 根据我个人的判断，最好听的几款如下： Atmosphere。据说是为了模拟声音在空气中融合的听感。 其失真较平均，没有突兀的听感。 Console5。更饱满，全频段失真上至奈奎斯特； Console5Dark， 此变异与原版反向后差别在-80dB左右， 而且主要是原频率以及前几个泛音， 但用Span把两个信号叠起来又看不出来什么区别。 此款CPU用量更少； Console5Raw，一个更干净的版本， 不过据说会出现一些不稳定的直流偏差。 Console7。听起来更空洞，基音音量会稍微小一点。 它还有个失真稍微更大一点的兄弟叫Console7Cascade。 PDConsole，PD代表Purest Drive。此款听起来失真量最小。 PurestConsole初版。 经不严谨测试它能跟PurestConsole2完全抵消， 但这款的CPU用量是所有Console里面最少的，都不到二代的一半。 而且！！这款跟Atmosphere也能完全抵消！！ 总结一下， 日常用PurestConsole， Console7当成超级模拟染色的Summing盒（它CPU用量最高）， PDConsole来当软胶（胶指粘合多个轨道的功能）， Console5或者Console5Dark当纽约式指脸怼人的硬胶。</description></item><item><title>音源模板及常见问题</title><link>https://RCJacH.github.io/cn/blog/working-with-sample-library-templates/</link><pubDate>Wed, 09 Jun 2021 07:20:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/working-with-sample-library-templates/</guid><description>我在2019年的时候提出过并尝试过用REAPER来搭建音源服务器的概念， 后来断断续续有人询问搭建方式，所以打算记录下来供大家参考。
 但这篇文章不是关于搭建的。
 这篇讲的是音源服务器到底是什么， 并且讨论一下它跟其他模板比起来有什么优势和劣势。
 为了理解该服务器的价值，我们需要了解一下媒体音乐制作人在工作中会遇到的几个问题。
@@ -29,13 +29,13 @@ storyteller的REAPER管弦超级大模板
 无论如何，单一模板法的确可以节省大量的初始配置时间， 但使用过程中反而会引入一些其他问题。
 单一模板法的问题 单一模板法最大的问题还是他们很大，只不过这次指的是文件体积。
 如果你是个REAPER用户， 你应该知道REAPER包含自动备份工程文件的功能。 鉴于丢失进度是准时交工最大的阻碍， 我把备份间隔设置为每5分钟保存一次。 这么基础的功能其他DAW估计也有。
-那么问题来了，如果我们将所有东西都加载进一个工程内， BASE64字符串格式的插件设置会把工程文件撑到肥胖， 动不动就上百兆。 如果我们继续自动备份的话， 每小时产生的备份文件就需要一千多兆， 到最终工作完成时可能会上到几百个G。</description></item><item><title>Jacob Collier和声编配技巧分析之Scooping</title><link>https://RCJacH.github.io/cn/post/analysis/jacob-collier/scooping/</link><pubDate>Thu, 25 Feb 2021 00:07:01 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/analysis/jacob-collier/scooping/</guid><description>前几天剪了个视频，用于分析Jacob Collier和声编配中的Scooping技巧。
+那么问题来了，如果我们将所有东西都加载进一个工程内， BASE64字符串格式的插件设置会把工程文件撑到肥胖， 动不动就上百兆。 如果我们继续自动备份的话， 每小时产生的备份文件就需要一千多兆， 到最终工作完成时可能会上到几百个G。</description></item><item><title>Jacob Collier和声编配技巧分析之Scooping</title><link>https://RCJacH.github.io/cn/blog/scooping/</link><pubDate>Thu, 25 Feb 2021 00:07:01 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/scooping/</guid><description>前几天剪了个视频，用于分析Jacob Collier和声编配中的Scooping技巧。
 Scooping来源于黑人福音歌曲，是两个步进声部进行的和弦组合，通常为八分音符或者十六分音符。
 我把JC所有的谱子都过了一遍，发现他主要用这个技术于感情丰富、偏灵魂一点的慢歌里。 而他那些节奏起范儿的、飘在天上的有点Ambience曲风、甚至纯爵士和声的歌曲里几乎就找不到这个技巧了。
 这个技巧主要用于音乐中的快速渐强或者渐弱，主要音符来自于五声音阶，但Jacob时不时的会用一些半音替换和弦来增加复杂度。
 墙内B站地址
 这几天试了一下，有几点心得：
-Scooping对应的发音需要慎重考虑。JC常用的&amp;quot;wow&amp;quot;类发音特色太明显，对于非Steve Wonder派系R&amp;amp;B风格的曲目中加上这种东西会很突兀。中文歌出现这种东西很容易不伦不类。 择音还是蛮重要的。有的时候最重要的声部并不是最高音。JC应该是通过后期音量包络来强调主要声部（通常是更偏五声音阶的声部）。 在此之上叠加不同连音节奏的声部是个增加气氛的好办法，就是唱起来比较困难。</description></item><item><title>软件推荐: Windows的程序管理器，Scoop</title><link>https://RCJacH.github.io/cn/post/review/scoop/</link><pubDate>Wed, 06 May 2020 01:02:12 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/review/scoop/</guid><description>我对弹出窗口一向抱有很宽容的态度，这要归功于网络浏览器的四大护法（Ghostery, AdGuard AdBlocker, Privacy Badger, uMatrix）。 不过，四大护法仅限于网页浏览，它们面对系统自带的弹窗无能为力。 当然，作为一个宽容的人，我不应该手动限制弹窗的自由，应该允许他们在法制下茁壮成长。
+Scooping对应的发音需要慎重考虑。JC常用的&amp;quot;wow&amp;quot;类发音特色太明显，对于非Steve Wonder派系R&amp;amp;B风格的曲目中加上这种东西会很突兀。中文歌出现这种东西很容易不伦不类。 择音还是蛮重要的。有的时候最重要的声部并不是最高音。JC应该是通过后期音量包络来强调主要声部（通常是更偏五声音阶的声部）。 在此之上叠加不同连音节奏的声部是个增加气氛的好办法，就是唱起来比较困难。</description></item><item><title>软件推荐: Windows的程序管理器，Scoop</title><link>https://RCJacH.github.io/cn/blog/scoop/</link><pubDate>Wed, 06 May 2020 01:02:12 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/scoop/</guid><description>我对弹出窗口一向抱有很宽容的态度，这要归功于网络浏览器的四大护法（Ghostery, AdGuard AdBlocker, Privacy Badger, uMatrix）。 不过，四大护法仅限于网页浏览，它们面对系统自带的弹窗无能为力。 当然，作为一个宽容的人，我不应该手动限制弹窗的自由，应该允许他们在法制下茁壮成长。
 所以我决定去添加更多的护法。
 在Windows上，我已经拥有了一个强大的软件删除工具，名曰Bulk Crap Uninstaller。 它能够在删除软件的时候屏蔽大部分弹窗，并且清除大部分遗留文件和相关注册表信息。
 但是那些还有生命力的软件经常在打开时用弹窗热情地提醒我该充值更新了，亲。
@@ -57,7 +57,7 @@ Scoop是一个Windows用的软件包管理系统。
 我系好安全带了，油门在哪儿 首先确认你用的是Windows系统，然后通过以下操作打开PowerShell：
 在键盘上按下Win+R 输入powershell 键盘按下Enter键 然后你需要通过以下命令来确认你的PowerShell版本至少是5.0。 输入字符（拷贝粘贴）后按Enter键。
 $psversiontable.psversion.major 如果返回的版本号小于5.0（部分Windows 7早期版本）你需要手动安装PowerShell：
-微软官网PowerShell 5.1下载地址</description></item><item><title>Cubehelix颜色表算法</title><link>https://RCJacH.github.io/cn/post/design/color-cubehelix/</link><pubDate>Mon, 30 Mar 2020 16:56:11 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/design/color-cubehelix/</guid><description>我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。
+微软官网PowerShell 5.1下载地址</description></item><item><title>Cubehelix颜色表算法</title><link>https://RCJacH.github.io/cn/blog/color-cubehelix/</link><pubDate>Mon, 30 Mar 2020 16:56:11 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/color-cubehelix/</guid><description>我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。
 在进入主题之前，我们先回顾一下传统的配色表通常是什么样的。
 当你在某些打不开的搜索引擎上搜索色图色表的时候，搜索结果通常是这样的：
 或者像这种多色系的：
@@ -82,14 +82,14 @@ Cubehelix in MATLAB
 Cubehelix in Matplotlib，在页面最底左右
 Github上有很多python脚本也加了&amp;quot;立方螺旋&amp;quot;算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个能生成颜色列表的cubehelix算法模块. 并多加了一点可自定义的参数。
 敝人的脚本 作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用Python来写各种日常自动化的脚本，例如：
-import numpy as np print(&amp;#34;Hello World!&amp;#34;) # 不会了 我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.</description></item><item><title>RCJacH - TV动画《钢之炼金术师》/ TVアニメ「鋼の錬金術師」OST「Main Theme」【吉他版】</title><link>https://RCJacH.github.io/cn/post/rcjach-the-fullmetal-alchemist/</link><pubDate>Fri, 31 Aug 2018 23:53:54 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/rcjach-the-fullmetal-alchemist/</guid><description>这次翻弹的是钢之炼金术师主题曲，思考了很久编配方式。之后写文章细讲创作思路及制作技巧。
+import numpy as np print(&amp;#34;Hello World!&amp;#34;) # 不会了 我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.</description></item><item><title>RCJacH - TV动画《钢之炼金术师》/ TVアニメ「鋼の錬金術師」OST「Main Theme」【吉他版】</title><link>https://RCJacH.github.io/cn/blog/rcjach-the-fullmetal-alchemist/</link><pubDate>Fri, 31 Aug 2018 23:53:54 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-the-fullmetal-alchemist/</guid><description>这次翻弹的是钢之炼金术师主题曲，思考了很久编配方式。之后写文章细讲创作思路及制作技巧。
 音频地址：
 全职猎人OST正義の怒り 吉他版 音频 网易云音乐
 ハンターハンターOST正義の怒り Guitar Cover SoundCloud
 设备：
 Fender HighWay One Telecaster (Lindy Fralin Pickups）
 Yamaha THR10
-REAPER</description></item><item><title>RCJacH - TV动画《全职猎人》/ TVアニメ「ハンター×ハンター」OST「正義の怒り」【吉他版】</title><link>https://RCJacH.github.io/cn/post/rcjach-hxh-seigi-no-ikari/</link><pubDate>Mon, 02 Jul 2018 16:36:45 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/rcjach-hxh-seigi-no-ikari/</guid><description>翻弹系列n年没更新了，老贼更的都比我快。这次献上Hiatus X Hiatus，哦不 Hunter X Hunter 次回预告OST「正義の怒り」吉他版翻弹。
+REAPER</description></item><item><title>RCJacH - TV动画《全职猎人》/ TVアニメ「ハンター×ハンター」OST「正義の怒り」【吉他版】</title><link>https://RCJacH.github.io/cn/blog/rcjach-hxh-seigi-no-ikari/</link><pubDate>Mon, 02 Jul 2018 16:36:45 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-hxh-seigi-no-ikari/</guid><description>翻弹系列n年没更新了，老贼更的都比我快。这次献上Hiatus X Hiatus，哦不 Hunter X Hunter 次回预告OST「正義の怒り」吉他版翻弹。
 音频地址：
 全职猎人OST正義の怒り 吉他版 音频 网易云音乐
 ハンターハンターOST正義の怒り Guitar Cover SoundCloud
@@ -101,7 +101,7 @@ National Silver Finger Picks
 Fender HighWay One Telecaster (Lindy Fralin Pickups）
 Yamaha THR10
 REAPER
-PS. 超小声：录音之前忘了换弦了&amp;hellip;</description></item><item><title>RCJacH乐理系列教程：大调音阶</title><link>https://RCJacH.github.io/cn/post/rcmtheory/the-major-scale/</link><pubDate>Sun, 01 Jul 2018 21:23:14 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/rcmtheory/the-major-scale/</guid><description>定义 大调音阶是一组由七个不同音高组成的合集，这些音相互之间保持着固定的距离。
+PS. 超小声：录音之前忘了换弦了&amp;hellip;</description></item><item><title>RCJacH乐理系列教程：大调音阶</title><link>https://RCJacH.github.io/cn/blog/the-major-scale/</link><pubDate>Sun, 01 Jul 2018 21:23:14 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/the-major-scale/</guid><description>定义 大调音阶是一组由七个不同音高组成的合集，这些音相互之间保持着固定的距离。
 属性 大调音阶拥有七个不同音高组的音级，按照音高从低到高排序。 每一个音级有一个专属名称。 其中有两双距离为半音的音级，分别是3级与4级，7级与1级。其他临近音级之间距离为全音。 学习指南 大调音阶每个音高组仅出现一次，例C与C#不可同时出现，要么C与Db要么B#与C#。 关于音级的专属名称，暂时我们仅需要知道音阶的第一个音叫主音，例如Bb大调音阶的主音为Bb。其他音可以用音级数来表示，例如二级音、三级音。 为了写出大调音阶，我们先写下从主音开始的7个音高组，以Bb为例则为B C D E F G A。 然后观察每双相邻音级的关系并确认仅三级至四级和七级至主音为半音关系，其他相邻音级为全音关系。 若任何相邻音关系不符合以上结构，用变音记号去修正后者。一个常见规律为，若音阶主音为F或包含降号，则使用降号来修正音高关系，否则使用升号。 例子 以E大调音阶为例子。
 我们列出从E开始的所有音高组：E F G A B C D，并确认仅三级至四级和七级至主音为半音关系，其他临近音级之间距离为全音。
 从主音开始，我们发现E-F是个半音关系，但是我们在看1-2音级而非3-4音级，这里我们需要个全音，所以需要改变后者。为了让半音关系提升到全音关系，我们需要把F升上去，得到F#。所以F#是这个音阶的二级。
@@ -118,12 +118,12 @@ PS. 超小声：录音之前忘了换弦了&amp;hellip;</description></item><ite
 这篇文章提供了一个可以用逻辑推导大调音阶的方法，就像我们学的数学公式一样。我们需要先从结果中推导出公式，然后记住该公式才能更快地运用起来。记忆来自于理解、训练、和应用，不过不要担心，我们之后的课程中会有足够多的机会去使用此概念的。
 很多乐理书上会在音名之后马上教音程（两个音之间的相关关系），可能因为音程涉及到的音会少一点。但是，若没有大调音阶的知识储备，学习音程可能只能依赖于数音数了。除此之外，很多书籍在讲音阶的时候会用五度圈或者调号来解释。虽然这两个概念很重要，很多人在学习过程中只会更迷茫，因为他们记不住五度圈看起来随机的顺序。为了学习大调音阶而学五度圈，为了学五度圈而学音程，而学音程有需要了解大调音阶&amp;hellip;这有点绕圈了。
 所以我认为我们需要先学会建立大调音阶，并且把需要死记硬背的内容减到最少。本文其实只列出了三个重点和三个简单地推导步骤，纯逻辑，不需要记什么绕口令。
-复习 该你啦！用本文所教的方法，以所有音高为主音推导对应的大调音阶 - 其中包含那些有等音关系的音高。注意一些大调音阶会需要使用重升号和重降号。</description></item><item><title>RCJacH乐理系列教程：音名</title><link>https://RCJacH.github.io/cn/post/rcmtheory/pitch-name/</link><pubDate>Tue, 05 Jun 2018 18:37:19 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/rcmtheory/pitch-name/</guid><description>音高定义 音高是人类对声音频率在对数刻度上的感受，也是用来判断声音高低的属性之一。
+复习 该你啦！用本文所教的方法，以所有音高为主音推导对应的大调音阶 - 其中包含那些有等音关系的音高。注意一些大调音阶会需要使用重升号和重降号。</description></item><item><title>RCJacH乐理系列教程：音名</title><link>https://RCJacH.github.io/cn/blog/pitch-name/</link><pubDate>Tue, 05 Jun 2018 18:37:19 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/pitch-name/</guid><description>音高定义 音高是人类对声音频率在对数刻度上的感受，也是用来判断声音高低的属性之一。
 命名规则 共有七组重复的音高，我们称之为音高组，并用字母A B C D E F G标注。 在这些音高组之间，有另外五个没有直接用字母标注的音高。所以每次重复之间共有十二个不同的音高。 这些字母之间，只有E-F与B-C是相邻的（此关系名为半音），其他字母之间皆有一个音高（此关系名为全音）。 为了使用这些中间音，我们使用一种叫变音记号的名称修饰符，来改变音组字母所代表的音高。变音记号共有四种，可叠加使用，分别为： 降号 (b) = -1： 1
 升号 (#) = +1： 1
 重升号 (x) = +2： 1
 还原记号 = 0（去除其他变音记号的影响）： 1仅在五线谱中出现。
-5. 正因为这些修饰符的存在，每一个音高可以有多个音名。同一个音高的不同名称被称为**等音**。 学习指南 命名规则 因历史原因，在音乐中这些字母的排列通常为C D E F G A B。 为了建立稳固的基础概念，我们在此仅使用十二平均律作为音律标准，即任意两个临近音之间的距离在对数刻度上是相等的。 学习这个规律最好的方法就是想象钢琴键盘。 区分音高组与修饰符对于理解音高相关的主题极其重要 - 无论是音程、音阶还是之后的对位法、和声学 - 理解之后能很快掌握之后的知识点。对于音高，其中一个思路是*把所有12个不同的音高根据他们之间的关系定义为0-11的数字，其中C = 0，D = 2等。*去获取数字为1的音高，也就是C与D之间的音高，我们可以从0加上1（升号），或者从2减去1（降号）。这样，我们只需要去记很少的信息，同时当碰到三重升号 或三重降号的时候 也不会一脸茫然。 **等音不等于同一个音高。**他是否为同一个音高取决于乐器的音律，例如木管和铜管通常是以谐音列为基础的音律，而非十二平均律。举个例子，重降D，代表从D音高组为基础-2的音高，其等音为C。但重降D依然属于D音高组的变异，而C则是C音高组的组员。 频率与音高 作为参考，一个音高的频率每次重复都会增加一倍。例如，若A音高的频率为440Hz，当我们经过BCDEFG以及期间的5个额外音高后，下一个A的音高则是两倍的频率：880Hz。再下一个A则为1760Hz。同时因为共有12个不同的音高，每增加半音，我们用基础赫兹乘以2的12次方根。 上图中，当音高上升时，半音之间的距离也在增加。为了让任意频段的相邻音之间保持同样距离，我们需要使用对数刻度。 细说 虽然音名属于乐理中最基础的概念，*它是那些能主动设计音乐的人与那些只能被动复现音乐的人最大的区别。*有很多乐理基础书籍、文章、甚至插件都很注重十二平均律里的十二个音，这个虽然对和声染色或序列音乐很有帮助，但并没有讲清楚功能音乐中每个音符之间的关系。有一些人甚至鼓励死记硬背，完全没有意识到我们对知识的深刻记忆来自于理解与经验，熟练只是这些努力的显性结果。</description></item><item><title>RCJacH乐理系列教程：Q&amp;A</title><link>https://RCJacH.github.io/cn/post/rcmtheory/qa/</link><pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/rcmtheory/qa/</guid><description>跟着RCJacH学乐理前，你可能想知道的问题： Q: 我的乐理教材会涉及哪些内容？ A: 乐理基础 (Rudiments)、和声学 (Harmony)、对位法 (Counterpoint)，及其它我目前还没想好的主题。
+5. 正因为这些修饰符的存在，每一个音高可以有多个音名。同一个音高的不同名称被称为**等音**。 学习指南 命名规则 因历史原因，在音乐中这些字母的排列通常为C D E F G A B。 为了建立稳固的基础概念，我们在此仅使用十二平均律作为音律标准，即任意两个临近音之间的距离在对数刻度上是相等的。 学习这个规律最好的方法就是想象钢琴键盘。 区分音高组与修饰符对于理解音高相关的主题极其重要 - 无论是音程、音阶还是之后的对位法、和声学 - 理解之后能很快掌握之后的知识点。对于音高，其中一个思路是*把所有12个不同的音高根据他们之间的关系定义为0-11的数字，其中C = 0，D = 2等。*去获取数字为1的音高，也就是C与D之间的音高，我们可以从0加上1（升号），或者从2减去1（降号）。这样，我们只需要去记很少的信息，同时当碰到三重升号 或三重降号的时候 也不会一脸茫然。 **等音不等于同一个音高。**他是否为同一个音高取决于乐器的音律，例如木管和铜管通常是以谐音列为基础的音律，而非十二平均律。举个例子，重降D，代表从D音高组为基础-2的音高，其等音为C。但重降D依然属于D音高组的变异，而C则是C音高组的组员。 频率与音高 作为参考，一个音高的频率每次重复都会增加一倍。例如，若A音高的频率为440Hz，当我们经过BCDEFG以及期间的5个额外音高后，下一个A的音高则是两倍的频率：880Hz。再下一个A则为1760Hz。同时因为共有12个不同的音高，每增加半音，我们用基础赫兹乘以2的12次方根。 上图中，当音高上升时，半音之间的距离也在增加。为了让任意频段的相邻音之间保持同样距离，我们需要使用对数刻度。 细说 虽然音名属于乐理中最基础的概念，*它是那些能主动设计音乐的人与那些只能被动复现音乐的人最大的区别。*有很多乐理基础书籍、文章、甚至插件都很注重十二平均律里的十二个音，这个虽然对和声染色或序列音乐很有帮助，但并没有讲清楚功能音乐中每个音符之间的关系。有一些人甚至鼓励死记硬背，完全没有意识到我们对知识的深刻记忆来自于理解与经验，熟练只是这些努力的显性结果。</description></item><item><title>RCJacH乐理系列教程：Q&amp;A</title><link>https://RCJacH.github.io/cn/blog/qa/</link><pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/qa/</guid><description>跟着RCJacH学乐理前，你可能想知道的问题： Q: 我的乐理教材会涉及哪些内容？ A: 乐理基础 (Rudiments)、和声学 (Harmony)、对位法 (Counterpoint)，及其它我目前还没想好的主题。
 Q: 现在市面上的乐理教学产品有什么问题吗？ A: 市场上不乏针对单独话题的优秀资料，但成系统的优秀教学资源却是屈指可数。大部分所谓系列教学产品东拼西凑、难以自圆其说；或堆积着大量需要死记硬背的内容，事倍功半，误人子弟。
 Q: 三百页的书比三十页的书更值得购买/阅读/学习/炫耀吗？ A: 并不。
 不少读者习惯以书本总页数判断一本书的价值。比如：三百页的书一定比三十页的更值钱。“薄”仿佛是书的原罪，所以多数作者自发或被迫花更多时间把简单的概念复杂化、把复杂的推导“玄学”化，更有通过填充大量类似脑筋急转弯的练习题，提高“充实感”，提高销量。
@@ -132,10 +132,10 @@ Q: 越看不懂的书越是好书”的错觉从何而来? A: 这可能是被有
 面对啰嗦冗长不知所云的教材，大部分刻苦学习的读者喜欢发挥阿Q精神，对自己说：我应该买了本好书，因为我根本看不懂！
 Q: 如何正确利用网络学习资源？ A: 我们可以利用时代优势，主动寻找学习主题、快速理解该主题的基础理论、理智地去选择是否要深入研究。优秀如维基百科，在音乐知识及历史方面尚可称全面；而若想依赖其训练音乐能力，却是缘木求鱼。
 Wiki以外的乐理相关网络文章、博客，大致分为两类：一是知识深入探索文，二是话题热度流量文。前者针对有一定基础的读者，是非常优秀的学习资源；而后者通常只是将常见书籍编辑整理，粘贴复制。如果说前者还能助力解锁某项技能，那后者除了消磨时间，就只会让好学者败兴而归了。
-Q: 如何快速消除对乐理的畏惧感与陌生感？ A: 定义 (Definition)！定义！定义！定义是学习所有新学科、了解新领域的关键。学习任何概念应该从非常明确的定义开始，然后再了解例子及解释。</description></item><item><title>乐理系列教程 - 目录</title><link>https://RCJacH.github.io/cn/post/rcmtheory/toc/</link><pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/rcmtheory/toc/</guid><description>目录 跟着RCJacH学乐理前，你可能想知道的问题 音乐基础
+Q: 如何快速消除对乐理的畏惧感与陌生感？ A: 定义 (Definition)！定义！定义！定义是学习所有新学科、了解新领域的关键。学习任何概念应该从非常明确的定义开始，然后再了解例子及解释。</description></item><item><title>乐理系列教程 - 目录</title><link>https://RCJacH.github.io/cn/blog/toc/</link><pubDate>Sat, 26 May 2018 01:53:16 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/toc/</guid><description>目录 跟着RCJacH学乐理前，你可能想知道的问题 音乐基础
 2.1. 音名
 2.2. 大调音阶
-2.3. 音程 和声 对位法</description></item><item><title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-rcmship-perfect-pitch/</guid><description>RCMShip Perfect Pitch下载地址
+2.3. 音程 和声 对位法</description></item><item><title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/cn/blog/rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rcmship-perfect-pitch/</guid><description>RCMShip Perfect Pitch下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RCJacH ReaPack Repository
 如何使用ReaPack？
 简介 RCMShip （MShip代表musicianship，即音乐修养、视唱练耳）Perfect Pitch是一款包含自适应随机算法的原创JSFX游戏，用来练习绝对音感的能力。
@@ -143,7 +143,7 @@ RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RC
 可选性 点击Setup将转至音符选择页面，在此你可以手动或随机选择游戏所包含的音高，限制游戏难度或者增加变化。
 可配置 点击Config按钮切换到设置页面，可以设置一些基本参数，例如音量、音符长度、播放的八度和八度跨越等。也可以切换至MIDI输出模式，用采样播放器或者其他合成器作为音源。
 进阶介绍 理论 来自404（wiki）：&amp;ldquo;Absolute pitch (AP), widely referred to as perfect pitch, is a rare auditory phenomenon characterized by the ability of a person to identify or re-create a given musical note without the benefit of a reference tone.&amp;rdquo; 绝对音感是一个罕见的听觉现象，指的是一个人有能力在没有参考音高的情况下识别或重现一个给定的音符音高。
-绝对音感通常被视为一个与生俱来的能力，而当前虽然有一些科研性或商业性的相关产品，但还未能证明其对大众的有效性。 然而，虽然音频工作者们（录音师、混音师、母带师）需要花数些年的时间练习分辨音频的振幅、频率、时间等各种性质，长时间地针对绝对音感进行相关练习的人可能并不是多数。 在这种情况下，对于绝对音感是天生而来的主张可能没有太多的实际证明。</description></item><item><title>关于棚改隔音</title><link>https://RCJacH.github.io/cn/post/sound-insulation/</link><pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/sound-insulation/</guid><description>前些日子经过一位大佬的点拨，以及几十篇GS、Johnlsayers帖子和Ethan Winer、RealTraps团队这种建筑师官网文章，稍微了解了一下符合录音功能的隔音与吸音，并整理出以下几段笔记。越挖越深，一步走错万丈深渊，因此来请大家一起入坑。
+绝对音感通常被视为一个与生俱来的能力，而当前虽然有一些科研性或商业性的相关产品，但还未能证明其对大众的有效性。 然而，虽然音频工作者们（录音师、混音师、母带师）需要花数些年的时间练习分辨音频的振幅、频率、时间等各种性质，长时间地针对绝对音感进行相关练习的人可能并不是多数。 在这种情况下，对于绝对音感是天生而来的主张可能没有太多的实际证明。</description></item><item><title>关于棚改隔音</title><link>https://RCJacH.github.io/cn/blog/sound-insulation/</link><pubDate>Sun, 18 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/sound-insulation/</guid><description>前些日子经过一位大佬的点拨，以及几十篇GS、Johnlsayers帖子和Ethan Winer、RealTraps团队这种建筑师官网文章，稍微了解了一下符合录音功能的隔音与吸音，并整理出以下几段笔记。越挖越深，一步走错万丈深渊，因此来请大家一起入坑。
 此文章仅为个人观点，若有任何讲解不正确的地方，请大佬们指出，看情况修正。
 隔音与吸音是两个相关但并非互相替换的概念。很遗憾，很多装修相关的书和文章都在瞎写，把这两个概念混淆在一起，甚至两个词换着用，有点不负责任。吸音主要功能是提高室内的声学环境 – 减少室内声波反射 – 无法阻止声音进出房间，虽然减少声音反射的确对隔音有一点点帮助。
 隔音需要注意的有以下几点，按重要性排列：
@@ -151,7 +151,7 @@ RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RC
 除去新风管道，还有别的东西也会在墙上打洞，例如插座暗盒、电线管、暖气管、空调管道。这些东西必要的，所以实际保证房间密封性是相对来说比较困难的。哦，别忘了一个房间最大的两个开口：门（shen）窗（keng）！怎么解决呢？问毛爷爷，红色的。
 2，Mass质量（或 体积 x 密度）。 这个道理也简单，隔音效果在同样体积情况下越重越好，同样密度下体积越大越好。而且是木桶原理，也就是说假设你花了很多钱建了个很厚、密度很高、隔音指数很高的墙，但是门不隔音&amp;hellip;花在墙上的钱就白费了。
 关于建筑材料密度，我找到了这么一个表并企图翻译了一下，可以当作参考：
-材料 kg/m³ lbs/ft³ 亚克力玻璃 Acrylic Glass 1180.0 kg/m³ 73.66 lb/ft³ 普通红砖 Brick, common red 1922.0 kg/m³ 119.99 lb/ft³ 火泥砖 Brick, fire clay 2403.0 kg/m³ 150.01 lb/ft³ 灌胶水泥 Cement (foundation) 2499.0 kg/m³ 156.01 lb/ft³ 硬质刨花板 Chip board, hard 750.</description></item><item><title>RCJacH - 不规则世界</title><link>https://RCJacH.github.io/cn/post/rcjach-anomaly-world/</link><pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/rcjach-anomaly-world/</guid><description>不规则世界 Anomaly World - Feat. Euphia 作曲 : RCJacH
+材料 kg/m³ lbs/ft³ 亚克力玻璃 Acrylic Glass 1180.0 kg/m³ 73.66 lb/ft³ 普通红砖 Brick, common red 1922.0 kg/m³ 119.99 lb/ft³ 火泥砖 Brick, fire clay 2403.0 kg/m³ 150.01 lb/ft³ 灌胶水泥 Cement (foundation) 2499.0 kg/m³ 156.01 lb/ft³ 硬质刨花板 Chip board, hard 750.</description></item><item><title>RCJacH - 不规则世界</title><link>https://RCJacH.github.io/cn/blog/rcjach-anomaly-world/</link><pubDate>Mon, 10 Jul 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-anomaly-world/</guid><description>不规则世界 Anomaly World - Feat. Euphia 作曲 : RCJacH
 作词 : Euphia
 棕色瞳孔里看见
 乞力马扎罗山的雪
@@ -206,7 +206,7 @@ RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RC
 悬念是多项选
 忽然间我爱上冒险
 忽然间我爱上冒险
-忽然间我爱上</description></item><item><title>REAPER信号流</title><link>https://RCJacH.github.io/cn/post/reaper-signal-flow/</link><pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-signal-flow/</guid><description>什么是信号流？
+忽然间我爱上</description></item><item><title>REAPER信号流</title><link>https://RCJacH.github.io/cn/blog/signal-flow/</link><pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/signal-flow/</guid><description>什么是信号流？
 在数字音频制作领域，信号流指的是信号（例如音频或MIDI）是如何经过DAW中每一层运算的。
 因为我们在实际使用中常常会需要建立路由，无论是简单的信号发送、搭建模块合成器、还是建立使用Parameter Modulation的多轨模板，清晰地了解信号在DAW中的路径以及运算顺序会有非常大的帮助。
 所以我画了以下这张图。
@@ -221,7 +221,7 @@ Take Trim = 层音量衰减（主页面块儿上&amp;quot;边&amp;quot;往下拽
 音频/MIDI通道是同路由上平行的信号流。
 音频只会相加同通道的信号。
 音量推子、Trim包络、音量包络三者可以同时使用，也就是说可以同时有三层音量调整的方法（平衡、段落、微调之类的）。
-监听FX（Monitor FX）在音频渲染时是旁通的。</description></item><item><title>Tone Sweep – 原创JSFX电鼓合成器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-tone-sweep/</link><pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-tone-sweep/</guid><description>Tone Sweep下载地址
+监听FX（Monitor FX）在音频渲染时是旁通的。</description></item><item><title>Tone Sweep – 原创JSFX电鼓合成器</title><link>https://RCJacH.github.io/cn/blog/tone-sweep/</link><pubDate>Fri, 05 May 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/tone-sweep/</guid><description>Tone Sweep下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 介绍： Tone Sweep是一款能生成一个音高变化（扫频）的单音电鼓合成器。主要用于设计电子音乐中使用的鼓，例如低鼓，军鼓，铜鼓，以及音效。
 用法： 设置起始音高（StartingNote）以及目标音高（EndingNote）。
@@ -252,16 +252,16 @@ Shape：这个参数决定了曲线的形状。
 音量包络图形与概括页面的图形一样。
 波形页面 波形页面所包含的是那些会改变输出信号音色的参数。
 Waveform：通过此参数选择合成器的基础波形。
-Modulations 调制 此合成器有两个调制选项，AM振幅调制（Amplitude Modulation）和FM频率调制（Frequency Modulation）。AM通过一个波形来改变源信号的振幅，而FM则通过一个波形变动源信号的频率。</description></item><item><title>音乐创作之 全排列 脚本</title><link>https://RCJacH.github.io/cn/post/script-list-permutation/</link><pubDate>Mon, 13 Feb 2017 20:38:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/script-list-permutation/</guid><description>为了让音乐创作之全排列技巧变得更直观，我做了一个简单的脚本。
+Modulations 调制 此合成器有两个调制选项，AM振幅调制（Amplitude Modulation）和FM频率调制（Frequency Modulation）。AM通过一个波形来改变源信号的振幅，而FM则通过一个波形变动源信号的频率。</description></item><item><title>音乐创作之 全排列 脚本</title><link>https://RCJacH.github.io/cn/blog/script-list-permutation/</link><pubDate>Mon, 13 Feb 2017 20:38:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/script-list-permutation/</guid><description>为了让音乐创作之全排列技巧变得更直观，我做了一个简单的脚本。
 全排列脚本地址
 这个脚本按着输入的音符（或者字符）以及所需要的变化数量，随机生成几个修饰方式以及相应的全排列。
 使用方法： 第一行的变量为音程修饰的总数，改成0则生成无修饰的全排列。
 第二行的大括号内为所使用的字符，第一项和最后一项是范围之外的临时变化。中间可以输入任意数量的字符。默认为C大调的1 2 3 4（以及作为临时变化的7和5）
 设置好了之后点击上方的Run，就可以在低下的结果栏里显示出来所有的排列。
-此脚本可以作为一个学习、检查、或者激发灵感的工具，真正弹奏的话还是建议把这个全排列技术练成本能。</description></item><item><title>音乐创作之 全排列 技巧</title><link>https://RCJacH.github.io/cn/post/compositional-permutation/</link><pubDate>Mon, 13 Feb 2017 20:37:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/compositional-permutation/</guid><description>全排列是一个组合数学概念，简单来说就是因为1+2=2+1，所以1与2之和的组合有两个（组合总数公式为n!）。
+此脚本可以作为一个学习、检查、或者激发灵感的工具，真正弹奏的话还是建议把这个全排列技术练成本能。</description></item><item><title>音乐创作之 全排列 技巧</title><link>https://RCJacH.github.io/cn/blog/compositional-permutation/</link><pubDate>Mon, 13 Feb 2017 20:37:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/compositional-permutation/</guid><description>全排列是一个组合数学概念，简单来说就是因为1+2=2+1，所以1与2之和的组合有两个（组合总数公式为n!）。
 在音乐即兴、作曲中，全排列是一个发展主题的好工具。我们可以通过使用全排列技巧来扩展一个简短的音乐动机，避免不断构思新的无关联的动机，这样能让音乐作品更统一，更有逻辑。在我们即兴课上，全排列是最基础的一个练习。每个人被要求背下四位数的全排列，把它变成本能，并有能力随时随地调取这个列表。
 四位数的全排列表如下（共4!=24组）：
-1 2 3 4 2 1 3 4 3 1 2 4 4 1 2 3 1 2 4 3 2 1 4 3 3 1 4 2 4 1 3 2 1 3 2 4 2 3 1 4 3 2 1 4 4 2 1 3 1 3 4 2 2 3 4 1 3 2 4 1 4 2 3 1 1 4 2 3 2 4 1 3 3 4 1 2 4 3 1 2 1 4 3 2 2 4 3 1 3 4 2 1 4 3 2 1 很多人会觉得这个表格很熟悉，毕竟吉他乐手练指法的时候会用到它（每个数字代表一个手指）。在指法之外，如果我们把每个数字代入一个音符、节奏、和弦、乐句、力度或者任何音乐概念的话，我们可以马上生成24种相关的动机可能性任我们挑选。</description></item><item><title>Reaper字符串快捷键系统：Vimper Solo</title><link>https://RCJacH.github.io/cn/post/reaper-vimper-solo/</link><pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-vimper-solo/</guid><description>当我们开始挖掘REAPER内隐藏着的几千个操作（Action），并且随着ReaPack的成长不断添加新的用户自制脚本与扩展时，我们会发现当我们需要自定义快捷键时，能用到的键位越来越少。而为了充分利用现有的字母、数字、以及符号键，我们通常需要加上各种如Ctrl，Alt甚至Win的修饰键进行各种高难度的键位组合，而且经常过几天可能就会忘掉一大半。
+1 2 3 4 2 1 3 4 3 1 2 4 4 1 2 3 1 2 4 3 2 1 4 3 3 1 4 2 4 1 3 2 1 3 2 4 2 3 1 4 3 2 1 4 4 2 1 3 1 3 4 2 2 3 4 1 3 2 4 1 4 2 3 1 1 4 2 3 2 4 1 3 3 4 1 2 4 3 1 2 1 4 3 2 2 4 3 1 3 4 2 1 4 3 2 1 很多人会觉得这个表格很熟悉，毕竟吉他乐手练指法的时候会用到它（每个数字代表一个手指）。在指法之外，如果我们把每个数字代入一个音符、节奏、和弦、乐句、力度或者任何音乐概念的话，我们可以马上生成24种相关的动机可能性任我们挑选。</description></item><item><title>Reaper字符串快捷键系统：Vimper Solo</title><link>https://RCJacH.github.io/cn/blog/vimper-solo/</link><pubDate>Sun, 05 Feb 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/vimper-solo/</guid><description>当我们开始挖掘REAPER内隐藏着的几千个操作（Action），并且随着ReaPack的成长不断添加新的用户自制脚本与扩展时，我们会发现当我们需要自定义快捷键时，能用到的键位越来越少。而为了充分利用现有的字母、数字、以及符号键，我们通常需要加上各种如Ctrl，Alt甚至Win的修饰键进行各种高难度的键位组合，而且经常过几天可能就会忘掉一大半。
 为了避免这种尴尬，我做了一个按组归类快捷键的脚本。它是依照VIM文本编辑器快捷键的理念，通过一串字符触发快捷键的。
 点击这里下载Vimper Solo。
 通过这个脚本，我们不需要去记各种修饰键，只需按组激发对应的键位就好了。例如，在这个脚本内，同一个m键可以根据不同的分组静音轨道、块或层，但在REAPER里，我们得去想到三个不同的修饰键组合来触发这三个不同的功能。有的时候由于记不住某个操作是要按Shift还是要按Ctrl还是Ctrl+Shift需要反复去试，浪费很多时间。
@@ -279,10 +279,10 @@ NAME = “分组”,
 **分组可以有无数层。
 ***如果添加新的总分组，得在最底下的return{}里添加。
 ****快捷键目前区分大小写。
-*****显示名称可以使用中文。</description></item><item><title>Reaper JSFX: NoiseBuzz噪音生成器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-noisebuzz/</link><pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-noisebuzz/</guid><description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
+*****显示名称可以使用中文。</description></item><item><title>Reaper JSFX: NoiseBuzz噪音生成器</title><link>https://RCJacH.github.io/cn/blog/noisebuzz/</link><pubDate>Mon, 23 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/noisebuzz/</guid><description>我们在混音或者声音设计的时候，经常需要在现有的军鼓上面叠一层噪音，这样能让军鼓听起来更满一点。为此，我们可能需要插入一个噪音生成器、一个门限再加上各种滤波器。我觉得调制起来很麻烦所以就把这三个放在了一起，做成了JS插件。这个插件会在输入音频信号超过Threshold阈值后触发动态噪音信号（噪音音量与输入音量有直接关系），并可以通过选项来调制这个噪音的动态包络以及频段限制。
 这个插件可以用于军鼓轨道（通常是军鼓bottom mic），或者放在Overhead、Room、甚至混响轨来添加一些房间的沙沙声。甚至可以叠在HiHat轨以及Supersaw合成器轨。随意玩。
 v1.3 (2018-03-08) Brown Noise Type. MIDI Trigger. Fixed sustain. Renamed to RCNoiseBuzz since the update broke backward compatibility. v1.2 (2017-04-08) Width Control. v1.1 (2017-03-11) Decay &amp;amp; Sustain Control. v1.0a (2017-01-31) Renamed to NoiseBuzz. v1.0 (2017-01-22) Initial Release. 下载地址： RCNoiseBuzz官网下载地址
-RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description></item><item><title>REAPER JSFX - AB Comparison 8路信号对比脚本</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-ab-comparison/</link><pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-ab-comparison/</guid><description>昨天做了个JSFX小脚本：AB Comparison。目的是更方便的监听和对比不同信号（比如说不同插件、不同轨道）。
+RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器</description></item><item><title>REAPER JSFX - AB Comparison 8路信号对比脚本</title><link>https://RCJacH.github.io/cn/blog/ab-comparison/</link><pubDate>Fri, 20 Jan 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/ab-comparison/</guid><description>昨天做了个JSFX小脚本：AB Comparison。目的是更方便的监听和对比不同信号（比如说不同插件、不同轨道）。
 这个脚本可以根据所设置的节拍或者微秒长度，自动切换到不同的双声道通道。同时还包含一个盲听模式。
 使用方法： 在任意音轨上放置 AB Comparison 这个JS脚本。
 将所需对比的乐器、插件、音轨设置成不同的双声道输出，例：插件1 = 1-2，插件2 = 3-4，插件3 = 5-6&amp;hellip;一共能接收8个双声道输入。
@@ -293,7 +293,7 @@ Manual = 手动模式，点击0-9任意触发按钮（或对应小键盘数字�
 Sequential = 循序模式，输出通道将按照所设置的间隔自动切换到下一个双声道。
 Random = 随机模式，输出通道将按照所设置的间隔自动切换到一个不同的随机双声道。
 Guessing = 盲听模式，随机切换到一个双声道，并隐藏显示正播放的通道。点击0-9任意触发按钮显示正在播放的通道。
-使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。</description></item><item><title>REAPER网格</title><link>https://RCJacH.github.io/cn/post/reaper-grid-system/</link><pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-grid-system/</guid><description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
+使用 Answer Displaying Time 来调制盲听模式中，显示答案至 返回到 “Guess”的时间。</description></item><item><title>REAPER网格</title><link>https://RCJacH.github.io/cn/blog/grid-system/</link><pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/grid-system/</guid><description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
 它长这个样子
 或者这个样子
 我们通常会把网格设置成常用的音符长度，例如八分音符、十六分音符等二的倍数(2 * 2^n)，或者三连音的倍数(3 * 2^n)。可是当我们需要稍微不常见的(例如五连音、七连音、九连音)或者不规则的细分时，这些选项就不太够用了。
@@ -312,7 +312,7 @@ MIDI界面的底端
 5/27
 此外，利用这种设置可以开启比较不寻常的节奏分解，例如把三拍分成五个音
 3/20
-我用不同组合的五连音做了个短Demo。</description></item><item><title>REAPER工具栏系统</title><link>https://RCJacH.github.io/cn/post/reaper-toolbar-system/</link><pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-toolbar-system/</guid><description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
+我用不同组合的五连音做了个短Demo。</description></item><item><title>REAPER工具栏系统</title><link>https://RCJacH.github.io/cn/blog/toolbar-system/</link><pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/toolbar-system/</guid><description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
 在其他DAW里，工具栏通常是固定不变的，我们最多只能移动或者隐藏它们。
 但是在Reaper里，因为我们很幸运地拥有不少可自定义的工具栏，并且能在工具栏内添加任何操作，可能过不了多久我们的屏幕就变成这样了：
 可能有些人会觉得这样排列工具栏在做大项目里是必要的，不过要在这么多图标里找到需要的操作还是要花一些时间的。
@@ -328,7 +328,7 @@ MIDI界面的底端
 我的钢琴卷工具栏也是用同样的方法设置的，只不过状态栏和操作栏全部放到了同一个横向面板中。
 状态 选择 音符 CC 呵呵，我讨厌CC
 和弦 （为了迅速输入和弦并且修改声部排列）
-当然，以上的截图并非是这个系统的最终状态。我会慢慢更新并完善它：添加一些常用的操作，并删除一些不常用的。不过，这个系统理念能够更有效的利用、整理、分类Reaper的工具栏，节省我们屏幕中宝贵的显示空间。</description></item><item><title>Reaper JSFX: Maschine式音符重复器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-note-beat-repeater/</link><pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-note-beat-repeater/</guid><description>下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
+当然，以上的截图并非是这个系统的最终状态。我会慢慢更新并完善它：添加一些常用的操作，并删除一些不常用的。不过，这个系统理念能够更有效的利用、整理、分类Reaper的工具栏，节省我们屏幕中宝贵的显示空间。</description></item><item><title>Reaper JSFX: Maschine式音符重复器</title><link>https://RCJacH.github.io/cn/blog/midi-note-beat-repeater/</link><pubDate>Wed, 27 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/midi-note-beat-repeater/</guid><description>下载MIDI Note Beat Repeater 然后放到资源文件目录下的Effects文件夹中。
 官网下载地址
 官网论坛地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
@@ -344,7 +344,7 @@ RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 用Normal Type Lock参数（第三个）来做Drill类型的片段非常轻松。你可以试试把它设置成1/8，Type设置成Triplet，然后通过改变Rate来做出加花式的8分音符、16分音符、甚至32分音符三连音。这个参数能让你节省很多反复调节交替正常和三连音的时间。
 Channel Pressure，通道触后，可以用来改变重复音符的力度：输出力度 = 通道触后。
 看图。
-输入： 过程： 输出：</description></item><item><title>小脚本 - 随机生成旋律属性</title><link>https://RCJacH.github.io/cn/post/script-generating-melodic-properties/</link><pubDate>Thu, 07 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/script-generating-melodic-properties/</guid><description>今天做了个小脚本，随机生成旋律方面的一些参数，这样每天可以练习一些旋律创作。
+输入： 过程： 输出：</description></item><item><title>小脚本 - 随机生成旋律属性</title><link>https://RCJacH.github.io/cn/blog/script-generating-melodic-properties/</link><pubDate>Thu, 07 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/script-generating-melodic-properties/</guid><description>今天做了个小脚本，随机生成旋律方面的一些参数，这样每天可以练习一些旋律创作。
 随机生成旋律属性脚本地址
 点击左侧偏上的Run按钮来运行，会在右侧显示结果。
 这个脚本生成一下几个参数：
@@ -362,7 +362,7 @@ Number of Points: 4
 &amp;ndash;&amp;gt; Up to Sixth
 &amp;ndash;&amp;gt; Down to Seventh
 Prominent Interval: perfect Fourth
-Number of Bars: 4</description></item><item><title>RCJacH - 在下坂本有何贵干登场曲 吉他版 乐谱</title><link>https://RCJacH.github.io/cn/post/rcjach-sakamoto-desu-ga-score/</link><pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/rcjach-sakamoto-desu-ga-score/</guid><description>乐谱地址：（注意调弦是Drop D：DADGBE）
+Number of Bars: 4</description></item><item><title>RCJacH - 在下坂本有何贵干登场曲 吉他版 乐谱</title><link>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga-score/</link><pubDate>Mon, 04 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga-score/</guid><description>乐谱地址：（注意调弦是Drop D：DADGBE）
 在下坂本有何贵干 吉他版 乐谱 度盘 密码: hw67
 在下坂本有何贵干 吉他版 乐谱 Github
 音频地址：
@@ -371,12 +371,12 @@ Number of Bars: 4</description></item><item><title>RCJacH - 在下坂本有何�
 视频地址：
 在下坂本有何贵干 吉他版 视频 Acfun
 在下坂本有何贵干 吉他版 视频 Bilibili
-坂本ですが? Guitar Cover YouTube</description></item><item><title>RCJacH - TV动画《在下坂本有何贵干》 登场曲/ TVアニメ「坂本ですが?」入場曲【吉他版】</title><link>https://RCJacH.github.io/cn/post/rcjach-sakamoto-desu-ga/</link><pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/rcjach-sakamoto-desu-ga/</guid><description>今天坂本完结撒花，为此献上登场曲一首。
+坂本ですが? Guitar Cover YouTube</description></item><item><title>RCJacH - TV动画《在下坂本有何贵干》 登场曲/ TVアニメ「坂本ですが?」入場曲【吉他版】</title><link>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga/</link><pubDate>Fri, 01 Jul 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-sakamoto-desu-ga/</guid><description>今天坂本完结撒花，为此献上登场曲一首。
 设备：
 Fender HighWay One Telecaster (Lindy Fralin Pickups）
 Yamaha THR10
 REAPER
-下周放谱子。</description></item><item><title>如何寻找Reaper资源文件目录</title><link>https://RCJacH.github.io/cn/post/reaper-resource-folder/</link><pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-resource-folder/</guid><description>在使用REAPER的过程中，无论是在添加主题、脚本、插件、还是轨道/工程模板的时候，都需要把相应的文件放到一个叫做资源文件目录的文件夹中。那么这个文件夹到底在哪儿呢？以下提供几个能找到它的方法。
+下周放谱子。</description></item><item><title>如何寻找Reaper资源文件目录</title><link>https://RCJacH.github.io/cn/blog/resource-folder/</link><pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/resource-folder/</guid><description>在使用REAPER的过程中，无论是在添加主题、脚本、插件、还是轨道/工程模板的时候，都需要把相应的文件放到一个叫做资源文件目录的文件夹中。那么这个文件夹到底在哪儿呢？以下提供几个能找到它的方法。
 最直接的方式：我们打开Reaper之后，在其默认菜单里的Option（选项）中，倒数第五个命令是Show REAPER resource path in explorer/finder&amp;hellip;（在Explorer/Finder中打开REAPER资源文件目录…），点击之后就会在系统默认的文件浏览器中打开该目录了。
 以上介绍的方式通常能解决大部分寻找资源文件目录的需求， 可实际上我们可能会遇到特殊的情况，需要通过手动的方式去寻找这个资源文件目录。方法如下。
 在windows系统下，不同的系统版本中的地址稍有不同，分别是：
@@ -390,7 +390,7 @@ C:\USERS&amp;lt;username&amp;gt;\AppData\Roaming\REAPER\
 Mac OS 系统下，该地址为：
 /Users/ /Library/Application Support/REAPER
 同样，把替换成你的电脑用户名即可。
-此外，REAPER对于资源文件目录的优先值为：先搜索主程序所在的文件夹，如果没有资源文件，再搜索系统默认的资源文件地址（之前所介绍的）。所以如果找不到相关的资源，不放也查看一下Reaper运行文件所在的地址吧。</description></item><item><title>Reaper：工程策划音轨模板</title><link>https://RCJacH.github.io/cn/post/reaper-track-template-layout-rsgc/</link><pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-track-template-layout-rsgc/</guid><description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
+此外，REAPER对于资源文件目录的优先值为：先搜索主程序所在的文件夹，如果没有资源文件，再搜索系统默认的资源文件地址（之前所介绍的）。所以如果找不到相关的资源，不放也查看一下Reaper运行文件所在的地址吧。</description></item><item><title>Reaper：工程策划音轨模板</title><link>https://RCJacH.github.io/cn/blog/track-template-layout-rsgc/</link><pubDate>Sat, 18 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/track-template-layout-rsgc/</guid><description>今天我来跟大家分享一个REAPER工程策划的音轨模板。这个模板包含了四条音轨，RSGC，分别代表：参考Reference，段落Sections，律动Grooves以及和弦Chords。这四条音轨能够为工程建立一个大体的轮廓，帮助我们理清思路，尤其在没有太多时间凭感觉尝试新东西的时候，能够让我们在制作的环节内节省很多被浪费掉的时间。当然我们也可以手动输入这些内容（可能过去就是这么做的），但是做成模板之后能减少很多重复的操作，大部分内容直接鼠标拖拉复制就好了。
 你可以这里下载RSGC英文版或者RSGC中文版。
 下载之后，解压放到REAPER资源文件目录内的Track Templates文件夹，之后直接在主窗口左半栏中，点击右键出现的Insert Track From Template或中译的通过模板插入新的轨道选项里，选择Layout RSGC就能加载了。
 看一下截图：
@@ -411,7 +411,7 @@ Mac OS 系统下，该地址为：
 我在这轨上保留了一个空白块，简单用鼠标拖拽就可以将其复制。对比手动建立空白块省去了许多步骤。
 小贴士：
 我们可以使用 RSGC 进行制作分析：分析参考轨中歌曲的律动、和弦和段落，然后将其保存为一个新音轨模板，在今后可作为易用的参考。 对你自己所有的歌曲进行同样的操作，这是一种快速为歌曲确定律动与和弦结构的方法。我们也可以在改编时加载模板作为歌曲参考。 我们甚至可以把自己歌曲的RSGC策划发给需要录音的乐手，这样他(们)就不用拿着个TXT文件每个小节地去对你所发的音频了。 其他没了，玩得愉快。如果有什么问题或者建议的话，请随时提出。能提高工作效率的东西肯定是极好的。
-下载RSGC英文版 下载RSGC中文版</description></item><item><title>RCJacH - A Quest for Vocal Harmony (AQVH)</title><link>https://RCJacH.github.io/cn/post/rcjach-a-quest-for-vocal-harmony/</link><pubDate>Sun, 17 Apr 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/rcjach-a-quest-for-vocal-harmony/</guid><description>A Quest for Vocal Harmony (AQVH) 是一首教学用阿卡贝拉作品，由我个人创作制作完成。这首总长只有54秒的歌曲，集中展现了12种基础人声和声编配手法。
+下载RSGC英文版 下载RSGC中文版</description></item><item><title>RCJacH - A Quest for Vocal Harmony (AQVH)</title><link>https://RCJacH.github.io/cn/blog/rcjach-a-quest-for-vocal-harmony/</link><pubDate>Sun, 17 Apr 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rcjach-a-quest-for-vocal-harmony/</guid><description>A Quest for Vocal Harmony (AQVH) 是一首教学用阿卡贝拉作品，由我个人创作制作完成。这首总长只有54秒的歌曲，集中展现了12种基础人声和声编配手法。
 歌词：
 Bass Goes
 Chord Stabs
@@ -425,16 +425,16 @@ But when the voices sing as one,
 feel the power of unity
 or dissonancy,
 in this song
-I sang to thee.</description></item><item><title>模拟信号与电子信号的音量关系：-20 dBFS = 0 VU</title><link>https://RCJacH.github.io/cn/post/between-analog-and-digital-volume/</link><pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/between-analog-and-digital-volume/</guid><description>这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。
+I sang to thee.</description></item><item><title>模拟信号与电子信号的音量关系：-20 dBFS = 0 VU</title><link>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</link><pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</guid><description>这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。
 图中有以下几点需要注意：
 电子信号会在0 dBFS的状态下遭遇电子削波，而模拟信号会在+24 dBu（也就是+20VU）的状态下遭遇削波。
 模拟设备在0VU以上会有逐渐增强的过载失真。
 因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的输出音量平均值保持在-20dBFS左右（之后细讲），这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。
-在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。</description></item><item><title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title><link>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-cc-eater/</link><pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-jsfx-midi-cc-eater/</guid><description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
+在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。</description></item><item><title>REAPER JSFX - MIDI CC Eater CC屏蔽器</title><link>https://RCJacH.github.io/cn/blog/midi-cc-eater/</link><pubDate>Wed, 16 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/midi-cc-eater/</guid><description>昨天有个朋友问道自己的MIDI键盘会随机自动发送一些CC控制器的信息，导致录音的时候很困扰。我的M-Audio Oxygen键盘用了几年也出现这个毛病了，而且每几个月会发送不同的CC信息哈哈，所以我在此分享一下之前用JS写的CC屏蔽的插件，叫CC Eater。
 如图，这个插件只有一个选项：你想要屏蔽的CC。你也可以通过选择最顶项来屏蔽所有的CC。
 具体使用方法就是，当你点击通道上的录音键之后，通道会出现一个IN FX的选项。如下图中橙色箭头所指位置。
 IN FX指的是Input FX（输入效果），也就是在你的信号录入电脑之前所处理的效果。他会对你录入的MIDI/音频有不可恢复的影响（Destructive），所以除了这种特殊需求以外很少去运用INFX。录音的朋友们尽量不要用这个Input FX为录音加压缩防爆音什么的…如果你录入的音频是爆音的，通常在出声卡的时候已经爆音了，所以你在DAW添加什么效果都没有用。具体请参考这篇录音输入音量标准。
-点击这里通过官网Stash下载MIDI CC Eater，然后放到资源文件目录下的Effects/MIDI文件夹内就可以在Reaper里调用了！</description></item><item><title>ReaComp到底有多强大？Pro Tools用户哭了。</title><link>https://RCJacH.github.io/cn/post/reaper-reacomp-the-great/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-reacomp-the-great/</guid><description>在音频处理方面，压缩一词经常被捧上天。尤其是对听感的音量变化还不是很敏感的那些初学者们，会觉得压缩处理好像是一个非常神秘的步骤。其实压缩器的性质与手动调音量一样- 衰减音量大的部分并提升音量小的部分 – 只不过压缩比手动画音量能在更短的时间内做出反应与相对措施。那么他对音频具体有什么影响呢？我们来通过Reaper自带的ReaComp来观察一下。
+点击这里通过官网Stash下载MIDI CC Eater，然后放到资源文件目录下的Effects/MIDI文件夹内就可以在Reaper里调用了！</description></item><item><title>ReaComp到底有多强大？Pro Tools用户哭了。</title><link>https://RCJacH.github.io/cn/blog/reacomp-the-great/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reacomp-the-great/</guid><description>在音频处理方面，压缩一词经常被捧上天。尤其是对听感的音量变化还不是很敏感的那些初学者们，会觉得压缩处理好像是一个非常神秘的步骤。其实压缩器的性质与手动调音量一样- 衰减音量大的部分并提升音量小的部分 – 只不过压缩比手动画音量能在更短的时间内做出反应与相对措施。那么他对音频具体有什么影响呢？我们来通过Reaper自带的ReaComp来观察一下。
 ReaComp的界面的确不是最华丽的，但麻雀虽小五脏俱全：
 音频信号压缩的原理是把输入信号分成两份，一份通过压缩本身的信号处理，而另一份则被用于检测衡量信号。这两份信号都可以在ReaComp内进行一定程度的处理来达到所需的效果。我们用图来解释一下ReaComp内的参数分别是什么。
 假设我们输入的音频是这个样子，中间有一段音量突出的片段。
@@ -456,7 +456,7 @@ Pre-Comp算法相对更复杂一点，但我们目前可以把他看成信号检
 我们知道RMS是截取一个段落的平均值，我们又知道Pre-Comp能让插件“预知”一段时间的音量。那么如果我们把Pre-Comp设置成RMS的一半左右，我们处理的则是一个峰值与它前后一段时间的平均值。这样等于音量会自然地在峰值之前衰减，而在峰值之后恢复。同时，因为Attack和Release已经包含在整个程序内了，我们不需要额外地添加Attack和Release。峰值的音头形状可能稍微取决于RMS与Pre-Comp * 2之差。利用这个方法，我们可以把Knee Size和Threshold调到比平常高一点的位置，让输入音频一直保持Knee中间的状态，GR大概保持在1.5dB以下就好了。这个压缩技术的效果就是在保留音头的情况下非常自然地降低了动态范围，甚至根本听不出来压缩的痕迹!
 操作起来很简单，你只需要如下图这样设置，然后根据你的输入及目的来调制红色框内的Threshold、Ratio、与Knee Size(其实都可以不动)。
 我还做了一个ReaComp预设，并把Ratio和Knee size通过Automation Modulation与Pre-Comp连到了一起，这样你的Pre-Comp时间越长GR越圆滑，反而如果Pre-Comp很短的话GR也会更猛一点。用这个预设你只需要调制Threshold和Pre-Comp，然后把RMS调到Pre-Comp的两倍左右就可以坐等奇迹了！使用方法：把zip文件解压缩至资源文件目录的FXChain下面，然后在你的FX列表内FX菜单里选择Add FXChain，之后双击加载这个预设文件就好了。
-Pro Tools和Mac的用户有没有心动？其实你们也可以用任何可调制Pre-Comp/Lookahead与RMS值的压缩插件来达到这个效果，例如Klanghelm的DC8C。只可惜它的RMS最高限制是100 ms，更何况ReaComp是免费的呢。</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/post/reaper-no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
+Pro Tools和Mac的用户有没有心动？其实你们也可以用任何可调制Pre-Comp/Lookahead与RMS值的压缩插件来达到这个效果，例如Klanghelm的DC8C。只可惜它的RMS最高限制是100 ms，更何况ReaComp是免费的呢。</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/blog/no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
 虽然目前有一些能提高CC效率的工具，例如这款MIDI Velocity/CC Tool。
 但他们治标不治本，无法大幅度提升编曲效率。尤其当我们做吉他
 做弦乐
@@ -486,7 +486,7 @@ MIDI Link - CC 来直接控制Helm合成器参数"
 当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
 记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！
 因编曲需要，我已经设置好了几个Kontakt乐器的配置，并为每个参数设置了英文名称。有兴趣的朋友可以随意下载使用。
-Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>5个常（cuo）见（wu）的乐器练习方法</title><link>https://RCJacH.github.io/cn/post/how-not-to-practise-an-instrument/</link><pubDate>Sat, 13 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/how-not-to-practise-an-instrument/</guid><description>不少音乐学习者有一个很经典的练习套路：
+Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>5个常（cuo）见（wu）的乐器练习方法</title><link>https://RCJacH.github.io/cn/blog/how-not-to-practise-an-instrument/</link><pubDate>Sat, 13 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/how-not-to-practise-an-instrument/</guid><description>不少音乐学习者有一个很经典的练习套路：
 每天练琴先用爬格子、音阶、和各种哈农类型的技巧提高练习噪上个半个小时或更久，直到手指感觉“进入状态”了。 紧接着马上挑一首新曲目，双手从第一小节起，小心翼翼磕磕碰碰地弹上个几页。跟着节拍器从一个较慢的速度开始，在稍微熟练之后逐渐增加速度直到弹奏的速度上限，然后合上谱子。 这俩小时过去之后，已经足够热身了，所以赶紧趁热弹几首熟练的曲目。毕竟今天经历了这枯燥的俩小时，至少得放松一下。让双手在乐器上飞一会儿吧，看看有啥进步，速度是不是比原先快了？ 当一个曲目熟悉得差不多能背下来的时候，反复再弹个十几遍直到弹奏变成肌肉记忆，脑子都不用想手指就能给弹出来。 在演出当天以及前一天，疯狂地练习该曲目，并且用最快的速度争取多弹几遍。最后的机会了，争取能多弹几遍就多弹几遍，反正多练肯定是好的。 是不是听起来很耳熟？甚至感觉身边的朋友每天就是像这样刻苦地练习着乐器？
 很可惜，**以上五条程序都是错误的！**这五条里每一个细节都是错误的。它们效率低下、违背了人体肌肉与记忆的机能、同时非常容易养成坏习惯，极度限制了未来的发展空间。
 这些练习方法究竟错在哪里呢？
@@ -497,7 +497,7 @@ Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</d
 误区五：演出之前多练几遍会更顺 演出之前不要全力弹奏曲目。
 演出之前不要全力弹奏曲目。
 我们演出的时候，肾上腺激素会让我们心跳加快，让我们大脑接受3-5倍的信息。很多人因为控制不了这个感觉而所以会紧张、弹错、甚至怯场。演出的时候，我们需要的不是提高弹奏机能，那个是日常练习的目的。我们真正需要的是把自己的身体调制成能够让大脑在演出时放松下来的状态，让它能够平和的去操作自己的身体以及行为，能够放开体验演奏所带来的新鲜感。演出当天甚至当周，练习过久过累都会让大脑疲惫，导致大脑没有精力放松，也没有精力控制身体的行为。演出之前进行一遍比全速稍微慢一点的弹奏，一遍中速度弹奏，再接着一遍慢速无错误的弹奏就可以收拾了。如果有任何出现问题的片段，用中速和慢速无错误的片段弹奏来修复。That&amp;rsquo;s it.
-以上泛泛地介绍了一下大众（尤其是家长）对日常练习的一些误区。具体正确的练习方法我会在今后的文章中具体讲解给大家的。</description></item><item><title>录音输入音量标准</title><link>https://RCJacH.github.io/cn/post/recording-volume-calibration/</link><pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/recording-volume-calibration/</guid><description>这篇文章是录音输入音量标准的解说。
+以上泛泛地介绍了一下大众（尤其是家长）对日常练习的一些误区。具体正确的练习方法我会在今后的文章中具体讲解给大家的。</description></item><item><title>录音输入音量标准</title><link>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</link><pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</guid><description>这篇文章是录音输入音量标准的解说。
 我发现国内的录音爱好者和一些职业录音师，对于输入音量并没有一个绝对标准（除了用耳朵听这种无法衡量的行为），这导致同一个录音工程的同一轨会有不同音量标准的文件，甚至输入太热导致爆音。由于语言与文化的差别，我决定不逐字翻译，仅把结论和简单的理由列了出来。
 关于录音输入音量所需注意的事项：
 用24位或更高的音频录音。 正式录音前，试录整个演奏中音量最大的部分，并观察你的输入音量。
@@ -512,7 +512,7 @@ Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</d
 后期各阶段的压缩会继续降低信噪比。
 为了不让音量峰值部分爆音，我们还需要为预留一些额外的空间，称为动态余量。
 在后期处理中，使用软硬件效果器之前，我们依然需要把音频输入音量调到一个标准范围（通常效果器对不同动态会有不同的失真与压缩处理）。
-24位音频的144dB的动态范围能够精确地记载录音信号，同时也能预留出动态余量，所以请好好利用其优势！</description></item><item><title>在线吉他指板</title><link>https://RCJacH.github.io/cn/post/website-online-guitar-fretboard/</link><pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/website-online-guitar-fretboard/</guid><description>最近一个朋友用vexflow脚本做了个在线吉他指板。目前不支持移动端，但电脑端的朋友可以试试玩，点击任何一品添加记号。
+24位音频的144dB的动态范围能够精确地记载录音信号，同时也能预留出动态余量，所以请好好利用其优势！</description></item><item><title>在线吉他指板</title><link>https://RCJacH.github.io/cn/blog/website-online-guitar-fretboard/</link><pubDate>Wed, 03 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/website-online-guitar-fretboard/</guid><description>最近一个朋友用vexflow脚本做了个在线吉他指板。目前不支持移动端，但电脑端的朋友可以试试玩，点击任何一品添加记号。
 页面低端有三个选项，所有选项只对之后添加的记号有影响。Showname代表记号显示音名，Sharp/Flat选择表示这个显示的音名如非自然音会使用升号或降号。Playback指的是每次点击会播放对应音高的音频。听起来不是采样，估计是用算法合成的？
 右键指板可以选择保存为本地图片。
 这个网页还可以添加一些querystring来修改参数，比如说：
@@ -520,7 +520,7 @@ http://yxonic.github.io/fret/index.html?strings=6&amp;amp;start=1&amp;amp;end=11
 上面地址中的strings=6代表有六根弦，如果想要个贝司指板可以改成strings=4。
 后面start=1表示从1品开始(最低品)，end=11代表最高只到11品。Width=800应该表示指板整体像素长度。后面的Tuning应该是从上到下（细到粗弦）的顺序。
 以上这些参数都可以随便调节，疯嗨吧！
-PS. 以后博客各种谱子也争取运用vexflow的技术生成图片，近期会把功能嵌入到本博客。</description></item><item><title>REAPER简介</title><link>https://RCJacH.github.io/cn/post/reaper-introduction/</link><pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-introduction/</guid><description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
+PS. 以后博客各种谱子也争取运用vexflow的技术生成图片，近期会把功能嵌入到本博客。</description></item><item><title>REAPER简介</title><link>https://RCJacH.github.io/cn/blog/introduction/</link><pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/introduction/</guid><description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
 国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是因为某些功能不顺手、不稳定或者满足不了需求而心里默默跑过了一万只羊陀。
 所以Reaper诞生了。目前有一些大牌的游戏与影视音效、音乐设计师公开表达他们对Reaper的爱：
 David Farmer (霍比特人、蚁人、暗黑3、魔兽世界等)
@@ -538,7 +538,7 @@ Ryan Canestro (影视作品列表)
 自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 多采样率 在使用其他DAW的时候，当你拖进来任何与工程文件不同采样率的音频或者mp3时，宿主都会自动转换成一个与工程采样率一致的wav音频文件。这样不仅增加了硬盘负担，也降低了工作效率（转码也需要时间呐！）。尤其是对于声音设计师、影视音效师这种经常会用到不同来源的采样的音频工作者来说，能够把各种采样率以及各种格式的音频自由地拼在一个工程内是多么舒适的一件事情。
-轻量级 + Portable Reaper的安装文件只有10-20mb，安装之后也才60mb左右。你没看错，Megabytes不是Gigabytes!</description></item><item><title>【吉他】Bossa Nova吉他十分钟入门！</title><link>https://RCJacH.github.io/cn/post/bossa-nova-guitar-in-10-minutes/</link><pubDate>Mon, 25 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/bossa-nova-guitar-in-10-minutes/</guid><description>这篇入门文章是针对想要迅速学会巴西传统的Bossa Nova吉他的同学。为了能快速学会这个风格，我们需要抛开很多对此风格的误解，只保留最纯真的核心内容。同时，这篇文章假设读者已经熟练基本的按弦、拨弦、以及和弦转换，并能迅速的在指板上找到单音。
+轻量级 + Portable Reaper的安装文件只有10-20mb，安装之后也才60mb左右。你没看错，Megabytes不是Gigabytes!</description></item><item><title>【吉他】Bossa Nova吉他十分钟入门！</title><link>https://RCJacH.github.io/cn/blog/bossa-nova-guitar-in-10-minutes/</link><pubDate>Mon, 25 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/bossa-nova-guitar-in-10-minutes/</guid><description>这篇入门文章是针对想要迅速学会巴西传统的Bossa Nova吉他的同学。为了能快速学会这个风格，我们需要抛开很多对此风格的误解，只保留最纯真的核心内容。同时，这篇文章假设读者已经熟练基本的按弦、拨弦、以及和弦转换，并能迅速的在指板上找到单音。
 我们速速开始吧！
 因为Bossa Nova歌曲很多只有一把吉他伴奏人声，所以弹奏时通常分高低音两个声部，高音作为节奏组，低音作为贝斯。传统Bossa是很缓慢很放松的，低音永远在一三拍上。很多不理解bossa文化的人把低音改的特别复杂，各种八分音符。那是Salsa，不是Bossa。Bossa里面，低音只有一三拍。
 我们先拿常用的Dm9来练这个节奏吧。请打开你的节拍器。
@@ -555,7 +555,7 @@ P.S. 钢琴也要单手练！
 图中第一个与第四个和弦底下括号内橙色的音符是交替贝斯音，其实就是在六弦上与根音同品的五级音。
 这四个指法都熟练了吗？试试把他们当成12个调内的25都弹一遍吧！注意换和弦的时候不要抢拍哦！
 小贴士：
-有一些歌曲会省略第二小节的节奏只重复第一小节。 巴西本土记载方式是用两倍速在一个小节内写完，为了更清楚的表达这个律动概念，我选择了使用北美更认可的双小节八分音符的记载方式。 有时候，你并不需要弹和弦的每一个音，你甚至可以省略根音来让和弦变得更轻松，尤其是当你与其他乐器合奏的时候。 当你能顺利的用十二个调弹奏上面列出来的四个指法之后，你只需要把这个套路套在不同的和弦指法上。慢慢增加你的和弦词库吧！一天学一个和弦一年就是365个。</description></item><item><title>吉他基础之熟悉指板</title><link>https://RCJacH.github.io/cn/post/the-guitar-fretboard-exercise/</link><pubDate>Mon, 25 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/the-guitar-fretboard-exercise/</guid><description>最近我意识到这个博客缺少了吉他类很重要的一篇文章，那就是最基础的熟悉指板 - 知道指板上每个音的名称。有多重要？我敢说这个能力决定了你是否能有意识地在吉他上创造音乐。因此，我想与大家分享它的练习方法！
+有一些歌曲会省略第二小节的节奏只重复第一小节。 巴西本土记载方式是用两倍速在一个小节内写完，为了更清楚的表达这个律动概念，我选择了使用北美更认可的双小节八分音符的记载方式。 有时候，你并不需要弹和弦的每一个音，你甚至可以省略根音来让和弦变得更轻松，尤其是当你与其他乐器合奏的时候。 当你能顺利的用十二个调弹奏上面列出来的四个指法之后，你只需要把这个套路套在不同的和弦指法上。慢慢增加你的和弦词库吧！一天学一个和弦一年就是365个。</description></item><item><title>吉他基础之熟悉指板</title><link>https://RCJacH.github.io/cn/blog/the-guitar-fretboard-exercise/</link><pubDate>Mon, 25 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/the-guitar-fretboard-exercise/</guid><description>最近我意识到这个博客缺少了吉他类很重要的一篇文章，那就是最基础的熟悉指板 - 知道指板上每个音的名称。有多重要？我敢说这个能力决定了你是否能有意识地在吉他上创造音乐。因此，我想与大家分享它的练习方法！
 这个练习的起源应该是来自Joe Satriani的Guitar Secrets一书。
 它的思路是，比起按指板去记音名（即五弦6品是个降E），我们更应该按着音名去记指板（即D是在三弦7品），因为作为音乐人我们创作的时候第一反应通常是某种形式的乐谱（音高+节奏）而非固定的指板图。
 练习方法如下： 打开节拍器并将速度设置成60，如果你是吉他初学者可以把速度稍微放慢一点。
@@ -566,21 +566,21 @@ P.S. 钢琴也要单手练！
 在前期当你还不是很熟悉指板的时候，你甚至可以限制自己__只弹没有升降号的自然音符__。
 你还可以把表上音名的指板图打印出来。无所谓，反正很快你就觉得看图找只会影响速度了。
 这个练习你每天只需要过一遍。我现在整个练习下来也就不到一分半。
-一旦你对指板有个大概的感觉，你就可以在没有吉他的情况下进行这个练习。你只需要想象把你的手指放置到正确的位置上，而你想象中肢体动作的速度将决定你实际弹奏的速度。</description></item><item><title>【吉他】爵士和声基础之属和弦</title><link>https://RCJacH.github.io/cn/post/jazz-chords-dominant/</link><pubDate>Mon, 18 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/jazz-chords-dominant/</guid><description>在爵士吉他和弦solo或者comping风格里，为了在同和声功能内用最高音组成连贯的旋律，我们需要学会同一个和弦的不同按法。以下列出了一些属功能内比较常用的voicing（声部排列）。
+一旦你对指板有个大概的感觉，你就可以在没有吉他的情况下进行这个练习。你只需要想象把你的手指放置到正确的位置上，而你想象中肢体动作的速度将决定你实际弹奏的速度。</description></item><item><title>【吉他】爵士和声基础之属和弦</title><link>https://RCJacH.github.io/cn/blog/jazz-chords-dominant/</link><pubDate>Mon, 18 Jan 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/jazz-chords-dominant/</guid><description>在爵士吉他和弦solo或者comping风格里，为了在同和声功能内用最高音组成连贯的旋律，我们需要学会同一个和弦的不同按法。以下列出了一些属功能内比较常用的voicing（声部排列）。
 例子为根音在六弦的Bb7和根音在五弦的Eb7，我们可以用同样的指法套于任何和弦上。
 图片中每行代表一个扩展程度，分别为7，9，11（或sus），13和弦。每一竖列是根据指法相关程度来整理的，这样方便我们推导与记忆。和弦名旁边蓝色括号内的数字代表最高音在和弦内的级数，利用不同的高音与扩展，我们可以在同一个和弦内旋律。
-一次性学习这么多个不同的指法并不助于记忆，但我们可以从最简单的开始。选一个调，用十二小节布鲁斯(1411 4411 5411)来逐级练习不同指法。我们第一遍每一个和弦变化可以只用最开始的指法，熟悉之后每个小节换一个voicing，再进阶的时候可以每两拍换一个按法，慢慢过渡到每一拍一换。Make Music！</description></item><item><title>【吉他】单弦音阶</title><link>https://RCJacH.github.io/cn/post/single-string-scales/</link><pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/single-string-scales/</guid><description>前言 作为吉他弹奏者，我们每日的练习充满了各式各样的自然音阶、半音音阶或和弦音阶，以及不同的弹奏技巧、乐句和伴奏形式。为此目的，我提出一个非常有效及高效的方法，那就是单弦音阶。这个练习对于熟悉指板、摆脱固定把位的限制、以及建立更音乐性的思维都能有非常明显的帮助。市场上有几本非常好的吉他书记也提到了这个练习，例如The Advancing Guitarist和The Serious Guitarist - Right Hand Picking。
+一次性学习这么多个不同的指法并不助于记忆，但我们可以从最简单的开始。选一个调，用十二小节布鲁斯(1411 4411 5411)来逐级练习不同指法。我们第一遍每一个和弦变化可以只用最开始的指法，熟悉之后每个小节换一个voicing，再进阶的时候可以每两拍换一个按法，慢慢过渡到每一拍一换。Make Music！</description></item><item><title>【吉他】单弦音阶</title><link>https://RCJacH.github.io/cn/blog/single-string-scales/</link><pubDate>Wed, 09 Dec 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/single-string-scales/</guid><description>前言 作为吉他弹奏者，我们每日的练习充满了各式各样的自然音阶、半音音阶或和弦音阶，以及不同的弹奏技巧、乐句和伴奏形式。为此目的，我提出一个非常有效及高效的方法，那就是单弦音阶。这个练习对于熟悉指板、摆脱固定把位的限制、以及建立更音乐性的思维都能有非常明显的帮助。市场上有几本非常好的吉他书记也提到了这个练习，例如The Advancing Guitarist和The Serious Guitarist - Right Hand Picking。
 单弦音阶 那么单弦音阶（SSS）到底怎么练呢？ 这个系统里，一共有三个不同级别的练习限制。
 第1级： 想象你的吉他只有一根弦 - 任何一根弦 - 然后在这根弦上弹以空弦为主音的音阶。比如说，如果空弦是E的话就弹一个E音阶。
 如果你在选择音阶类型上有些犹豫的话，尝试一下大调音阶。因为所有的音阶级数及音程都是建立在大调音阶的基础上，多花点时间熟悉他们肯定是没有坏处的。作为提示，以下是大调音阶各个级数的弹奏位置：
 VexTabDiv.Artist.NOLOGO = true options beam-rests=false scale=0.8 tabstave clef=treble notation=true tablature=true time= C key= E notes :8 [ 0-2-4-5/1 ] [ 7-9-11-12/1 ] | :8 [ 12-11-9-7/1 ] [ 5-4-2-0/1 ] -- 牢记这个数字规律之后你就可以自己推断十二品以上的位置了。
 争取练习所有的音程，任何你能想到的模进以及交替连奏和断奏的弹奏方法。换句话说，MAKE MUSIC! 以下是一些练习的主意，你可以把他们变化着来弹：
 三度音程： 三音模进： 两音模进 + 空弦： 三音模进 + 空弦： 当你掌握了大调音阶，尝试用不同的音阶和调式来练习以上的例子。当然你也要去发明自己的练习哦！通常，比起很多人极度依赖的把位弹奏，以这个方法创作出来的旋律会额外的清新与鲜艳。
-第2级： 在你熟悉了以空弦为主音的音阶后，你可以让 主音 落在 第一品，然后用同样的方法练习。这回，你也许无法利用空弦来移动把位，所以需要更干净和更细腻的动作。 以上练习熟练之后，尝试把任何一品定义为音阶主音，这样你能对吉他指板上每单独一根弦，每一种音阶与任何位置都能获取全面的控制和自由。你可能需要在大幅度的把位移动时脑子里想着音名。这是个很好的现象。</description></item><item><title>更有效的节奏概念 - 16进制节奏型</title><link>https://RCJacH.github.io/cn/post/rhythm-in-hex-intro/</link><pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/rhythm-in-hex-intro/</guid><description>对于音乐学习者来说，尤其是小时候没有机会接触音乐教育的成年人，节奏通常是一个很头疼的问题。我们经常看到这些人在唱歌的时候会跟不上伴奏、弹琴的时候找不到拍子，可能听歌的时候也无法跟上律动。其中一些人能感受到自己的无奈，另一些人选择了沉默，有的人甚至还没有意识到自己的问题。
+第2级： 在你熟悉了以空弦为主音的音阶后，你可以让 主音 落在 第一品，然后用同样的方法练习。这回，你也许无法利用空弦来移动把位，所以需要更干净和更细腻的动作。 以上练习熟练之后，尝试把任何一品定义为音阶主音，这样你能对吉他指板上每单独一根弦，每一种音阶与任何位置都能获取全面的控制和自由。你可能需要在大幅度的把位移动时脑子里想着音名。这是个很好的现象。</description></item><item><title>更有效的节奏概念 - 16进制节奏型</title><link>https://RCJacH.github.io/cn/blog/rhythm-in-hex-intro/</link><pubDate>Sun, 25 Oct 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rhythm-in-hex-intro/</guid><description>对于音乐学习者来说，尤其是小时候没有机会接触音乐教育的成年人，节奏通常是一个很头疼的问题。我们经常看到这些人在唱歌的时候会跟不上伴奏、弹琴的时候找不到拍子，可能听歌的时候也无法跟上律动。其中一些人能感受到自己的无奈，另一些人选择了沉默，有的人甚至还没有意识到自己的问题。
 节奏是音乐最基础的元素，其重要性甚至超越了音高。当我们无法感受到稳定的节奏，或者没有能力融入歌曲的律动，就无法完全进入音乐状态，就会被音乐隔离在外。无论是演唱、演奏、还是聆听，如果能跟上歌曲的律动就能瞬间进入音乐状态。
 很多人认为节奏的掌握，甚至音乐本身，是需要从小到大十几年甚至几十年的累计。我不敢苟同。这些基本的音乐素养，对于一个18岁之前接触过音乐创造（泛指吹拉弹打唱等任何非纯听歌的音乐活动）的成年人，是可以在短期（几个月至十几个月）通过更有效的理解与练习方式，坚持每天几分钟的练习，来达到很可观的水平。有的在节奏熟练度甚至能达到内地职业乐手的水平（虽然内地职业乐手水平也不是多高的标准）。
 对此，我提出一个新的节奏理解与练习的方式：比起单独去分辨每一个节奏元素，不如去熟悉每一拍常见的节奏组合，这样我们才会把注意力从一点转移到每一个片段，然后逐渐拉远到整体。当我们以节拍为主体的时候，我们才敢去感受节奏本身，感受作曲家最初的音乐目的。
-原文为英文，今后会抽空翻译成中文。[点击阅读Rhythm in Hex]({{ relref . &amp;ldquo;Rhythm-in-Hex-part-1.md&amp;rdquo; }})</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/post/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
+原文为英文，今后会抽空翻译成中文。[点击阅读Rhythm in Hex]({{ relref . &amp;ldquo;Rhythm-in-Hex-part-1.md&amp;rdquo; }})</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
 英文缩写：（abbreviation，来自于拉丁语中的brevis，代表short简短）
 Shortening：缩略一个词使它保留原单词的前几个字母，一般会在结尾加一个句号&amp;quot;.&amp;quot; 例：cont. = continued。 注释：如果缩略单词能形成另外一个单词，句号会被省略。例：limo = limousine。
 这种缩略不一定是非正式用语，比如：bus = autobus，taxi = taxicab等等。

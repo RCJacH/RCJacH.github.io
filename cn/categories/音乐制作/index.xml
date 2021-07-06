@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>音乐制作 on RCJacH</title><link>https://RCJacH.github.io/cn/categories/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/</link><description>Recent content in 音乐制作 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 16:48:52 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/categories/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>如何挑选Airwindows Console插件系列</title><link>https://RCJacH.github.io/cn/post/analysis/audio-plugins/aw-console-comparison/</link><pubDate>Thu, 01 Jul 2021 16:48:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/analysis/audio-plugins/aw-console-comparison/</guid><description>Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>音乐制作 on RCJacH</title><link>https://RCJacH.github.io/cn/categories/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/</link><description>Recent content in 音乐制作 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Thu, 01 Jul 2021 16:48:52 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/categories/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/index.xml" rel="self" type="application/rss+xml"/><item><title>如何挑选Airwindows Console插件系列</title><link>https://RCJacH.github.io/cn/blog/aw-console-comparison/</link><pubDate>Thu, 01 Jul 2021 16:48:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/aw-console-comparison/</guid><description>Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。
 最近我终于想明白了如何在REAPER内搭建Console系统 （之后有空再翻译）， 所以在想办法把Console插件直接嵌入到各种模板里。
 不过他家插件有个小小的问题……选择太多了。
 目前为止， 他已经出了两百多个免费插件了， 光Console相关的插件就已经有12个。 而且他每周都在开发新算法， 我作为用户反而有点跟不上他的开发速度。
@@ -7,7 +7,7 @@
 工程放到REAPER官网上了，点击这里进入下载页面。
 使用方式：
 播放工程。 把单个静音的轨道Solo来听正弦波过Console Channel + Bus的声音。 静音的轨道名是所用的Console插件名称。 有一个没有挂插件的None轨道， 可以当成参考用的干信号， 也可以用来反向抵消其他轨来听失真染色的声音。 总线挂了几个自带的测量插件， 应该能对理解每个染色具体什么样能有些帮助， 尤其是频谱。 三个Source音轨挂了都挂上了自带的ReaSynths音源， 其中source 1在播放440Hz， source 2为880Hz（第一个泛音）， source 3则是用来测试非泛音的频率。 经过对比，我观察到了以下几点：
-大部分插件哪怕仅有单轨输入也会产生失真， 除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。 多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。 所有失真都会产生直流偏差（0Hz信号）， 所以在ConsoleBus之后需要添加一个直流滤波器。 此方面自带的ReaEQ是所有插件中CPU用量最少的， 用它加一个20Hz的高通可以过滤大部分的偏差。 如果你想把其全部切除， Airwindows的Infrasonic插件能完美实现， 代价是更高的CPU用量。 染色是非线性的。 更高的输入音量会使过载算法产生更多泛音， 并且整个信号会在接近0dB的地方被削波， 所以别忘了Gain-Staging。 仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。 根据我个人的判断，最好听的几款如下： Atmosphere。据说是为了模拟声音在空气中融合的听感。 其失真较平均，没有突兀的听感。 Console5。更饱满，全频段失真上至奈奎斯特； Console5Dark， 此变异与原版反向后差别在-80dB左右， 而且主要是原频率以及前几个泛音， 但用Span把两个信号叠起来又看不出来什么区别。 此款CPU用量更少； Console5Raw，一个更干净的版本， 不过据说会出现一些不稳定的直流偏差。 Console7。听起来更空洞，基音音量会稍微小一点。 它还有个失真稍微更大一点的兄弟叫Console7Cascade。 PDConsole，PD代表Purest Drive。此款听起来失真量最小。 PurestConsole初版。 经不严谨测试它能跟PurestConsole2完全抵消， 但这款的CPU用量是所有Console里面最少的，都不到二代的一半。 而且！！这款跟Atmosphere也能完全抵消！！ 总结一下， 日常用PurestConsole， Console7当成超级模拟染色的Summing盒（它CPU用量最高）， PDConsole来当软胶（胶指粘合多个轨道的功能）， Console5或者Console5Dark当纽约式指脸怼人的硬胶。</description></item><item><title>音源模板及常见问题</title><link>https://RCJacH.github.io/cn/post/reaper/working-with-sample-library-templates/</link><pubDate>Wed, 09 Jun 2021 07:20:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/post/reaper/working-with-sample-library-templates/</guid><description>我在2019年的时候提出过并尝试过用REAPER来搭建音源服务器的概念， 后来断断续续有人询问搭建方式，所以打算记录下来供大家参考。
+大部分插件哪怕仅有单轨输入也会产生失真， 除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。 多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。 所有失真都会产生直流偏差（0Hz信号）， 所以在ConsoleBus之后需要添加一个直流滤波器。 此方面自带的ReaEQ是所有插件中CPU用量最少的， 用它加一个20Hz的高通可以过滤大部分的偏差。 如果你想把其全部切除， Airwindows的Infrasonic插件能完美实现， 代价是更高的CPU用量。 染色是非线性的。 更高的输入音量会使过载算法产生更多泛音， 并且整个信号会在接近0dB的地方被削波， 所以别忘了Gain-Staging。 仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。 根据我个人的判断，最好听的几款如下： Atmosphere。据说是为了模拟声音在空气中融合的听感。 其失真较平均，没有突兀的听感。 Console5。更饱满，全频段失真上至奈奎斯特； Console5Dark， 此变异与原版反向后差别在-80dB左右， 而且主要是原频率以及前几个泛音， 但用Span把两个信号叠起来又看不出来什么区别。 此款CPU用量更少； Console5Raw，一个更干净的版本， 不过据说会出现一些不稳定的直流偏差。 Console7。听起来更空洞，基音音量会稍微小一点。 它还有个失真稍微更大一点的兄弟叫Console7Cascade。 PDConsole，PD代表Purest Drive。此款听起来失真量最小。 PurestConsole初版。 经不严谨测试它能跟PurestConsole2完全抵消， 但这款的CPU用量是所有Console里面最少的，都不到二代的一半。 而且！！这款跟Atmosphere也能完全抵消！！ 总结一下， 日常用PurestConsole， Console7当成超级模拟染色的Summing盒（它CPU用量最高）， PDConsole来当软胶（胶指粘合多个轨道的功能）， Console5或者Console5Dark当纽约式指脸怼人的硬胶。</description></item><item><title>音源模板及常见问题</title><link>https://RCJacH.github.io/cn/blog/working-with-sample-library-templates/</link><pubDate>Wed, 09 Jun 2021 07:20:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/working-with-sample-library-templates/</guid><description>我在2019年的时候提出过并尝试过用REAPER来搭建音源服务器的概念， 后来断断续续有人询问搭建方式，所以打算记录下来供大家参考。
 但这篇文章不是关于搭建的。
 这篇讲的是音源服务器到底是什么， 并且讨论一下它跟其他模板比起来有什么优势和劣势。
 为了理解该服务器的价值，我们需要了解一下媒体音乐制作人在工作中会遇到的几个问题。
@@ -29,7 +29,7 @@ storyteller的REAPER管弦超级大模板
 无论如何，单一模板法的确可以节省大量的初始配置时间， 但使用过程中反而会引入一些其他问题。
 单一模板法的问题 单一模板法最大的问题还是他们很大，只不过这次指的是文件体积。
 如果你是个REAPER用户， 你应该知道REAPER包含自动备份工程文件的功能。 鉴于丢失进度是准时交工最大的阻碍， 我把备份间隔设置为每5分钟保存一次。 这么基础的功能其他DAW估计也有。
-那么问题来了，如果我们将所有东西都加载进一个工程内， BASE64字符串格式的插件设置会把工程文件撑到肥胖， 动不动就上百兆。 如果我们继续自动备份的话， 每小时产生的备份文件就需要一千多兆， 到最终工作完成时可能会上到几百个G。</description></item><item><title>REAPER信号流</title><link>https://RCJacH.github.io/cn/post/reaper-signal-flow/</link><pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-signal-flow/</guid><description>什么是信号流？
+那么问题来了，如果我们将所有东西都加载进一个工程内， BASE64字符串格式的插件设置会把工程文件撑到肥胖， 动不动就上百兆。 如果我们继续自动备份的话， 每小时产生的备份文件就需要一千多兆， 到最终工作完成时可能会上到几百个G。</description></item><item><title>REAPER信号流</title><link>https://RCJacH.github.io/cn/blog/signal-flow/</link><pubDate>Fri, 23 Jun 2017 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/signal-flow/</guid><description>什么是信号流？
 在数字音频制作领域，信号流指的是信号（例如音频或MIDI）是如何经过DAW中每一层运算的。
 因为我们在实际使用中常常会需要建立路由，无论是简单的信号发送、搭建模块合成器、还是建立使用Parameter Modulation的多轨模板，清晰地了解信号在DAW中的路径以及运算顺序会有非常大的帮助。
 所以我画了以下这张图。
@@ -44,7 +44,7 @@ Take Trim = 层音量衰减（主页面块儿上&amp;quot;边&amp;quot;往下拽
 音频/MIDI通道是同路由上平行的信号流。
 音频只会相加同通道的信号。
 音量推子、Trim包络、音量包络三者可以同时使用，也就是说可以同时有三层音量调整的方法（平衡、段落、微调之类的）。
-监听FX（Monitor FX）在音频渲染时是旁通的。</description></item><item><title>REAPER网格</title><link>https://RCJacH.github.io/cn/post/reaper-grid-system/</link><pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-grid-system/</guid><description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
+监听FX（Monitor FX）在音频渲染时是旁通的。</description></item><item><title>REAPER网格</title><link>https://RCJacH.github.io/cn/blog/grid-system/</link><pubDate>Sun, 06 Nov 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/grid-system/</guid><description>当我们在创作任何非散拍音乐的时候，通常需要让音符或音频在某些程度上对齐节拍的细分（subdivision）来保证节奏的稳定性。这个时候，在DAW里，我们所用到的是节拍网格（Grid）。
 它长这个样子
 或者这个样子
 我们通常会把网格设置成常用的音符长度，例如八分音符、十六分音符等二的倍数(2 * 2^n)，或者三连音的倍数(3 * 2^n)。可是当我们需要稍微不常见的(例如五连音、七连音、九连音)或者不规则的细分时，这些选项就不太够用了。
@@ -63,7 +63,7 @@ MIDI界面的底端
 5/27
 此外，利用这种设置可以开启比较不寻常的节奏分解，例如把三拍分成五个音
 3/20
-我用不同组合的五连音做了个短Demo。</description></item><item><title>REAPER工具栏系统</title><link>https://RCJacH.github.io/cn/post/reaper-toolbar-system/</link><pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-toolbar-system/</guid><description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
+我用不同组合的五连音做了个短Demo。</description></item><item><title>REAPER工具栏系统</title><link>https://RCJacH.github.io/cn/blog/toolbar-system/</link><pubDate>Thu, 22 Sep 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/toolbar-system/</guid><description>我最近发现了一个很有意思并且非常有效的使用Reaper自定义工具栏的方法。
 在其他DAW里，工具栏通常是固定不变的，我们最多只能移动或者隐藏它们。
 但是在Reaper里，因为我们很幸运地拥有不少可自定义的工具栏，并且能在工具栏内添加任何操作，可能过不了多久我们的屏幕就变成这样了：
 可能有些人会觉得这样排列工具栏在做大项目里是必要的，不过要在这么多图标里找到需要的操作还是要花一些时间的。
@@ -79,7 +79,7 @@ MIDI界面的底端
 我的钢琴卷工具栏也是用同样的方法设置的，只不过状态栏和操作栏全部放到了同一个横向面板中。
 状态 选择 音符 CC 呵呵，我讨厌CC
 和弦 （为了迅速输入和弦并且修改声部排列）
-当然，以上的截图并非是这个系统的最终状态。我会慢慢更新并完善它：添加一些常用的操作，并删除一些不常用的。不过，这个系统理念能够更有效的利用、整理、分类Reaper的工具栏，节省我们屏幕中宝贵的显示空间。</description></item><item><title>如何寻找Reaper资源文件目录</title><link>https://RCJacH.github.io/cn/post/reaper-resource-folder/</link><pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-resource-folder/</guid><description>在使用REAPER的过程中，无论是在添加主题、脚本、插件、还是轨道/工程模板的时候，都需要把相应的文件放到一个叫做资源文件目录的文件夹中。那么这个文件夹到底在哪儿呢？以下提供几个能找到它的方法。
+当然，以上的截图并非是这个系统的最终状态。我会慢慢更新并完善它：添加一些常用的操作，并删除一些不常用的。不过，这个系统理念能够更有效的利用、整理、分类Reaper的工具栏，节省我们屏幕中宝贵的显示空间。</description></item><item><title>如何寻找Reaper资源文件目录</title><link>https://RCJacH.github.io/cn/blog/resource-folder/</link><pubDate>Mon, 20 Jun 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/resource-folder/</guid><description>在使用REAPER的过程中，无论是在添加主题、脚本、插件、还是轨道/工程模板的时候，都需要把相应的文件放到一个叫做资源文件目录的文件夹中。那么这个文件夹到底在哪儿呢？以下提供几个能找到它的方法。
 最直接的方式：我们打开Reaper之后，在其默认菜单里的Option（选项）中，倒数第五个命令是Show REAPER resource path in explorer/finder&amp;hellip;（在Explorer/Finder中打开REAPER资源文件目录…），点击之后就会在系统默认的文件浏览器中打开该目录了。
 以上介绍的方式通常能解决大部分寻找资源文件目录的需求， 可实际上我们可能会遇到特殊的情况，需要通过手动的方式去寻找这个资源文件目录。方法如下。
 在windows系统下，不同的系统版本中的地址稍有不同，分别是：
@@ -93,12 +93,12 @@ C:\USERS&amp;lt;username&amp;gt;\AppData\Roaming\REAPER\
 Mac OS 系统下，该地址为：
 /Users/ /Library/Application Support/REAPER
 同样，把替换成你的电脑用户名即可。
-此外，REAPER对于资源文件目录的优先值为：先搜索主程序所在的文件夹，如果没有资源文件，再搜索系统默认的资源文件地址（之前所介绍的）。所以如果找不到相关的资源，不放也查看一下Reaper运行文件所在的地址吧。</description></item><item><title>模拟信号与电子信号的音量关系：-20 dBFS = 0 VU</title><link>https://RCJacH.github.io/cn/post/between-analog-and-digital-volume/</link><pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/between-analog-and-digital-volume/</guid><description>这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。
+此外，REAPER对于资源文件目录的优先值为：先搜索主程序所在的文件夹，如果没有资源文件，再搜索系统默认的资源文件地址（之前所介绍的）。所以如果找不到相关的资源，不放也查看一下Reaper运行文件所在的地址吧。</description></item><item><title>模拟信号与电子信号的音量关系：-20 dBFS = 0 VU</title><link>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</link><pubDate>Fri, 01 Apr 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/between-analog-and-digital-volume/</guid><description>这篇文章会用最短的方式解释一下模拟信号与电子信号的音量关系。
 图中有以下几点需要注意：
 电子信号会在0 dBFS的状态下遭遇电子削波，而模拟信号会在+24 dBu（也就是+20VU）的状态下遭遇削波。
 模拟设备在0VU以上会有逐渐增强的过载失真。
 因为大部分模拟设备不会显示20dB的动态余量，而电子设备会，所以我们在用DAW的时候需要自行留出20dB的动态余量。也就是说让每一轨、每一个插件的输出音量平均值保持在-20dBFS左右（之后细讲），这样能保证我们用电子调音台时能与模拟调音台预留同样的动态余量。
-在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。</description></item><item><title>ReaComp到底有多强大？Pro Tools用户哭了。</title><link>https://RCJacH.github.io/cn/post/reaper-reacomp-the-great/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-reacomp-the-great/</guid><description>在音频处理方面，压缩一词经常被捧上天。尤其是对听感的音量变化还不是很敏感的那些初学者们，会觉得压缩处理好像是一个非常神秘的步骤。其实压缩器的性质与手动调音量一样- 衰减音量大的部分并提升音量小的部分 – 只不过压缩比手动画音量能在更短的时间内做出反应与相对措施。那么他对音频具体有什么影响呢？我们来通过Reaper自带的ReaComp来观察一下。
+在此基础上，我们可以使用各种防模拟失真的插件来模仿模拟设备的声音，例如AirWindows的Console4、ToneBooster的Ferox/Reelbus、Klanghelm的IVGI等等。</description></item><item><title>ReaComp到底有多强大？Pro Tools用户哭了。</title><link>https://RCJacH.github.io/cn/blog/reacomp-the-great/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/reacomp-the-great/</guid><description>在音频处理方面，压缩一词经常被捧上天。尤其是对听感的音量变化还不是很敏感的那些初学者们，会觉得压缩处理好像是一个非常神秘的步骤。其实压缩器的性质与手动调音量一样- 衰减音量大的部分并提升音量小的部分 – 只不过压缩比手动画音量能在更短的时间内做出反应与相对措施。那么他对音频具体有什么影响呢？我们来通过Reaper自带的ReaComp来观察一下。
 ReaComp的界面的确不是最华丽的，但麻雀虽小五脏俱全：
 音频信号压缩的原理是把输入信号分成两份，一份通过压缩本身的信号处理，而另一份则被用于检测衡量信号。这两份信号都可以在ReaComp内进行一定程度的处理来达到所需的效果。我们用图来解释一下ReaComp内的参数分别是什么。
 假设我们输入的音频是这个样子，中间有一段音量突出的片段。
@@ -120,7 +120,7 @@ Pre-Comp算法相对更复杂一点，但我们目前可以把他看成信号检
 我们知道RMS是截取一个段落的平均值，我们又知道Pre-Comp能让插件“预知”一段时间的音量。那么如果我们把Pre-Comp设置成RMS的一半左右，我们处理的则是一个峰值与它前后一段时间的平均值。这样等于音量会自然地在峰值之前衰减，而在峰值之后恢复。同时，因为Attack和Release已经包含在整个程序内了，我们不需要额外地添加Attack和Release。峰值的音头形状可能稍微取决于RMS与Pre-Comp * 2之差。利用这个方法，我们可以把Knee Size和Threshold调到比平常高一点的位置，让输入音频一直保持Knee中间的状态，GR大概保持在1.5dB以下就好了。这个压缩技术的效果就是在保留音头的情况下非常自然地降低了动态范围，甚至根本听不出来压缩的痕迹!
 操作起来很简单，你只需要如下图这样设置，然后根据你的输入及目的来调制红色框内的Threshold、Ratio、与Knee Size(其实都可以不动)。
 我还做了一个ReaComp预设，并把Ratio和Knee size通过Automation Modulation与Pre-Comp连到了一起，这样你的Pre-Comp时间越长GR越圆滑，反而如果Pre-Comp很短的话GR也会更猛一点。用这个预设你只需要调制Threshold和Pre-Comp，然后把RMS调到Pre-Comp的两倍左右就可以坐等奇迹了！使用方法：把zip文件解压缩至资源文件目录的FXChain下面，然后在你的FX列表内FX菜单里选择Add FXChain，之后双击加载这个预设文件就好了。
-Pro Tools和Mac的用户有没有心动？其实你们也可以用任何可调制Pre-Comp/Lookahead与RMS值的压缩插件来达到这个效果，例如Klanghelm的DC8C。只可惜它的RMS最高限制是100 ms，更何况ReaComp是免费的呢。</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/post/reaper-no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
+Pro Tools和Mac的用户有没有心动？其实你们也可以用任何可调制Pre-Comp/Lookahead与RMS值的压缩插件来达到这个效果，例如Klanghelm的DC8C。只可惜它的RMS最高限制是100 ms，更何况ReaComp是免费的呢。</description></item><item><title>你还在画CC吗？其实Reaper这么用更强大！</title><link>https://RCJacH.github.io/cn/blog/no-more-cc/</link><pubDate>Thu, 10 Mar 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/no-more-cc/</guid><description>许多人对Reaper自带的MIDI Control Change(MIDI CC控制器)功能很不满。可以理解，Reaper在MIDI CC这一块儿缺少了很多其他DAW特征性的功能，比如说Logic与AbletonLive的曲线功能，Cubase的Expression Map，Studio One的各种LFO形状的画笔等等。
 虽然目前有一些能提高CC效率的工具，例如这款MIDI Velocity/CC Tool。
 但他们治标不治本，无法大幅度提升编曲效率。尤其当我们做吉他
 做弦乐
@@ -150,7 +150,7 @@ MIDI Link - CC 来直接控制Helm合成器参数"
 当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
 记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！
 因编曲需要，我已经设置好了几个Kontakt乐器的配置，并为每个参数设置了英文名称。有兴趣的朋友可以随意下载使用。
-Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>录音输入音量标准</title><link>https://RCJacH.github.io/cn/post/recording-volume-calibration/</link><pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/recording-volume-calibration/</guid><description>这篇文章是录音输入音量标准的解说。
+Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>录音输入音量标准</title><link>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</link><pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</guid><description>这篇文章是录音输入音量标准的解说。
 我发现国内的录音爱好者和一些职业录音师，对于输入音量并没有一个绝对标准（除了用耳朵听这种无法衡量的行为），这导致同一个录音工程的同一轨会有不同音量标准的文件，甚至输入太热导致爆音。由于语言与文化的差别，我决定不逐字翻译，仅把结论和简单的理由列了出来。
 关于录音输入音量所需注意的事项：
 用24位或更高的音频录音。 正式录音前，试录整个演奏中音量最大的部分，并观察你的输入音量。
@@ -165,7 +165,7 @@ Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</d
 后期各阶段的压缩会继续降低信噪比。
 为了不让音量峰值部分爆音，我们还需要为预留一些额外的空间，称为动态余量。
 在后期处理中，使用软硬件效果器之前，我们依然需要把音频输入音量调到一个标准范围（通常效果器对不同动态会有不同的失真与压缩处理）。
-24位音频的144dB的动态范围能够精确地记载录音信号，同时也能预留出动态余量，所以请好好利用其优势！</description></item><item><title>REAPER简介</title><link>https://RCJacH.github.io/cn/post/reaper-introduction/</link><pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/reaper-introduction/</guid><description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
+24位音频的144dB的动态范围能够精确地记载录音信号，同时也能预留出动态余量，所以请好好利用其优势！</description></item><item><title>REAPER简介</title><link>https://RCJacH.github.io/cn/blog/introduction/</link><pubDate>Tue, 02 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/introduction/</guid><description>从今天开始，本博客将在吉他/乐器练习与乐理的基础上开启新的Reaper内容分类，这个分类将主要包含REAPER (Rapid Environment for Audio Production, Engineering, and Recording) 这款DAW的进阶使用理念、音乐制作的思路与操作、音频录音与后期处理等内容。
 国内用Reaper的不是很多，大部分还是处于FL Studio, PT, Cubase, Sonar, Logic, 和Live这几种更商业的DAW。当然Reaper在国外也不是很嚣张，因为人家压根没有花一分钱在宣传上，靠的都是口碑。什么是宣传？当你看到国外大师级别的录音/混音/母带工程师微笑地讲解着某个DAW功能的高清视频…嗯，那就是宣（Dai）传（Yan）。大部分音频工作者真正工作的时候都是因为某些功能不顺手、不稳定或者满足不了需求而心里默默跑过了一万只羊陀。
 所以Reaper诞生了。目前有一些大牌的游戏与影视音效、音乐设计师公开表达他们对Reaper的爱：
 David Farmer (霍比特人、蚁人、暗黑3、魔兽世界等)
@@ -183,7 +183,7 @@ Ryan Canestro (影视作品列表)
 自制脚本 目前Reaper支持Lua、EEL、C++、Python、以及自家的Jesusonic Effects（JSFX）五种脚本语言，其中JSFX与EEL偏向实时音频或者MIDI处理。通过这些脚本，我们可以做到很多DAW本身做不到的功能 &amp;ndash; 从简单的信号处理，到改变工程制作方式（例如仿Ableton Live的Playtime），甚至自动生成MIDI也可以哟！你可能会问：“我不是程序猿怎么办？”没关系，Reaper已经自带上百个JS效果，并且官方论坛上也有很多用户自制的免费脚本。如果你能想到什么奇特的功能，不妨在论坛上留个言，也许会有大神给你写出来一个也说不定哦。
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器
 多采样率 在使用其他DAW的时候，当你拖进来任何与工程文件不同采样率的音频或者mp3时，宿主都会自动转换成一个与工程采样率一致的wav音频文件。这样不仅增加了硬盘负担，也降低了工作效率（转码也需要时间呐！）。尤其是对于声音设计师、影视音效师这种经常会用到不同来源的采样的音频工作者来说，能够把各种采样率以及各种格式的音频自由地拼在一个工程内是多么舒适的一件事情。
-轻量级 + Portable Reaper的安装文件只有10-20mb，安装之后也才60mb左右。你没看错，Megabytes不是Gigabytes!</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/post/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/post/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
+轻量级 + Portable Reaper的安装文件只有10-20mb，安装之后也才60mb左右。你没看错，Megabytes不是Gigabytes!</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
 英文缩写：（abbreviation，来自于拉丁语中的brevis，代表short简短）
 Shortening：缩略一个词使它保留原单词的前几个字母，一般会在结尾加一个句号&amp;quot;.&amp;quot; 例：cont. = continued。 注释：如果缩略单词能形成另外一个单词，句号会被省略。例：limo = limousine。
 这种缩略不一定是非正式用语，比如：bus = autobus，taxi = taxicab等等。
