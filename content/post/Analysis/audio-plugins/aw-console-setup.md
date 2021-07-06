@@ -1,10 +1,9 @@
 ---
 title: "Airwindows Console Plugins Basics"
 date: 2021-07-03T03:13:14+08:00
-draft: true
 tags: ["analysis", "music production", "mixing", "audio-plugins"]
 categories: ["music-production"]
-description: "What do Airwindows's console plugins actually do, and how you should use them in your DAW."
+description: "What do Airwindows console plugins actually do to your audio, and how you should use them in your DAW."
 ---
 
 I did a comparison of Airwindows console plugins in the last post,
@@ -42,12 +41,12 @@ How do they do that?
 It's complicated,
 since each plugin implements a slightly different algorithm.
 Fortunately,
-Chris did write a simple version of this concept,
+Chris did write a simple variation of this concept,
 stripping away all of the coloring bits,
-keeping only the core of this concept,
-which became my go-to as I mentioned in the last article.
+keeping only the core of this concept.
 
 The PurestConsole.
+My go-to as I mentioned in the last article.
 
 The algorithm is simple.
 Each channel track goes through a sine function,
@@ -66,7 +65,9 @@ arcsin(sin(A) + sin(B)...)
 If you are wondering what this does to the signal,
 I made a <a href="https://www.desmos.com/calculator/yxsyooalg8" target="_blank">visualizer on desmos</a>.
 
-Black is raw signal,
+X axis is the time domain,
+Y axis is the amplitude.
+Black line is raw signal,
 red is the output with console,
 and blue is the delta,
 the difference between.
@@ -75,7 +76,7 @@ the difference between.
 
 Observe and you will notice that:
 
-1. The louder the input (y), the more reinforced it becomes;
+1. The louder the input, the more reinforced it becomes;
 2. If the combined input is above 0dB (y > 1),
     the output becomes undefined,
     which will likely result in nasty distortion,
@@ -96,7 +97,7 @@ whereas ConsoleBus reverse that with arcsin.
 
 Thus, ideally you should **put a ConsoleChannel on every audio track,
 and a ConsoleBus on, as the name indicates,
-the bus track** that is parental to them.
+the bus track that is parental to them**.
 
 However you need to **place the ConsoleChannels post-fader**,
 because Console plugins requires unity gain to work.
@@ -144,7 +145,7 @@ We need one ConsoleChannel plugin for each channel track,
 each with a different stereo channel input and output,
 then a ConsoleBus plugin at the end of the FX chain,
 receiving input from all stereo channels,
-with only the first as the output,
+but only using the first as the output,
 zeroing out all unmapped output channels to mute bleed.
 
 ![Console plugins routing example](/img/Content/analysis/aw-console/console_plugins_routing.png)
