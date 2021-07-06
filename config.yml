@@ -6,6 +6,9 @@ baseURL: "https://RCJacH.github.io/"
 languageCode: en-us
 description: "RCJacH is a music composer, songwriter, and producer."
 
+permalinks:
+  post: /blog/:filename/
+
 markup:
   goldmark:
     renderer:

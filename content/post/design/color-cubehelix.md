@@ -4,6 +4,7 @@ date = 2020-03-28T14:42:02+08:00
 tags = ["Design", "Color", "Script"]
 categories = ["Design"]
 description = "An algorithm to make color schemes with continuous increase in perceived intensity and change in hue."
+alias = ["/posts/design/color-cubehelix/", "/blog/color-cubehelix/"]
 +++
 
 I've always been fascinated with generating color schemes with algorithms - using set of rules to calculate the most effective combination of colors - rather than manually selecting a handful based on personal preferences, which I have tried once or twice with no satisfying result. We'll save the discussion of that for later. Today, I would like to share with you an algorithm called **CUBEHELIX**.

@@ -94,7 +94,7 @@ you probably, and you should, know that REAPER allows you to automatically save
 a backup file every x minutes.
 Because losing progress is the worst enemy to getting work done on time,
 I set mine to saving a backup every 5 minutes when not recording.
-![REAPER Preferences to backup every 5 minutes when not recording](/img/Content/REAPER/preference_project_backup.png)
+![REAPER Preferences to backup every 5 minutes when not recording](/img/content/REAPER/preference_project_backup.png)
 
 Similar features should be included for other DAWs as well.
 

@@ -98,7 +98,7 @@ cover:
 你*应该*知道REAPER包含自动备份工程文件的功能。
 鉴于丢失进度是准时交工最大的阻碍，
 我把备份间隔设置为每5分钟保存一次。
-![REAPER设置非录音时每五分钟备份一次](/img/Content/REAPER/preference_project_backup.png)
+![REAPER设置非录音时每五分钟备份一次](/img/content/REAPER/preference_project_backup.png)
 
 这么基础的功能其他DAW估计也有。
 
