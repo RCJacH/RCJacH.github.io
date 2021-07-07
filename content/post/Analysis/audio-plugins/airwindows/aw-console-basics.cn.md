@@ -1,229 +1,224 @@
 ---
-title: "Airwindows Console Plugins Basics"
+title: "Airwindows Console插件系列概念及使用简介"
 date: 2021-07-06T20:12:58+08:00
 draft: true
-tags: ["analysis", "music production", "mixing", "audio-plugins"]
-categories: ["music-production"]
-description: "What do Airwindows console plugins actually do to your audio, and how you should use them in your DAW."
+tags: ["插件分析", "音乐制作", "混音", "音频插件"]
+categories: ["音乐制作"]
+description: "狗不理的Console插件系列是玄学还是科学？我该怎样偷偷地使用它们？顺便问一下怎么能避免被那些昂贵又听不出来区别但是好漂亮啊的仿模拟插件GUI掏空钱包【伪"
 ---
 
-I did a comparison of Airwindows console plugins in the last post,
-today I'm going to talk about how to use them.
+我在上一篇文章中对比了一下Airwindows的Console插件，
+今天我要讲讲具体怎样使用它们。
 
-Before getting into the actual setup,
-let me first explain what they are and what they do.
+在此之前，我先讲一下为什么要使用console插件。
 
-## The Purpose of Airwindows Console Plugins
+## Airwindows Console插件的功能
 
-Airwindows Console series aim to **emulate the summing effect of analog console systems**.
+Airwindows Console系列插件追求的是**模拟(emulate)模拟(analog)调音台的Summing效果**。
 
-Summing is what happens when two signals are combined.
-With digital signal, summing is simple addition.
-For example,
-if two samples with values 1 and 2 were to be added,
-you get 3.
+Summing效果指的是把多个信号加在一起的过程。
+对于数字信号而言，summing就是简单的加法。
+举个例子，
+采样A与B相加，
+前者数值为1后者数值为2的话，
+总和为3。
 
-It's ~~magic~~ pre-grade school math.
+数学是不是很奇妙。
 
-Analog console systems don't exactly work that way.
-They are powered by electricity.
-Each channel pulls a bit of that power
-to trace out an extremely detailed outline of the input signal.
-And, as Chris explained in one of his console videos,
-the louder the signal,
-the more energy is required.
-When a channel draws a large amount of electricity,
-other channels down the line will be affected in some way.
+模拟调音台就不一样了。
+它们是电力驱动的。
+每个电子元件都需要用电来描绘信号、传递信号。
+而且，
+输入信号的音量越高，
+所需的供电量就越多。
+当某一个通道需要大量用电的时候，
+其他通道会受到一些[不可描述的影响](https://gearspace.com/board/showpost.php?p=13049501&postcount=19)。
 
-That behavior is what the console plugins try to recreate.
+Console插件模仿的正是这个现象。
 
-How do they do that?
+那它们是怎么实现的呢？
 
-It's complicated,
-since each plugin implements a slightly different algorithm.
-Fortunately,
-Chris did write a simple variation of this concept,
-stripping away all of the coloring bits,
-keeping only the core of this concept.
+额，
+稍微有些复杂，
+因为每个插件变异所用的算法都稍微有些不同。
+幸运的是，
+Chris写了一个剥离了所有染色功能只保留了该核心概念的简化版。
 
-The PurestConsole.
-My go-to as I mentioned in the last article.
+PurestConsole。
+也正是我上篇提到的日常款。
 
-The algorithm is simple.
-Each channel track goes through a sine function,
-which is then summed (digitally) by the DAW,
-and the result goes through an arcsin,
-the inverse of the sine function.
-According to the calculator,
-sin(30) = 0.5 and arcsin(0.5) = 30.
+其算法很简单。
+每个音轨过一个正弦函数sin(x)添加失真，
+经过DAW自带的（数字）Summing功能合并之后，
+再过一个反正弦函数arcsin(x)来逆转之前的失真。
 
-The concept represented in code:
+用代码来表达以上概念的话则是：
 
 ``` C++
-arcsin(sin(A) + sin(B)...)
+asin(sin(A) + sin(B)...)
 ```
 
-If you are wondering what this does to the signal,
-I made a <a href="https://www.desmos.com/calculator/yxsyooalg8" target="_blank">visualizer on desmos</a>.
+如果你对视觉更敏感的话，
+<a href="https://www.desmos.com/calculator/yxsyooalg8" target="_blank">点击这里查看我在Desmos上做的图</a>。
 
-X axis is the time domain,
-Y axis is the amplitude.
-Black line is raw signal,
-red is the output with console,
-and blue is the delta,
-the difference between.
+图中：
 
-![Here's a screenshot of the Airwindows PurestConsole Curve](/img/content/analysis/aw-console/purestconsole_curve.png)
++ X轴为时域
++ Y轴为振幅
++ 黑线为原信号
++ 红线为Console渲染的输出
++ 蓝线为其中的插值，指干湿之前的区别
 
-Observe and you will notice that:
+![Airwindows PurestConsole曲线截图](/img/content/analysis/aw-console/purestconsole_curve.png)
 
-1. The louder the input, the more reinforced it becomes;
-2. If the combined input is above 0dB (y > 1),
-    the output becomes undefined,
-    which will likely result in nasty distortion,
-    so do your gain-staging.
+目不转睛看一会儿就能注意到以下两点：
 
-With the concept briefly explained,
-let us move on to the actual setup and usage in production.
+1. 信号增强比例和输入音量成正比。
+2. 当输入总和高于0dB (y > 1)时，
+    输出值则属于未定义域，
+    实际使用是估计会有难听的失真，
+    所以do your gain-staging。
 
-## How to Setup and Use the Console Plugins from Airwindows
+概念简要解释结束，
+接下来让我们聊聊实际制作中地设置和应用吧
 
-Each console comes with a pair of plugins.
+## 如何设置和使用Airwindows的Console插件
 
-One is called ConsoleChannel, the other ConsoleBus.
+每个Console都有一对插件。
 
-Using the algorithm explored above,
-ConsoleChannel is the one that does the sine function,
-whereas ConsoleBus reverse that with arcsin.
+通道条的ConsoleChannel，总线条的ConsoleBus。
 
-Thus, ideally you should **put a ConsoleChannel on every audio track,
-and a ConsoleBus on, as the name indicates,
-the bus track that is parental to them**.
+回顾一下上文解释的算法，
+ConsoleChannel是那个正弦函数，
+ConsoleBus则是反正弦函数。
 
-However you need to **place the ConsoleChannels post-fader**,
-because Console plugins requires unity gain to work.
-Unity gain means that the volume before going into ConsoleChannel
-should be equivalent to the volume that hits the ConsoleBus.
+所以，理论上你应该**为每一个音频轨道添加一个ConsoleChannel，
+并为那些轨道上一级的总线轨添加一个ConsoleBus**。
 
-If your DAW does not provide post-fader FX function,
-I'm looking at you REAPER,
-then you are ~~screwed~~ lucky to have me coming up with a workaround.
+有一点需要注意，**ConsoleChannel需要放在推子后的插件位置上**。
+因为Console插件算法的要求是输入音量与输出音量相等才能使两个函数所添加的失真互相抵消，
+所以音量和声像（左右通道音量平衡）需要在Channel插件之前调整。
 
-### Workaround in DAWs with NO Post-Fader FX
+如果你的DAW不支持轨道在推子后添加插件的话，
+咳咳REAPER咳咳，
+那你~~完了~~赚大发了，因为我发现了以下这个解决方法。
 
-To be honest, you don't *really* need this workaround.
-You can simply add ConsoleChannel at the end of every track,
-ConsoleBus at the top of every bus track,
-then keep your hands away from the volume fader and pan-pot and call it a day.
+### 我的DAW没有推子后插件功能怎么办
 
-![Console Channel & Bus on Track FX Chain](/img/content/analysis/aw-console/original_usage.png)
+首先说一下官方解决方案，指的是Chris在Logic里的用法。
 
-That's how Chris uses them in Logic,
-which is also my old workflow.
+在每个轨道插件链末端添加ConsoleChannel，
+并在总线轨插件链首端添加ConsoleBus，
+之后在推子和声像钮上贴个“请勿触碰”的封条严格遵守。
 
-Until one day I finally became exasperated,
-and decided to redesign my workflow regarding the console plugins,
-because of a sudden realization that I was handicapped by neglecting two important features that my DAW provides.
+![Console之Channel与Bus插件链普通版](/img/content/analysis/aw-console/original_usage.png)
 
-By not using the fader and pan-pot,
-I forfeited the opportunity to monitor the balance between tracks by solely looking at the mixer.
-On top of that,
-embedding the console plugin into the track FX chain means
-less flexibility for dry/wet comparison,
-because toggling the FX chain on and off,
-on the channel track or the bus track,
-tears the console pairs apart,
-resulting in uncontrolled partial saturation.
+我之前也是这么用的，
+直到有一天我终于受够了，
+决定重新设计Console相关的工作流程。
+主要是因为我突然意识到，
+这么做忽视了DAW提供的两个重要功能。
 
-We will resolve those issues by creating an intermediate track dedicated for summing,
-which resides between the bus track and the channels.
-Then we need to transport the console plugins into the new summing track,
-freeing up the fader, pan-pot, and the FX chain toggle switch.
+首先，
+不使用推子和声像钮意味着
+我无法依靠调音台的参数来得知混音平衡，
+每次都得通过插件来修改轨道音量或者包络，
+效率比较低。
+不仅如此，
+把Console插件嵌入音频轨道插件链上会增加干湿对比工作的难度。
+因为关闭任何一轨插件链（无论是音频轨还是总线轨）
+都会把本身成对的console插件拆分开，
+导致音频的过载状态不同于输入或输出。
 
-![A dedicated summing track between bus and channels](/img/content/analysis/aw-console/dedicated_summing_track.png)
+这些问题的解决方法很简单，
+我们单独创建一个专为summing用的轨道，
+让其成为音频轨与总线之间的中介。
+然后把所有console插件都挪到该轨道上，
+这样就可以自由地使用推子、音像钮和插件链开关了。
 
-We need one ConsoleChannel plugin for each channel track,
-each with a different stereo channel input and output,
-then a ConsoleBus plugin at the end of the FX chain,
-receiving input from all stereo channels,
-but only using the first as the output,
-zeroing out all unmapped output channels to mute bleed.
+![总线与音频轨之间Summing专用轨道](/img/content/analysis/aw-console/dedicated_summing_track.png)
 
-![Console plugins routing example](/img/content/analysis/aw-console/console_plugins_routing.png)
+与普通模式原理相同，
+该轨上ConsoleChannel插件数量对应输入的音轨数量，
+每个插件应该设置成不同的双声道输入输出。
+ConsoleBus应放在插件链末端，
+接受所有输入但仅输出至第一个双声道，
+并在插件I/O的右键菜单中把其设置为zero out unmapped output channels，
+意思是屏蔽未设置为输出的通道。
 
-After that,
-we need to modify the channels of tracks to match the input of the corresponding ConsoleChannel plugin.
+![双音轨的Console插件路由案例](/img/content/analysis/aw-console/console_plugins_routing.png)
 
-![Set all children tracks to sequential stereo channels](/img/content/analysis/aw-console/track_send_routing.png)
+在此之后，
+我们需要为所有的子音轨设置成对应的音频通道。
 
-Phew, that's a lot of work, especially when tracks begin to pile up.
-To make life simpler, I wrote two scripts to automate this process.
+![把所有子轨道设置为连续的立体声通道](/img/content/analysis/aw-console/track_send_routing.png)
+
+工作量有点大，不敢想象上百轨的工程是如何管理的。
+别怕，我写了以下两个让生活更美好的脚本。
 
 1. RCJacH_Set Airwindows Console Track FX Pin Mapping.lua
 
-This script will set the I/O pins of all track FX of a selected track to sequential stereo pairs,
-except for the last FX,
-which is assumed to be a console bus plugin,
-thus making it receiving all stereo pairs based on the number of previous plugins,
-and outputs only channel 1-2.
+该脚本在所选轨道中按上述规律设置所有的插件－
+除了最后一个插件设置成接受全部输入并仅输出前两个通道，
+其他插件都自动分配未占有的双声道输入输出。
+但这个脚本没办法设置屏蔽其他输出通道，
+暂需手动。
 
 2. RCJacH_Set Parent Send Channel Offset to Sequentially Stereos for Selected Tracks.lua
 
-This script will make all selected tracks to set their parent send offset to sequential stereo pairs.
+该脚本会按顺序将所选的每个音轨设置成不同的双声道（上交母轨道的）输出。
 
-So the workflow is:
+所以对应的工作流程是：
 
-First,
-create a summing track,
-add whatever console variations you want,
-with the number of channel FXs equivalent to the number of children tracks,
-also add a console bus as the last plugin of the track,
-then run script 1.
-After that,
-place tracks to be summed under this summing track,
-select them all and run script 2.
-Voila.
+首先在总线和子音轨之间建立Summing轨。
+其次在此轨道上添加给定的Console插件，
+Bus插件放到最后，
+Channel插件数量对应子音轨数量，
+然后选中Summing轨并运行脚本1。
+之后选中所有子轨道并运行脚本2。
+操作终了。
 
-You can add my ReaPack repo to download them:
+添加我的ReaPack镜像来下载这两个插件：
 
-<a href="https://github.com/RCJacH/ReaScripts" target="_blank">RCJach's ReaScripts Repository</a>
+<a href="https://forum.reaget.com/mirrors/RCJacH/ReaScripts/index.xml" target="_blank">RCJacH的ReaPack镜像</a>
 
-### The Problems with Dedicated Summing Track
+### 专用Summing轨道的弊端
 
-Now this workaround is not without disadvantages.
+刚才提到的这个路由方法并不是十全十美的，
+我接下来要自怼了。
 
-One obvious issue is that,
-if we put console plugins directly onto the original tracks,
-we can easily apply processes in-between ConsoleChannel and ConsoleBus,
-such as reverb.
-Again recommended by Chris in his console videos,
-by sending ConsoleChannel saturated signals out to a reverb track,
-which the result goes through a ConsoleBus plugin,
-usually the one on the master bus,
-apparently gives the reverb more cohesion.
+第一个问题是：
 
-But personally I don't hear much of a difference...
+使用普通路由的话，
+我们可以在ConsoleChannel和ConsoleBus之间添加一些处理效果，
+例如把正过载的音频信号发送至混响轨，
+再把混响信号过一遍（总线上的）ConsoleBus反过载。
+使用专用Summing轨做到这一点就麻烦很多。
+这样做的优势据说能让混响更有粘合力。
 
-The other issue is that REAPER has maximum of 64 channels per track,
-so you can only have 32 separated stereo inputs per bus track.
-To work around that limit,
-we can divide our tracks into sub-busses.
-For example,
-all drum tracks into the drum bus,
-all guitars into the guitar bus,
-and all vocals to a vocal bus, etc.
-If that's not enough,
-divide again,
-separate acoustic guitars and electric guitars,
-which both goes into the guitar bus.
-Then all sub-busses goes into the master 2-bus.
-A bit like analog mixing isn't it?
+但我木耳朵听不出来。
 
-## Conclusion
+第二个问题是：
 
-Now you should have some understanding of what the console plugins are doing -
-making your mix more adhesive and interactive -
-and how to set them up in your DAW.
-Whether that is synonymous to better sounding...
-well if you haven't read my previous post [on Airwindows Console Plugins Comparison]({{< relref "aw-console-comparison.md" >}}),
-do so now, and use the included project to make your own judgement.
+REAPER每个轨道最高只有64个音频通道，
+也就是说你一个轨道最多只能用32个Console插件。
+比某款经常被我吐槽但不能说名字因为会被骂的DAW的轨道限制还可怜。
+这个问题的解决方案是把总线分成多个编组总线。
+举个例子，
+所有的鼓分轨先在鼓组合并，
+所有吉他到吉他组，
+人声到人声组等等。
+如果通道数量还不够，
+那就再切。
+把木吉他和电吉他分开单独做Summing再进入到吉他组，
+这时吉他组总线就只需要两个双声道输入了。
+然后再把所有的编组进到总线的Summing轨。
+这样一层一层的处理是不是有点像模拟时代的混音了？
+
+## 总结
+
+看了上述介绍你应该能了解Console插件的作用和使用方法了。
+它能让你的混音更融合，轨道之间有更多互动。
+但这是否能让你的混音变得更好听呢？
+额，如果你还没有读过我上一篇文章[如何挑选Airwindows Console插件系列]({{< relref "aw-console-comparison.cn.md" >}})
+请猛击链接、下载工程、打开并自行测试。
