@@ -1,4 +1,19 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RCJacH</title><link>https://RCJacH.github.io/cn/</link><description>Recent content on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/index.xml" rel="self" type="application/rss+xml"/><item><title>如何挑选Airwindows Console插件系列</title><link>https://RCJacH.github.io/cn/blog/aw-console-comparison/</link><pubDate>Thu, 01 Jul 2021 16:48:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/aw-console-comparison/</guid><description>Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>RCJacH</title><link>https://RCJacH.github.io/cn/</link><description>Recent content on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 01 Jul 2017 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/index.xml" rel="self" type="application/rss+xml"/><item><title>Airwindows Console插件系列概念及使用简介</title><link>https://RCJacH.github.io/cn/blog/aw-console-basics/</link><pubDate>Tue, 06 Jul 2021 20:12:58 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/aw-console-basics/</guid><description>我在上一篇文章中对比了一下Airwindows的Console插件， 今天我要讲讲怎样使用它们。
+在此之前，请允许我先唠叨一下该系列插件的原理。
+Airwindows Console插件的原理 Airwindows Console系列插件追求的是模拟(emulate)模拟(analog)调音台的相加效果。
+相加效果，summing，指的是把多个信号合并在一起的过程。 对于数字信号而言，summing就是简单的加法。 举个例子， 数值为1的采样A与数值为2的采样B相加之后， 总和为3。
+数学是不是很奇妙？
+模拟调音台就不一样了。 它们是电力驱动的。 每个电子元件都需要用电来描绘信号、传递信号。 非常美好。 不过会出现以下这个现象。 当多个信号出现相位抵消的时候， 由于每个通道依然需要使用能量 (虽然相位抵消把这个能量“浪费”掉了)， 导致相关的电子元件变得更不稳定、更易失真， 会让信号受到一些不可描述的影响。
+Console插件模仿的正是这个现象。
+那它们是怎么实现的呢？
+稍微有些复杂， 因为每个版本和变异所用的算法都稍微有些不同。 幸运的是， Airwindows的作者Chris写了一个剥离了染色功能只保留了核心概念的简化版。
+PurestConsole。 也正是我上篇提到的日常款。
+其算法很简单。 每个音轨过一个正弦函数sin(x)添加正失真， 经过DAW自带的（数字）summing功能合并之后， 再过一个反正弦函数arcsin(x)来逆转之前的失真。 Chris称之为反失真。
+如果你觉得&amp;quot;Talk is cheap, show me the code&amp;quot;：
+asin(sin(A) + sin(B)...) 如果你对视觉更敏感的话， 点击这里查看我在Desmos上做的图。
+图中：
+X轴为时域 Y轴为振幅 黑线为原信号 红线为Console渲染后的输出 蓝线为其中的差值－干湿之间的区别 目不转睛看一会儿（手动调一调参数）能注意到以下两点：
+信号增强比例和输入音量成正比。 当输入总和高于0dB (y &amp;gt; 1)时， 输出值则属于未定义域。 实际使用时估计会有难听的失真， 所以do your gain-staging。 概念简要解释结束， 接下来让我们聊聊实际制作中的设置和应用吧</description></item><item><title>如何挑选Airwindows Console插件系列</title><link>https://RCJacH.github.io/cn/blog/aw-console-comparison/</link><pubDate>Thu, 01 Jul 2021 16:48:52 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/aw-console-comparison/</guid><description>Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。
 最近我终于想明白了如何在REAPER内搭建Console系统 （之后有空再翻译）， 所以在想办法把Console插件直接嵌入到各种模板里。
 不过他家插件有个小小的问题……选择太多了。
 目前为止， 他已经出了两百多个免费插件了， 光Console相关的插件就已经有12个。 而且他每周都在开发新算法， 我作为用户反而有点跟不上他的开发速度。
