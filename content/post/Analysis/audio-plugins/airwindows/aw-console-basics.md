@@ -28,11 +28,13 @@ Analog console systems don't exactly work that way.
 They are powered by electricity.
 Each channel pulls a bit of that power
 to trace out an extremely detailed outline of the input signal.
-And, as Chris explained in one of his console videos,
-the louder the signal,
-the more energy is required.
-When a channel draws a large amount of electricity,
-other channels down the line will be affected in some way.
+As [Chris explained on GS](https://gearspace.com/board/showpost.php?p=13049501&postcount=19),
+when the channels are in phase, everyone's happy.
+However, when the channels are out of phase,
+they will not only cancel each other out,
+but since they are still drawing energy from the resistive network,
+and in a way "wasting" it because there's zero output,
+they will also distort more easily.
 
 That behavior is what the console plugins try to recreate.
 
@@ -59,22 +61,21 @@ sin(30) = 0.5 and arcsin(0.5) = 30.
 The concept represented in code:
 
 ``` C++
-arcsin(sin(A) + sin(B)...)
+asin(sin(A) + sin(B)...)
 ```
 
 If you are wondering what this does to the signal,
 I made a <a href="https://www.desmos.com/calculator/yxsyooalg8" target="_blank">visualizer on desmos</a>.
 
-X axis is the time domain,
-Y axis is the amplitude.
-Black line is raw signal,
-red is the output with console,
-and blue is the delta,
-the difference between.
++ X axis is the time domain
++ Y axis is the amplitude
++ Black line is the raw signal
++ Red is the output with console
++ Blue is the delta, the difference between
 
 ![Here's a screenshot of the Airwindows PurestConsole Curve](/img/content/analysis/aw-console/purestconsole_curve.png)
 
-Observe and you will notice that:
+Observe while playing with the parameters on the left and you will notice that:
 
 1. The louder the input, the more reinforced it becomes;
 2. If the combined input is above 0dB (y > 1),
@@ -101,8 +102,8 @@ the bus track that is parental to them**.
 
 However you need to **place the ConsoleChannels post-fader**,
 because Console plugins requires unity gain to work.
-Unity gain means that the volume before going into ConsoleChannel
-should be equivalent to the volume that hits the ConsoleBus.
+Unity gain means that the volume before going into the ConsoleChannel
+should be equivalent to the volume that goes into the ConsoleBus.
 
 If your DAW does not provide post-fader FX function,
 I'm looking at you REAPER,
@@ -160,15 +161,18 @@ To make life simpler, I wrote two scripts to automate this process.
 
 1. RCJacH_Set Airwindows Console Track FX Pin Mapping.lua
 
-This script will set the I/O pins of all track FX of a selected track to sequential stereo pairs,
-except for the last FX,
-which is assumed to be a console bus plugin,
-thus making it receiving all stereo pairs based on the number of previous plugins,
-and outputs only channel 1-2.
+    This script will set the I/O pins of all track FX of a selected track to sequential stereo pairs,
+    except for the last FX,
+    which is assumed to be a console bus plugin,
+    thus making it receiving all stereo pairs based on the number of previous plugins,
+    and outputs only channel 1-2.
+    Unfortunately,
+    the script currently does not support setting zero out unmapped output channels automatically,
+    so you have to do some labor.
 
 2. RCJacH_Set Parent Send Channel Offset to Sequentially Stereos for Selected Tracks.lua
 
-This script will make all selected tracks to set their parent send offset to sequential stereo pairs.
+    This script will set the parent send offset of all selected tracks to sequential stereo pairs.
 
 So the workflow is:
 
@@ -187,7 +191,7 @@ You can add my ReaPack repo to download them:
 
 <a href="https://github.com/RCJacH/ReaScripts" target="_blank">RCJach's ReaScripts Repository</a>
 
-### The Problems with Dedicated Summing Track
+### The Problems with Dedicated Summing Tracks
 
 Now this workaround is not without disadvantages.
 
@@ -206,16 +210,17 @@ But personally I don't hear much of a difference...
 The other issue is that REAPER has maximum of 64 channels per track,
 so you can only have 32 separated stereo inputs per bus track.
 To work around that limit,
-we can divide our tracks into sub-busses.
+we can divide our tracks into sub-mix busses,
+with a summing track for each sub-mix.
 For example,
 all drum tracks into the drum bus,
 all guitars into the guitar bus,
 and all vocals to a vocal bus, etc.
 If that's not enough,
 divide again,
-separate acoustic guitars and electric guitars,
-which both goes into the guitar bus.
-Then all sub-busses goes into the master 2-bus.
+separate acoustic guitars from electric guitars,
+both going into the guitar bus.
+Then all sub-mix busses goes into the summing track of master 2-bus.
 A bit like analog mixing isn't it?
 
 ## Conclusion
