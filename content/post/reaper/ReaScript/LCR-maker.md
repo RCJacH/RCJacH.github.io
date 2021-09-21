@@ -1,33 +1,40 @@
 ---
 title: "LRC Maker - A Script to Make Lyrics in LRC Format"
 date: 2021-09-21T22:25:43+08:00
-draft: true
+tags: 
+  - reaper
+  - Script
+  - production
+  - workflow
+categories:
+  - Scripts & Templates
+description: "Generate timecoded lyrics (or text) directly in REAPER."
 ---
 
-I wrote a script to generate LRC formatted lyrics,
-which is basically lyrics each line timecoded.
+I wrote a script to generate [LRC formatted lyrics](https://en.wikipedia.org/wiki/LRC_(file_format)),
+which is basically lyrics with each line timecoded.
 
 It's called LRC Maker,
 available in [RCJacH's ReaPack Repository](https://github.com/RCJacH/ReaScripts).
 
 I lied.
-The name is more explicit with more searchable keywords,
+The name is more explicit with searchable keywords,
 called `RCJacH_Generate LRC Lyrics and Export to Clipboard.lua`
 
 If you dislike ReaPack,
 you can get the [raw script here](https://raw.githubusercontent.com/RCJacH/ReaScripts/master/Lua/Various/RCJacH_Generate%20LRC%20Lyrics%20and%20Export%20to%20Clipboard.lua)
 
-The script combines the *take name* of active take of each item on the *selected track*,
-with each take considered as a separated line,
-using the starting location for the timing of the line,
-and copies the result to the system clipboard,
-while giving you a preview in a message pop-up.
+The script combines the *name* of the *active take* of items on the *selected track*.
+Each item is considered as a separated line,
+with the starting location of the item as the timing of the line.
+The result is copied to the system clipboard,
+although it does give you a preview in a pop-up message.
 
 It looks like this:
 
 ![Select track containing desired lyrics and run the script to generate LRC lyrics](/img/Content/REAPER/LRC_demonstration.gif)
 
-So by selecting different track, you can generate lyrics in different language.
+So by selecting different track, you can generate lyrics in different languages.
 
 Now some details.
 
@@ -36,10 +43,13 @@ by adding a `#` at the beginning.
 For example `#ar: Artist` becomes `[ar: Artist]`.
 
 Items with empty take names will also generate timecode,
-you can use them to add spacing to the output.
+you can use them to add spacing to the output,
+bumping a line up with space when the singer finishes the phrase.
 
 That's about it.
 
 So now our lyrics scrolling can be quantized to the beat,
 just like our music,
 yay!
+
+PS. the song in the demo gif is [this one](https://rcappella.bandcamp.com/track/a-quest-for-vocal-harmony).
