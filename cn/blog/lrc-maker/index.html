@@ -28,7 +28,7 @@
 <meta name=twitter:card content="summary">
 <meta name=twitter:title content="如何在REAPER内制作LRC格式的滚动歌词">
 <meta name=twitter:description content="提示：新脚本">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何在REAPER内制作LRC格式的滚动歌词","name":"如何在REAPER内制作LRC格式的滚动歌词","description":"前几天我终于在某云音乐让个人的全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。\n脚本去RCJacH的ReaPack库自取。\n脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。\n如果你没有ReaPack， 也 …","keywords":["reaper","脚本","歌词","工作流程"],"articleBody":"前几天我终于在某云音乐让个人的全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。\n脚本去RCJacH的ReaPack库自取。\n脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。\n如果你没有ReaPack， 也可以直接另保存脚本源文件。\n这个脚本的使用方式如下：\n 创建一个专门写歌词的轨道，轨道名随意。 在每行歌词起始位置创建一个MIDI块儿，并把Take名改成该行歌词。 MIDI块儿长度暂时不影响输出。 如果想添加标签，可以在Take名最前面加一个#。 例#ar: 歌手会变成[ar: 歌手]。 这种标签是给播放器用的，但后来发现某云会自己生成部分标签。 如果你想让两行之间有空隙，请使用一个空名的MIDI块儿。 选择该歌词轨。 运行脚本。  该脚本会把这些歌词合并到一起，并拷贝结果至系统剪切板中，最后给你一个预览用的小弹窗。\n看起来像这样。\n如图中示范， 你通过选择不同轨道来生成不同语言的歌词。\n额，该脚本不包含翻译功能。\n用了这个脚本我们就可以把歌词滚动量化到拍子上了（跟我们的音乐一样）【微笑\n以上。\nPS. 动图中的歌曲是这首。\n","wordCount":"34","inLanguage":"cn","datePublished":"2021-09-21T22:25:43+08:00","dateModified":"2021-09-21T22:25:43+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/lrc-maker/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script>
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何在REAPER内制作LRC格式的滚动歌词","name":"如何在REAPER内制作LRC格式的滚动歌词","description":"前几天我终于让某云音乐的个人全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。\n脚本去RCJacH的ReaPack库自取。\n脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。\n如果你没有ReaPack， 也可 …","keywords":["reaper","脚本","歌词","工作流程"],"articleBody":"前几天我终于让某云音乐的个人全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。\n脚本去RCJacH的ReaPack库自取。\n脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。\n如果你没有ReaPack， 也可以直接另保存脚本源文件。\n这个脚本的使用方式如下：\n 创建一个专门写歌词的轨道，轨道名随意。 在每行歌词起始位置创建一个MIDI块儿，并把Take名改成该行歌词。 MIDI块儿长度暂时不影响输出。 如果想添加标签，可以在Take名最前面加一个#。 例#ar: 歌手会变成[ar: 歌手]。 这种标签是给播放器用的，但后来发现某云会自己生成部分标签。 如果你想让两行之间有空隙，请使用一个空名的MIDI块儿。 选择该歌词轨。 运行脚本。  该脚本会把这些歌词合并到一起，并拷贝结果至系统剪切板中，最后给你一个预览用的小弹窗。\n看起来像这样。\n如图中示范， 你通过选择不同轨道来生成不同语言的歌词。\n额，该脚本不包含翻译功能。\n用了这个脚本我们就可以把歌词滚动量化到拍子上了（跟我们的音乐一样）【微笑\n以上。\nPS. 动图中的歌曲是这首。\n","wordCount":"34","inLanguage":"cn","datePublished":"2021-09-21T22:25:43+08:00","dateModified":"2021-09-21T22:25:43+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/lrc-maker/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script>
 <body class="l-viewFrame single" id=top>
 <div class="l-viewGlass background">
 <script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript>
@@ -115,7 +115,7 @@
 </details>
 </aside>
 <div class=l-post_content>
-<p>前几天我终于在<a href="https://music.163.com/#/song?id=1875744708">某云音乐</a>让个人的全部歌曲+1了。
+<p>前几天我终于让<a href="https://music.163.com/#/song?id=1875744708">某云音乐的个人全部歌曲+1了</a>。
 为了<del>摸鱼</del>制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。
 LRC格式说白了就是每行歌词前面多一个时间位置信息。</p>
 <p>脚本去<a href=https://github.com/RCJacH/ReaScripts>RCJacH的ReaPack库</a>自取。</p>
