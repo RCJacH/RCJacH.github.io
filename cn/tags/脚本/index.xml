@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>脚本 on RCJacH</title><link>https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/</link><description>Recent content in 脚本 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2020 16:56:11 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>Cubehelix颜色表算法</title><link>https://RCJacH.github.io/cn/blog/color-cubehelix/</link><pubDate>Mon, 30 Mar 2020 16:56:11 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/color-cubehelix/</guid><description>我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>脚本 on RCJacH</title><link>https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/</link><description>Recent content in 脚本 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 22:25:43 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在REAPER内制作LRC格式的滚动歌词</title><link>https://RCJacH.github.io/cn/blog/lrc-maker/</link><pubDate>Tue, 21 Sep 2021 22:25:43 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/lrc-maker/</guid><description>前几天我终于在某云音乐让个人的全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。
+脚本去RCJacH的ReaPack库自取。
+脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。
+如果你没有ReaPack， 也可以直接另保存脚本源文件。
+这个脚本的使用方式如下：
+创建一个专门写歌词的轨道，轨道名随意。 在每行歌词起始位置创建一个MIDI块儿，并把Take名改成该行歌词。 MIDI块儿长度暂时不影响输出。 如果想添加标签，可以在Take名最前面加一个#。 例#ar: 歌手会变成[ar: 歌手]。 这种标签是给播放器用的，但后来发现某云会自己生成部分标签。 如果你想让两行之间有空隙，请使用一个空名的MIDI块儿。 选择该歌词轨。 运行脚本。 该脚本会把这些歌词合并到一起，并拷贝结果至系统剪切板中，最后给你一个预览用的小弹窗。
+看起来像这样。
+如图中示范， 你通过选择不同轨道来生成不同语言的歌词。
+额，该脚本不包含翻译功能。
+用了这个脚本我们就可以把歌词滚动量化到拍子上了（跟我们的音乐一样）【微笑
+以上。
+PS. 动图中的歌曲是这首。</description></item><item><title>Cubehelix颜色表算法</title><link>https://RCJacH.github.io/cn/blog/color-cubehelix/</link><pubDate>Mon, 30 Mar 2020 16:56:11 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/color-cubehelix/</guid><description>我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。
 在进入主题之前，我们先回顾一下传统的配色表通常是什么样的。
 当你在某些打不开的搜索引擎上搜索色图色表的时候，搜索结果通常是这样的：
 或者像这种多色系的：

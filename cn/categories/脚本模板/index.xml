@@ -1,4 +1,15 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>脚本模板 on RCJacH</title><link>https://RCJacH.github.io/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF/</link><description>Recent content in 脚本模板 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 28 Mar 2018 00:00:00 +0000</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml"/><item><title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/cn/blog/rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rcmship-perfect-pitch/</guid><description>RCMShip Perfect Pitch下载地址
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>脚本模板 on RCJacH</title><link>https://RCJacH.github.io/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF/</link><description>Recent content in 脚本模板 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 22:25:43 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在REAPER内制作LRC格式的滚动歌词</title><link>https://RCJacH.github.io/cn/blog/lrc-maker/</link><pubDate>Tue, 21 Sep 2021 22:25:43 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/lrc-maker/</guid><description>前几天我终于在某云音乐让个人的全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。
+脚本去RCJacH的ReaPack库自取。
+脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。
+如果你没有ReaPack， 也可以直接另保存脚本源文件。
+这个脚本的使用方式如下：
+创建一个专门写歌词的轨道，轨道名随意。 在每行歌词起始位置创建一个MIDI块儿，并把Take名改成该行歌词。 MIDI块儿长度暂时不影响输出。 如果想添加标签，可以在Take名最前面加一个#。 例#ar: 歌手会变成[ar: 歌手]。 这种标签是给播放器用的，但后来发现某云会自己生成部分标签。 如果你想让两行之间有空隙，请使用一个空名的MIDI块儿。 选择该歌词轨。 运行脚本。 该脚本会把这些歌词合并到一起，并拷贝结果至系统剪切板中，最后给你一个预览用的小弹窗。
+看起来像这样。
+如图中示范， 你通过选择不同轨道来生成不同语言的歌词。
+额，该脚本不包含翻译功能。
+用了这个脚本我们就可以把歌词滚动量化到拍子上了（跟我们的音乐一样）【微笑
+以上。
+PS. 动图中的歌曲是这首。</description></item><item><title>REAPER - 原创JSFX小游戏RCMShip Perfect Pitch</title><link>https://RCJacH.github.io/cn/blog/rcmship-perfect-pitch/</link><pubDate>Wed, 28 Mar 2018 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/rcmship-perfect-pitch/</guid><description>RCMShip Perfect Pitch下载地址
 RCJacH的ReaPack Repository包含REAPER Daw使用的Lua和JS脚本与效果器RCJacH ReaPack Repository
 如何使用ReaPack？
 简介 RCMShip （MShip代表musicianship，即音乐修养、视唱练耳）Perfect Pitch是一款包含自适应随机算法的原创JSFX游戏，用来练习绝对音感的能力。

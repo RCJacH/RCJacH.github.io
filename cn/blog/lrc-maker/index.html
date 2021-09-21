@@ -1,0 +1,219 @@
+<!doctype html><html lang=cn dir=auto><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>如何在REAPER内制作LRC格式的滚动歌词 | RCJacH</title>
+<meta name=keywords content="reaper,脚本,歌词,工作流程">
+<meta name=description content="提示：新脚本">
+<meta name=author content>
+<link rel=canonical href=https://RCJacH.github.io/cn/blog/lrc-maker/>
+<link href=https://RCJacH.github.io/assets/css/stylesheet.min.55c1afd2311ae16fc60a3afaccb973812ae64e9e1993e47067d4268690210056.css integrity="sha256-VcGv0jEa4W/GCjr6zLlzgSrmTp4Zk+RwZ9QmhpAhAFY=" rel="preload stylesheet" as=style>
+<link href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css rel=stylesheet>
+<link rel=icon href=https://RCJacH.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://RCJacH.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://RCJacH.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://RCJacH.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://RCJacH.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<link rel=alternate hreflang=en href=https://RCJacH.github.io/blog/lrc-maker/>
+<meta property="og:title" content="如何在REAPER内制作LRC格式的滚动歌词">
+<meta property="og:description" content="提示：新脚本">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://RCJacH.github.io/cn/blog/lrc-maker/">
+<meta property="article:published_time" content="2021-09-21T22:25:43+08:00">
+<meta property="article:modified_time" content="2021-09-21T22:25:43+08:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="如何在REAPER内制作LRC格式的滚动歌词">
+<meta name=twitter:description content="提示：新脚本">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何在REAPER内制作LRC格式的滚动歌词","name":"如何在REAPER内制作LRC格式的滚动歌词","description":"前几天我终于在某云音乐让个人的全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。\n脚本去RCJacH的ReaPack库自取。\n脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。\n如果你没有ReaPack， 也 …","keywords":["reaper","脚本","歌词","工作流程"],"articleBody":"前几天我终于在某云音乐让个人的全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。\n脚本去RCJacH的ReaPack库自取。\n脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。\n如果你没有ReaPack， 也可以直接另保存脚本源文件。\n这个脚本的使用方式如下：\n 创建一个专门写歌词的轨道，轨道名随意。 在每行歌词起始位置创建一个MIDI块儿，并把Take名改成该行歌词。 MIDI块儿长度暂时不影响输出。 如果想添加标签，可以在Take名最前面加一个#。 例#ar: 歌手会变成[ar: 歌手]。 这种标签是给播放器用的，但后来发现某云会自己生成部分标签。 如果你想让两行之间有空隙，请使用一个空名的MIDI块儿。 选择该歌词轨。 运行脚本。  该脚本会把这些歌词合并到一起，并拷贝结果至系统剪切板中，最后给你一个预览用的小弹窗。\n看起来像这样。\n如图中示范， 你通过选择不同轨道来生成不同语言的歌词。\n额，该脚本不包含翻译功能。\n用了这个脚本我们就可以把歌词滚动量化到拍子上了（跟我们的音乐一样）【微笑\n以上。\nPS. 动图中的歌曲是这首。\n","wordCount":"34","inLanguage":"cn","datePublished":"2021-09-21T22:25:43+08:00","dateModified":"2021-09-21T22:25:43+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/lrc-maker/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script>
+<body class="l-viewFrame single" id=top>
+<div class="l-viewGlass background">
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript>
+<style type=text/css>.c-theme_toggle,.top-link{display:none}</style>
+</noscript>
+<header class=l-header>
+<nav class=l-nav>
+<div class=c-logo>
+<a href=https://RCJacH.github.io/cn/ accesskey=h title="RCJacH (Alt + H)"><span class=c-logo__text>RCJacH</span>
+</a>
+<span class=l-theme__switches>
+<span class=c-theme_toggle title="(Alt + T)">
+<a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</a>
+</span>
+<span class=l-lang_switch>
+<span>|</span>
+<ul>
+<li>
+<a href=https://RCJacH.github.io/ title=English aria-label=English>English</a>
+</li>
+</ul>
+</span>
+</span>
+</div>
+<ul class=l-menu id=menu onscroll=menu_on_scroll()>
+<div class=c-menuList>
+<li class=c-menuList__item>
+<a href=https://RCJacH.github.io/cn/post title=博客>
+<span>博客</span>
+</a>
+</li>
+<li class=c-menuList__item>
+<a href=https://RCJacH.github.io/cn/portfolio title=资料>
+<span>资料</span>
+</a>
+</li></div>
+<button type=button class=c-menuButton></button>
+</ul>
+</nav>
+</header>
+<main class=l-main>
+<div class="l-main__column -center -isFluid">
+<div class=l-content><div class=l-content__main>
+<article class=l-post>
+<header class=l-post__header>
+<h1 class=c-post_title>
+如何在REAPER内制作LRC格式的滚动歌词
+</h1>
+<div class=post-description>
+提示：新脚本
+</div>
+<div class=l-postMeta>
+<div class=l-postMeta__box>
+<div class=l-postMeta__element>
+<span class=c-emoji>📆</span><time class="c-postMeta -time" datetime=21000-09-21 title>September 21, 2021</time>
+</div>
+<div class=l-postMeta__element>
+<span class=c-emoji>📄</span><span class="c-postMeta -wordcount">34 words</span>
+</div>
+<div class=l-postMeta__element>
+<ul class=l-taxonomy>
+<li class=c-taxonomy>
+<a href=/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF/ title=脚本模板>
+<span class=c-emoji>📁</span><span class="c-postMeta -categories">脚本模板</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class=l-i18nList>
+<li class=l-18nList__item>
+<a href=https://RCJacH.github.io/blog/lrc-maker/>English: LRC Maker - A Script to Make Lyrics in LRC Format
+</a>
+</li>
+</ul></div>
+</header>
+<aside class=l-toc>
+<details class=c-toc>
+<summary accesskey=c title="(Alt + C)">
+<div class=c-toc__title>目录</div>
+</summary>
+<blockquote class=c-toc__contents></blockquote>
+</details>
+</aside>
+<div class=l-post_content>
+<p>前几天我终于在<a href="https://music.163.com/#/song?id=1875744708">某云音乐</a>让个人的全部歌曲+1了。
+为了<del>摸鱼</del>制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。
+LRC格式说白了就是每行歌词前面多一个时间位置信息。</p>
+<p>脚本去<a href=https://github.com/RCJacH/ReaScripts>RCJacH的ReaPack库</a>自取。</p>
+<p>脚本名叫<code>RCJacH_Generate LRC Lyrics and Export to Clipboard.lua</code>。</p>
+<p>如果你没有ReaPack，
+也可以直接另保存<a href=https://raw.githubusercontent.com/RCJacH/ReaScripts/master/Lua/Various/RCJacH_Generate%20LRC%20Lyrics%20and%20Export%20to%20Clipboard.lua>脚本源文件</a>。</p>
+<p>这个脚本的使用方式如下：</p>
+<ol>
+<li>创建一个专门写歌词的轨道，轨道名随意。</li>
+<li>在每行歌词起始位置创建一个<em>MIDI块儿</em>，并把<em>Take名</em>改成该行歌词。
+MIDI块儿长度暂时不影响输出。</li>
+<li>如果想添加标签，可以在Take名最前面加一个<code>#</code>。
+例<code>#ar: 歌手</code>会变成<code>[ar: 歌手]</code>。
+这种标签是给播放器用的，但后来发现某云会自己生成部分标签。</li>
+<li>如果你想让两行之间有空隙，请使用一个空名的MIDI块儿。</li>
+<li><em>选择该歌词轨</em>。</li>
+<li>运行脚本。</li>
+</ol>
+<p>该脚本会把这些歌词合并到一起，并拷贝结果至系统剪切板中，最后给你一个预览用的小弹窗。</p>
+<p>看起来像这样。</p>
+<p><img src=/img/Content/REAPER/LRC_demonstration.gif alt=选择包含歌词的轨道并运行该脚本来生成LRC歌词></p>
+<p>如图中示范，
+你通过选择不同轨道来生成不同语言的歌词。</p>
+<p>额，该脚本不包含翻译功能。</p>
+<p>用了这个脚本我们就可以把歌词滚动量化到拍子上了（跟我们的音乐一样）【微笑</p>
+<p>以上。</p>
+<p>PS. 动图中的歌曲是<a href="https://music.163.com/#/song?id=409649602">这首</a>。</p>
+</div>
+<footer class=l-post_footer><ul class=l-taxonomy>
+<li class=c-taxonomy>
+<a href=/cn/tags/reaper/ title=REAPER>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">REAPER</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E8%84%9A%E6%9C%AC/ title=脚本>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">脚本</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E6%AD%8C%E8%AF%8D/ title=歌词>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">歌词</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E5%B7%A5%E4%BD%9C%E6%B5%81%E7%A8%8B/ title=工作流程>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">工作流程</span>
+</a>
+</li>
+</ul>
+<div class=share-buttons>
+<a target=_blank rel="noopener noreferrer" aria-label="share 如何在REAPER内制作LRC格式的滚动歌词 on baidu" href="http://tieba.baidu.com/f/commit/share/openShareApi?url=https://RCJacH.github.io/cn/blog/lrc-maker/&title=%e5%a6%82%e4%bd%95%e5%9c%a8REAPER%e5%86%85%e5%88%b6%e4%bd%9cLRC%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%bb%9a%e5%8a%a8%e6%ad%8c%e8%af%8d&desc=%e6%8f%90%e7%a4%ba%ef%bc%9a%e6%96%b0%e8%84%9a%e6%9c%ac&pic=https://RCJacH.github.io/">
+<i class="c-icon -share ri-baidu-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何在REAPER内制作LRC格式的滚动歌词 on douban" href="http://www.douban.com/recommend/?url=https://RCJacH.github.io/cn/blog/lrc-maker/&image=https://RCJacH.github.io/&title=%e5%a6%82%e4%bd%95%e5%9c%a8REAPER%e5%86%85%e5%88%b6%e4%bd%9cLRC%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%bb%9a%e5%8a%a8%e6%ad%8c%e8%af%8d">
+<i class="c-icon -share ri-douban-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何在REAPER内制作LRC格式的滚动歌词 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://RCJacH.github.io/cn/blog/lrc-maker/&title=%e5%a6%82%e4%bd%95%e5%9c%a8REAPER%e5%86%85%e5%88%b6%e4%bd%9cLRC%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%bb%9a%e5%8a%a8%e6%ad%8c%e8%af%8d&summary=%e6%8f%90%e7%a4%ba%ef%bc%9a%e6%96%b0%e8%84%9a%e6%9c%ac&source=https://RCJacH.github.io/">
+<i class="c-icon -share ri-linkedin-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何在REAPER内制作LRC格式的滚动歌词 on qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey??url=https://RCJacH.github.io/cn/blog/lrc-maker/&title=%e5%a6%82%e4%bd%95%e5%9c%a8REAPER%e5%86%85%e5%88%b6%e4%bd%9cLRC%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%bb%9a%e5%8a%a8%e6%ad%8c%e8%af%8d&pics=https://RCJacH.github.io/">
+<i class="c-icon -share ri-qq-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何在REAPER内制作LRC格式的滚动歌词 on weibo" href="http://service.weibo.com/share/share.php?url=https://RCJacH.github.io/cn/blog/lrc-maker/&pic=https://RCJacH.github.io/&title=%e5%a6%82%e4%bd%95%e5%9c%a8REAPER%e5%86%85%e5%88%b6%e4%bd%9cLRC%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%bb%9a%e5%8a%a8%e6%ad%8c%e8%af%8d&ralateUid=%7b%7b%20.user%20%7d%7d">
+<i class="c-icon -share ri-weibo-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何在REAPER内制作LRC格式的滚动歌词 on mail" href="mailto:?subject=%e5%a6%82%e4%bd%95%e5%9c%a8REAPER%e5%86%85%e5%88%b6%e4%bd%9cLRC%e6%a0%bc%e5%bc%8f%e7%9a%84%e6%bb%9a%e5%8a%a8%e6%ad%8c%e8%af%8d&body=https://RCJacH.github.io/cn/blog/lrc-maker/">
+<i class="c-icon -share ri-mail-fill ri-lg"></i>
+</a>
+</div>
+</footer>
+</article></div></div>
+</div>
+</main><footer class=footer><div class=l-socialMedia>
+<div class=l-socialMedia__filler></div>
+<div class=l-socialMedia__sticky>
+<a href=//space.bilibili.com/259824695 target=_blank rel="noopener noreferrer me" title=bilibili>
+<i class="c-icon ri-bilibili-fill ri-3x"></i>
+</a>
+<a href=//github.com/rcjach target=_blank rel="noopener noreferrer me" title=github>
+<i class="c-icon ri-github-fill ri-3x"></i>
+</a>
+<a href=//linkedin.com/in/ruochen-han-a00956107 target=_blank rel="noopener noreferrer me" title=linkedin>
+<i class="c-icon ri-linkedin-fill ri-3x"></i>
+</a>
+<a href=//weibo.com/rcjach target=_blank rel="noopener noreferrer me" title=weibo>
+<i class="c-icon ri-weibo-fill ri-3x"></i>
+</a>
+<a href=//zhihu.com/people/rcjach target=_blank rel="noopener noreferrer me" title=zhihu>
+<i class="c-icon ri-zhihu-fill ri-3x"></i>
+</a>
+</div>
+</div>
+<span>&copy; 2021 <a href=https://RCJacH.github.io/cn/>RCJacH</a></span>
+<span>&#183;</span>
+<span>Powered by <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
+<span>&#183;</span>
+<span>Theme <a href=https://github.com/RCJacH/RCPaperMod rel=noopener target=_blank>RCPaperMod</a></span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+</button>
+</a>
+<script defer src=https://RCJacH.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</div>
+</body>
+</html>
