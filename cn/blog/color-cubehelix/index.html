@@ -1,19 +1,241 @@
-<!doctype html><html lang=cn dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>Cubehelix颜色表算法 | RCJacH</title><meta name=keywords content="设计,颜色,脚本"><meta name=description content="一个生成持续变色调变色度的算法。"><meta name=author content><link rel=canonical href=https://RCJacH.github.io/cn/blog/color-cubehelix/><link href=https://RCJacH.github.io/assets/css/stylesheet.min.55c1afd2311ae16fc60a3afaccb973812ae64e9e1993e47067d4268690210056.css integrity="sha256-VcGv0jEa4W/GCjr6zLlzgSrmTp4Zk+RwZ9QmhpAhAFY=" rel="preload stylesheet" as=style><link href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css rel=stylesheet><link rel=icon href=https://RCJacH.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://RCJacH.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://RCJacH.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://RCJacH.github.io/apple-touch-icon.png><link rel=mask-icon href=https://RCJacH.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.85.0"><link rel=alternate hreflang=en href=https://RCJacH.github.io/blog/color-cubehelix/><meta property="og:title" content="Cubehelix颜色表算法"><meta property="og:description" content="一个生成持续变色调变色度的算法。"><meta property="og:type" content="article"><meta property="og:url" content="https://RCJacH.github.io/cn/blog/color-cubehelix/"><meta property="article:published_time" content="2020-03-30T16:56:11+08:00"><meta property="article:modified_time" content="2020-03-30T16:56:11+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="Cubehelix颜色表算法"><meta name=twitter:description content="一个生成持续变色调变色度的算法。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cubehelix颜色表算法","name":"Cubehelix颜色表算法","description":"我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。\n在进入主题之前，我们先回顾一 …","keywords":["设计","颜色","脚本"],"articleBody":"我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。\n在进入主题之前，我们先回顾一下传统的配色表通常是什么样的。\n当你在某些打不开的搜索引擎上搜索色图色表的时候，搜索结果通常是这样的：\n\n或者像这种多色系的：\n\n\n渐变：\n\n\n甚至整个配色表：\n\n\n小贴士: 文字可点击\n这类工具在平面设计或者UI设计阶段的确能够激发灵感，但人嘛，一年总有那么十几个月想用一键生成的工具。【严肃脸】主要是因为它们可以抑制我们人类在选择单个元素时犹豫不决，反复推敲的冲动，有效的降低了拖延病的发作机率。【伪\n不过话说回来，有时自动生成的算法的确更有利一点，尤其是在构造可视化数据的时候，例如音频频谱图。\n别说，我之前就在开发一个配器相关的音乐数据库（目前仍然 WIP）。由于是五线谱，纯黑白的极简主义有点太单调了，毕竟漫画还有彩图封面呢不是么。所以当时想要加点更生动的视觉反馈 - 把每个音符依据他们在和弦中的功能进行染色。我尝试了十几种颜色表，很遗憾，都很丑。倒不是色表的问题，主要是因为由于出现的音符较多，关系比较复杂，所以为了表明音符之间的关联，需要很多不同的颜色，不同的色调。而由于这个数据库又无法提前知道哪个颜色最终会挨着哪个颜色… 所以渲染后经常会出现一些挑战审美极限的结果。不美。\n直到它出现了。\n什么是 CUBEHELIX 由于作者很慷慨地为CUBEHELIX 算法专门建立了一个网页，解释了其创作思路并给出论文地址，我在此就跳过长篇大论，简单地介绍一下好了。\nCubehelix “立方螺旋” 算法会生成给定数量的颜色列表。此颜色表拥有线性增加的强度曲线，同时也会在色轮周围旋转产生各种颜色的渐变。\n英文有句话说一张图顶千字稿费，我们还是上图吧。立方螺旋颜色表长这个样子：\n这个算法还有另一个优点。生成的色表在转换为灰度或替换色调后，其强度的变化不会有影响。这点挺重要的，因为红绿蓝三色本身的感知亮度是不一样的，所以如果更改了基础色，还需要再修一遍整体平衡。这个算法能够在不破坏亮度平衡的情况下替换起始颜色在应用上还是非常省心的。\n伸手党通道 您可以通过以下渠道购买 咳咳 免费获取 cubehelix 色表。如果只需要生成结果，而不需要引用算法的话，以下几个在线的生成器就足够了。\n原官方在线效果预览。这里有五个参数，点击页面中间的 refresh plots 按钮在右侧预览颜色，通过下方四个按钮能在新页面中获取浮点、8位定点、或16进制字符串格式的颜色列表。\n另一个有七个参数的在线预览。这款还能显示更顺滑的渐变以及亮度渐变。另一个亮点是结果色表所有的颜色在十六进制编号旁边还会有个颜色预览，便于挑选。\n如果你想要脚本版，我之前贴的官贴里面最下方有个列表。\n以下几款是我觉得值得点名的，因为这些库还挺常见的。\nCubehelix in Chroma.js\nCubehelix in MATLAB\nCubehelix in Matplotlib，在页面最底左右\nGithub上有很多python脚本也加了\"立方螺旋\"算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个能生成颜色列表的cubehelix算法模块. 并多加了一点可自定义的参数。\n敝人的脚本 作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用Python来写各种日常自动化的脚本，例如：\nimport numpy as np print(\"Hello World!\") # 不会了 我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.5, 0.5, 0.5)、8位定点(128, 128, 128)、或16进制字符串#808080表示。\n我已争取在不改变原算法的基础上尽可能地添加更多的自定义空间。当前可用的输入参数包含：\nShape: 指生成颜色的数量。\nHue: 选择一个色调作为参考点。0为红色；1为绿色；2为蓝色；3则再次回到红色。此参数接收任何实数。\nRotations: 螺旋循环的次数。例，1则代表列表从起始颜色，例如红色，过渡到绿色、蓝色后再次以红色结束。0则列表为单色系。负数则反转螺旋旋转的方向。红绿蓝变成红蓝绿。此参数还可以接受列表输入，让Hue参数不作为起始色，而作为列表中间的某个颜色。例如Hue为1，Rotations为(-0.5, 0.7)则代表实际起始颜色为0.5 (1 - 0.5) 实际rotation为1.2 (0.5 + 0.7)。\nSaturation: 颜色的饱和度，鲜艳度。0为灰色，1为纯色。此参数也可接收两个数的元组，来定义列表的起始饱和度与结尾饱和度产生渐变。\nLightness: 颜色的亮度。0为黑色，1为白色。这个参数也可以接收两个数的元组，来达到原算法本意的亮度渐变。\nGamma: 强调较低强度或较高强度。就是个调整亮度的指数曲线。\n代码在我的GitHub上@ RCJACH - Color Systems。目前只有这个算法，之后会不定期更新。等有了更详细的文档后，我再更新这篇文章。\n以上总结了我对cubehelix算法的介绍，明年见。咕\n","wordCount":"95","inLanguage":"cn","datePublished":"2020-03-30T16:56:11+08:00","dateModified":"2020-03-30T16:56:11+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/color-cubehelix/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script><body class="l-viewFrame single" id=top><div class="l-viewGlass background"><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript><style type=text/css>.c-theme_toggle,.top-link{display:none}</style></noscript><header class=l-header><nav class=l-nav><div class=c-logo><a href=https://RCJacH.github.io/cn/ accesskey=h title="RCJacH (Alt + H)"><span class=c-logo__text>RCJacH</span></a>
-<span class=l-theme__switches><span class=c-theme_toggle title="(Alt + T)"><a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></a></span><span class=l-lang_switch><span>|</span><ul><li><a href=https://RCJacH.github.io/ title=English aria-label=English>English</a></li></ul></span></span></div><ul class=l-menu id=menu onscroll=menu_on_scroll()><div class=c-menuList><li class=c-menuList__item><a href=https://RCJacH.github.io/cn/post title=博客><span>博客</span></a></li><li class=c-menuList__item><a href=https://RCJacH.github.io/cn/portfolio title=资料><span>资料</span></a></li></div><button type=button class=c-menuButton></button></ul></nav></header><main class=l-main><div class="l-main__column -center -isFluid"><div class=l-content><div class=l-content__main><article class=l-post><header class=l-post__header><h1 class=c-post_title>Cubehelix颜色表算法</h1><div class=post-description>一个生成持续变色调变色度的算法。</div><div class=l-postMeta><div class=l-postMeta__box><div class=l-postMeta__element><span class=c-emoji>📆</span><time class="c-postMeta -time" datetime=30000-03-30 title>March 30, 2020</time></div><div class=l-postMeta__element><span class=c-emoji>📄</span><span class="c-postMeta -wordcount">95 words</span></div><div class=l-postMeta__element><ul class=l-taxonomy><li class=c-taxonomy><a href=/cn/categories/%E8%AE%BE%E8%AE%A1/ title=设计><span class=c-emoji>📁</span><span class="c-postMeta -categories">设计</span></a></li></ul></div></div><ul class=l-i18nList><li class=l-18nList__item><a href=https://RCJacH.github.io/blog/color-cubehelix/>English: Cubehelix Color Palette Algorithm</a></li></ul></div></header><aside class=l-toc><details class=c-toc><summary accesskey=c title="(Alt + C)"><div class=c-toc__title>目录</div></summary><blockquote class=c-toc__contents><ul><li><a href=#%e4%bb%80%e4%b9%88%e6%98%af-cubehelix aria-label="什么是 CUBEHELIX">什么是 CUBEHELIX</a></li><li><a href=#%e4%bc%b8%e6%89%8b%e5%85%9a%e9%80%9a%e9%81%93 aria-label=伸手党通道>伸手党通道</a></li><li><a href=#%e6%95%9d%e4%ba%ba%e7%9a%84%e8%84%9a%e6%9c%ac aria-label=敝人的脚本>敝人的脚本</a></li></ul></blockquote></details></aside><div class=l-post_content><p>我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 <strong>CUBEHELIX</strong> 直译为<strong>立方螺旋</strong>的色盘生成算法。</p><p>在进入主题之前，我们先回顾一下传统的配色表通常是什么样的。</p><p>当你在某些打不开的搜索引擎上搜索<del>色图</del>色表的时候，搜索结果通常是这样的：</p><p><a href=https://paletton.com><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/monochromatic-color-palette.jpg alt="Monochromatic Color Scheme"></a></p><p><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/colorschemer-studio.jpg alt="ColorSchemer Studio"></p><p>或者像这种多色系的：</p><p><a href=https://coolors.co><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/coolors-co.jpg alt=Coolors.co></a></p><p><a href=https://klart.io/colors><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/klart-io.jpg alt=klart.io></a></p><p>渐变：</p><p><a href=https://webkul.github.io/coolhue/><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/coolhue.jpg alt=CoolHue></a></p><p><a href=https://uigradients.com/><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/uigradients.jpg alt=uiGradients></a></p><p>甚至整个配色表：</p><p><a href=https://design.lyft.com/re-approaching-color-9e604ba22c88><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/lyft-color-map.jpg alt="Lyft color scheme"></a></p><p><a href=https://hypejunction.github.io/color-wizard/><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/color-wizard.jpg alt="Color Wizard"></a></p><p><em>小贴士: 文字可点击</em></p><p>这类工具在平面设计或者UI设计阶段的确能够激发灵感，但人嘛，一年总有那么十几个月想用一键生成的工具。【严肃脸】主要是因为它们可以抑制我们人类在选择单个元素时犹豫不决，反复推敲的冲动，有效的降低了拖延病的发作机率。【伪</p><p>不过话说回来，有时自动生成的算法的确更有利一点，尤其是在构造可视化数据的时候，例如音频频谱图。</p><p>别说，我之前就在开发一个配器相关的音乐数据库（目前仍然 WIP）。由于是五线谱，纯黑白的极简主义有点太单调了，毕竟漫画还有彩图封面呢不是么。所以当时想要加点更生动的视觉反馈 - 把每个音符依据他们在和弦中的功能进行染色。我尝试了十几种颜色表，很遗憾，都很丑。倒不是色表的问题，主要是因为由于出现的音符较多，关系比较复杂，所以为了表明音符之间的关联，需要很多不同的颜色，不同的色调。而由于这个数据库又无法提前知道哪个颜色最终会挨着哪个颜色&mldr; 所以渲染后经常会出现一些挑战审美极限的结果。不美。</p><p>直到它出现了。</p><h2 id=什么是-cubehelix>什么是 CUBEHELIX<a hidden class=anchor aria-hidden=true href=#什么是-cubehelix>#</a></h2><p>由于作者很慷慨地为<a href=www.mrao.cam.ac.uk/~dag/CUBEHELIX/>CUBEHELIX 算法专门建立了一个网页</a>，解释了其创作思路并给出论文地址，我在此就跳过长篇大论，简单地介绍一下好了。</p><p>Cubehelix &ldquo;立方螺旋&rdquo; 算法会<strong>生成给定数量的颜色列表。此颜色表拥有线性增加的强度曲线，同时也会在色轮周围旋转产生各种颜色的渐变</strong>。</p><p>英文有句话说一张图顶千字稿费，我们还是上图吧。立方螺旋颜色表长这个样子：</p><p><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/cubehelix.jpg alt="Cubehelix 渐变"></p><p>这个算法还有另一个优点。生成的色表在转换为灰度或替换色调后，其强度的变化不会有影响。这点挺重要的，因为红绿蓝三色本身的感知亮度是不一样的，所以如果更改了基础色，还需要再修一遍整体平衡。这个算法能够在不破坏亮度平衡的情况下替换起始颜色在应用上还是非常省心的。</p><p><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/cubehelix-luminance.jpg alt="Cubehelix 渐变加亮度渐变"></p><h2 id=伸手党通道>伸手党通道<a hidden class=anchor aria-hidden=true href=#伸手党通道>#</a></h2><p>您可以通过以下渠道<del>购买</del> 咳咳 <em>免费获取</em> cubehelix 色表。如果只需要生成结果，而不需要引用算法的话，以下几个在线的生成器就足够了。</p><p><a href=http://www.mrao.cam.ac.uk/~dag/CUBEHELIX/cubetry.html>原官方在线效果预览</a>。这里有五个参数，点击页面中间的 refresh plots 按钮在右侧预览颜色，通过下方四个按钮能在新页面中获取浮点、8位定点、或16进制字符串格式的颜色列表。</p><p><a href=http://davidjohnstone.net/pages/cubehelix-gradient-picker>另一个有七个参数的在线预览</a>。这款还能显示更顺滑的渐变以及亮度渐变。另一个亮点是结果色表所有的颜色在十六进制编号旁边还会有个颜色预览，便于挑选。</p><p>如果你想要脚本版，我之前贴的官贴里面最下方有个列表。</p><p>以下几款是我觉得值得点名的，因为这些库还挺常见的。</p><p><a href=https://gka.github.io/chroma.js/#cubehelix>Cubehelix in Chroma.js</a></p><p><a href=https://www.mathworks.com/matlabcentral/fileexchange/43700-cubehelix-colormap-generator-beautiful-and-versatile>Cubehelix in MATLAB</a></p><p><a href="https://matplotlib.org/gallery/color/colormap_reference.html?highlight=cubehelix">Cubehelix in Matplotlib，在页面最底左右</a></p><p>Github上有很多python脚本也加了"立方螺旋"算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个<a href=https://github.com/RCJacH/color_systems.git>能生成颜色列表的cubehelix算法模块</a>. 并多加了一点可自定义的参数。</p><h2 id=敝人的脚本>敝人的脚本<a hidden class=anchor aria-hidden=true href=#敝人的脚本>#</a></h2><p>作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用<a href=https://www.python.org/>Python</a>来写各种日常自动化的脚本，例如：</p><div class=highlight><pre style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
+<!doctype html><html lang=cn dir=auto><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>Cubehelix颜色表算法 | RCJacH</title>
+<meta name=keywords content="设计,颜色,脚本">
+<meta name=description content="一个生成持续变色调变色度的算法。">
+<meta name=author content>
+<link rel=canonical href=https://RCJacH.github.io/cn/blog/color-cubehelix/>
+<link href=https://RCJacH.github.io/assets/css/stylesheet.min.55c1afd2311ae16fc60a3afaccb973812ae64e9e1993e47067d4268690210056.css integrity="sha256-VcGv0jEa4W/GCjr6zLlzgSrmTp4Zk+RwZ9QmhpAhAFY=" rel="preload stylesheet" as=style>
+<link href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css rel=stylesheet>
+<link rel=icon href=https://RCJacH.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://RCJacH.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://RCJacH.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://RCJacH.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://RCJacH.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<link rel=alternate hreflang=en href=https://RCJacH.github.io/blog/color-cubehelix/>
+<meta property="og:title" content="Cubehelix颜色表算法">
+<meta property="og:description" content="一个生成持续变色调变色度的算法。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://RCJacH.github.io/cn/blog/color-cubehelix/">
+<meta property="article:published_time" content="2020-03-30T16:56:11+08:00">
+<meta property="article:modified_time" content="2020-03-30T16:56:11+08:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="Cubehelix颜色表算法">
+<meta name=twitter:description content="一个生成持续变色调变色度的算法。">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"Cubehelix颜色表算法","name":"Cubehelix颜色表算法","description":"我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。\n在进入主题之前，我们先回顾一 …","keywords":["设计","颜色","脚本"],"articleBody":"我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 CUBEHELIX 直译为立方螺旋的色盘生成算法。\n在进入主题之前，我们先回顾一下传统的配色表通常是什么样的。\n当你在某些打不开的搜索引擎上搜索色图色表的时候，搜索结果通常是这样的：\n\n或者像这种多色系的：\n\n\n渐变：\n\n\n甚至整个配色表：\n\n\n小贴士: 文字可点击\n这类工具在平面设计或者UI设计阶段的确能够激发灵感，但人嘛，一年总有那么十几个月想用一键生成的工具。【严肃脸】主要是因为它们可以抑制我们人类在选择单个元素时犹豫不决，反复推敲的冲动，有效的降低了拖延病的发作机率。【伪\n不过话说回来，有时自动生成的算法的确更有利一点，尤其是在构造可视化数据的时候，例如音频频谱图。\n别说，我之前就在开发一个配器相关的音乐数据库（目前仍然 WIP）。由于是五线谱，纯黑白的极简主义有点太单调了，毕竟漫画还有彩图封面呢不是么。所以当时想要加点更生动的视觉反馈 - 把每个音符依据他们在和弦中的功能进行染色。我尝试了十几种颜色表，很遗憾，都很丑。倒不是色表的问题，主要是因为由于出现的音符较多，关系比较复杂，所以为了表明音符之间的关联，需要很多不同的颜色，不同的色调。而由于这个数据库又无法提前知道哪个颜色最终会挨着哪个颜色… 所以渲染后经常会出现一些挑战审美极限的结果。不美。\n直到它出现了。\n什么是 CUBEHELIX 由于作者很慷慨地为CUBEHELIX 算法专门建立了一个网页，解释了其创作思路并给出论文地址，我在此就跳过长篇大论，简单地介绍一下好了。\nCubehelix “立方螺旋” 算法会生成给定数量的颜色列表。此颜色表拥有线性增加的强度曲线，同时也会在色轮周围旋转产生各种颜色的渐变。\n英文有句话说一张图顶千字稿费，我们还是上图吧。立方螺旋颜色表长这个样子：\n这个算法还有另一个优点。生成的色表在转换为灰度或替换色调后，其强度的变化不会有影响。这点挺重要的，因为红绿蓝三色本身的感知亮度是不一样的，所以如果更改了基础色，还需要再修一遍整体平衡。这个算法能够在不破坏亮度平衡的情况下替换起始颜色在应用上还是非常省心的。\n伸手党通道 您可以通过以下渠道购买 咳咳 免费获取 cubehelix 色表。如果只需要生成结果，而不需要引用算法的话，以下几个在线的生成器就足够了。\n原官方在线效果预览。这里有五个参数，点击页面中间的 refresh plots 按钮在右侧预览颜色，通过下方四个按钮能在新页面中获取浮点、8位定点、或16进制字符串格式的颜色列表。\n另一个有七个参数的在线预览。这款还能显示更顺滑的渐变以及亮度渐变。另一个亮点是结果色表所有的颜色在十六进制编号旁边还会有个颜色预览，便于挑选。\n如果你想要脚本版，我之前贴的官贴里面最下方有个列表。\n以下几款是我觉得值得点名的，因为这些库还挺常见的。\nCubehelix in Chroma.js\nCubehelix in MATLAB\nCubehelix in Matplotlib，在页面最底左右\nGithub上有很多python脚本也加了\"立方螺旋\"算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个能生成颜色列表的cubehelix算法模块. 并多加了一点可自定义的参数。\n敝人的脚本 作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用Python来写各种日常自动化的脚本，例如：\nimport numpy as np print(\"Hello World!\") # 不会了 我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.5, 0.5, 0.5)、8位定点(128, 128, 128)、或16进制字符串#808080表示。\n我已争取在不改变原算法的基础上尽可能地添加更多的自定义空间。当前可用的输入参数包含：\nShape: 指生成颜色的数量。\nHue: 选择一个色调作为参考点。0为红色；1为绿色；2为蓝色；3则再次回到红色。此参数接收任何实数。\nRotations: 螺旋循环的次数。例，1则代表列表从起始颜色，例如红色，过渡到绿色、蓝色后再次以红色结束。0则列表为单色系。负数则反转螺旋旋转的方向。红绿蓝变成红蓝绿。此参数还可以接受列表输入，让Hue参数不作为起始色，而作为列表中间的某个颜色。例如Hue为1，Rotations为(-0.5, 0.7)则代表实际起始颜色为0.5 (1 - 0.5) 实际rotation为1.2 (0.5 + 0.7)。\nSaturation: 颜色的饱和度，鲜艳度。0为灰色，1为纯色。此参数也可接收两个数的元组，来定义列表的起始饱和度与结尾饱和度产生渐变。\nLightness: 颜色的亮度。0为黑色，1为白色。这个参数也可以接收两个数的元组，来达到原算法本意的亮度渐变。\nGamma: 强调较低强度或较高强度。就是个调整亮度的指数曲线。\n代码在我的GitHub上@ RCJACH - Color Systems。目前只有这个算法，之后会不定期更新。等有了更详细的文档后，我再更新这篇文章。\n以上总结了我对cubehelix算法的介绍，明年见。咕\n","wordCount":"95","inLanguage":"cn","datePublished":"2020-03-30T16:56:11+08:00","dateModified":"2020-03-30T16:56:11+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/color-cubehelix/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script>
+<body class="l-viewFrame single" id=top>
+<div class="l-viewGlass background">
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript>
+<style type=text/css>.c-theme_toggle,.top-link{display:none}</style>
+</noscript>
+<header class=l-header>
+<nav class=l-nav>
+<div class=c-logo>
+<a href=https://RCJacH.github.io/cn/ accesskey=h title="RCJacH (Alt + H)"><span class=c-logo__text>RCJacH</span>
+</a>
+<span class=l-theme__switches>
+<span class=c-theme_toggle title="(Alt + T)">
+<a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</a>
+</span>
+<span class=l-lang_switch>
+<span>|</span>
+<ul>
+<li>
+<a href=https://RCJacH.github.io/ title=English aria-label=English>English</a>
+</li>
+</ul>
+</span>
+</span>
+</div>
+<ul class=l-menu id=menu onscroll=menu_on_scroll()>
+<div class=c-menuList>
+<li class=c-menuList__item>
+<a href=https://RCJacH.github.io/cn/post title=博客>
+<span>博客</span>
+</a>
+</li>
+<li class=c-menuList__item>
+<a href=https://RCJacH.github.io/cn/portfolio title=资料>
+<span>资料</span>
+</a>
+</li></div>
+<button type=button class=c-menuButton></button>
+</ul>
+</nav>
+</header>
+<main class=l-main>
+<div class="l-main__column -center -isFluid">
+<div class=l-content><div class=l-content__main>
+<article class=l-post>
+<header class=l-post__header>
+<h1 class=c-post_title>
+Cubehelix颜色表算法
+</h1>
+<div class=post-description>
+一个生成持续变色调变色度的算法。
+</div>
+<div class=l-postMeta>
+<div class=l-postMeta__box>
+<div class=l-postMeta__element>
+<span class=c-emoji>📆</span><time class="c-postMeta -time" datetime=30000-03-30 title>March 30, 2020</time>
+</div>
+<div class=l-postMeta__element>
+<span class=c-emoji>📄</span><span class="c-postMeta -wordcount">95 words</span>
+</div>
+<div class=l-postMeta__element>
+<ul class=l-taxonomy>
+<li class=c-taxonomy>
+<a href=/cn/categories/%E8%AE%BE%E8%AE%A1/ title=设计>
+<span class=c-emoji>📁</span><span class="c-postMeta -categories">设计</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class=l-i18nList>
+<li class=l-18nList__item>
+<a href=https://RCJacH.github.io/blog/color-cubehelix/>English: Cubehelix Color Palette Algorithm
+</a>
+</li>
+</ul></div>
+</header>
+<aside class=l-toc>
+<details class=c-toc>
+<summary accesskey=c title="(Alt + C)">
+<div class=c-toc__title>目录</div>
+</summary>
+<blockquote class=c-toc__contents><ul><li>
+<a href=#%e4%bb%80%e4%b9%88%e6%98%af-cubehelix aria-label="什么是 CUBEHELIX">什么是 CUBEHELIX</a></li><li>
+<a href=#%e4%bc%b8%e6%89%8b%e5%85%9a%e9%80%9a%e9%81%93 aria-label=伸手党通道>伸手党通道</a></li><li>
+<a href=#%e6%95%9d%e4%ba%ba%e7%9a%84%e8%84%9a%e6%9c%ac aria-label=敝人的脚本>敝人的脚本</a></li></ul></blockquote>
+</details>
+</aside>
+<div class=l-post_content>
+<p>我一直对自动生成颜色表的算法情有独钟。通过规则和公式来生成一系列适合搭配的颜色能让我很有满足感。而仅靠个人喜好在一千六百七十七万七千两百一十六个不同的 RGB 颜色中挑出最适合当前工程的那么几个出来总是能很有效的带来海底捞针样的疲惫感。不过这不是今天的话题。今天我是来介绍一个叫 <strong>CUBEHELIX</strong> 直译为<strong>立方螺旋</strong>的色盘生成算法。</p>
+<p>在进入主题之前，我们先回顾一下传统的配色表通常是什么样的。</p>
+<p>当你在某些打不开的搜索引擎上搜索<del>色图</del>色表的时候，搜索结果通常是这样的：</p>
+<p><a href=https://paletton.com><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/monochromatic-color-palette.jpg alt="Monochromatic Color Scheme"></a></p>
+<p><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/colorschemer-studio.jpg alt="ColorSchemer Studio"></p>
+<p>或者像这种多色系的：</p>
+<p><a href=https://coolors.co><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/coolors-co.jpg alt=Coolors.co></a></p>
+<p><a href=https://klart.io/colors><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/klart-io.jpg alt=klart.io></a></p>
+<p>渐变：</p>
+<p><a href=https://webkul.github.io/coolhue/><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/coolhue.jpg alt=CoolHue></a></p>
+<p><a href=https://uigradients.com/><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/uigradients.jpg alt=uiGradients></a></p>
+<p>甚至整个配色表：</p>
+<p><a href=https://design.lyft.com/re-approaching-color-9e604ba22c88><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/lyft-color-map.jpg alt="Lyft color scheme"></a></p>
+<p><a href=https://hypejunction.github.io/color-wizard/><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/color-wizard.jpg alt="Color Wizard"></a></p>
+<p><em>小贴士: 文字可点击</em></p>
+<p>这类工具在平面设计或者UI设计阶段的确能够激发灵感，但人嘛，一年总有那么十几个月想用一键生成的工具。【严肃脸】主要是因为它们可以抑制我们人类在选择单个元素时犹豫不决，反复推敲的冲动，有效的降低了拖延病的发作机率。【伪</p>
+<p>不过话说回来，有时自动生成的算法的确更有利一点，尤其是在构造可视化数据的时候，例如音频频谱图。</p>
+<p>别说，我之前就在开发一个配器相关的音乐数据库（目前仍然 WIP）。由于是五线谱，纯黑白的极简主义有点太单调了，毕竟漫画还有彩图封面呢不是么。所以当时想要加点更生动的视觉反馈 - 把每个音符依据他们在和弦中的功能进行染色。我尝试了十几种颜色表，很遗憾，都很丑。倒不是色表的问题，主要是因为由于出现的音符较多，关系比较复杂，所以为了表明音符之间的关联，需要很多不同的颜色，不同的色调。而由于这个数据库又无法提前知道哪个颜色最终会挨着哪个颜色&mldr; 所以渲染后经常会出现一些挑战审美极限的结果。不美。</p>
+<p>直到它出现了。</p>
+<h2 id=什么是-cubehelix>什么是 CUBEHELIX<a hidden class=anchor aria-hidden=true href=#什么是-cubehelix>#</a></h2>
+<p>由于作者很慷慨地为<a href=www.mrao.cam.ac.uk/~dag/CUBEHELIX/>CUBEHELIX 算法专门建立了一个网页</a>，解释了其创作思路并给出论文地址，我在此就跳过长篇大论，简单地介绍一下好了。</p>
+<p>Cubehelix &ldquo;立方螺旋&rdquo; 算法会<strong>生成给定数量的颜色列表。此颜色表拥有线性增加的强度曲线，同时也会在色轮周围旋转产生各种颜色的渐变</strong>。</p>
+<p>英文有句话说一张图顶千字稿费，我们还是上图吧。立方螺旋颜色表长这个样子：</p>
+<p><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/cubehelix.jpg alt="Cubehelix 渐变"></p>
+<p>这个算法还有另一个优点。生成的色表在转换为灰度或替换色调后，其强度的变化不会有影响。这点挺重要的，因为红绿蓝三色本身的感知亮度是不一样的，所以如果更改了基础色，还需要再修一遍整体平衡。这个算法能够在不破坏亮度平衡的情况下替换起始颜色在应用上还是非常省心的。</p>
+<p><img src=https://github.com/RCJacH/BlogImages/raw/master/design/color/cubehelix/cubehelix-luminance.jpg alt="Cubehelix 渐变加亮度渐变"></p>
+<h2 id=伸手党通道>伸手党通道<a hidden class=anchor aria-hidden=true href=#伸手党通道>#</a></h2>
+<p>您可以通过以下渠道<del>购买</del> 咳咳 <em>免费获取</em> cubehelix 色表。如果只需要生成结果，而不需要引用算法的话，以下几个在线的生成器就足够了。</p>
+<p><a href=http://www.mrao.cam.ac.uk/~dag/CUBEHELIX/cubetry.html>原官方在线效果预览</a>。这里有五个参数，点击页面中间的 refresh plots 按钮在右侧预览颜色，通过下方四个按钮能在新页面中获取浮点、8位定点、或16进制字符串格式的颜色列表。</p>
+<p><a href=http://davidjohnstone.net/pages/cubehelix-gradient-picker>另一个有七个参数的在线预览</a>。这款还能显示更顺滑的渐变以及亮度渐变。另一个亮点是结果色表所有的颜色在十六进制编号旁边还会有个颜色预览，便于挑选。</p>
+<p>如果你想要脚本版，我之前贴的官贴里面最下方有个列表。</p>
+<p>以下几款是我觉得值得点名的，因为这些库还挺常见的。</p>
+<p><a href=https://gka.github.io/chroma.js/#cubehelix>Cubehelix in Chroma.js</a></p>
+<p><a href=https://www.mathworks.com/matlabcentral/fileexchange/43700-cubehelix-colormap-generator-beautiful-and-versatile>Cubehelix in MATLAB</a></p>
+<p><a href="https://matplotlib.org/gallery/color/colormap_reference.html?highlight=cubehelix">Cubehelix in Matplotlib，在页面最底左右</a></p>
+<p>Github上有很多python脚本也加了"立方螺旋"算法。我尝试过一些，但由于三个原因被劝退：1，他们主要是用于做数据图的，所以相关函数返回的东西都不是马上能当成颜色列表用的；2，为了一个简单的颜色生成器安装整个巨大的库，例如matplotlib，有点不值；3，部分库没有优化性能（用numpy之类的），很多都是直接通过循环计算的。所以我花了点时间写了个<a href=https://github.com/RCJacH/color_systems.git>能生成颜色列表的cubehelix算法模块</a>. 并多加了一点可自定义的参数。</p>
+<h2 id=敝人的脚本>敝人的脚本<a hidden class=anchor aria-hidden=true href=#敝人的脚本>#</a></h2>
+<p>作为一个音乐制作人（希望我现在还算一个音乐制作人），我一直在用<a href=https://www.python.org/>Python</a>来写各种日常自动化的脚本，例如：</p>
+<div class=highlight><pre tabindex=0 style=color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4><code class=language-python data-lang=python><span style=color:#f92672>import</span> numpy <span style=color:#66d9ef>as</span> np
 print(<span style=color:#e6db74>&#34;Hello World!&#34;</span>)
 <span style=color:#75715e># 不会了</span>
-</code></pre></div><p>我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.5, 0.5, 0.5)、8位定点(128, 128, 128)、或16进制字符串#808080表示。</p><p>我已争取在不改变原算法的基础上尽可能地添加更多的自定义空间。当前可用的输入参数包含：</p><p><strong>Shape</strong>: 指生成颜色的数量。</p><p><strong>Hue</strong>: 选择一个色调作为参考点。0为红色；1为绿色；2为蓝色；3则再次回到红色。此参数接收任何实数。</p><p><strong>Rotations</strong>: 螺旋循环的次数。例，1则代表列表从起始颜色，例如红色，过渡到绿色、蓝色后再次以红色结束。0则列表为单色系。负数则反转螺旋旋转的方向。红绿蓝变成红蓝绿。此参数还可以接受列表输入，让Hue参数不作为起始色，而作为列表中间的某个颜色。例如Hue为1，Rotations为(-0.5, 0.7)则代表实际起始颜色为0.5 (1 - 0.5) 实际rotation为1.2 (0.5 + 0.7)。</p><p><strong>Saturation</strong>: 颜色的饱和度，鲜艳度。0为灰色，1为纯色。此参数也可接收两个数的元组，来定义列表的起始饱和度与结尾饱和度产生渐变。</p><p><strong>Lightness</strong>: 颜色的亮度。0为黑色，1为白色。这个参数也可以接收两个数的元组，来达到原算法本意的亮度渐变。</p><p><strong>Gamma</strong>: 强调较低强度或较高强度。就是个调整亮度的指数曲线。</p><p>代码在我的GitHub上@ <a href=https://github.com/RCJacH/color_systems.git>RCJACH - Color Systems</a>。目前只有这个算法，之后会不定期更新。等有了更详细的文档后，我再更新这篇文章。</p><p>以上总结了我对cubehelix算法的介绍，<del>明年见</del>。咕</p></div><footer class=l-post_footer><ul class=l-taxonomy><li class=c-taxonomy><a href=/cn/tags/%E8%AE%BE%E8%AE%A1/ title=设计><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">设计</span></a></li><li class=c-taxonomy><a href=/cn/tags/%E9%A2%9C%E8%89%B2/ title=颜色><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">颜色</span></a></li><li class=c-taxonomy><a href=/cn/tags/%E8%84%9A%E6%9C%AC/ title=脚本><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">脚本</span></a></li></ul><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on baidu" href="http://tieba.baidu.com/f/commit/share/openShareApi?url=https://RCJacH.github.io/cn/blog/color-cubehelix/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&desc=%e4%b8%80%e4%b8%aa%e7%94%9f%e6%88%90%e6%8c%81%e7%bb%ad%e5%8f%98%e8%89%b2%e8%b0%83%e5%8f%98%e8%89%b2%e5%ba%a6%e7%9a%84%e7%ae%97%e6%b3%95%e3%80%82&pic=https://RCJacH.github.io/"><i class="c-icon -share ri-baidu-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on douban" href="http://www.douban.com/recommend/?url=https://RCJacH.github.io/cn/blog/color-cubehelix/&image=https://RCJacH.github.io/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95"><i class="c-icon -share ri-douban-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://RCJacH.github.io/cn/blog/color-cubehelix/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&summary=%e4%b8%80%e4%b8%aa%e7%94%9f%e6%88%90%e6%8c%81%e7%bb%ad%e5%8f%98%e8%89%b2%e8%b0%83%e5%8f%98%e8%89%b2%e5%ba%a6%e7%9a%84%e7%ae%97%e6%b3%95%e3%80%82&source=https://RCJacH.github.io/"><i class="c-icon -share ri-linkedin-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey??url=https://RCJacH.github.io/cn/blog/color-cubehelix/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&pics=https://RCJacH.github.io/"><i class="c-icon -share ri-qq-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on weibo" href="http://service.weibo.com/share/share.php?url=https://RCJacH.github.io/cn/blog/color-cubehelix/&pic=https://RCJacH.github.io/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&ralateUid=%7b%7b%20.user%20%7d%7d"><i class="c-icon -share ri-weibo-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on mail" href="mailto:?subject=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&body=https://RCJacH.github.io/cn/blog/color-cubehelix/"><i class="c-icon -share ri-mail-fill ri-lg"></i></a></div></footer></article></div></div></div></main><footer class=footer><div class=l-socialMedia><div class=l-socialMedia__filler></div><div class=l-socialMedia__sticky><a href=//space.bilibili.com/259824695 target=_blank rel="noopener noreferrer me" title=bilibili><i class="c-icon ri-bilibili-fill ri-3x"></i></a>
-<a href=//github.com/rcjach target=_blank rel="noopener noreferrer me" title=github><i class="c-icon ri-github-fill ri-3x"></i></a>
-<a href=//linkedin.com/in/ruochen-han-a00956107 target=_blank rel="noopener noreferrer me" title=linkedin><i class="c-icon ri-linkedin-fill ri-3x"></i></a>
-<a href=//weibo.com/rcjach target=_blank rel="noopener noreferrer me" title=weibo><i class="c-icon ri-weibo-fill ri-3x"></i></a>
-<a href=//zhihu.com/people/rcjach target=_blank rel="noopener noreferrer me" title=zhihu><i class="c-icon ri-zhihu-fill ri-3x"></i></a></div></div><span>&copy; 2021 <a href=https://RCJacH.github.io/cn/>RCJacH</a></span>
+</code></pre></div><p>我写了一个生成cubehelix色表的脚本。其目的是生成一个颜色列表，每个颜色以浮点(0.5, 0.5, 0.5)、8位定点(128, 128, 128)、或16进制字符串#808080表示。</p>
+<p>我已争取在不改变原算法的基础上尽可能地添加更多的自定义空间。当前可用的输入参数包含：</p>
+<p><strong>Shape</strong>: 指生成颜色的数量。</p>
+<p><strong>Hue</strong>: 选择一个色调作为参考点。0为红色；1为绿色；2为蓝色；3则再次回到红色。此参数接收任何实数。</p>
+<p><strong>Rotations</strong>: 螺旋循环的次数。例，1则代表列表从起始颜色，例如红色，过渡到绿色、蓝色后再次以红色结束。0则列表为单色系。负数则反转螺旋旋转的方向。红绿蓝变成红蓝绿。此参数还可以接受列表输入，让Hue参数不作为起始色，而作为列表中间的某个颜色。例如Hue为1，Rotations为(-0.5, 0.7)则代表实际起始颜色为0.5 (1 - 0.5) 实际rotation为1.2 (0.5 + 0.7)。</p>
+<p><strong>Saturation</strong>: 颜色的饱和度，鲜艳度。0为灰色，1为纯色。此参数也可接收两个数的元组，来定义列表的起始饱和度与结尾饱和度产生渐变。</p>
+<p><strong>Lightness</strong>: 颜色的亮度。0为黑色，1为白色。这个参数也可以接收两个数的元组，来达到原算法本意的亮度渐变。</p>
+<p><strong>Gamma</strong>: 强调较低强度或较高强度。就是个调整亮度的指数曲线。</p>
+<p>代码在我的GitHub上@ <a href=https://github.com/RCJacH/color_systems.git>RCJACH - Color Systems</a>。目前只有这个算法，之后会不定期更新。等有了更详细的文档后，我再更新这篇文章。</p>
+<p>以上总结了我对cubehelix算法的介绍，<del>明年见</del>。咕</p>
+</div>
+<footer class=l-post_footer><ul class=l-taxonomy>
+<li class=c-taxonomy>
+<a href=/cn/tags/%E8%AE%BE%E8%AE%A1/ title=设计>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">设计</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E9%A2%9C%E8%89%B2/ title=颜色>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">颜色</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E8%84%9A%E6%9C%AC/ title=脚本>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">脚本</span>
+</a>
+</li>
+</ul>
+<div class=share-buttons>
+<a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on baidu" href="http://tieba.baidu.com/f/commit/share/openShareApi?url=https://RCJacH.github.io/cn/blog/color-cubehelix/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&desc=%e4%b8%80%e4%b8%aa%e7%94%9f%e6%88%90%e6%8c%81%e7%bb%ad%e5%8f%98%e8%89%b2%e8%b0%83%e5%8f%98%e8%89%b2%e5%ba%a6%e7%9a%84%e7%ae%97%e6%b3%95%e3%80%82&pic=https://RCJacH.github.io/">
+<i class="c-icon -share ri-baidu-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on douban" href="http://www.douban.com/recommend/?url=https://RCJacH.github.io/cn/blog/color-cubehelix/&image=https://RCJacH.github.io/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95">
+<i class="c-icon -share ri-douban-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://RCJacH.github.io/cn/blog/color-cubehelix/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&summary=%e4%b8%80%e4%b8%aa%e7%94%9f%e6%88%90%e6%8c%81%e7%bb%ad%e5%8f%98%e8%89%b2%e8%b0%83%e5%8f%98%e8%89%b2%e5%ba%a6%e7%9a%84%e7%ae%97%e6%b3%95%e3%80%82&source=https://RCJacH.github.io/">
+<i class="c-icon -share ri-linkedin-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey??url=https://RCJacH.github.io/cn/blog/color-cubehelix/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&pics=https://RCJacH.github.io/">
+<i class="c-icon -share ri-qq-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on weibo" href="http://service.weibo.com/share/share.php?url=https://RCJacH.github.io/cn/blog/color-cubehelix/&pic=https://RCJacH.github.io/&title=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&ralateUid=%7b%7b%20.user%20%7d%7d">
+<i class="c-icon -share ri-weibo-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share Cubehelix颜色表算法 on mail" href="mailto:?subject=Cubehelix%e9%a2%9c%e8%89%b2%e8%a1%a8%e7%ae%97%e6%b3%95&body=https://RCJacH.github.io/cn/blog/color-cubehelix/">
+<i class="c-icon -share ri-mail-fill ri-lg"></i>
+</a>
+</div>
+</footer>
+</article></div></div>
+</div>
+</main><footer class=footer><div class=l-socialMedia>
+<div class=l-socialMedia__filler></div>
+<div class=l-socialMedia__sticky>
+<a href=//space.bilibili.com/259824695 target=_blank rel="noopener noreferrer me" title=bilibili>
+<i class="c-icon ri-bilibili-fill ri-3x"></i>
+</a>
+<a href=//github.com/rcjach target=_blank rel="noopener noreferrer me" title=github>
+<i class="c-icon ri-github-fill ri-3x"></i>
+</a>
+<a href=//linkedin.com/in/ruochen-han-a00956107 target=_blank rel="noopener noreferrer me" title=linkedin>
+<i class="c-icon ri-linkedin-fill ri-3x"></i>
+</a>
+<a href=//weibo.com/rcjach target=_blank rel="noopener noreferrer me" title=weibo>
+<i class="c-icon ri-weibo-fill ri-3x"></i>
+</a>
+<a href=//zhihu.com/people/rcjach target=_blank rel="noopener noreferrer me" title=zhihu>
+<i class="c-icon ri-zhihu-fill ri-3x"></i>
+</a>
+</div>
+</div>
+<span>&copy; 2021 <a href=https://RCJacH.github.io/cn/>RCJacH</a></span>
 <span>&#183;</span>
 <span>Powered by <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
 <span>&#183;</span>
-<span>Theme <a href=https://github.com/RCJacH/RCPaperMod rel=noopener target=_blank>RCPaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></button></a>
-<script defer src=https://RCJacH.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script><script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script></div></body></html>
+<span>Theme <a href=https://github.com/RCJacH/RCPaperMod rel=noopener target=_blank>RCPaperMod</a></span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+</button>
+</a>
+<script defer src=https://RCJacH.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</div>
+</body>
+</html>

@@ -1,14 +1,134 @@
-<!doctype html><html lang=cn dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>如何挑选Airwindows Console插件系列 | RCJacH</title><meta name=keywords content="插件分析,音乐制作,混音,音频插件"><meta name=description content="把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。"><meta name=author content><link rel=canonical href=https://RCJacH.github.io/cn/blog/aw-console-comparison/><link href=https://RCJacH.github.io/assets/css/stylesheet.min.55c1afd2311ae16fc60a3afaccb973812ae64e9e1993e47067d4268690210056.css integrity="sha256-VcGv0jEa4W/GCjr6zLlzgSrmTp4Zk+RwZ9QmhpAhAFY=" rel="preload stylesheet" as=style><link href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css rel=stylesheet><link rel=icon href=https://RCJacH.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://RCJacH.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://RCJacH.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://RCJacH.github.io/apple-touch-icon.png><link rel=mask-icon href=https://RCJacH.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.85.0"><link rel=alternate hreflang=en href=https://RCJacH.github.io/blog/aw-console-comparison/><meta property="og:title" content="如何挑选Airwindows Console插件系列"><meta property="og:description" content="把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。"><meta property="og:type" content="article"><meta property="og:url" content="https://RCJacH.github.io/cn/blog/aw-console-comparison/"><meta property="article:published_time" content="2021-07-01T16:48:52+08:00"><meta property="article:modified_time" content="2021-07-01T16:48:52+08:00"><meta name=twitter:card content="summary"><meta name=twitter:title content="如何挑选Airwindows Console插件系列"><meta name=twitter:description content="把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何挑选Airwindows Console插件系列","name":"如何挑选Airwindows Console插件系列","description":"Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。\n最近我终于想明白了如何在REAPER内搭建Console系统 （之后有空再翻译）， 所以在想办法把Console插件直接嵌入到各种模板 …","keywords":["插件分析","音乐制作","混音","音频插件"],"articleBody":"Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。\n最近我终于想明白了如何在REAPER内搭建Console系统 （之后有空再翻译）， 所以在想办法把Console插件直接嵌入到各种模板里。\n不过他家插件有个小小的问题……选择太多了。\n目前为止， 他已经出了两百多个免费插件了， 光Console相关的插件就已经有12个。 而且他每周都在开发新算法， 我作为用户反而有点跟不上他的开发速度。\n对于收藏家来说， 能收集那么多奇特的染色插件来丰富我们的调色板是件非常幸福的事情。 更何况其中很多插件就像扭蛋一样， 使用之前根本不知道是干什么用的， 每次都有种拆礼物的感觉。 但是对于音频工作者来说， 这点反而是个灾难。 因为在制作过程中我们不希望被选择恐惧症打断思路， 也没有多少时间尝鲜。 实际上， 有效的工作流程应该是有一个常用插件外加两三个功能明确的代替品。 为了实现流畅的操作我们必须得使用空闲时间对这些资源进行整理， 挑出适合的， 舍弃用不上的。 为此，我创建了一个专门对比所有Airwindows Console插件的REAPER工程， 来看看每种Console到底染了什么色， 有什么区别， 哪个是最优选。\n俗话说是驴是马拉出来遛遛。\n工程放到REAPER官网上了，点击这里进入下载页面。\n使用方式：\n 播放工程。 把单个静音的轨道Solo来听正弦波过Console Channel + Bus的声音。 静音的轨道名是所用的Console插件名称。 有一个没有挂插件的None轨道， 可以当成参考用的干信号， 也可以用来反向抵消其他轨来听失真染色的声音。 总线挂了几个自带的测量插件， 应该能对理解每个染色具体什么样能有些帮助， 尤其是频谱。 三个Source音轨挂了都挂上了自带的ReaSynths音源， 其中source 1在播放440Hz， source 2为880Hz（第一个泛音）， source 3则是用来测试非泛音的频率。  经过对比，我观察到了以下几点：\n 大部分插件哪怕仅有单轨输入也会产生失真， 除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。 多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。 所有失真都会产生直流偏差（0Hz信号）， 所以在ConsoleBus之后需要添加一个直流滤波器。 此方面自带的ReaEQ是所有插件中CPU用量最少的， 用它加一个20Hz的高通可以过滤大部分的偏差。 如果你想把其全部切除， Airwindows的Infrasonic插件能完美实现， 代价是更高的CPU用量。 染色是非线性的。 更高的输入音量会使过载算法产生更多泛音， 并且整个信号会在接近0dB的地方被削波， 所以别忘了Gain-Staging。 仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。 根据我个人的判断，最好听的几款如下：  Atmosphere。据说是为了模拟声音在空气中融合的听感。 其失真较平均，没有突兀的听感。 Console5。更饱满，全频段失真上至奈奎斯特； Console5Dark， 此变异与原版反向后差别在-80dB左右， 而且主要是原频率以及前几个泛音， 但用Span把两个信号叠起来又看不出来什么区别。 此款CPU用量更少； Console5Raw，一个更干净的版本， 不过据说会出现一些不稳定的直流偏差。 Console7。听起来更空洞，基音音量会稍微小一点。 它还有个失真稍微更大一点的兄弟叫Console7Cascade。 PDConsole，PD代表Purest Drive。此款听起来失真量最小。 PurestConsole初版。 经不严谨测试它能跟PurestConsole2完全抵消， 但这款的CPU用量是所有Console里面最少的，都不到二代的一半。 而且！！这款跟Atmosphere也能完全抵消！！    总结一下， 日常用PurestConsole， Console7当成超级模拟染色的Summing盒（它CPU用量最高）， PDConsole来当软胶（胶指粘合多个轨道的功能）， Console5或者Console5Dark当纽约式指脸怼人的硬胶。\n","wordCount":"97","inLanguage":"cn","datePublished":"2021-07-01T16:48:52+08:00","dateModified":"2021-07-01T16:48:52+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/aw-console-comparison/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script><body class="l-viewFrame single" id=top><div class="l-viewGlass background"><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript><style type=text/css>.c-theme_toggle,.top-link{display:none}</style></noscript><header class=l-header><nav class=l-nav><div class=c-logo><a href=https://RCJacH.github.io/cn/ accesskey=h title="RCJacH (Alt + H)"><span class=c-logo__text>RCJacH</span></a>
-<span class=l-theme__switches><span class=c-theme_toggle title="(Alt + T)"><a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></a></span><span class=l-lang_switch><span>|</span><ul><li><a href=https://RCJacH.github.io/ title=English aria-label=English>English</a></li></ul></span></span></div><ul class=l-menu id=menu onscroll=menu_on_scroll()><div class=c-menuList><li class=c-menuList__item><a href=https://RCJacH.github.io/cn/post title=博客><span>博客</span></a></li><li class=c-menuList__item><a href=https://RCJacH.github.io/cn/portfolio title=资料><span>资料</span></a></li></div><button type=button class=c-menuButton></button></ul></nav></header><main class=l-main><div class="l-main__column -center -isFluid"><div class=l-content><div class=l-content__main><article class=l-post><header class=l-post__header><h1 class=c-post_title>如何挑选Airwindows Console插件系列</h1><div class=post-description>把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。</div><div class=l-postMeta><div class=l-postMeta__box><div class=l-postMeta__element><span class=c-emoji>📆</span><time class="c-postMeta -time" datetime=1000-07-01 title>July 1, 2021</time></div><div class=l-postMeta__element><span class=c-emoji>📄</span><span class="c-postMeta -wordcount">97 words</span></div><div class=l-postMeta__element><ul class=l-taxonomy><li class=c-taxonomy><a href=/cn/categories/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/ title=音乐制作><span class=c-emoji>📁</span><span class="c-postMeta -categories">音乐制作</span></a></li></ul></div></div><ul class=l-i18nList><li class=l-18nList__item><a href=https://RCJacH.github.io/blog/aw-console-comparison/>English: Airwindows Console Plugins Comparison</a></li></ul></div></header><aside class=l-toc><details class=c-toc><summary accesskey=c title="(Alt + C)"><div class=c-toc__title>目录</div></summary><blockquote class=c-toc__contents></blockquote></details></aside><div class=l-post_content><p><a href="http://www.airwindows.com/?s=console">Airwindows的仿调音台Summing功能的Console插件系列</a>是好东西，
+<!doctype html><html lang=cn dir=auto><head>
+<meta charset=utf-8>
+<meta http-equiv=x-ua-compatible content="IE=edge">
+<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<meta name=robots content="index, follow">
+<title>如何挑选Airwindows Console插件系列 | RCJacH</title>
+<meta name=keywords content="插件分析,音乐制作,混音,音频插件">
+<meta name=description content="把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。">
+<meta name=author content>
+<link rel=canonical href=https://RCJacH.github.io/cn/blog/aw-console-comparison/>
+<link href=https://RCJacH.github.io/assets/css/stylesheet.min.55c1afd2311ae16fc60a3afaccb973812ae64e9e1993e47067d4268690210056.css integrity="sha256-VcGv0jEa4W/GCjr6zLlzgSrmTp4Zk+RwZ9QmhpAhAFY=" rel="preload stylesheet" as=style>
+<link href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css rel=stylesheet>
+<link rel=icon href=https://RCJacH.github.io/favicon.ico>
+<link rel=icon type=image/png sizes=16x16 href=https://RCJacH.github.io/favicon-16x16.png>
+<link rel=icon type=image/png sizes=32x32 href=https://RCJacH.github.io/favicon-32x32.png>
+<link rel=apple-touch-icon href=https://RCJacH.github.io/apple-touch-icon.png>
+<link rel=mask-icon href=https://RCJacH.github.io/safari-pinned-tab.svg>
+<meta name=theme-color content="#2e2e33">
+<meta name=msapplication-TileColor content="#2e2e33">
+<meta name=generator content="Hugo 0.88.1">
+<link rel=alternate hreflang=en href=https://RCJacH.github.io/blog/aw-console-comparison/>
+<meta property="og:title" content="如何挑选Airwindows Console插件系列">
+<meta property="og:description" content="把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://RCJacH.github.io/cn/blog/aw-console-comparison/">
+<meta property="article:published_time" content="2021-07-01T16:48:52+08:00">
+<meta property="article:modified_time" content="2021-07-01T16:48:52+08:00">
+<meta name=twitter:card content="summary">
+<meta name=twitter:title content="如何挑选Airwindows Console插件系列">
+<meta name=twitter:description content="把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。">
+<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"如何挑选Airwindows Console插件系列","name":"如何挑选Airwindows Console插件系列","description":"Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。\n最近我终于想明白了如何在REAPER内搭建Console系统 （之后有空再翻译）， 所以在想办法把Console插件直接嵌入到各种模板 …","keywords":["插件分析","音乐制作","混音","音频插件"],"articleBody":"Airwindows的仿调音台Summing功能的Console插件系列是好东西， 一些人甚至觉得比某款知名的A级模拟调音台还要好听。 自从开发者Chris Johnson把他家插件免费化了之后， 我每个工程都会大量使用。\n最近我终于想明白了如何在REAPER内搭建Console系统 （之后有空再翻译）， 所以在想办法把Console插件直接嵌入到各种模板里。\n不过他家插件有个小小的问题……选择太多了。\n目前为止， 他已经出了两百多个免费插件了， 光Console相关的插件就已经有12个。 而且他每周都在开发新算法， 我作为用户反而有点跟不上他的开发速度。\n对于收藏家来说， 能收集那么多奇特的染色插件来丰富我们的调色板是件非常幸福的事情。 更何况其中很多插件就像扭蛋一样， 使用之前根本不知道是干什么用的， 每次都有种拆礼物的感觉。 但是对于音频工作者来说， 这点反而是个灾难。 因为在制作过程中我们不希望被选择恐惧症打断思路， 也没有多少时间尝鲜。 实际上， 有效的工作流程应该是有一个常用插件外加两三个功能明确的代替品。 为了实现流畅的操作我们必须得使用空闲时间对这些资源进行整理， 挑出适合的， 舍弃用不上的。 为此，我创建了一个专门对比所有Airwindows Console插件的REAPER工程， 来看看每种Console到底染了什么色， 有什么区别， 哪个是最优选。\n俗话说是驴是马拉出来遛遛。\n工程放到REAPER官网上了，点击这里进入下载页面。\n使用方式：\n 播放工程。 把单个静音的轨道Solo来听正弦波过Console Channel + Bus的声音。 静音的轨道名是所用的Console插件名称。 有一个没有挂插件的None轨道， 可以当成参考用的干信号， 也可以用来反向抵消其他轨来听失真染色的声音。 总线挂了几个自带的测量插件， 应该能对理解每个染色具体什么样能有些帮助， 尤其是频谱。 三个Source音轨挂了都挂上了自带的ReaSynths音源， 其中source 1在播放440Hz， source 2为880Hz（第一个泛音）， source 3则是用来测试非泛音的频率。  经过对比，我观察到了以下几点：\n 大部分插件哪怕仅有单轨输入也会产生失真， 除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。 多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。 所有失真都会产生直流偏差（0Hz信号）， 所以在ConsoleBus之后需要添加一个直流滤波器。 此方面自带的ReaEQ是所有插件中CPU用量最少的， 用它加一个20Hz的高通可以过滤大部分的偏差。 如果你想把其全部切除， Airwindows的Infrasonic插件能完美实现， 代价是更高的CPU用量。 染色是非线性的。 更高的输入音量会使过载算法产生更多泛音， 并且整个信号会在接近0dB的地方被削波， 所以别忘了Gain-Staging。 仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。 根据我个人的判断，最好听的几款如下：  Atmosphere。据说是为了模拟声音在空气中融合的听感。 其失真较平均，没有突兀的听感。 Console5。更饱满，全频段失真上至奈奎斯特； Console5Dark， 此变异与原版反向后差别在-80dB左右， 而且主要是原频率以及前几个泛音， 但用Span把两个信号叠起来又看不出来什么区别。 此款CPU用量更少； Console5Raw，一个更干净的版本， 不过据说会出现一些不稳定的直流偏差。 Console7。听起来更空洞，基音音量会稍微小一点。 它还有个失真稍微更大一点的兄弟叫Console7Cascade。 PDConsole，PD代表Purest Drive。此款听起来失真量最小。 PurestConsole初版。 经不严谨测试它能跟PurestConsole2完全抵消， 但这款的CPU用量是所有Console里面最少的，都不到二代的一半。 而且！！这款跟Atmosphere也能完全抵消！！    总结一下， 日常用PurestConsole， Console7当成超级模拟染色的Summing盒（它CPU用量最高）， PDConsole来当软胶（胶指粘合多个轨道的功能）， Console5或者Console5Dark当纽约式指脸怼人的硬胶。\n","wordCount":"97","inLanguage":"cn","datePublished":"2021-07-01T16:48:52+08:00","dateModified":"2021-07-01T16:48:52+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/aw-console-comparison/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script>
+<body class="l-viewFrame single" id=top>
+<div class="l-viewGlass background">
+<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript>
+<style type=text/css>.c-theme_toggle,.top-link{display:none}</style>
+</noscript>
+<header class=l-header>
+<nav class=l-nav>
+<div class=c-logo>
+<a href=https://RCJacH.github.io/cn/ accesskey=h title="RCJacH (Alt + H)"><span class=c-logo__text>RCJacH</span>
+</a>
+<span class=l-theme__switches>
+<span class=c-theme_toggle title="(Alt + T)">
+<a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
+</a>
+</span>
+<span class=l-lang_switch>
+<span>|</span>
+<ul>
+<li>
+<a href=https://RCJacH.github.io/ title=English aria-label=English>English</a>
+</li>
+</ul>
+</span>
+</span>
+</div>
+<ul class=l-menu id=menu onscroll=menu_on_scroll()>
+<div class=c-menuList>
+<li class=c-menuList__item>
+<a href=https://RCJacH.github.io/cn/post title=博客>
+<span>博客</span>
+</a>
+</li>
+<li class=c-menuList__item>
+<a href=https://RCJacH.github.io/cn/portfolio title=资料>
+<span>资料</span>
+</a>
+</li></div>
+<button type=button class=c-menuButton></button>
+</ul>
+</nav>
+</header>
+<main class=l-main>
+<div class="l-main__column -center -isFluid">
+<div class=l-content><div class=l-content__main>
+<article class=l-post>
+<header class=l-post__header>
+<h1 class=c-post_title>
+如何挑选Airwindows Console插件系列
+</h1>
+<div class=post-description>
+把所有的Airwindows Console插件都拿出来对比一下看看哪个最好用。
+</div>
+<div class=l-postMeta>
+<div class=l-postMeta__box>
+<div class=l-postMeta__element>
+<span class=c-emoji>📆</span><time class="c-postMeta -time" datetime=1000-07-01 title>July 1, 2021</time>
+</div>
+<div class=l-postMeta__element>
+<span class=c-emoji>📄</span><span class="c-postMeta -wordcount">97 words</span>
+</div>
+<div class=l-postMeta__element>
+<ul class=l-taxonomy>
+<li class=c-taxonomy>
+<a href=/cn/categories/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/ title=音乐制作>
+<span class=c-emoji>📁</span><span class="c-postMeta -categories">音乐制作</span>
+</a>
+</li>
+</ul>
+</div>
+</div>
+<ul class=l-i18nList>
+<li class=l-18nList__item>
+<a href=https://RCJacH.github.io/blog/aw-console-comparison/>English: Airwindows Console Plugins Comparison
+</a>
+</li>
+</ul></div>
+</header>
+<aside class=l-toc>
+<details class=c-toc>
+<summary accesskey=c title="(Alt + C)">
+<div class=c-toc__title>目录</div>
+</summary>
+<blockquote class=c-toc__contents></blockquote>
+</details>
+</aside>
+<div class=l-post_content>
+<p><a href="http://www.airwindows.com/?s=console">Airwindows的仿调音台Summing功能的Console插件系列</a>是好东西，
 一些人甚至觉得<a href=https://tapeop.com/reviews/gear/104/console-and-buss-colors-plug-ins/>比某款知名的A级模拟调音台还要好听</a>。
 自从开发者Chris Johnson把他家插件免费化了之后，
-我每个工程都会大量使用。</p><p>最近我终于想明白了<a href="https://forums.cockos.com/showpost.php?p=2449032&postcount=2">如何在REAPER内搭建Console系统</a>
+我每个工程都会大量使用。</p>
+<p>最近我终于想明白了<a href="https://forums.cockos.com/showpost.php?p=2449032&postcount=2">如何在REAPER内搭建Console系统</a>
 （之后有空再翻译），
-所以在想办法把Console插件直接嵌入到各种模板里。</p><p>不过他家插件有个小小的问题……选择太多了。</p><p>目前为止，
+所以在想办法把Console插件直接嵌入到各种模板里。</p>
+<p>不过他家插件有个小小的问题……选择太多了。</p>
+<p>目前为止，
 他已经出了两百多个免费插件了，
 光Console相关的插件就已经有12个。
 而且他每周都在开发新算法，
-我作为用户反而有点跟不上他的开发速度。</p><p>对于收藏家来说，
+我作为用户反而有点跟不上他的开发速度。</p>
+<p>对于收藏家来说，
 能收集那么多奇特的染色插件来丰富我们的调色板是件非常幸福的事情。
 更何况其中很多插件就像扭蛋一样，
 使用之前根本不知道是干什么用的，
@@ -25,52 +145,140 @@
 为此，我创建了一个专门对比所有Airwindows Console插件的REAPER工程，
 来看看每种Console到底染了什么色，
 有什么区别，
-哪个是最优选。</p><p>俗话说是驴是马拉出来遛遛。</p><p><a href=https://stash.reaper.fm/v/42335/aw%20Console%20Comparison.rpp>工程放到REAPER官网上了，点击这里进入下载页面</a>。</p><p>使用方式：</p><ol><li>播放工程。</li><li>把单个静音的轨道Solo来听正弦波过Console Channel + Bus的声音。
-静音的轨道名是所用的Console插件名称。</li><li>有一个没有挂插件的None轨道，
+哪个是最优选。</p>
+<p>俗话说是驴是马拉出来遛遛。</p>
+<p><a href=https://stash.reaper.fm/v/42335/aw%20Console%20Comparison.rpp>工程放到REAPER官网上了，点击这里进入下载页面</a>。</p>
+<p>使用方式：</p>
+<ol>
+<li>播放工程。</li>
+<li>把单个静音的轨道Solo来听正弦波过Console Channel + Bus的声音。
+静音的轨道名是所用的Console插件名称。</li>
+<li>有一个没有挂插件的None轨道，
 可以当成参考用的干信号，
-也可以用来反向抵消其他轨来听失真染色的声音。</li><li>总线挂了几个自带的测量插件，
+也可以用来反向抵消其他轨来听失真染色的声音。</li>
+<li>总线挂了几个自带的测量插件，
 应该能对理解每个染色具体什么样能有些帮助，
-尤其是频谱。</li><li>三个Source音轨挂了都挂上了自带的ReaSynths音源，
+尤其是频谱。</li>
+<li>三个Source音轨挂了都挂上了自带的ReaSynths音源，
 其中source 1在播放440Hz，
 source 2为880Hz（第一个泛音），
-source 3则是用来测试非泛音的频率。</li></ol><p>经过对比，我观察到了以下几点：</p><ol><li>大部分插件哪怕仅有单轨输入也会产生失真，
-除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。</li><li>多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。</li><li>所有失真都会产生直流偏差（0Hz信号），
+source 3则是用来测试非泛音的频率。</li>
+</ol>
+<p>经过对比，我观察到了以下几点：</p>
+<ol>
+<li>大部分插件哪怕仅有单轨输入也会产生失真，
+除了Atmosphere, Console5RAW, Console6以及那两个PurestConsole。</li>
+<li>多轨Summing肯定会有失真。毕竟染色就是失真，不给染色我们用这个插件干嘛。</li>
+<li>所有失真都会产生直流偏差（0Hz信号），
 所以在ConsoleBus之后需要添加一个直流滤波器。
 此方面自带的ReaEQ是所有插件中CPU用量最少的，
 用它加一个20Hz的高通可以过滤大部分的偏差。
 如果你想把其全部切除，
 <a href=https://www.airwindows.com/infrasonic/>Airwindows的Infrasonic插件</a>能完美实现，
-代价是更高的CPU用量。</li><li>染色是非线性的。
+代价是更高的CPU用量。</li>
+<li>染色是非线性的。
 更高的输入音量会使过载算法产生更多泛音，
 并且整个信号会在接近0dB的地方被削波，
-所以别忘了Gain-Staging。</li><li>仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。</li><li>根据我个人的判断，最好听的几款如下：<ol><li>Atmosphere。据说是为了模拟声音在空气中融合的听感。
-其失真较平均，没有突兀的听感。</li><li>Console5。更饱满，全频段失真上至奈奎斯特；
+所以别忘了Gain-Staging。</li>
+<li>仅用正弦波的话，最难听的失真来自于Console4、Console6、及uLaw。</li>
+<li>根据我个人的判断，最好听的几款如下：
+<ol>
+<li>Atmosphere。据说是为了模拟声音在空气中融合的听感。
+其失真较平均，没有突兀的听感。</li>
+<li>Console5。更饱满，全频段失真上至奈奎斯特；
 <a href="https://gearspace.com/board/showpost.php?p=13053669&postcount=147">Console5Dark</a>，
 此变异与原版反向后差别在-80dB左右，
 而且主要是原频率以及前几个泛音，
 但用Span把两个信号叠起来又看不出来什么区别。
 此款CPU用量更少；
 Console5Raw，一个更干净的版本，
-<a href="https://gearspace.com/board/showpost.php?p=13034212&postcount=8">不过据说会出现一些不稳定的直流偏差</a>。</li><li>Console7。听起来更空洞，基音音量会稍微小一点。
-它还有个失真稍微更大一点的兄弟叫Console7Cascade。</li><li>PDConsole，PD代表Purest Drive。此款听起来失真量最小。</li><li>PurestConsole初版。
+<a href="https://gearspace.com/board/showpost.php?p=13034212&postcount=8">不过据说会出现一些不稳定的直流偏差</a>。</li>
+<li>Console7。听起来更空洞，基音音量会稍微小一点。
+它还有个失真稍微更大一点的兄弟叫Console7Cascade。</li>
+<li>PDConsole，PD代表Purest Drive。此款听起来失真量最小。</li>
+<li>PurestConsole初版。
 经不严谨测试它能跟PurestConsole2完全抵消，
 但这款的CPU用量是所有Console里面最少的，都不到二代的一半。
-而且！！这款跟Atmosphere也能完全抵消！！</li></ol></li></ol><p>总结一下，
+而且！！这款跟Atmosphere也能完全抵消！！</li>
+</ol>
+</li>
+</ol>
+<p>总结一下，
 日常用PurestConsole，
 Console7当成超级模拟染色的Summing盒（它CPU用量最高），
 PDConsole来当软胶（胶指粘合多个轨道的功能），
-Console5或者Console5Dark当纽约式指脸怼人的硬胶。</p></div><footer class=l-post_footer><ul class=l-taxonomy><li class=c-taxonomy><a href=/cn/tags/%E6%8F%92%E4%BB%B6%E5%88%86%E6%9E%90/ title=插件分析><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">插件分析</span></a></li><li class=c-taxonomy><a href=/cn/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/ title=音乐制作><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">音乐制作</span></a></li><li class=c-taxonomy><a href=/cn/tags/%E6%B7%B7%E9%9F%B3/ title=混音><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">混音</span></a></li><li class=c-taxonomy><a href=/cn/tags/%E9%9F%B3%E9%A2%91%E6%8F%92%E4%BB%B6/ title=音频插件><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">音频插件</span></a></li></ul><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on baidu" href="http://tieba.baidu.com/f/commit/share/openShareApi?url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&desc=%e6%8a%8a%e6%89%80%e6%9c%89%e7%9a%84Airwindows%20Console%e6%8f%92%e4%bb%b6%e9%83%bd%e6%8b%bf%e5%87%ba%e6%9d%a5%e5%af%b9%e6%af%94%e4%b8%80%e4%b8%8b%e7%9c%8b%e7%9c%8b%e5%93%aa%e4%b8%aa%e6%9c%80%e5%a5%bd%e7%94%a8%e3%80%82&pic=https://RCJacH.github.io/"><i class="c-icon -share ri-baidu-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on douban" href="http://www.douban.com/recommend/?url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&image=https://RCJacH.github.io/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97"><i class="c-icon -share ri-douban-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&summary=%e6%8a%8a%e6%89%80%e6%9c%89%e7%9a%84Airwindows%20Console%e6%8f%92%e4%bb%b6%e9%83%bd%e6%8b%bf%e5%87%ba%e6%9d%a5%e5%af%b9%e6%af%94%e4%b8%80%e4%b8%8b%e7%9c%8b%e7%9c%8b%e5%93%aa%e4%b8%aa%e6%9c%80%e5%a5%bd%e7%94%a8%e3%80%82&source=https://RCJacH.github.io/"><i class="c-icon -share ri-linkedin-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey??url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&pics=https://RCJacH.github.io/"><i class="c-icon -share ri-qq-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on weibo" href="http://service.weibo.com/share/share.php?url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&pic=https://RCJacH.github.io/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&ralateUid=%7b%7b%20.user%20%7d%7d"><i class="c-icon -share ri-weibo-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on mail" href="mailto:?subject=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&body=https://RCJacH.github.io/cn/blog/aw-console-comparison/"><i class="c-icon -share ri-mail-fill ri-lg"></i></a></div></footer></article></div></div></div></main><footer class=footer><div class=l-socialMedia><div class=l-socialMedia__filler></div><div class=l-socialMedia__sticky><a href=//space.bilibili.com/259824695 target=_blank rel="noopener noreferrer me" title=bilibili><i class="c-icon ri-bilibili-fill ri-3x"></i></a>
-<a href=//github.com/rcjach target=_blank rel="noopener noreferrer me" title=github><i class="c-icon ri-github-fill ri-3x"></i></a>
-<a href=//linkedin.com/in/ruochen-han-a00956107 target=_blank rel="noopener noreferrer me" title=linkedin><i class="c-icon ri-linkedin-fill ri-3x"></i></a>
-<a href=//weibo.com/rcjach target=_blank rel="noopener noreferrer me" title=weibo><i class="c-icon ri-weibo-fill ri-3x"></i></a>
-<a href=//zhihu.com/people/rcjach target=_blank rel="noopener noreferrer me" title=zhihu><i class="c-icon ri-zhihu-fill ri-3x"></i></a></div></div><span>&copy; 2021 <a href=https://RCJacH.github.io/cn/>RCJacH</a></span>
+Console5或者Console5Dark当纽约式指脸怼人的硬胶。</p>
+</div>
+<footer class=l-post_footer><ul class=l-taxonomy>
+<li class=c-taxonomy>
+<a href=/cn/tags/%E6%8F%92%E4%BB%B6%E5%88%86%E6%9E%90/ title=插件分析>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">插件分析</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/ title=音乐制作>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">音乐制作</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E6%B7%B7%E9%9F%B3/ title=混音>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">混音</span>
+</a>
+</li><li class=c-taxonomy>
+<a href=/cn/tags/%E9%9F%B3%E9%A2%91%E6%8F%92%E4%BB%B6/ title=音频插件>
+<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">音频插件</span>
+</a>
+</li>
+</ul>
+<div class=share-buttons>
+<a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on baidu" href="http://tieba.baidu.com/f/commit/share/openShareApi?url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&desc=%e6%8a%8a%e6%89%80%e6%9c%89%e7%9a%84Airwindows%20Console%e6%8f%92%e4%bb%b6%e9%83%bd%e6%8b%bf%e5%87%ba%e6%9d%a5%e5%af%b9%e6%af%94%e4%b8%80%e4%b8%8b%e7%9c%8b%e7%9c%8b%e5%93%aa%e4%b8%aa%e6%9c%80%e5%a5%bd%e7%94%a8%e3%80%82&pic=https://RCJacH.github.io/">
+<i class="c-icon -share ri-baidu-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on douban" href="http://www.douban.com/recommend/?url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&image=https://RCJacH.github.io/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97">
+<i class="c-icon -share ri-douban-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&summary=%e6%8a%8a%e6%89%80%e6%9c%89%e7%9a%84Airwindows%20Console%e6%8f%92%e4%bb%b6%e9%83%bd%e6%8b%bf%e5%87%ba%e6%9d%a5%e5%af%b9%e6%af%94%e4%b8%80%e4%b8%8b%e7%9c%8b%e7%9c%8b%e5%93%aa%e4%b8%aa%e6%9c%80%e5%a5%bd%e7%94%a8%e3%80%82&source=https://RCJacH.github.io/">
+<i class="c-icon -share ri-linkedin-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey??url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&pics=https://RCJacH.github.io/">
+<i class="c-icon -share ri-qq-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on weibo" href="http://service.weibo.com/share/share.php?url=https://RCJacH.github.io/cn/blog/aw-console-comparison/&pic=https://RCJacH.github.io/&title=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&ralateUid=%7b%7b%20.user%20%7d%7d">
+<i class="c-icon -share ri-weibo-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share 如何挑选Airwindows Console插件系列 on mail" href="mailto:?subject=%e5%a6%82%e4%bd%95%e6%8c%91%e9%80%89Airwindows%20Console%e6%8f%92%e4%bb%b6%e7%b3%bb%e5%88%97&body=https://RCJacH.github.io/cn/blog/aw-console-comparison/">
+<i class="c-icon -share ri-mail-fill ri-lg"></i>
+</a>
+</div>
+</footer>
+</article></div></div>
+</div>
+</main><footer class=footer><div class=l-socialMedia>
+<div class=l-socialMedia__filler></div>
+<div class=l-socialMedia__sticky>
+<a href=//space.bilibili.com/259824695 target=_blank rel="noopener noreferrer me" title=bilibili>
+<i class="c-icon ri-bilibili-fill ri-3x"></i>
+</a>
+<a href=//github.com/rcjach target=_blank rel="noopener noreferrer me" title=github>
+<i class="c-icon ri-github-fill ri-3x"></i>
+</a>
+<a href=//linkedin.com/in/ruochen-han-a00956107 target=_blank rel="noopener noreferrer me" title=linkedin>
+<i class="c-icon ri-linkedin-fill ri-3x"></i>
+</a>
+<a href=//weibo.com/rcjach target=_blank rel="noopener noreferrer me" title=weibo>
+<i class="c-icon ri-weibo-fill ri-3x"></i>
+</a>
+<a href=//zhihu.com/people/rcjach target=_blank rel="noopener noreferrer me" title=zhihu>
+<i class="c-icon ri-zhihu-fill ri-3x"></i>
+</a>
+</div>
+</div>
+<span>&copy; 2021 <a href=https://RCJacH.github.io/cn/>RCJacH</a></span>
 <span>&#183;</span>
 <span>Powered by <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
 <span>&#183;</span>
-<span>Theme <a href=https://github.com/RCJacH/RCPaperMod rel=noopener target=_blank>RCPaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></button></a>
-<script defer src=https://RCJacH.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script><script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script></div></body></html>
+<span>Theme <a href=https://github.com/RCJacH/RCPaperMod rel=noopener target=_blank>RCPaperMod</a></span>
+</footer>
+<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
+<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
+</button>
+</a>
+<script defer src=https://RCJacH.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
+<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
+</div>
+</body>
+</html>
