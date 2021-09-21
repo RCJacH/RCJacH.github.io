@@ -24,7 +24,7 @@ called `RCJacH_Generate LRC Lyrics and Export to Clipboard.lua`
 If you dislike ReaPack,
 you can get the [raw script here](https://raw.githubusercontent.com/RCJacH/ReaScripts/master/Lua/Various/RCJacH_Generate%20LRC%20Lyrics%20and%20Export%20to%20Clipboard.lua)
 
-The script combines the *name* of the *active take* of items on the *selected track*.
+The script combines the *names* of the *active take* of items on the *selected track*.
 Each item is considered as a separated line,
 with the starting location of the item as the timing of the line.
 The result is copied to the system clipboard,
@@ -34,7 +34,8 @@ It looks like this:
 
 ![Select track containing desired lyrics and run the script to generate LRC lyrics](/img/Content/REAPER/LRC_demonstration.gif)
 
-So by selecting different track, you can generate lyrics in different languages.
+By selecting different track,
+you can generate lyrics in different languages...if you had it translated in the first place.
 
 Now some details.
 
