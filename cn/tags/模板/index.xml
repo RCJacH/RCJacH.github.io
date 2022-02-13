@@ -28,7 +28,7 @@ storyteller的REAPER管弦超级大模板
 那么我们怎么使用这个模板呢？请容我解释一下模板中每一轨的功能。
 参考轨： 我们可以直接把参考的音频拖到这个音轨中，无论是该风格的制作/混音/母带参考品还是歌曲的小样版本。
 为了针对可能出现的频段监听需求，我在效果链中放个了ReaEQ，当高切低切用，并且把频率参数设置成了轨道控制钮。
-段落轨： 这个音轨是用来排列歌曲不同段落的。这个方面我发现用Reaper的空白块(Empty Item)功能会比用各种标记（Markers）或者区域（Regions）要更便捷。同时我们还能直接选中需要导出的段落，使用&amp;ldquo;Loop points: Set Loop Points to Items&amp;rdquo;这个操作（Actions），然后在导出界面右上角的Bounds选项里选择**&amp;ldquo;Time Selection&amp;rdquo;**或**选区**。
+段落轨： 这个音轨是用来排列歌曲不同段落的。这个方面我发现用Reaper的空白块(Empty Item)功能会比用各种标记（Markers）或者区域（Regions）要更便捷。同时我们还能直接选中需要导出的段落，使用&amp;ldquo;Loop points: Set Loop Points to Items&amp;rdquo;这个操作（Actions），然后在导出界面右上角的Bounds选项里选择**&amp;ldquo;Time Selection&amp;rdquo;或选区**。
 此模板内包含了所有我能想到的段落名称作为一个个单独的空白块。这样我们可以直接加载模板，利用现有的块来拼出歌曲的轮廓，然后删掉剩下的那些不需要的块。
 在此之上，我用ReaMIDIControl加了一轨没有任何实际影响的包络，命名为Energy Map/能量线，主要是画出歌曲的动态起伏。我们可以模仿上一条的参考轨来画出符合风格的能量线。
 律动轨： 律动轨是用来制定出歌曲每个段落中的多层节奏律动的。我们可以直接插入一个MIDI块，然后如下图一样画出律动：

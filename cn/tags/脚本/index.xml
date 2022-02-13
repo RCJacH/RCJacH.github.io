@@ -1,4 +1,18 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>脚本 on RCJacH</title><link>https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/</link><description>Recent content in 脚本 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Tue, 21 Sep 2021 22:25:43 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>如何在REAPER内制作LRC格式的滚动歌词</title><link>https://RCJacH.github.io/cn/blog/lrc-maker/</link><pubDate>Tue, 21 Sep 2021 22:25:43 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/lrc-maker/</guid><description>前几天我终于让某云音乐的个人全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>脚本 on RCJacH</title><link>https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/</link><description>Recent content in 脚本 on RCJacH</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 08 Jan 2022 16:29:02 +0800</lastBuildDate><atom:link href="https://RCJacH.github.io/cn/tags/%E8%84%9A%E6%9C%AC/index.xml" rel="self" type="application/rss+xml"/><item><title>RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾</title><link>https://RCJacH.github.io/cn/blog/rcinflator/</link><pubDate>Sat, 08 Jan 2022 16:29:02 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/rcinflator/</guid><description>欢迎来到我们插件发布会的直播间， 我是本次直播的主持人， 也是本司的CEO，CTO，COO，CFO&amp;hellip;（以下省略100个职称） RCJacH。 在开始之前有我邀请大家阅读以下三个注意事项：
+请不要询问为什么我们选择以文字形式直播。 大家都是音乐人， 都有非常高端的脑放。 调制旁通的插件都能听出变化， 文字转语音会有什么困难吗。
+文中有一些【鼓掌】的标签， 是为了触发脑放中的鼓掌采样， 这样能显得有很多人关注这种冷门话题。
+今天狗头不够用， 请大家自行脑补。
+好了， 今天我们将要发布一款革命性的音频插件， 不过在此之间我先给大家科普一下行业现状。
+音频插件行业一直被国外的资本主义统治。 而这些“恶毒的”资本家为了“剥削”我们这些用爱发电的音乐人， 用尽花言巧语引诱我们消费、 “骗取”我们的财产。 由于音频插件是个黑盒， 具体算法除了作者谁也说不清， 好不好使全靠“吹”， 这导致一些“聪明的”资本家发现只要找外包做个生锈破皮的硬件3D建模、 写个不知所云的宣传文案， 文中使用一些平时不会出现在同一个句子的抽象词， 例如“warmth（温暖）”、“glue（粘合）”、“life（生命）”、“power（力量）”、“tube（电子管）”等， 再贴上几张硬件设备的照片让买家产生联想， 就可以平躺收税了。
+更可恶的是， 部分资本家并不满足于此， 而是会想尽办法榨干用户的剩余价值。 修几个Bug收一次钱， 整理一下代码库收一次钱， 重画个GUI又来收一次钱。 作为现实主义的加班人， 我们要全力抵制这种行为， 时刻提醒自己不可被华丽的外表蒙蔽双眼， 妥善对待口袋里的一块二毛三分钱。
+有句古话说得好， 自己动手成单身狗丰衣足食。 经过十分钟长时间的艰苦奋斗， 我终于自主研发出了一款新的音频插件。
+【鼓掌】
+这款插件名叫RCInflator。 RC就是我， 因为是我做出来的， 所以肯定要写上我的名字， 不然写谷歌么？ Inflator则是插件的名字， 来源于inflate一词， 意思是通货膨胀。
+非常符合当前的全球经济发展动向。
+【鼓掌】
+我在这里说明一下， Inflator这个词可能会使有些人联想到十几年前的一款同名插件, 但实际上这两者是完全不同的插件。
+首先这两款的功能不一样。 我们来看一下那款同名插件的宣传文：
+A unique and powerful plugin to increase loudness, without sacrificing sonic quality or dynamic range.</description></item><item><title>如何在REAPER内制作LRC格式的滚动歌词</title><link>https://RCJacH.github.io/cn/blog/lrc-maker/</link><pubDate>Tue, 21 Sep 2021 22:25:43 +0800</pubDate><guid>https://RCJacH.github.io/cn/blog/lrc-maker/</guid><description>前几天我终于让某云音乐的个人全部歌曲+1了。 为了摸鱼制作更精准的滚动歌词，我写了一个自动生成LRC的脚本。 LRC格式说白了就是每行歌词前面多一个时间位置信息。
 脚本去RCJacH的ReaPack库自取。
 脚本名叫RCJacH_Generate LRC Lyrics and Export to Clipboard.lua。
 如果你没有ReaPack， 也可以直接另保存脚本源文件。
