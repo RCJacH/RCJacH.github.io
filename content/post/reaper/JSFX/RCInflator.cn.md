@@ -1,10 +1,12 @@
----
-title: "RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾"
-date: 2022-01-08T16:29:02+08:00
-tags: ["音乐制作","REAPER","JSFX","脚本","混音"]
-categories: ["脚本&模板"]
-description: "tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。"
----
++++
+title = "RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾"
+date = 2022-01-08T16:29:02+08:00
+tags = ["音乐制作","REAPER","JSFX","脚本","混音"]
+categories = ["脚本&模板"]
+description = "tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。"
+[cover]
+image = "img/banners/rcmtheory/major_scale.jpg"
++++
 
 欢迎来到我们插件发布会的直播间，
 我是本次直播的主持人，
@@ -192,8 +194,8 @@ RCInflator原价只要194欧元。
 购买地址藏在文末。
 
 不过据小道消息，
-目前官网出现了**无需支付就能下载**的bug，
-我们会尽快修复。
+目前该插件在官网**无需支付就能下载**，
+我们会尽快修复这个bug。
 
 欸，
 我们刚刚收到一个来自网友的留言。
@@ -246,3 +248,21 @@ REAPER用户请直接去用[ReaPack](https://forum.reaget.com/t/topic/219)，
 
 非REAPER用户的朋友们请在本文底下留言，
 评论区超过一定数量我会考虑再出一篇《如何在其他非PT的DAW里使用JSFX》的教材。
+
+P.S. 算法曲线动态演示动图
+
+![RCInflator Curve](/img/Content/REAPER/Inflator_curves.gif)
+
+[Inflator算法曲线动态演示](https://www.desmos.com/calculator/t6c6tqs6og)
+
+点击左上角的双箭头打开控制面板，
+调制w（插件的Effect参数），
+v（插件的Curve参数）等参数查看曲线变化。
+
+x轴为输入浮点信号，
+y轴为输出浮点信号。
+其中，0=-inf dB，1=0dB，2=6dB。
+
+红色为关Clip的曲线，
+蓝色为开Clip的曲线，
+紫色虚线为正弦函数参考曲线。
