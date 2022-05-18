@@ -257,7 +257,6 @@ Pro Tools和Mac的用户有没有心动？其实你们也可以用任何可调�
 我们能看到ReaControlMIDI所有可以操作的参数，其中包含CC1、PW、和CC11。我们只需点击红色圈内的选框就能把包络当成CC来画啦！
 二，使用音源参数 当我们把上一个小节的方法运用到音源参数的时候，会比通过ReaControlMIDI中转成CC更直接。我们可以直接控制任何音源所有可以操作的外部参数，例如这款免费合成器Helm所包含的一部分参数:
 Reaper版本5.1开始支持用MIDI CC来直接控制参数，不需要经过ReaControlMIDI，如图。
-MIDI Link - CC 来直接控制Helm合成器参数"
 注释：选择一个可控制的参数，通过选择Param -&amp;gt; MIDI Link -&amp;gt; CC -&amp;gt; 我们需要的控制器编号。图中使用的JS只是模拟CC 1的输入。
 如果想利用插件（如JS脚本或序列器）在原MIDI基础上添加新信息的话，只需要右键插件输入输出选项，在MIDI output菜单里选择Merges with MIDI bus（感谢Tee先生的补充），如图：
 当然，我们在编曲时使用CC最多的恐怕是Kontakt内的采样音源。我们可以通过Auto一栏的Host Automation（宿主自动化）来设置。
@@ -269,7 +268,8 @@ MIDI Link - CC 来直接控制Helm合成器参数"
 当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
 记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！
 因编曲需要，我已经设置好了几个Kontakt乐器的配置，并为每个参数设置了英文名称。有兴趣的朋友可以随意下载使用。
-Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>录音输入音量标准</title><link>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</link><pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</guid><description>这篇文章是录音输入音量标准的解说。
+Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。
+NI最新Symphonic Series String Ensemble弦乐音源组，同时加载小提I、小提II、中提、大提、低音提琴。</description></item><item><title>录音输入音量标准</title><link>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</link><pubDate>Sun, 07 Feb 2016 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/recording-volume-calibration/</guid><description>这篇文章是录音输入音量标准的解说。
 我发现国内的录音爱好者和一些职业录音师，对于输入音量并没有一个绝对标准（除了用耳朵听这种无法衡量的行为），这导致同一个录音工程的同一轨会有不同音量标准的文件，甚至输入太热导致爆音。由于语言与文化的差别，我决定不逐字翻译，仅把结论和简单的理由列了出来。
 关于录音输入音量所需注意的事项：
 用24位或更高的音频录音。 正式录音前，试录整个演奏中音量最大的部分，并观察你的输入音量。

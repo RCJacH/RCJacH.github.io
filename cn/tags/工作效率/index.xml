@@ -53,7 +53,6 @@
 我们能看到ReaControlMIDI所有可以操作的参数，其中包含CC1、PW、和CC11。我们只需点击红色圈内的选框就能把包络当成CC来画啦！
 二，使用音源参数 当我们把上一个小节的方法运用到音源参数的时候，会比通过ReaControlMIDI中转成CC更直接。我们可以直接控制任何音源所有可以操作的外部参数，例如这款免费合成器Helm所包含的一部分参数:
 Reaper版本5.1开始支持用MIDI CC来直接控制参数，不需要经过ReaControlMIDI，如图。
-MIDI Link - CC 来直接控制Helm合成器参数"
 注释：选择一个可控制的参数，通过选择Param -&amp;gt; MIDI Link -&amp;gt; CC -&amp;gt; 我们需要的控制器编号。图中使用的JS只是模拟CC 1的输入。
 如果想利用插件（如JS脚本或序列器）在原MIDI基础上添加新信息的话，只需要右键插件输入输出选项，在MIDI output菜单里选择Merges with MIDI bus（感谢Tee先生的补充），如图：
 当然，我们在编曲时使用CC最多的恐怕是Kontakt内的采样音源。我们可以通过Auto一栏的Host Automation（宿主自动化）来设置。
@@ -65,11 +64,12 @@ MIDI Link - CC 来直接控制Helm合成器参数"
 当我们把每一个常用参数都设置成一个宿主自动化之后，就可以随心所欲的画曲线了！像下面这一轨电吉他
 记得右键轨道选择Save tracks as track template来把设置好的选项保存为轨道模板噢！
 因编曲需要，我已经设置好了几个Kontakt乐器的配置，并为每个参数设置了英文名称。有兴趣的朋友可以随意下载使用。
-Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
+Sample Modeling Kontakt铜管音源，包含小号x4、长号x4、圆号x4。
+NI最新Symphonic Series String Ensemble弦乐音源组，同时加载小提I、小提II、中提、大提、低音提琴。</description></item><item><title>英文缩写规则</title><link>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</link><pubDate>Sat, 05 Sep 2015 00:00:00 +0000</pubDate><guid>https://RCJacH.github.io/cn/blog/english-abbreviation-in-naming/</guid><description>在音频制作时候，经常会遇到音轨名称太长的情况，比如说PAD Sequence Glitter，或者Electric Guitar Wah Tremolo。这么长的名字一般DAW是不会显示的，所以我们需要简化这个音轨名称让DAW能正常显示所有的文字。前些日子看了一篇关于英文缩写的规则，翻出来分享一下：
 英文缩写：（abbreviation，来自于拉丁语中的brevis，代表short简短）
 Shortening：缩略一个词使它保留原单词的前几个字母，一般会在结尾加一个句号&amp;quot;.&amp;quot; 例：cont. = continued。 注释：如果缩略单词能形成另外一个单词，句号会被省略。例：limo = limousine。
 这种缩略不一定是非正式用语，比如：bus = autobus，taxi = taxicab等等。
 注释：有些时候会为了发音或拼写对缩略单词进行变化，例如：bike = bicycle。
-Contraction：使用单词第一个字母与最后一个字母，并省略中间的字母。例如：Dr. doctor, St. = saint/street。需要在结尾加句号&amp;quot;.&amp;quot;。另一种缩短方式是用单引号apostrophe ' 来标注省略字母，比如说：can&amp;rsquo;t = cannot，didn&amp;rsquo;t = did not等等。 注释：我个人发现另一种缩短的方法：省略元音与重复的字母，保留辅音。例如：cls. = Class， src = source，gtr = guitar。 Initialism：对于词组，可以使用每个词的首写字母。CIA/C.I.A.，US/U.S.。这种缩写方法越来越倾向不使用句号来分开字母。
+Contraction：使用单词第一个字母与最后一个字母，并省略中间的字母。例如：Dr. doctor, St. = saint/street。需要在结尾加句号&amp;quot;.&amp;quot;。另一种缩短方式是用单引号apostrophe &amp;rsquo; 来标注省略字母，比如说：can&amp;rsquo;t = cannot，didn&amp;rsquo;t = did not等等。 注释：我个人发现另一种缩短的方法：省略元音与重复的字母，保留辅音。例如：cls. = Class， src = source，gtr = guitar。 Initialism：对于词组，可以使用每个词的首写字母。CIA/C.I.A.，US/U.S.。这种缩写方法越来越倾向不使用句号来分开字母。
 Acronyms：这种缩写方法是让词组的每个词形成另外一个完整的单词，比如：AIDS，laser，或者像DAW以及Reaper。这种情况缩写反而成为了常用的词汇，而完整体通常用于解释目的。
 灵活地去运用以上四个方法，我们便可很便捷地、系统地去简化音频相关英文单词。例如之前的PAD Sequence Glitter可以写成 PD sq Gltr，而后者可以标记为EG w trem。这样一眼就知道每一轨代表什么乐器了。</description></item></channel></rss>

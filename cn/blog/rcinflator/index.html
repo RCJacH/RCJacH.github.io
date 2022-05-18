@@ -1,141 +1,18 @@
-<!doctype html><html lang=cn dir=auto><head>
-<meta charset=utf-8>
-<meta http-equiv=x-ua-compatible content="IE=edge">
-<meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no">
-<meta name=robots content="index, follow">
-<title>RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 | RCJacH</title>
-<meta name=keywords content="音乐制作,REAPER,JSFX,脚本,混音">
-<meta name=description content="tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。">
-<meta name=author content>
-<link rel=canonical href=https://RCJacH.github.io/cn/blog/rcinflator/>
-<link href=https://RCJacH.github.io/assets/css/stylesheet.min.bba413af1b411d78c407114b90561713fc45e661c3fc62ee4f65af0196f1a4fb.css integrity="sha256-u6QTrxtBHXjEBxFLkFYXE/xF5mHD/GLuT2WvAZbxpPs=" rel="preload stylesheet" as=style>
-<link href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css rel=stylesheet>
-<link rel=icon href=https://RCJacH.github.io/favicon.ico>
-<link rel=icon type=image/png sizes=16x16 href=https://RCJacH.github.io/favicon-16x16.png>
-<link rel=icon type=image/png sizes=32x32 href=https://RCJacH.github.io/favicon-32x32.png>
-<link rel=apple-touch-icon href=https://RCJacH.github.io/apple-touch-icon.png>
-<link rel=mask-icon href=https://RCJacH.github.io/safari-pinned-tab.svg>
-<meta name=theme-color content="#2e2e33">
-<meta name=msapplication-TileColor content="#2e2e33">
-<meta name=generator content="Hugo 0.92.2">
-<meta property="og:title" content="RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾">
-<meta property="og:description" content="tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。">
-<meta property="og:type" content="article">
-<meta property="og:url" content="https://RCJacH.github.io/cn/blog/rcinflator/">
-<meta property="article:published_time" content="2022-01-08T16:29:02+08:00">
-<meta property="article:modified_time" content="2022-01-08T16:29:02+08:00">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾">
-<meta name=twitter:description content="tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。">
-<script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾","name":"RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾","description":"欢迎来到我们插件发布会的直播间， 我是本次直播的主持人， 也是本司的CEO，CTO，COO，CFO\u0026amp;hellip;（以下省略100个职称） RCJacH。 在开始之前有我邀请大家阅读以下三个注意事项：\n  请不要询问为什么我们选择以文字形式直播。 大家都是音乐人， 都有非常高端的脑放。 调制旁通的插件都能听出变化， 文字转语音会有什么困难吗。\n  文中有一 …","keywords":["音乐制作","REAPER","JSFX","脚本","混音"],"articleBody":"欢迎来到我们插件发布会的直播间， 我是本次直播的主持人， 也是本司的CEO，CTO，COO，CFO…（以下省略100个职称） RCJacH。 在开始之前有我邀请大家阅读以下三个注意事项：\n  请不要询问为什么我们选择以文字形式直播。 大家都是音乐人， 都有非常高端的脑放。 调制旁通的插件都能听出变化， 文字转语音会有什么困难吗。\n  文中有一些【鼓掌】的标签， 是为了触发脑放中的鼓掌采样， 这样能显得有很多人关注这种冷门话题。\n  今天狗头不够用， 请大家自行脑补。\n  好了， 今天我们将要发布一款革命性的音频插件， 不过在此之间我先给大家科普一下行业现状。\n音频插件行业一直被国外的资本主义统治。 而这些“恶毒的”资本家为了“剥削”我们这些用爱发电的音乐人， 用尽花言巧语引诱我们消费、 “骗取”我们的财产。 由于音频插件是个黑盒， 具体算法除了作者谁也说不清， 好不好使全靠“吹”， 这导致一些“聪明的”资本家发现只要找外包做个生锈破皮的硬件3D建模、 写个不知所云的宣传文案， 文中使用一些平时不会出现在同一个句子的抽象词， 例如“warmth（温暖）”、“glue（粘合）”、“life（生命）”、“power（力量）”、“tube（电子管）”等， 再贴上几张硬件设备的照片让买家产生联想， 就可以平躺收税了。\n更可恶的是， 部分资本家并不满足于此， 而是会想尽办法榨干用户的剩余价值。 修几个Bug收一次钱， 整理一下代码库收一次钱， 重画个GUI又来收一次钱。 作为现实主义的加班人， 我们要全力抵制这种行为， 时刻提醒自己不可被华丽的外表蒙蔽双眼， 妥善对待口袋里的一块二毛三分钱。\n有句古话说得好， 自己动手成单身狗丰衣足食。 经过十分钟长时间的艰苦奋斗， 我终于自主研发出了一款新的音频插件。\n【鼓掌】\n这款插件名叫RCInflator。 RC就是我， 因为是我做出来的， 所以肯定要写上我的名字， 不然写谷歌么？ Inflator则是插件的名字， 来源于inflate一词， 意思是通货膨胀。\n非常符合当前的全球经济发展动向。\n【鼓掌】\n我在这里说明一下， Inflator这个词可能会使有些人联想到十几年前的一款同名插件, 但实际上这两者是完全不同的插件。\n首先这两款的功能不一样。 我们来看一下那款同名插件的宣传文：\n A unique and powerful plugin to increase loudness, without sacrificing sonic quality or dynamic range. Add power and presence to your mix without the pumping of compression, or use on individual channels to bring them forward and add weight. Perfect to help vocals cut through the mix.\nWhen driven harder, Inflator delivers tube-like musical warmth and provides the ‘sonic glue’ you need to gel your mix together!\n“Inflator is a rare plugin…I can’t live without it. It simply makes everything sound better…”\n“Just the right amount of Inflator will breathe life into anything you run through it!”\n 这几段话让人看得一头雾水， 不明觉厉。 但实际上它就是个增加音量的waveshaper嘛， 一句话就能说清楚的。\n当然如果说透了销量就降下来了。\n相比之下我这款功能就跟它一样简单很多－ 它可以让任何音频都变得更好听。\n没错， 连数字底噪也能变得更好听。\n你不要说音量更大自然会显得更好听， 这两者本质上还是不同的。 哪怕AB测试能完全抵消也不代表声音完全一样。\n如果你听不出来区别， 那肯定是因为你的监听音箱不够贵。\n其次我们对比一下GUI。 人家长这个样子\n我们看， 这个界面有大量无用的视觉元素， 例如推子钮上的颜色渐变和刻印等等。 这样的视觉设计会增加很多开发成本， 毕竟当时国外的界面设计师不是白菜价。\n（虽然现在可能是了\n而我的RCInflator保留了音乐人朴素的一面， 修复了调整图片尺寸可能会产生失真像素的Bug， 优化了渲染矢量图形会占用额外CPU的问题， 避免了HiDPI显示器下无法阅读的情况， 并且将极简主义发挥到了极致。\n它长这个样子：\n请不要误会， 这种原生程式样的设计绝对不是为了节省开发成本， 而是为了凸显插件本身的音频处理功能以及增加稳定性。\n说到稳定性， 告诉大家一个好消息。 RCInflator不需要iLok， 你可以随时随地在任意一台电脑上使用该插件。 同时我也没有在插件中添加在线插件激活功能、 定时callhome、 以及timebomb等降低稳定性的元素， 所以可以安心地使用它。\n至少在不到一分钟的测试环节内一次都没有崩溃过。\n请大家注意， 我没有添加防范措施绝对不是因为我不会写， 而是因为我衷心希望所有用户可以更轻松地上手使用它， 把精力放在创造音乐上。\n【鼓掌】\n所以你们看， 这两者不仅宣传语不一样， 长相也不一样， 而且连防伪措施都不一样， 怎么可能是同款插件呢对不对。\n好的， 以上是这款插件的介绍， 接下来是大家最在乎的环节， 也就是这款插件的价格。\n定价是个非常讲究的艺术， 这方面我投入了很多时间和精力。 为了能让各位理解我的决定， 我先给大家一个参考数值。 口碑很好的DMG EQuilibrium原价约210欧元， 大名鼎鼎的肥波FabFilter Pro-L 2原价是199欧元， 刚才提到的Sonnox Inflator原价是195欧元， 这三个毫不相关的插件换成RMB都将近一千五， 简直是天文数字。 我没有那么贪婪， RCInflator原价只要194欧元。\n毕竟定价太便宜会影响音质。\n但是好消息！\n为了防止国人用盗版支持国内的音乐人， 去中文官网购买该插件的话可以享受不到2折的优惠， 只要194.0 RMB！ 【小字：实际价格不包含小数点本点】\n【鼓掌】\n谢谢，举手之劳。 购买地址藏在文末。\n不过据小道消息， 目前官网出现了无需支付就能下载的bug， 我们会尽快修复。\n欸， 我们刚刚收到一个来自网友的留言。 留言内容是： 这个算法不是早有人破解了吗？你们盗用人家成果吧。\n哈哈哈， 这位朋友真会说笑， 你就不怕我们旗下二十多个水军团队在网上骂死你么。 哦不我是说， 朋友你误会了。 的确一年前有人在GearSlutz，呃GearSnobs，哦不对，GearSpace上发帖子声称破解了Inflator的算法。 但他是以预设形式发表的， 根本不是个插件啊。 所以怎么能算盗用呢？ 这最多是个参考！ 灵感来源！\n音乐人的事，能算盗么？\n好的我们又收到了一个留言： “不是说自主研发么， 我在官方论坛上看到你们的开发讨论贴， 里面都是Sai’ke在修代码啊。”\n问得好。 但朋友你格局小了。 自主研发就不可以使用别人的代码吗？ 都2202了， 我们那么多自主研发的产品不也都是站在巨人的肩膀上吗？ 哪怕是魔改、套壳、外包， 只要概念是我们想出来的产品是我们发布的不就是自主了么？\n好了我们马上进入下一个环节， 我来讲一下这个插件怎么用。\n…\n其实我也不是很清楚这个插件应该怎么用， 大家可以参考Inflator的说明书， 作为…呃，同类插件。\n哦， 对了， 下载地址。\nREAPER用户请直接去用ReaPack， 官方源自然包含该插件， 名字是RCInflator (Oxford Edition)。\n非REAPER用户的朋友们请在本文底下留言， 评论区超过一定数量我会考虑再出一篇《如何在其他非PT的DAW里使用JSFX》的教材。\n","wordCount":"283","inLanguage":"cn","datePublished":"2022-01-08T16:29:02+08:00","dateModified":"2022-01-08T16:29:02+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/rcinflator/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script>
-<body class="l-viewFrame single" id=top>
-<div class="l-viewGlass background">
-<script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add('dark'):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove('dark'):window.matchMedia('(prefers-color-scheme: dark)').matches&&document.body.classList.add('dark')</script><noscript>
-<style type=text/css>.c-theme_toggle,.top-link{display:none}</style>
-</noscript>
-<header class=l-header>
-<nav class=l-nav>
-<div class=c-logo>
-<a href=https://RCJacH.github.io/cn/ accesskey=h title="RCJacH (Alt + H)"><span class=c-logo__text>RCJacH</span>
-</a>
-<span class=l-theme__switches>
-<span class=c-theme_toggle title="(Alt + T)">
-<a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg>
-</a>
-</span>
-<span class=l-lang_switch>
-<span>|</span>
-<ul>
-<li>
-<a href=https://RCJacH.github.io/ title=English aria-label=English>English</a>
-</li>
-</ul>
-</span>
-</span>
-</div>
-<ul class=l-menu id=menu onscroll=menu_on_scroll()>
-<div class=c-menuList>
-<li class=c-menuList__item>
-<a href=https://RCJacH.github.io/cn/post title=博客>
-<span>博客</span>
-</a>
-</li>
-<li class=c-menuList__item>
-<a href=https://RCJacH.github.io/cn/portfolio title=资料>
-<span>资料</span>
-</a>
-</li></div>
-<button type=button class=c-menuButton></button>
-</ul>
-</nav>
-</header>
-<main class=l-main>
-<div class="l-main__column -center -isFluid">
-<div class=l-content><div class=l-content__main>
-<article class=l-post>
-<header class=l-post__header>
-<h1 class=c-post_title>
-RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾
-</h1>
-<div class=post-description>
-tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。
-</div>
-<div class=l-postMeta>
-<div class=l-postMeta__box>
-<div class=l-postMeta__element>
-<span class=c-emoji>📆</span><time class="c-postMeta -time" datetime=8000-01-08 title>January 8, 2022</time>
-</div>
-<div class=l-postMeta__element>
-<span class=c-emoji>📄</span><span class="c-postMeta -wordcount">283 words</span>
-</div>
-<div class=l-postMeta__element>
-<ul class=l-taxonomy>
-<li class=c-taxonomy>
-<a href=/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF/ title=脚本模板>
-<span class=c-emoji>📁</span><span class="c-postMeta -categories">脚本模板</span>
-</a>
-</li>
-</ul>
-</div>
-</div>
-</div>
-</header>
-<aside class=l-toc>
-<details class=c-toc>
-<summary accesskey=c title="(Alt + C)">
-<div class=c-toc__title>目录</div>
-</summary>
-<blockquote class=c-toc__contents></blockquote>
-</details>
-</aside>
-<div class=l-post_content>
-<p>欢迎来到我们插件发布会的直播间，
+<!doctype html><html lang=cn dir=auto><head><meta charset=utf-8><meta http-equiv=x-ua-compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1,shrink-to-fit=no"><meta name=robots content="index, follow"><title>RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 | RCJacH</title><meta name=keywords content="音乐制作,REAPER,JSFX,脚本,混音"><meta name=description content="tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。"><meta name=author content><link rel=canonical href=https://RCJacH.github.io/cn/blog/rcinflator/><link href=https://RCJacH.github.io/assets/css/stylesheet.min.bba413af1b411d78c407114b90561713fc45e661c3fc62ee4f65af0196f1a4fb.css integrity="sha256-u6QTrxtBHXjEBxFLkFYXE/xF5mHD/GLuT2WvAZbxpPs=" rel="preload stylesheet" as=style><link href=https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css rel=stylesheet><link rel=icon href=https://RCJacH.github.io/favicon.ico><link rel=icon type=image/png sizes=16x16 href=https://RCJacH.github.io/favicon-16x16.png><link rel=icon type=image/png sizes=32x32 href=https://RCJacH.github.io/favicon-32x32.png><link rel=apple-touch-icon href=https://RCJacH.github.io/apple-touch-icon.png><link rel=mask-icon href=https://RCJacH.github.io/safari-pinned-tab.svg><meta name=theme-color content="#2e2e33"><meta name=msapplication-TileColor content="#2e2e33"><meta name=generator content="Hugo 0.99.0"><meta property="og:title" content="RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾"><meta property="og:description" content="tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。"><meta property="og:type" content="article"><meta property="og:url" content="https://RCJacH.github.io/cn/blog/rcinflator/"><meta property="og:image" content="https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png"><meta property="article:published_time" content="2022-01-08T16:29:02+08:00"><meta property="article:modified_time" content="2022-01-08T16:29:02+08:00"><meta name=twitter:card content="summary_large_image"><meta name=twitter:image content="https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png"><meta name=twitter:title content="RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾"><meta name=twitter:description content="tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。"><script type=application/ld+json>{"@context":"https://schema.org","@type":"BlogPosting","headline":"RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾","name":"RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾","description":"欢迎来到我们插件发布会的直播间， 我是本次直播的主持人， 也是本司的CEO，CTO，COO，CFO\u0026amp;hellip;（以下省略100个职称） RCJacH。 在开始之前有我邀请大家阅读以下三个注意事项：\n  请不要询问为什么我们选择以文字形式直播。 大家都是音乐人， 都有非常高端的脑放。 调制旁通的插件都能听出变化， 文字转语音会有什么困难吗。\n  文中有一 …","keywords":["音乐制作","REAPER","JSFX","脚本","混音"],"articleBody":"欢迎来到我们插件发布会的直播间， 我是本次直播的主持人， 也是本司的CEO，CTO，COO，CFO…（以下省略100个职称） RCJacH。 在开始之前有我邀请大家阅读以下三个注意事项：\n  请不要询问为什么我们选择以文字形式直播。 大家都是音乐人， 都有非常高端的脑放。 调制旁通的插件都能听出变化， 文字转语音会有什么困难吗。\n  文中有一些【鼓掌】的标签， 是为了触发脑放中的鼓掌采样， 这样能显得有很多人关注这种冷门话题。\n  今天狗头不够用， 请大家自行脑补。\n  好了， 今天我们将要发布一款革命性的音频插件， 不过在此之间我先给大家科普一下行业现状。\n音频插件行业一直被国外的资本主义统治。 而这些“恶毒的”资本家为了“剥削”我们这些用爱发电的音乐人， 用尽花言巧语引诱我们消费、 “骗取”我们的财产。 由于音频插件是个黑盒， 具体算法除了作者谁也说不清， 好不好使全靠“吹”， 这导致一些“聪明的”资本家发现只要找外包做个生锈破皮的硬件3D建模、 写个不知所云的宣传文案， 文中使用一些平时不会出现在同一个句子的抽象词， 例如“warmth（温暖）”、“glue（粘合）”、“life（生命）”、“power（力量）”、“tube（电子管）”等， 再贴上几张硬件设备的照片让买家产生联想， 就可以平躺收税了。\n更可恶的是， 部分资本家并不满足于此， 而是会想尽办法榨干用户的剩余价值。 修几个Bug收一次钱， 整理一下代码库收一次钱， 重画个GUI又来收一次钱。 作为现实主义的加班人， 我们要全力抵制这种行为， 时刻提醒自己不可被华丽的外表蒙蔽双眼， 妥善对待口袋里的一块二毛三分钱。\n有句古话说得好， 自己动手成单身狗丰衣足食。 经过十分钟长时间的艰苦奋斗， 我终于自主研发出了一款新的音频插件。\n【鼓掌】\n这款插件名叫RCInflator。 RC就是我， 因为是我做出来的， 所以肯定要写上我的名字， 不然写谷歌么？ Inflator则是插件的名字， 来源于inflate一词， 意思是通货膨胀。\n非常符合当前的全球经济发展动向。\n【鼓掌】\n我在这里说明一下， Inflator这个词可能会使有些人联想到十几年前的一款同名插件, 但实际上这两者是完全不同的插件。\n首先这两款的功能不一样。 我们来看一下那款同名插件的宣传文：\n A unique and powerful plugin to increase loudness, without sacrificing sonic quality or dynamic range. Add power and presence to your mix without the pumping of compression, or use on individual channels to bring them forward and add weight. Perfect to help vocals cut through the mix.\nWhen driven harder, Inflator delivers tube-like musical warmth and provides the ‘sonic glue’ you need to gel your mix together!\n“Inflator is a rare plugin…I can’t live without it. It simply makes everything sound better…”\n“Just the right amount of Inflator will breathe life into anything you run through it!”\n 这几段话让人看得一头雾水， 不明觉厉。 但实际上它就是个增加音量的waveshaper嘛， 一句话就能说清楚的。\n当然如果说透了销量就降下来了。\n相比之下我这款功能就跟它一样简单很多－ 它可以让任何音频都变得更好听。\n没错， 连数字底噪也能变得更好听。\n你不要说音量更大自然会显得更好听， 这两者本质上还是不同的。 哪怕AB测试能完全抵消也不代表声音完全一样。\n如果你听不出来区别， 那肯定是因为你的监听音箱不够贵。\n其次我们对比一下GUI。 人家长这个样子\n我们看， 这个界面有大量无用的视觉元素， 例如推子钮上的颜色渐变和刻印等等。 这样的视觉设计会增加很多开发成本， 毕竟当时国外的界面设计师不是白菜价。\n（虽然现在可能是了\n而我的RCInflator保留了音乐人朴素的一面， 修复了调整图片尺寸可能会产生失真像素的Bug， 优化了渲染矢量图形会占用额外CPU的问题， 避免了HiDPI显示器下无法阅读的情况， 并且将极简主义发挥到了极致。\n它长这个样子：\n请不要误会， 这种原生程式样的设计绝对不是为了节省开发成本， 而是为了凸显插件本身的音频处理功能以及增加稳定性。\n说到稳定性， 告诉大家一个好消息。 RCInflator不需要iLok， 你可以随时随地在任意一台电脑上使用该插件。 同时我也没有在插件中添加在线插件激活功能、 定时callhome、 以及timebomb等降低稳定性的元素， 所以可以安心地使用它。\n至少在不到一分钟的测试环节内一次都没有崩溃过。\n请大家注意， 我没有添加防范措施绝对不是因为我不会写， 而是因为我衷心希望所有用户可以更轻松地上手使用它， 把精力放在创造音乐上。\n【鼓掌】\n所以你们看， 这两者不仅宣传语不一样， 长相也不一样， 而且连防伪措施都不一样， 怎么可能是同款插件呢对不对。\n好的， 以上是这款插件的介绍， 接下来是大家最在乎的环节， 也就是这款插件的价格。\n定价是个非常讲究的艺术， 这方面我投入了很多时间和精力。 为了能让各位理解我的决定， 我先给大家一个参考数值。 口碑很好的DMG EQuilibrium原价约210欧元， 大名鼎鼎的肥波FabFilter Pro-L 2原价是199欧元， 刚才提到的Sonnox Inflator原价是195欧元， 这三个毫不相关的插件换成RMB都将近一千五， 简直是天文数字。 我没有那么贪婪， RCInflator原价只要194欧元。\n毕竟定价太便宜会影响音质。\n但是好消息！\n为了防止国人用盗版支持国内的音乐人， 去中文官网购买该插件的话可以享受不到2折的优惠， 只要194.0 RMB！ 【小字：实际价格不包含小数点本点】\n【鼓掌】\n谢谢，举手之劳。 购买地址藏在文末。\n不过据小道消息， 目前该插件在官网无需支付就能下载， 我们会尽快修复这个bug。\n欸， 我们刚刚收到一个来自网友的留言。 留言内容是： 这个算法不是早有人破解了吗？你们盗用人家成果吧。\n哈哈哈， 这位朋友真会说笑， 你就不怕我们旗下二十多个水军团队在网上骂死你么。 哦不我是说， 朋友你误会了。 的确一年前有人在GearSlutz，呃GearSnobs，哦不对，GearSpace上发帖子声称破解了Inflator的算法。 但他是以预设形式发表的， 根本不是个插件啊。 所以怎么能算盗用呢？ 这最多是个参考！ 灵感来源！\n音乐人的事，能算盗么？\n好的我们又收到了一个留言： “不是说自主研发么， 我在官方论坛上看到你们的开发讨论贴， 里面都是Sai’ke在修代码啊。”\n问得好。 但朋友你格局小了。 自主研发就不可以使用别人的代码吗？ 都2202了， 我们那么多自主研发的产品不也都是站在巨人的肩膀上吗？ 哪怕是魔改、套壳、外包， 只要概念是我们想出来的产品是我们发布的不就是自主了么？\n好了我们马上进入下一个环节， 我来讲一下这个插件怎么用。\n…\n其实我也不是很清楚这个插件应该怎么用， 大家可以参考Inflator的说明书， 作为…呃，同类插件。\n哦， 对了， 下载地址。\nREAPER用户请直接去用ReaPack， 官方源自然包含该插件， 名字是RCInflator (Oxford Edition)。\n非REAPER用户的朋友们请在本文底下留言， 评论区超过一定数量我会考虑再出一篇《如何在其他非PT的DAW里使用JSFX》的教材。\nP.S. 算法曲线动态演示动图\nInflator算法曲线动态演示\n点击左上角的双箭头打开控制面板， 调制w（插件的Effect参数）， v（插件的Curve参数）等参数查看曲线变化。\nx轴为输入浮点信号， y轴为输出浮点信号。 其中，0=-inf dB，1=0dB，2=6dB。\n红色为关Clip的曲线， 蓝色为开Clip的曲线， 紫色虚线为正弦函数参考曲线。\n","wordCount":"296","inLanguage":"cn","image":"https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png","datePublished":"2022-01-08T16:29:02+08:00","dateModified":"2022-01-08T16:29:02+08:00","mainEntityOfPage":{"@type":"WebPage","@id":"https://RCJacH.github.io/cn/blog/rcinflator/"},"publisher":{"@type":"Organization","name":"RCJacH","logo":{"@type":"ImageObject","url":"https://RCJacH.github.io/favicon.ico"}}}</script><body class="l-viewFrame single" id=top><div class="l-viewGlass background"><script>localStorage.getItem("pref-theme")==="dark"?document.body.classList.add("dark"):localStorage.getItem("pref-theme")==="light"?document.body.classList.remove("dark"):window.matchMedia("(prefers-color-scheme: dark)").matches&&document.body.classList.add("dark")</script><noscript><style type=text/css>.c-theme_toggle,.top-link{display:none}</style></noscript><header class=l-header><nav class=l-nav><div class=c-logo><a href=https://RCJacH.github.io/cn/ accesskey=h title="RCJacH (Alt + H)"><span class=c-logo__text>RCJacH</span></a>
+<span class=l-theme__switches><span class=c-theme_toggle title="(Alt + T)"><a id=theme-toggle accesskey=t><svg id="moon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg><svg id="sun" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentcolor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"/><line x1="12" y1="1" x2="12" y2="3"/><line x1="12" y1="21" x2="12" y2="23"/><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"/><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"/><line x1="1" y1="12" x2="3" y2="12"/><line x1="21" y1="12" x2="23" y2="12"/><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"/><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/></svg></a></span><span class=l-lang_switch><span>|</span><ul><li><a href=https://RCJacH.github.io/ title=English aria-label=English>English</a></li></ul></span></span></div><ul class=l-menu id=menu onscroll=menu_on_scroll()><div class=c-menuList><li class=c-menuList__item><a href=https://RCJacH.github.io/cn/post title=博客><span>博客</span></a></li><li class=c-menuList__item><a href=https://RCJacH.github.io/cn/portfolio title=资料><span>资料</span></a></li></div><button type=button class=c-menuButton></button></ul></nav></header><main class=l-main><div class="l-main__column -center -isFluid"><div class=l-content><div class=l-content__main><article class=l-post><header class=l-post__header><h1 class=c-post_title>RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾</h1><div class=post-description>tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。</div><div class=l-postMeta><div class=l-postMeta__box><div class=l-postMeta__element><span class=c-emoji>📆</span><time class="c-postMeta -time" datetime=8000-01-08 title>January 8, 2022</time></div><div class=l-postMeta__element><span class=c-emoji>📄</span><span class="c-postMeta -wordcount">296 words</span></div><div class=l-postMeta__element><ul class=l-taxonomy><li class=c-taxonomy><a href=/cn/categories/%E8%84%9A%E6%9C%AC%E6%A8%A1%E6%9D%BF/ title=脚本模板><span class=c-emoji>📁</span><span class="c-postMeta -categories">脚本模板</span></a></li></ul></div></div></div></header><figure class=entry-cover><img src=https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png alt></figure><aside class=l-toc><details class=c-toc><summary accesskey=c title="(Alt + C)"><div class=c-toc__title>目录</div></summary><blockquote class=c-toc__contents></blockquote></details></aside><div class=l-post_content><p>欢迎来到我们插件发布会的直播间，
 我是本次直播的主持人，
 也是本司的CEO，CTO，COO，CFO&mldr;（以下省略100个职称）
 RCJacH。
-在开始之前有我邀请大家阅读以下三个注意事项：</p>
-<ol>
-<li>
-<p>请不要询问为什么我们选择以文字形式直播。
+在开始之前有我邀请大家阅读以下三个注意事项：</p><ol><li><p>请不要询问为什么我们选择以文字形式直播。
 大家都是音乐人，
 都有非常高端的脑放。
 调制旁通的插件都能听出变化，
-文字转语音会有什么困难吗。</p>
-</li>
-<li>
-<p>文中有一些【鼓掌】的标签，
+文字转语音会有什么困难吗。</p></li><li><p>文中有一些【鼓掌】的标签，
 是为了触发脑放中的鼓掌采样，
-这样能显得有很多人关注这种冷门话题。</p>
-</li>
-<li>
-<p>今天狗头不够用，
-请大家自行脑补。</p>
-</li>
-</ol>
-<p>好了，
+这样能显得有很多人关注这种冷门话题。</p></li><li><p>今天狗头不够用，
+请大家自行脑补。</p></li></ol><p>好了，
 今天我们将要发布一款革命性的音频插件，
-不过在此之间我先给大家科普一下行业现状。</p>
-<p>音频插件行业一直被国外的资本主义统治。
+不过在此之间我先给大家科普一下行业现状。</p><p>音频插件行业一直被国外的资本主义统治。
 而这些“恶毒的”资本家为了“剥削”我们这些用爱发电的音乐人，
 用尽花言巧语引诱我们消费、
 “骗取”我们的财产。
@@ -147,8 +24,7 @@ RCJacH。
 文中使用一些平时不会出现在同一个句子的抽象词，
 例如“warmth（温暖）”、“glue（粘合）”、“life（生命）”、“power（力量）”、“tube（电子管）”等，
 再贴上几张硬件设备的照片让买家产生联想，
-就可以平躺收税了。</p>
-<p>更可恶的是，
+就可以平躺收税了。</p><p>更可恶的是，
 部分资本家并不满足于此，
 而是会想尽办法榨干用户的剩余价值。
 修几个Bug收一次钱，
@@ -157,90 +33,56 @@ RCJacH。
 作为现实主义的加班人，
 我们要全力抵制这种行为，
 时刻提醒自己不可被华丽的外表蒙蔽双眼，
-妥善对待口袋里的一块二毛三分钱。</p>
-<p>有句古话说得好，
+妥善对待口袋里的一块二毛三分钱。</p><p>有句古话说得好，
 自己动手<del>成单身狗</del>丰衣足食。
 经过<del>十分钟</del>长时间的艰苦奋斗，
-我终于自主研发出了一款新的音频插件。</p>
-<p>【鼓掌】</p>
-<p>这款插件名叫RCInflator。
+我终于自主研发出了一款新的音频插件。</p><p>【鼓掌】</p><p>这款插件名叫RCInflator。
 RC就是我，
 因为是我做出来的，
 所以肯定要写上我的名字，
 不然写谷歌么？
 Inflator则是插件的名字，
 来源于inflate一词，
-意思是通货膨胀。</p>
-<p>非常符合当前的全球经济发展动向。</p>
-<p>【鼓掌】</p>
-<p>我在这里说明一下，
+意思是通货膨胀。</p><p>非常符合当前的全球经济发展动向。</p><p>【鼓掌】</p><p>我在这里说明一下，
 Inflator这个词可能会使有些人联想到十几年前的一款同名插件,
-但实际上这两者是完全不同的插件。</p>
-<p>首先这两款的功能不一样。
-我们来看一下那款同名插件的宣传文：</p>
-<blockquote>
-<p>A unique and powerful plugin to increase loudness, without sacrificing sonic quality or dynamic range. Add power and presence to your mix without the pumping of compression, or use on individual channels to bring them forward and add weight. Perfect to help vocals cut through the mix.</p>
-<p>When driven harder, Inflator delivers tube-like musical warmth and provides the &lsquo;sonic glue&rsquo; you need to gel your mix together!</p>
-<p>&ldquo;Inflator is a rare plugin…I can’t live without it. It simply makes everything sound better&mldr;&rdquo;</p>
-<p>&ldquo;Just the right amount of Inflator will breathe life into anything you run through it!&rdquo;</p>
-</blockquote>
-<p>这几段话让人看得一头雾水，
+但实际上这两者是完全不同的插件。</p><p>首先这两款的功能不一样。
+我们来看一下那款同名插件的宣传文：</p><blockquote><p>A unique and powerful plugin to increase loudness, without sacrificing sonic quality or dynamic range. Add power and presence to your mix without the pumping of compression, or use on individual channels to bring them forward and add weight. Perfect to help vocals cut through the mix.</p><p>When driven harder, Inflator delivers tube-like musical warmth and provides the &lsquo;sonic glue&rsquo; you need to gel your mix together!</p><p>&ldquo;Inflator is a rare plugin…I can’t live without it. It simply makes everything sound better&mldr;&rdquo;</p><p>&ldquo;Just the right amount of Inflator will breathe life into anything you run through it!&rdquo;</p></blockquote><p>这几段话让人看得一头雾水，
 不明觉厉。
 但实际上它就是个增加音量的waveshaper嘛，
-一句话就能说清楚的。</p>
-<p>当然如果说透了销量就降下来了。</p>
-<p>相比之下我这款功能就<del>跟它一样</del>简单很多－
-它可以让任何音频都变得更好听。</p>
-<p>没错，
-连数字底噪也能变得更好听。</p>
-<p>你不要说音量更大自然会显得更好听，
+一句话就能说清楚的。</p><p>当然如果说透了销量就降下来了。</p><p>相比之下我这款功能就<del>跟它一样</del>简单很多－
+它可以让任何音频都变得更好听。</p><p>没错，
+连数字底噪也能变得更好听。</p><p>你不要说音量更大自然会显得更好听，
 这两者本质上还是不同的。
-哪怕AB测试能完全抵消也不代表声音完全一样。</p>
-<p>如果你听不出来区别，
-那肯定是因为你的监听音箱不够贵。</p>
-<p>其次我们对比一下GUI。
-人家长这个样子</p>
-<p><img src=/img/Content/REAPER/inflator-V3-gui2.jpg alt="Sonnox Inflator screenshot"></p>
-<p>我们看，
+哪怕AB测试能完全抵消也不代表声音完全一样。</p><p>如果你听不出来区别，
+那肯定是因为你的监听音箱不够贵。</p><p>其次我们对比一下GUI。
+人家长这个样子</p><p><img src=/img/Content/REAPER/inflator-V3-gui2.jpg alt="Sonnox Inflator screenshot"></p><p>我们看，
 这个界面有大量无用的视觉元素，
 例如推子钮上的颜色渐变和刻印等等。
 这样的视觉设计会增加很多开发成本，
-毕竟当时国外的界面设计师不是白菜价。</p>
-<p>（虽然现在可能是了</p>
-<p>而我的RCInflator保留了音乐人朴素的一面，
+毕竟当时国外的界面设计师不是白菜价。</p><p>（虽然现在可能是了</p><p>而我的RCInflator保留了音乐人朴素的一面，
 修复了调整图片尺寸可能会产生失真像素的Bug，
 优化了渲染矢量图形会占用额外CPU的问题，
 避免了HiDPI显示器下无法阅读的情况，
-并且将极简主义发挥到了极致。</p>
-<p>它长这个样子：</p>
-<p><img src=/img/Content/REAPER/RCInflator.png alt="RCInflator screenshot"></p>
-<p>请不要误会，
+并且将极简主义发挥到了极致。</p><p>它长这个样子：</p><p><img src=/img/Content/REAPER/RCInflator.png alt="RCInflator screenshot"></p><p>请不要误会，
 这种原生程式样的设计绝对不是为了节省开发成本，
-而是为了凸显插件本身的音频处理功能以及增加稳定性。</p>
-<p>说到稳定性，
+而是为了凸显插件本身的音频处理功能以及增加稳定性。</p><p>说到稳定性，
 告诉大家一个好消息。
 RCInflator不需要iLok，
 你可以随时随地在任意一台电脑上使用该插件。
 同时我也没有在插件中添加在线插件激活功能、
 定时callhome、
 以及timebomb等降低稳定性的元素，
-所以可以安心地使用它。</p>
-<p>至少在不到一分钟的测试环节内一次都没有崩溃过。</p>
-<p>请大家注意，
+所以可以安心地使用它。</p><p>至少在不到一分钟的测试环节内一次都没有崩溃过。</p><p>请大家注意，
 我没有添加防范措施绝对不是因为我不会写，
 而是因为我衷心希望所有用户可以更轻松地上手使用它，
-把精力放在创造音乐上。</p>
-<p>【鼓掌】</p>
-<p>所以你们看，
+把精力放在创造音乐上。</p><p>【鼓掌】</p><p>所以你们看，
 这两者不仅宣传语不一样，
 长相也不一样，
 而且连防伪措施都不一样，
-怎么可能是同款插件呢对不对。</p>
-<p>好的，
+怎么可能是同款插件呢对不对。</p><p>好的，
 以上是这款插件的介绍，
 接下来是大家最在乎的环节，
-也就是这款插件的<strong>价格</strong>。</p>
-<p>定价是个非常讲究的艺术，
+也就是这款插件的<strong>价格</strong>。</p><p>定价是个非常讲究的艺术，
 这方面我投入了很多时间和精力。
 为了能让各位理解我的决定，
 我先给大家一个参考数值。
@@ -250,24 +92,16 @@ RCInflator不需要iLok，
 这三个毫不相关的插件换成RMB都将近一千五，
 简直是天文数字。
 我没有那么贪婪，
-RCInflator原价只要194欧元。</p>
-<p>毕竟定价太便宜会影响音质。</p>
-<p>但是好消息！</p>
-<p>为了<del>防止国人用盗版</del>支持国内的音乐人，
+RCInflator原价只要194欧元。</p><p>毕竟定价太便宜会影响音质。</p><p>但是好消息！</p><p>为了<del>防止国人用盗版</del>支持国内的音乐人，
 去中文官网购买该插件的话可以享受不到2折的优惠，
 只要194.0 RMB！
-【小字：实际价格不包含小数点本点】</p>
-<p>【鼓掌】</p>
-<p>谢谢，举手之劳。
-购买地址藏在文末。</p>
-<p>不过据小道消息，
-目前官网出现了<strong>无需支付就能下载</strong>的bug，
-我们会尽快修复。</p>
-<p>欸，
+【小字：实际价格不包含小数点本点】</p><p>【鼓掌】</p><p>谢谢，举手之劳。
+购买地址藏在文末。</p><p>不过据小道消息，
+目前该插件在官网<strong>无需支付就能下载</strong>，
+我们会尽快修复这个bug。</p><p>欸，
 我们刚刚收到一个来自网友的留言。
 留言内容是：
-这个算法不是早有人破解了吗？你们盗用人家成果吧。</p>
-<p>哈哈哈，
+这个算法不是早有人破解了吗？你们盗用人家成果吧。</p><p>哈哈哈，
 这位朋友真会说笑，
 <del>你就不怕我们旗下二十多个水军团队在网上骂死你么</del>。
 哦不我是说，
@@ -277,108 +111,42 @@ RCInflator原价只要194欧元。</p>
 根本不是个插件啊。
 所以怎么能算盗用呢？
 这最多是个参考！
-灵感来源！</p>
-<p>音乐人的事，能算盗么？</p>
-<p>好的我们又收到了一个留言：
+灵感来源！</p><p>音乐人的事，能算盗么？</p><p>好的我们又收到了一个留言：
 “不是说自主研发么，
 我在官方论坛上看到你们的<a href="https://forum.cockos.com/showthread.php?t=256286">开发讨论贴</a>，
-里面都是Sai&rsquo;ke在修代码啊。”</p>
-<p>问得好。
+里面都是Sai&rsquo;ke在修代码啊。”</p><p>问得好。
 但朋友你格局小了。
 自主研发就不可以使用别人的代码吗？
 都2202了，
 我们那么多自主研发的产品不也都是站在巨人的肩膀上吗？
 哪怕是魔改、套壳、外包，
-只要概念是我们想出来的产品是我们发布的不就是自主了么？</p>
-<p>好了我们马上进入下一个环节，
-我来讲一下这个插件怎么用。</p>
-<p>&mldr;</p>
-<p>其实我也不是很清楚这个插件应该怎么用，
+只要概念是我们想出来的产品是我们发布的不就是自主了么？</p><p>好了我们马上进入下一个环节，
+我来讲一下这个插件怎么用。</p><p>&mldr;</p><p>其实我也不是很清楚这个插件应该怎么用，
 大家可以参考Inflator的说明书，
-作为&mldr;呃，<em>同类插件</em>。</p>
-<p>哦，
+作为&mldr;呃，<em>同类插件</em>。</p><p>哦，
 对了，
-下载地址。</p>
-<p>REAPER用户请直接去用<a href=https://forum.reaget.com/t/topic/219>ReaPack</a>，
+下载地址。</p><p>REAPER用户请直接去用<a href=https://forum.reaget.com/t/topic/219>ReaPack</a>，
 官方源自然包含该插件，
-名字是RCInflator (Oxford Edition)。</p>
-<p>非REAPER用户的朋友们请在本文底下留言，
-评论区超过一定数量我会考虑再出一篇《如何在其他非PT的DAW里使用JSFX》的教材。</p>
-</div>
-<footer class=l-post_footer><ul class=l-taxonomy>
-<li class=c-taxonomy>
-<a href=/cn/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/ title=音乐制作>
-<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">音乐制作</span>
-</a>
-</li><li class=c-taxonomy>
-<a href=/cn/tags/reaper/ title=REAPER>
-<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">REAPER</span>
-</a>
-</li><li class=c-taxonomy>
-<a href=/cn/tags/jsfx/ title=JSFX>
-<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">JSFX</span>
-</a>
-</li><li class=c-taxonomy>
-<a href=/cn/tags/%E8%84%9A%E6%9C%AC/ title=脚本>
-<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">脚本</span>
-</a>
-</li><li class=c-taxonomy>
-<a href=/cn/tags/%E6%B7%B7%E9%9F%B3/ title=混音>
-<span class=c-emoji>🏷️</span><span class="c-postMeta -tags">混音</span>
-</a>
-</li>
-</ul>
-<div class=share-buttons>
-<a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on baidu" href="http://tieba.baidu.com/f/commit/share/openShareApi?url=https://RCJacH.github.io/cn/blog/rcinflator/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&desc=tl;dr%20%e6%9a%82%e6%97%a0%e5%a4%9a%e6%ae%b5%e7%9a%84%e5%85%8d%e8%b4%b9Inflator%ef%bc%8c100%25%e6%8a%b5%e6%b6%88%ef%bc%8c%e8%af%b7%e4%bd%bf%e7%94%a8ReaPack%e5%ae%98%e6%96%b9%e6%ba%90%e4%b8%8b%e8%bd%bd%e8%af%a5JSFX%e8%84%9a%e6%9c%ac%e3%80%82&pic=https://RCJacH.github.io/">
-<i class="c-icon -share ri-baidu-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on douban" href="http://www.douban.com/recommend/?url=https://RCJacH.github.io/cn/blog/rcinflator/&image=https://RCJacH.github.io/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be">
-<i class="c-icon -share ri-douban-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://RCJacH.github.io/cn/blog/rcinflator/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&summary=tl;dr%20%e6%9a%82%e6%97%a0%e5%a4%9a%e6%ae%b5%e7%9a%84%e5%85%8d%e8%b4%b9Inflator%ef%bc%8c100%25%e6%8a%b5%e6%b6%88%ef%bc%8c%e8%af%b7%e4%bd%bf%e7%94%a8ReaPack%e5%ae%98%e6%96%b9%e6%ba%90%e4%b8%8b%e8%bd%bd%e8%af%a5JSFX%e8%84%9a%e6%9c%ac%e3%80%82&source=https://RCJacH.github.io/">
-<i class="c-icon -share ri-linkedin-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey??url=https://RCJacH.github.io/cn/blog/rcinflator/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&pics=https://RCJacH.github.io/">
-<i class="c-icon -share ri-qq-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on weibo" href="http://service.weibo.com/share/share.php?url=https://RCJacH.github.io/cn/blog/rcinflator/&pic=https://RCJacH.github.io/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&ralateUid=%7b%7b%20.user%20%7d%7d">
-<i class="c-icon -share ri-weibo-fill ri-lg"></i>
-</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on mail" href="mailto:?subject=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&body=https://RCJacH.github.io/cn/blog/rcinflator/">
-<i class="c-icon -share ri-mail-fill ri-lg"></i>
-</a>
-</div>
-</footer>
-</article></div></div>
-</div>
-</main><footer class=footer><div class=l-socialMedia>
-<div class=l-socialMedia__filler></div>
-<div class=l-socialMedia__sticky>
-<a href=//space.bilibili.com/259824695 target=_blank rel="noopener noreferrer me" title=bilibili>
-<i class="c-icon ri-bilibili-fill ri-3x"></i>
-</a>
-<a href=//github.com/rcjach target=_blank rel="noopener noreferrer me" title=github>
-<i class="c-icon ri-github-fill ri-3x"></i>
-</a>
-<a href=//linkedin.com/in/ruochen-han-a00956107 target=_blank rel="noopener noreferrer me" title=linkedin>
-<i class="c-icon ri-linkedin-fill ri-3x"></i>
-</a>
-<a href=//weibo.com/rcjach target=_blank rel="noopener noreferrer me" title=weibo>
-<i class="c-icon ri-weibo-fill ri-3x"></i>
-</a>
-<a href=//zhihu.com/people/rcjach target=_blank rel="noopener noreferrer me" title=zhihu>
-<i class="c-icon ri-zhihu-fill ri-3x"></i>
-</a>
-</div>
-</div>
-<span>&copy; 2022 <a href=https://RCJacH.github.io/cn/>RCJacH</a></span>
+名字是RCInflator (Oxford Edition)。</p><p>非REAPER用户的朋友们请在本文底下留言，
+评论区超过一定数量我会考虑再出一篇《如何在其他非PT的DAW里使用JSFX》的教材。</p><p>P.S. 算法曲线动态演示动图</p><p><img src=/img/Content/REAPER/Inflator_curves.gif alt="RCInflator Curve"></p><p><a href=https://www.desmos.com/calculator/t6c6tqs6og>Inflator算法曲线动态演示</a></p><p>点击左上角的双箭头打开控制面板，
+调制w（插件的Effect参数），
+v（插件的Curve参数）等参数查看曲线变化。</p><p>x轴为输入浮点信号，
+y轴为输出浮点信号。
+其中，0=-inf dB，1=0dB，2=6dB。</p><p>红色为关Clip的曲线，
+蓝色为开Clip的曲线，
+紫色虚线为正弦函数参考曲线。</p></div><footer class=l-post_footer><ul class=l-taxonomy><li class=c-taxonomy><a href=/cn/tags/%E9%9F%B3%E4%B9%90%E5%88%B6%E4%BD%9C/ title=音乐制作><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">音乐制作</span></a></li><li class=c-taxonomy><a href=/cn/tags/reaper/ title=REAPER><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">REAPER</span></a></li><li class=c-taxonomy><a href=/cn/tags/jsfx/ title=JSFX><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">JSFX</span></a></li><li class=c-taxonomy><a href=/cn/tags/%E8%84%9A%E6%9C%AC/ title=脚本><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">脚本</span></a></li><li class=c-taxonomy><a href=/cn/tags/%E6%B7%B7%E9%9F%B3/ title=混音><span class=c-emoji>🏷️</span><span class="c-postMeta -tags">混音</span></a></li></ul><div class=share-buttons><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on baidu" href="http://tieba.baidu.com/f/commit/share/openShareApi?url=https://RCJacH.github.io/cn/blog/rcinflator/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&desc=tl;dr%20%e6%9a%82%e6%97%a0%e5%a4%9a%e6%ae%b5%e7%9a%84%e5%85%8d%e8%b4%b9Inflator%ef%bc%8c100%25%e6%8a%b5%e6%b6%88%ef%bc%8c%e8%af%b7%e4%bd%bf%e7%94%a8ReaPack%e5%ae%98%e6%96%b9%e6%ba%90%e4%b8%8b%e8%bd%bd%e8%af%a5JSFX%e8%84%9a%e6%9c%ac%e3%80%82&pic=https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png"><i class="c-icon -share ri-baidu-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on douban" href="http://www.douban.com/recommend/?url=https://RCJacH.github.io/cn/blog/rcinflator/&image=https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be"><i class="c-icon -share ri-douban-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on linkedin" href="https://www.linkedin.com/shareArticle?mini=true&url=https://RCJacH.github.io/cn/blog/rcinflator/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&summary=tl;dr%20%e6%9a%82%e6%97%a0%e5%a4%9a%e6%ae%b5%e7%9a%84%e5%85%8d%e8%b4%b9Inflator%ef%bc%8c100%25%e6%8a%b5%e6%b6%88%ef%bc%8c%e8%af%b7%e4%bd%bf%e7%94%a8ReaPack%e5%ae%98%e6%96%b9%e6%ba%90%e4%b8%8b%e8%bd%bd%e8%af%a5JSFX%e8%84%9a%e6%9c%ac%e3%80%82&source=https://RCJacH.github.io/"><i class="c-icon -share ri-linkedin-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on qq" href="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey??url=https://RCJacH.github.io/cn/blog/rcinflator/&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&pics=https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png"><i class="c-icon -share ri-qq-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on weibo" href="http://service.weibo.com/share/share.php?url=https://RCJacH.github.io/cn/blog/rcinflator/&pic=https://RCJacH.github.io/img/banners/reaper/RCInflator-fake-gui.png&title=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&ralateUid=%7b%7b%20.user%20%7d%7d"><i class="c-icon -share ri-weibo-fill ri-lg"></i>
+</a><a target=_blank rel="noopener noreferrer" aria-label="share RCInflator：破解百万级音频效果器算法，打破资本主义技术壁垒（大雾 on mail" href="mailto:?subject=RCInflator%ef%bc%9a%e7%a0%b4%e8%a7%a3%e7%99%be%e4%b8%87%e7%ba%a7%e9%9f%b3%e9%a2%91%e6%95%88%e6%9e%9c%e5%99%a8%e7%ae%97%e6%b3%95%ef%bc%8c%e6%89%93%e7%a0%b4%e8%b5%84%e6%9c%ac%e4%b8%bb%e4%b9%89%e6%8a%80%e6%9c%af%e5%a3%81%e5%9e%92%ef%bc%88%e5%a4%a7%e9%9b%be&body=https://RCJacH.github.io/cn/blog/rcinflator/"><i class="c-icon -share ri-mail-fill ri-lg"></i></a></div></footer></article></div></div></div></main><footer class=footer><div class=l-socialMedia><div class=l-socialMedia__filler></div><div class=l-socialMedia__sticky><a href=//space.bilibili.com/259824695 target=_blank rel="noopener noreferrer me" title=bilibili><i class="c-icon ri-bilibili-fill ri-3x"></i></a>
+<a href=//github.com/rcjach target=_blank rel="noopener noreferrer me" title=github><i class="c-icon ri-github-fill ri-3x"></i></a>
+<a href=//linkedin.com/in/ruochen-han-a00956107 target=_blank rel="noopener noreferrer me" title=linkedin><i class="c-icon ri-linkedin-fill ri-3x"></i></a>
+<a href=//weibo.com/rcjach target=_blank rel="noopener noreferrer me" title=weibo><i class="c-icon ri-weibo-fill ri-3x"></i></a>
+<a href=//zhihu.com/people/rcjach target=_blank rel="noopener noreferrer me" title=zhihu><i class="c-icon ri-zhihu-fill ri-3x"></i></a></div></div><span>&copy; 2022 <a href=https://RCJacH.github.io/cn/>RCJacH</a></span>
 <span>&#183;</span>
 <span>Powered by <a href=https://gohugo.io/ rel="noopener noreferrer" target=_blank>Hugo</a></span>
 <span>&#183;</span>
-<span>Theme <a href=https://github.com/RCJacH/RCPaperMod rel=noopener target=_blank>RCPaperMod</a></span>
-</footer>
-<a href=#top aria-label="go to top" title="Go to Top (Alt + G)">
-<button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg>
-</button>
-</a>
-<script defer src=https://RCJacH.github.io/assets/js/highlight.min.7680afc38aa6b15ddf158a4f3780b7b1f7dde7e91d26f073e6229bb7a0793c92.js integrity="sha256-doCvw4qmsV3fFYpPN4C3sffd5+kdJvBz5iKbt6B5PJI=" onload=hljs.initHighlightingOnLoad()></script>
-<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById('menu').scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(a=>{a.addEventListener("click",function(b){b.preventDefault();var a=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(a)}']`).scrollIntoView({behavior:"smooth"}),a==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${a}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById('menu').scrollLeft)}</script>
-<script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove('dark'),localStorage.setItem("pref-theme",'light')):(document.body.classList.add('dark'),localStorage.setItem("pref-theme",'dark'))})</script>
-</div>
-</body>
-</html>
+<span>Theme <a href=https://github.com/RCJacH/RCPaperMod rel=noopener target=_blank>RCPaperMod</a></span></footer><a href=#top aria-label="go to top" title="Go to Top (Alt + G)"><button class=top-link id=top-link type=button accesskey=g><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 6"><path d="M12 6H0l6-6z"/></svg></button></a>
+<script defer src=https://RCJacH.github.io/assets/js/highlight.min.2840b7fccd34145847db71a290569594bdbdb00047097f75d6495d162f5d7dff.js integrity="sha256-KEC3/M00FFhH23GikFaVlL29sABHCX911kldFi9dff8=" onload=hljs.initHighlightingOnLoad()></script>
+<script>window.onload=function(){localStorage.getItem("menu-scroll-position")&&(document.getElementById("menu").scrollLeft=localStorage.getItem("menu-scroll-position"))},document.querySelectorAll('a[href^="#"]').forEach(e=>{e.addEventListener("click",function(t){t.preventDefault();var e=this.getAttribute("href").substr(1);document.querySelector(`[id='${decodeURIComponent(e)}']`).scrollIntoView({behavior:"smooth"}),e==="top"?history.replaceState(null,null," "):history.replaceState(null,null,`#${e}`)})});var mybutton=document.getElementById("top-link");window.onscroll=function(){document.body.scrollTop>800||document.documentElement.scrollTop>800?(mybutton.style.visibility="visible",mybutton.style.opacity="1"):(mybutton.style.visibility="hidden",mybutton.style.opacity="0")};function menu_on_scroll(){localStorage.setItem("menu-scroll-position",document.getElementById("menu").scrollLeft)}</script><script>document.getElementById("theme-toggle").addEventListener("click",()=>{document.body.className.includes("dark")?(document.body.classList.remove("dark"),localStorage.setItem("pref-theme","light")):(document.body.classList.add("dark"),localStorage.setItem("pref-theme","dark"))})</script></div></body></html>
