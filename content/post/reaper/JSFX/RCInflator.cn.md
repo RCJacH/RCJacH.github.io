@@ -5,7 +5,7 @@ tags = ["音乐制作","REAPER","JSFX","脚本","混音"]
 categories = ["脚本&模板"]
 description = "tl;dr 暂无多段的免费Inflator，100%抵消，请使用ReaPack官方源下载该JSFX脚本。"
 [cover]
-image = "img/banners/rcmtheory/major_scale.jpg"
+image = "img/banners/reaper/RCInflator-fake-gui.png"
 +++
 
 欢迎来到我们插件发布会的直播间，
